@@ -8,7 +8,8 @@
 ### Single point
 ```
 {
-  "project": (string, NAME-VER),
+  "project": (string),
+  "version": (string),
   "file": (string),
   "line": (int),
   "type": (string, see above),
@@ -20,7 +21,8 @@
 ### Two points
 ```
 {
-  "project": (string, NAME-VER),
+  "project": (string),
+  "version": (string),
   "source": {
     "file": (string),
     "line": (int),

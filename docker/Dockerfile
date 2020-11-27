@@ -4,6 +4,9 @@ RUN apt-get update && \
     apt-get upgrade -y
 RUN apt-get install -y make git gcc
 
+ENV TZ=Asia/Seoul
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 ENV SRC=/src
 RUN mkdir -p $SRC
 

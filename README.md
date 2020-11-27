@@ -31,12 +31,13 @@
   },
   "type": (string, see above),
   "CVE": (string, CVE-XXXX-XXXX),
-  "report": (string, bug report or CVE report),  
+  "report": (string, bug report or CVE report),
   "patch": (string option, patch commit)
 }
 ```
 
 ## Docker
+- Base image: `prosyslab/bug-bench-base` in Dockerhub built from [docker/Dockerfile](docker/Dockerfile)
 ```
 /
 |-- src

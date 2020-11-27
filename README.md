@@ -35,3 +35,12 @@
   "patch": (string option, patch commit)
 }
 ```
+
+## Docker
+```
+/
+|-- src
+|  `---/PROGRAM
+|  `---/build.sh
+|-- smake
+```

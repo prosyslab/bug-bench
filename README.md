@@ -36,6 +36,21 @@
 }
 ```
 
+## Benchmark
+```
+benchmark
+|--- PROGRAM1
+    `--- VER1
+    |    `--- label.json
+    |    `--- Dockerfile
+    |    `--- build.sh
+    `--- VER2
+    |    `--- label.json
+    |    `--- Dockerfile
+    |    `--- build.sh
+    ...
+```
+
 ## Docker
 - Base image: `prosyslab/bug-bench-base` in Dockerhub built from [docker/Dockerfile](docker/Dockerfile)
 ```

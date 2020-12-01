@@ -64,7 +64,6 @@ benchmark
 |-- infer/  # shall be mounted
 |-- out/
    `-- smake-out/
-      `-- captured/
    `-- infer-out/
 ```
 
@@ -79,7 +78,7 @@ For example, to build target for Sparrow, run `$BUILD sparrow`. Then, the built 
 ### How to mount `infer`?
 
 ```sh
-$ docker run -it -v PATH/TO/INFER/:/infer REPO:TAG
+$ docker run -it -v PATH/TO/INFER/DIR/:/infer REPO:TAG
 ```
 
 FYI, look out for `-v` option in `docker run --help`.

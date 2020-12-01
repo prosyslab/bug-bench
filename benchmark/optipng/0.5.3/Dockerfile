@@ -14,4 +14,3 @@ ENV URL=https://downloads.sourceforge.net/project/optipng/OptiPNG/optipng-0.5.3/
 RUN wget $URL
 RUN tar -xzvf optipng-0.5.3.tar.gz
 RUN cd optipng-0.5.3
-RUN $SRC/build.sh

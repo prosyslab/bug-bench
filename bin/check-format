@@ -11,4 +11,5 @@ for file in $(find $PROJECT_HOME -name "label.json"); do
     echo "See error message after running js-beautify -s 2 $file"
     exit 1
   fi
+  $PROJECT_HOME/bin/check-schema $file
 done

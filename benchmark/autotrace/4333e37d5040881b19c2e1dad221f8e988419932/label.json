@@ -11,7 +11,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://www.cvedetails.com/cve/CVE-2017-9181"
+    "report": "https://www.cvedetails.com/cve/CVE-2017-9181",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -26,7 +27,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://www.cvedetails.com/cve/CVE-2017-9181"
+    "report": "https://www.cvedetails.com/cve/CVE-2017-9181",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -41,7 +43,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://www.cvedetails.com/cve/CVE-2017-9181"
+    "report": "https://www.cvedetails.com/cve/CVE-2017-9181",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -56,7 +59,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -72,7 +76,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -87,7 +92,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -102,7 +108,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -117,7 +124,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -132,7 +140,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -147,7 +156,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -162,7 +172,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -177,7 +188,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -192,7 +204,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -207,7 +220,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -222,7 +236,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -237,7 +252,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -252,7 +268,8 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   },
   {
     "project": "autotrace",
@@ -267,6 +284,7 @@
     },
     "type": "integer-overflow",
     "CVE": "CVE-2017-9181",
-    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/"
+    "report": "https://blogs.gentoo.org/ago/2017/05/20/autotrace-multiple-vulnerabilities-the-autotrace-nightmare/",
+    "patch": null
   }
 ]

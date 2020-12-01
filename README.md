@@ -55,10 +55,28 @@ benchmark
 
 ## Docker
 - Base image: `prosyslab/bug-bench-base` in Dockerhub built from [docker/Dockerfile](docker/Dockerfile)
-```
+```sh
 /
-|-- src
-|  `---/PROGRAM
-|  `---/build.sh
-|-- smake
+|-- src/
+|  `-- PROGRAM/
+|  `-- build.sh
+|-- smake/
+|-- infer/  # shall be mounted
+|-- out/
+   `-- smake-out/
+      `-- captured/
+   `-- infer-out/
+```
+
+### How to build with respect to desired target?
+
+```sh
+$ $BUILD [ sparrow | infer ]
+```
+
+For example, to build target for Sparrow, run `$BUILD sparrow`. Then, built target will be located at `/out/*`.
+
+### How to mount `infer`?
+```sh
+$ docker run -it -v PATH/TO/INFER/:/infer REPO:TAG
 ```

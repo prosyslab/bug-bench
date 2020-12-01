@@ -1,15 +1,16 @@
 [{
-    "project": "optipng",
-    "version": "0.5.3",
-    "source": {
-        "file": "tiffread.c",
-        "line": 192
-    },
-    "sink": {
-        "file": "tiffread.c",
-        "line": 353
-    },
-    "type": "integer-overflow",
-    "CVE": "CVE-2017-16938",
-    "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16938"
+  "project": "optipng",
+  "version": "0.5.3",
+  "source": {
+    "file": "tiffread.c",
+    "line": 192
+  },
+  "sink": {
+    "file": "tiffread.c",
+    "line": 353
+  },
+  "type": "integer-overflow",
+  "CVE": "CVE-2017-16938",
+  "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16938",
+  "patch": null
 }]

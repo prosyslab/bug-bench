@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+
+import json
+import sys
+
+with open(sys.argv[1]) as f:
+    label = json.load(f)
+
+single_point = ['buffer-overflow']
+two_point = ['integer-overflow', 'format-string']
+
+
+def check_single_point(item):
+    assert (item['file'])
+    assert (item['line'] and type(item['line']) == int)
+
+
+def check_two_point(item):
+    assert (item['source'])
+    assert (item['source']['file'])
+    assert (item['source']['line'] and type(item['source']['line']) == int)
+    assert (item['sink'])
+    assert (item['sink']['file'])
+    assert (item['sink']['line'] and type(item['sink']['line']) == int)
+
+
+for item in label:
+    assert (item['project'])
+    assert (item['version'])
+    assert (item['type'])
+    if item['type'] in single_point:
+        check_single_point(item)
+    elif item['type'] in two_point:
+        check_two_point(item)
+    else:
+        assert False
+    assert ('CVE' in item)
+    assert ('report' in item)
+    assert ('patch' in item)

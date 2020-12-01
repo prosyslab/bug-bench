@@ -74,9 +74,12 @@ benchmark
 $ $BUILD [ sparrow | infer ]
 ```
 
-For example, to build target for Sparrow, run `$BUILD sparrow`. Then, built target will be located at `/out/*`.
+For example, to build target for Sparrow, run `$BUILD sparrow`. Then, the built target along with either Sparrow or Infer will be located at `/out/*`.
 
 ### How to mount `infer`?
+
 ```sh
 $ docker run -it -v PATH/TO/INFER/:/infer REPO:TAG
 ```
+
+FYI, look out for `-v` option in `docker run --help`.

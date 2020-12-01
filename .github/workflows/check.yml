@@ -1,0 +1,17 @@
+name: check
+
+on: [push, pull_request]
+
+jobs:
+  check:
+    name: check-format
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: sudo npm -g install js-beautify
+
+      - name: Check format
+        run: bin/check-format

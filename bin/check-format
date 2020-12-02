@@ -12,4 +12,8 @@ for file in $(find $PROJECT_HOME -name "label.json"); do
     exit 1
   fi
   $PROJECT_HOME/bin/check-schema $file
+  if [[ $? -ne 0 ]]; then
+    echo "Failed: Please check label schema of $file"
+    exit 1
+  fi
 done

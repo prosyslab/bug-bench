@@ -8,7 +8,11 @@
     "sink": {
       "file": "prototype.c",
       "line": 341
-    }
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
   },
   {
     "project": "urjtag",
@@ -20,7 +24,11 @@
     "sink": {
       "file": "prototype.c",
       "line": 346
-    }
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
   },
   {
     "project": "urjtag",
@@ -32,7 +40,11 @@
     "sink": {
       "file": "prototype.c",
       "line": 358
-    }
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
   },
   {
     "project": "urjtag",
@@ -44,7 +56,11 @@
     "sink": {
       "file": "prototype.c",
       "line": 369
-    }
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
   },
   {
     "project": "urjtag",
@@ -56,7 +72,11 @@
     "sink": {
       "file": "prototype.c",
       "line": 374
-    }
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
   },
   {
     "project": "urjtag",
@@ -68,6 +88,10 @@
     "sink": {
       "file": "prototype.c",
       "line": 386
-    }
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
   }
 ]

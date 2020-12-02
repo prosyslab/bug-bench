@@ -32,8 +32,8 @@
     "line": (int),
   },
   "type": (string, see above),
-  "CVE": (string, CVE-XXXX-XXXX),
-  "report": (string, bug report or CVE report),
+  "CVE": (string option, CVE-XXXX-XXXX),
+  "report": (string option, bug report or CVE report),
   "patch": (string option, patch commit)
 }
 ```

@@ -12,4 +12,4 @@ WORKDIR $PROGRAM
 ENV URL=https://downloads.sourceforge.net/project/urjtag/urjtag/0.8/urjtag-0.8.tar.gz
 
 RUN wget $URL
-RUN tar -xzvf urjtag-0.8.tar.gz --strip-components 1
+RUN tar -xzvf urjtag-0.8.tar.gz -C $PROGRAM --strip-components 1

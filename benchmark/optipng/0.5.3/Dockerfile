@@ -12,4 +12,4 @@ WORKDIR $PROGRAM
 ENV URL=https://downloads.sourceforge.net/project/optipng/OptiPNG/optipng-0.5.3/optipng-0.5.3.tar.gz
 
 RUN wget $URL
-RUN tar -xzvf optipng-0.5.3.tar.gz --strip-components 1
+RUN tar -xzvf optipng-0.5.3.tar.gz -C $PROGRAM --strip-components 1

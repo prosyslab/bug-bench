@@ -1,0 +1,10 @@
+[{
+  "project": "sed",
+  "version": "4.3",
+  "file": "regexp.c",
+  "line": 279,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "https://github.com/mirror/sed/commit/007a417687970e0f5c88e181dc0cd07800fc0180",
+  "patch": null
+}]

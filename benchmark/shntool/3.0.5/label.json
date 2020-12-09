@@ -24,7 +24,11 @@
     "sink": {
       "file": "mode_cmp.c",
       "line": 318
-    }
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
   },
   {
     "project": "shntool",

@@ -1,0 +1,119 @@
+[{
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 515,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 1005,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2001-1228",
+  "report": "https://www.cvedetails.com/cve/CVE-2001-1228/",
+  "patch": "https://www.securityfocus.com/bid/3712/solution"
+}, {
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 1053,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 1056,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2001-1228",
+  "report": "https://www.cvedetails.com/cve/CVE-2001-1228/",
+  "patch": "https://www.securityfocus.com/bid/3712/solution"
+}, {
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 1070,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 1133,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+
+}, {
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 1434,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 1439,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 1467,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 1502,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 1504,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 1685,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2001-1228",
+  "report": "https://www.cvedetails.com/cve/CVE-2001-1228/",
+  "patch": "https://www.securityfocus.com/bid/3712/solution"
+}, {
+  "project": "gzip",
+  "version": "1.2.4a",
+  "file": "gzip.c",
+  "line": 1688,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}]

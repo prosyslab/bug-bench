@@ -1,0 +1,31 @@
+[{
+    "project": "jhead",
+    "version": "3.0.0",
+    "source": {
+      "file": "jpgfile.c",
+      "line": 159
+    },
+    "sink": {
+      "file": "jpgfile.c",
+      "line": 173
+    },
+    "CVE": "CVE-2018-6612",
+    "report": "https://www.cvedetails.com/cve/CVE-2018-6612",
+    "patch": null
+  },
+  {
+    "project": "jhead-3.0.0",
+    "version": "3.0.0",
+    "source": {
+      "file": "jpgfile.c",
+      "line": 160
+    },
+    "sink": {
+      "file": "jpgfile.c",
+      "line": 173
+    },
+    "CVE": "CVE-2018-6612",
+    "report": "https://www.cvedetails.com/cve/CVE-2018-6612",
+    "patch": null
+  }
+]

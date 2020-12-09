@@ -1,0 +1,1044 @@
+[{
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "write.c",
+      "line": 1347
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 123
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 127
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 131
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 142
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 166
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 170
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 174
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 185
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 209
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 213
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 217
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 772
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 228
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 123
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 123
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 123
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 123
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 127
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 127
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 127
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 127
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 131
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 131
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 131
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 131
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 142
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 142
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 142
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 142
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 166
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 166
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 166
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 166
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 170
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 170
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 170
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 170
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 174
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 174
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 174
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 174
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 185
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 185
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 185
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 185
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 209
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 209
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 209
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 209
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 213
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 213
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 213
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 213
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 217
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 217
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 217
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 217
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 228
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 228
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 228
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "number.c",
+      "line": 228
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 320
+    },
+    "sink": {
+      "file": "write.c",
+      "line": 1347
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 351
+    },
+    "sink": {
+      "file": "write.c",
+      "line": 1347
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 394
+    },
+    "sink": {
+      "file": "write.c",
+      "line": 1347
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "sdop",
+    "version": "0.61",
+    "source": {
+      "file": "read.c",
+      "line": 553
+    },
+    "sink": {
+      "file": "write.c",
+      "line": 1347
+    },
+    "type": "format-string",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  }
+]

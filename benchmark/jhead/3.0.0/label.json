@@ -9,7 +9,7 @@
       "file": "jpgfile.c",
       "line": 173
     },
-"type": "integer-overflow",
+    "type": "integer-overflow",
     "CVE": "CVE-2018-6612",
     "report": "https://www.cvedetails.com/cve/CVE-2018-6612",
     "patch": null
@@ -25,7 +25,7 @@
       "file": "jpgfile.c",
       "line": 173
     },
-"type": "integer-overflow",
+    "type": "integer-overflow",
     "CVE": "CVE-2018-6612",
     "report": "https://www.cvedetails.com/cve/CVE-2018-6612",
     "patch": null

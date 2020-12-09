@@ -1,0 +1,193 @@
+[{
+    "project": "sam2p",
+    "version": "0.49.4",
+    "source": {
+      "file": "input-bmp.ci",
+      "line": 110
+    },
+    "sink": {
+      "file": "input-bmp.ci",
+      "line": 267
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2017-16663",
+    "report": "https://github.com/pts/sam2p/issues/16",
+    "patch": "https://github.com/pts/sam2p/commit/b3dd8209cc98673d682e82971bf822568f8efa27"
+  },
+  {
+    "project": "sam2p",
+    "version": "0.49.4",
+    "source": {
+      "file": "input-bmp.ci",
+      "line": 110
+    },
+    "sink": {
+      "file": "input-bmp.ci",
+      "line": 272
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2017-16663",
+    "report": "https://github.com/pts/sam2p/issues/16",
+    "patch": "https://github.com/pts/sam2p/commit/b3dd8209cc98673d682e82971bf822568f8efa27"
+  },
+  {
+    "project": "sam2p",
+    "version": "0.49.4",
+    "source": {
+      "file": "input-bmp.ci",
+      "line": 110
+    },
+    "sink": {
+      "file": "input-bmp.ci",
+      "line": 277
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2017-16663",
+    "report": "https://github.com/pts/sam2p/issues/16",
+    "patch": "https://github.com/pts/sam2p/commit/b3dd8209cc98673d682e82971bf822568f8efa27"
+  },
+  {
+    "project": "sam2p",
+    "version": "0.49.4",
+    "source": {
+      "file": "input-bmp.ci",
+      "line": 110
+    },
+    "sink": {
+      "file": "input-bmp.ci",
+      "line": 281
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2017-16663",
+    "report": "https://github.com/pts/sam2p/issues/16",
+    "patch": "https://github.com/pts/sam2p/commit/b3dd8209cc98673d682e82971bf822568f8efa27"
+  },
+  {
+    "project": "sam2p",
+    "version": "0.49.4",
+    "source": {
+      "file": "input-bmp.ci",
+      "line": 125
+    },
+    "sink": {
+      "file": "input-bmp.ci",
+      "line": 267
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2017-16663",
+    "report": "https://github.com/pts/sam2p/issues/16",
+    "patch": "https://github.com/pts/sam2p/commit/b3dd8209cc98673d682e82971bf822568f8efa27"
+  },
+  {
+    "project": "sam2p",
+    "version": "0.49.4",
+    "source": {
+      "file": "input-bmp.ci",
+      "line": 125
+    },
+    "sink": {
+      "file": "input-bmp.ci",
+      "line": 272
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2017-16663",
+    "report": "https://github.com/pts/sam2p/issues/16",
+    "patch": "https://github.com/pts/sam2p/commit/b3dd8209cc98673d682e82971bf822568f8efa27"
+  },
+  {
+    "project": "sam2p",
+    "version": "0.49.4",
+    "source": {
+      "file": "input-bmp.ci",
+      "line": 125
+    },
+    "sink": {
+      "file": "input-bmp.ci",
+      "line": 277
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2017-16663",
+    "report": "https://github.com/pts/sam2p/issues/16",
+    "patch": "https://github.com/pts/sam2p/commit/b3dd8209cc98673d682e82971bf822568f8efa27"
+  },
+  {
+    "project": "sam2p",
+    "version": "0.49.4",
+    "source": {
+      "file": "input-bmp.ci",
+      "line": 125
+    },
+    "sink": {
+      "file": "input-bmp.ci",
+      "line": 281
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2017-16663",
+    "report": "https://github.com/pts/sam2p/issues/16",
+    "patch": "https://github.com/pts/sam2p/commit/b3dd8209cc98673d682e82971bf822568f8efa27"
+  },
+  {
+    "project": "sam2p",
+    "version": "0.49.4",
+    "source": {
+      "file": "input-bmp.ci",
+      "line": 143
+    },
+    "sink": {
+      "file": "input-bmp.ci",
+      "line": 267
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2017-16663",
+    "report": "https://github.com/pts/sam2p/issues/16",
+    "patch": "https://github.com/pts/sam2p/commit/b3dd8209cc98673d682e82971bf822568f8efa27"
+  },
+  {
+    "project": "sam2p",
+    "version": "0.49.4",
+    "source": {
+      "file": "input-bmp.ci",
+      "line": 143
+    },
+    "sink": {
+      "file": "input-bmp.ci",
+      "line": 272
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2017-16663",
+    "report": "https://github.com/pts/sam2p/issues/16",
+    "patch": "https://github.com/pts/sam2p/commit/b3dd8209cc98673d682e82971bf822568f8efa27"
+  },
+  {
+    "project": "sam2p",
+    "version": "0.49.4",
+    "source": {
+      "file": "input-bmp.ci",
+      "line": 143
+    },
+    "sink": {
+      "file": "input-bmp.ci",
+      "line": 277
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2017-16663",
+    "report": "https://github.com/pts/sam2p/issues/16",
+    "patch": "https://github.com/pts/sam2p/commit/b3dd8209cc98673d682e82971bf822568f8efa27"
+  },
+  {
+    "project": "sam2p",
+    "version": "0.49.4",
+    "source": {
+      "file": "input-bmp.ci",
+      "line": 143
+    },
+    "sink": {
+      "file": "input-bmp.ci",
+      "line": 281
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2017-16663",
+    "report": "https://github.com/pts/sam2p/issues/16",
+    "patch": "https://github.com/pts/sam2p/commit/b3dd8209cc98673d682e82971bf822568f8efa27"
+  }
+]

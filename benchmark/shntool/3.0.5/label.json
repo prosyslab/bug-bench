@@ -1,6 +1,6 @@
-[
-  {
-    "project": "shntool-3.0.5",
+[{
+    "project": "shntool",
+    "version": "3.0.5",
     "source": {
       "file": "core_shntool.c",
       "line": 304
@@ -8,10 +8,15 @@
     "sink": {
       "file": "mode_cmp.c",
       "line": 187
-    }
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
   },
   {
-    "project": "shntool-3.0.5",
+    "project": "shntool",
+    "version": "3.0.5",
     "source": {
       "file": "core_shntool.c",
       "line": 304
@@ -22,7 +27,8 @@
     }
   },
   {
-    "project": "shntool-3.0.5",
+    "project": "shntool",
+    "version": "3.0.5",
     "source": {
       "file": "core_fileio.c",
       "line": 107
@@ -30,10 +36,15 @@
     "sink": {
       "file": "mode_cmp.c",
       "line": 187
-    }
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
   },
   {
-    "project": "shntool-3.0.5",
+    "project": "shntool",
+    "version": "3.0.5",
     "source": {
       "file": "core_fileio.c",
       "line": 107
@@ -41,10 +52,15 @@
     "sink": {
       "file": "mode_cmp.c",
       "line": 318
-    }
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
   },
   {
-    "project": "shntool-3.0.5",
+    "project": "shntool",
+    "version": "3.0.5",
     "source": {
       "file": "core_fileio.c",
       "line": 129
@@ -52,10 +68,15 @@
     "sink": {
       "file": "mode_cmp.c",
       "line": 187
-    }
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
   },
   {
-    "project": "shntool-3.0.5",
+    "project": "shntool",
+    "version": "3.0.5",
     "source": {
       "file": "core_fileio.c",
       "line": 129
@@ -63,6 +84,11 @@
     "sink": {
       "file": "mode_cmp.c",
       "line": 318
-    }
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
+
   }
 ]

@@ -12,5 +12,6 @@
   "type": "integer-overflow",
   "CVE": "CVE-2017-16938",
   "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16938",
-  "patch": null
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/2f5197c817860a1b51705e80919a6cb8a11066c7/lib/pngxtern/minitiff/tiffread.c#L353"
 }]

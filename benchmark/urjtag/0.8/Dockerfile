@@ -7,9 +7,10 @@ COPY build.sh $SRC
 ENV PROGRAM=urjtag
 
 RUN mkdir $PROGRAM
-WORKDIR $PROGRAM
 
 ENV URL=https://downloads.sourceforge.net/project/urjtag/urjtag/0.8/urjtag-0.8.tar.gz
 
 RUN wget $URL
 RUN tar -xzvf urjtag-0.8.tar.gz -C $PROGRAM --strip-components 1
+
+WORKDIR $PROGRAM

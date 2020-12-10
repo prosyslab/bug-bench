@@ -6,6 +6,7 @@ RUN apt-get install -y make git gcc
 
 ENV TZ=Asia/Seoul
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN apt-get install -y tzdata
 
 RUN git clone https://github.com/prosyslab/smake.git
 

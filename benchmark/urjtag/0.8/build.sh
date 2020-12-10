@@ -10,7 +10,7 @@ if [[ $1 == "sparrow" ]]; then
   mv sparrow/src/jtag/*.i $SMAKE_OUT
 elif [[ $1 == "infer" ]]; then
   $INFER_BIN capture -- make $MAKE_PARAMS
-  mv infer-out $OUT
+  cp -r infer-out $OUT
 else
   echo "Unknown build target"
   exit 1

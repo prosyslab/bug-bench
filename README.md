@@ -66,6 +66,15 @@ benchmark
    `-- smake-out/
    `-- infer-out/
 ```
+### Building Docker images
+- Building a single image
+```
+$ bin/build-docker.sh benchmark/[program]/[version]
+```
+- Building all images including `base`
+```
+$ bin/build-docker.sh all
+```
 
 ### How to build with respect to desired target?
 

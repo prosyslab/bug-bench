@@ -15,7 +15,7 @@
     "patch": null
   },
   {
-    "project": "jhead-3.0.0",
+    "project": "jhead",
     "version": "3.0.0",
     "source": {
       "file": "jpgfile.c",

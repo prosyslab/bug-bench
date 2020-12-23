@@ -2,7 +2,7 @@
 
 
 MAKE_PARAMS="-j"
-SMAKE_I_DIR="TODO"
+SMAKE_I_DIR="sparrow/libslirp.a"
 
 if [[ $1 == "sparrow" ]]; then
   $SMAKE_BIN --init

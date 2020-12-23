@@ -1,0 +1,113 @@
+[{
+    "project": "libslirp",
+    "version": "4.1.0",
+    "source": {
+      "file": null,
+      "line": null
+    },
+    "sink": {
+      "file": "src/tcp_subr.c",
+      "line": 643
+    },
+    "type": "format-string",
+    "CVE": "CVE-2020-8608",
+    "report": "https://cve.circl.lu/cve/CVE-2020-8608",
+    "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  },
+  {
+    "project": "libslirp",
+    "version": "4.1.0",
+    "source": {
+      "file": null,
+      "line": null
+    },
+    "sink": {
+      "file": "src/tcp_subr.c",
+      "line": 684
+    },
+    "type": "format-string",
+    "CVE": "CVE-2020-8608",
+    "report": "https://cve.circl.lu/cve/CVE-2020-8608",
+    "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  },
+  {
+    "project": "libslirp",
+    "version": "4.1.0",
+    "source": {
+      "file": null,
+      "line": null
+    },
+    "sink": {
+      "file": "src/tcp_subr.c",
+      "line": 720
+    },
+    "type": "format-string",
+    "CVE": "CVE-2020-8608",
+    "report": "https://cve.circl.lu/cve/CVE-2020-8608",
+    "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  },
+  {
+    "project": "libslirp",
+    "version": "4.1.0",
+    "source": {
+      "file": null,
+      "line": null
+    },
+    "sink": {
+      "file": "src/tcp_subr.c",
+      "line": 747
+    },
+    "type": "format-string",
+    "CVE": "CVE-2020-8608",
+    "report": "https://cve.circl.lu/cve/CVE-2020-8608",
+    "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  },
+  {
+    "project": "libslirp",
+    "version": "4.1.0",
+    "source": {
+      "file": null,
+      "line": null
+    },
+    "sink": {
+      "file": "src/tcp_subr.c",
+      "line": 766
+    },
+    "type": "format-string",
+    "CVE": "CVE-2020-8608",
+    "report": "https://cve.circl.lu/cve/CVE-2020-8608",
+    "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  },
+  {
+    "project": "libslirp",
+    "version": "4.1.0",
+    "source": {
+      "file": null,
+      "line": null
+    },
+    "sink": {
+      "file": "src/tcp_subr.c",
+      "line": 777
+    },
+    "type": "format-string",
+    "CVE": "CVE-2020-8608",
+    "report": "https://cve.circl.lu/cve/CVE-2020-8608",
+    "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  },
+  {
+    "project": "libslirp",
+    "version": "4.1.0",
+    "source": {
+      "file": null,
+      "line": null
+    },
+    "sink": {
+      "file": "src/tcp_subr.c",
+      "line": 788
+    },
+    "type": "format-string",
+    "CVE": "CVE-2020-8608",
+    "report": "https://cve.circl.lu/cve/CVE-2020-8608",
+    "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  }
+]

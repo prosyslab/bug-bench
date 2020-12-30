@@ -1,0 +1,33 @@
+[{
+    "project": "unzip",
+    "version": "6.0",
+    "source": {
+      "file": "fileio.c",
+      "line": 584
+    },
+    "sink": {
+      "file": "fileop.c",
+      "line": 1592
+    },
+    "type": "classic-buffer-overflow",
+    "CVE": "CVE-2018-1000035",
+    "report": "https://cve.circl.lu/cve/CVE-2018-1000035",
+    "patch": null
+  },
+  {
+    "project": "unzip",
+    "version": "6.0",
+    "source": {
+      "file": "unzip.c",
+      "line": 714
+    },
+    "sink": {
+      "file": "fileop.c",
+      "line": 1592
+    },
+    "type": "classic-buffer-overflow",
+    "CVE": "CVE-2018-1000035",
+    "report": "https://cve.circl.lu/cve/CVE-2018-1000035",
+    "patch": null
+  }
+]

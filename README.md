@@ -91,3 +91,13 @@ $ docker run -it -v PATH/TO/INFER/DIR/:/infer REPO:TAG
 ```
 
 FYI, look out for `-v` option in `docker run --help`.
+
+### How to upload repository to prosyslab-warehouse?
+```sh
+$ bin/add_repo_to_remote.sh [repo name] [url of tar file]
+```
+
+Example
+```sh
+$ bin/add_repo_to_remote.sh prosyslab-warehouse/shntool-3.0.5 http://shnutils.freeshell.org/shntool/dist/src/shntool-3.0.5.tar.gz
+```

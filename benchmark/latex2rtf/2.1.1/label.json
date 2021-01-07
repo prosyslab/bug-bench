@@ -1,17 +1,16 @@
 [{
-    "project": "latex2rtf",
-    "version": "2.1.1",
-    "source": {
-      "file": "parser.c",
-      "line": 439
-    },
-    "sink": {
-      "file": "main.c",
-      "line": 834
-    },
-    "type": "format-string",
-    "CVE": "CVE-2015-8106",
-    "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8106",
-    "patch": "https://seclists.org/oss-sec/2015/q4/283"
-  }
-]
+  "project": "latex2rtf",
+  "version": "2.1.1",
+  "source": {
+    "file": "parser.c",
+    "line": 439
+  },
+  "sink": {
+    "file": "main.c",
+    "line": 834
+  },
+  "type": "format-string",
+  "CVE": "CVE-2015-8106",
+  "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8106",
+  "patch": "https://seclists.org/oss-sec/2015/q4/283"
+}]

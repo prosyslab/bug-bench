@@ -7,7 +7,7 @@ with open(sys.argv[1]) as f:
     label = json.load(f)
 
 single_point = ['buffer-overflow']
-two_point = ['integer-overflow', 'format-string']
+two_point = ['integer-overflow', 'format-string', 'classic-buffer-overflow']
 
 
 def check_single_point(item):

@@ -9,7 +9,7 @@
       "file": "fileop.c",
       "line": 1592
     },
-    "type": "classic-buffer-overflow",
+    "type": "buffer-overflow",
     "CVE": "CVE-2018-1000035",
     "report": "https://cve.circl.lu/cve/CVE-2018-1000035",
     "patch": null
@@ -25,7 +25,7 @@
       "file": "fileop.c",
       "line": 1592
     },
-    "type": "classic-buffer-overflow",
+    "type": "buffer-overflow",
     "CVE": "CVE-2018-1000035",
     "report": "https://cve.circl.lu/cve/CVE-2018-1000035",
     "patch": null

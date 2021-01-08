@@ -1,8 +1,6 @@
 [{
     "project": "libslirp",
     "version": "4.1.0",
-    "file": "file",
-    "line": -1,
     "source": {
       "file": "src/",
       "line": -1
@@ -19,8 +17,6 @@
   {
     "project": "libslirp",
     "version": "4.1.0",
-    "file": "file",
-    "line": -1,
     "source": {
       "file": "src/",
       "line": -1
@@ -37,8 +33,6 @@
   {
     "project": "libslirp",
     "version": "4.1.0",
-    "file": "file",
-    "line": -1,
     "source": {
       "file": "src/",
       "line": -1
@@ -55,8 +49,6 @@
   {
     "project": "libslirp",
     "version": "4.1.0",
-    "file": "file",
-    "line": -1,
     "source": {
       "file": "src/",
       "line": -1
@@ -73,8 +65,6 @@
   {
     "project": "libslirp",
     "version": "4.1.0",
-    "file": "file",
-    "line": -1,
     "source": {
       "file": "src/",
       "line": -1
@@ -91,8 +81,6 @@
   {
     "project": "libslirp",
     "version": "4.1.0",
-    "file": "file",
-    "line": -1,
     "source": {
       "file": "src/",
       "line": -1
@@ -109,8 +97,6 @@
   {
     "project": "libslirp",
     "version": "4.1.0",
-    "file": "file",
-    "line": -1,
     "source": {
       "file": "src/",
       "line": -1

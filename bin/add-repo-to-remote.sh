@@ -9,12 +9,12 @@ FILE_NAME="${URL##*/}"
 FILE_EXTENSION="${FILE_NAME##*.}"
 
 if [ $FILE_EXTENSION = "gz" ]; then
-    TAR_OPTION="-xzvf"
+  TAR_OPTION="-xzvf"
 elif [ $FILE_EXTENSION = "xz" ]; then
-    TAR_OPTION="-xvf"
+  TAR_OPTION="-xvf"
 else
-    echo "Please give me the tar.gz or tar.xz file link!"
-    exit 0
+  echo "Please give me the tar.gz or tar.xz file link!"
+  exit 0
 fi
 
 mkdir /tmp/add_repo_to_remote

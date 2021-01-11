@@ -1,7 +1,7 @@
 [{
   "project": "tar",
   "version": "1.28",
-  "file": "suffix.c",
+  "file": "src/suffix.c",
   "line": 104,
   "type": "buffer-overflow",
   "CVE": null,

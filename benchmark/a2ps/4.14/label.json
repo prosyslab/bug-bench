@@ -2,11 +2,11 @@
     "project": "a2ps",
     "version": "4.14",
     "source": {
-      "file": "userdata.c",
+      "file": "lib/userdata.c",
       "line": 62
     },
     "sink": {
-      "file": "dstring.c",
+      "file": "lib/dstring.c",
       "line": 326
     },
     "type": "format-string",
@@ -18,11 +18,11 @@
     "project": "a2ps",
     "version": "4.14",
     "source": {
-      "file": "userdata.c",
+      "file": "lib/userdata.c",
       "line": 70
     },
     "sink": {
-      "file": "dstring.c",
+      "file": "lib/dstring.c",
       "line": 326
     },
     "type": "format-string",
@@ -34,11 +34,11 @@
     "project": "a2ps",
     "version": "4.14",
     "source": {
-      "file": "userdata.c",
+      "file": "lib/userdata.c",
       "line": 72
     },
     "sink": {
-      "file": "dstring.c",
+      "file": "lib/dstring.c",
       "line": 326
     },
     "type": "format-string",
@@ -50,11 +50,11 @@
     "project": "a2ps",
     "version": "4.14",
     "source": {
-      "file": "metaseq.c",
+      "file": "lib/metaseq.c",
       "line": 538
     },
     "sink": {
-      "file": "dstring.c",
+      "file": "lib/dstring.c",
       "line": 326
     },
     "type": "format-string",
@@ -66,11 +66,11 @@
     "project": "a2ps",
     "version": "4.14",
     "source": {
-      "file": "metaseq.c",
+      "file": "lib/metaseq.c",
       "line": 568
     },
     "sink": {
-      "file": "dstring.c",
+      "file": "lib/dstring.c",
       "line": 326
     },
     "type": "format-string",
@@ -82,11 +82,11 @@
     "project": "a2ps",
     "version": "4.14",
     "source": {
-      "file": "main.c",
+      "file": "src/main.c",
       "line": 928
     },
     "sink": {
-      "file": "dstring.c",
+      "file": "lib/dstring.c",
       "line": 326
     },
     "type": "format-string",

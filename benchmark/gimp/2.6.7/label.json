@@ -2,11 +2,11 @@
     "project": "gimp",
     "version": "2.6.7",
     "source": {
-      "file": "bmp-read.c",
+      "file": "plug-ins/file-bmp/bmp-read.c",
       "line": 224
     },
     "sink": {
-      "file": "bmp-read.c",
+      "file": "plug-ins/file-bmp/bmp-read.c",
       "line": 630
     },
     "type": "integer-overflow",
@@ -19,11 +19,11 @@
     "project": "gimp",
     "version": "2.6.7",
     "source": {
-      "file": "bmp-read.c",
+      "file": "plug-ins/file-bmp/bmp-read.c",
       "line": 251
     },
     "sink": {
-      "file": "bmp-read.c",
+      "file": "plug-ins/file-bmp/bmp-read.c",
       "line": 630
     },
     "type": "integer-overflow",
@@ -36,11 +36,11 @@
     "project": "gimp",
     "version": "2.6.7",
     "source": {
-      "file": "bmp-read.c",
+      "file": "plug-ins/file-bmp/bmp-read.c",
       "line": 344
     },
     "sink": {
-      "file": "bmp-read.c",
+      "file": "plug-ins/file-bmp/bmp-read.c",
       "line": 630
     },
     "type": "integer-overflow",

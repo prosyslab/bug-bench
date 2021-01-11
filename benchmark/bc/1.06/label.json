@@ -1,7 +1,7 @@
 [{
     "project": "bc",
     "version": "1.06",
-    "file": "storage.c",
+    "file": "bc/storage.c",
     "line": 177,
     "type": "buffer-overflow",
     "CVE": null,
@@ -11,7 +11,7 @@
   {
     "project": "bc",
     "version": "1.06",
-    "file": "util.c",
+    "file": "bc/util.c",
     "line": 577,
     "type": "buffer-overflow",
     "CVE": null,

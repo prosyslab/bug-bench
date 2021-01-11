@@ -1,7 +1,7 @@
 [{
   "project": "fribidi",
   "version": "1.0.7",
-  "file": "fribidi-bidi.c",
+  "file": "lib/fribidi-bidi.c",
   "line": 751,
   "type": "buffer-overflow",
   "CVE": "CVE-2019-18397",

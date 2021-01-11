@@ -1,7 +1,7 @@
 [{
   "project": "wget",
   "version": "1.12",
-  "file": "ftp-ls.c",
+  "file": "src/ftp-ls.c",
   "line": 766,
   "type": "buffer-overflow",
   "CVE": null,
@@ -10,7 +10,7 @@
 }, {
   "project": "wget",
   "version": "1.12",
-  "file": "ftp-ls.c",
+  "file": "src/ftp-ls.c",
   "line": 789,
   "type": "buffer-overflow",
   "CVE": null,
@@ -19,7 +19,7 @@
 }, {
   "project": "wget",
   "version": "1.12",
-  "file": "ftp-ls.c",
+  "file": "src/ftp-ls.c",
   "line": 796,
   "type": "buffer-overflow",
   "CVE": null,

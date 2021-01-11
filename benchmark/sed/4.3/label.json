@@ -1,7 +1,7 @@
 [{
   "project": "sed",
   "version": "4.3",
-  "file": "regexp.c",
+  "file": "src/regexp.c",
   "line": 279,
   "type": "buffer-overflow",
   "CVE": null,

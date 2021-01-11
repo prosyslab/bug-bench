@@ -2,11 +2,11 @@
     "project": "urjtag",
     "version": "0.8",
     "source": {
-      "file": "jtag.c",
+      "file": "src/jtag.c",
       "line": 251
     },
     "sink": {
-      "file": "prototype.c",
+      "file": "src/bus/prototype.c",
       "line": 341
     },
     "type": "format-string",
@@ -18,11 +18,11 @@
     "project": "urjtag",
     "version": "0.8",
     "source": {
-      "file": "jtag.c",
+      "file": "src/jtag.c",
       "line": 251
     },
     "sink": {
-      "file": "prototype.c",
+      "file": "src/bus/prototype.c",
       "line": 346
     },
     "type": "format-string",
@@ -34,11 +34,11 @@
     "project": "urjtag",
     "version": "0.8",
     "source": {
-      "file": "jtag.c",
+      "file": "src/jtag.c",
       "line": 251
     },
     "sink": {
-      "file": "prototype.c",
+      "file": "src/bus/prototype.c",
       "line": 358
     },
     "type": "format-string",
@@ -50,11 +50,11 @@
     "project": "urjtag",
     "version": "0.8",
     "source": {
-      "file": "jtag.c",
+      "file": "src/jtag.c",
       "line": 251
     },
     "sink": {
-      "file": "prototype.c",
+      "file": "src/bus/prototype.c",
       "line": 369
     },
     "type": "format-string",
@@ -66,11 +66,11 @@
     "project": "urjtag",
     "version": "0.8",
     "source": {
-      "file": "jtag.c",
+      "file": "src/jtag.c",
       "line": 251
     },
     "sink": {
-      "file": "prototype.c",
+      "file": "src/bus/prototype.c",
       "line": 374
     },
     "type": "format-string",
@@ -82,11 +82,11 @@
     "project": "urjtag",
     "version": "0.8",
     "source": {
-      "file": "jtag.c",
+      "file": "src/jtag.c",
       "line": 251
     },
     "sink": {
-      "file": "prototype.c",
+      "file": "src/bus/prototype.c",
       "line": 386
     },
     "type": "format-string",

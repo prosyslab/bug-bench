@@ -1,7 +1,7 @@
 [{
   "project": "grep",
   "version": "2.19",
-  "file": "kwset.c",
+  "file": "src/kwset.c",
   "line": 657,
   "type": "buffer-overflow",
   "CVE": "CVE-2015-1345",

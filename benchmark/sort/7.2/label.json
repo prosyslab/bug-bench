@@ -1,7 +1,7 @@
 [{
   "project": "sort",
   "version": "7.2",
-  "file": "sort.c",
+  "file": "src/sort.c",
   "line": 2611,
   "type": "buffer-overflow",
   "CVE": null,

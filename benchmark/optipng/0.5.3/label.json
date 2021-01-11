@@ -2,11 +2,11 @@
   "project": "optipng",
   "version": "0.5.3",
   "source": {
-    "file": "tiffread.c",
+    "file": "lib/pngxtern/minitiff/tiffread.c",
     "line": 192
   },
   "sink": {
-    "file": "tiffread.c",
+    "file": "lib/pngxtern/minitiff/tiffread.c",
     "line": 353
   },
   "type": "integer-overflow",

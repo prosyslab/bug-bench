@@ -69,7 +69,6 @@
       "file": "input-bmp.c",
       "line": 119
     },
-    "type": "integer-overflow",
     "sink": {
       "file": "autotrace.c",
       "line": 170

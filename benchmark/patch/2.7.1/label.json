@@ -1,7 +1,7 @@
 [{
   "project": "patch",
   "version": "2.7.1",
-  "file": "pch.c",
+  "file": "src/pch.c",
   "line": 2272,
   "type": "buffer-overflow",
   "CVE": "CVE-2016-10713",

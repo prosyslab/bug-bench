@@ -6,7 +6,7 @@
       "line": 584
     },
     "sink": {
-      "file": "fileop.c",
+      "file": "fileio.c",
       "line": 1592
     },
     "type": "buffer-overflow",
@@ -22,7 +22,7 @@
       "line": 714
     },
     "sink": {
-      "file": "fileop.c",
+      "file": "fileio.c",
       "line": 1592
     },
     "type": "buffer-overflow",

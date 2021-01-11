@@ -3,9 +3,6 @@
 import json
 import sys
 
-with open(sys.argv[1]) as f:
-    label = json.load(f)
-
 single_point = ['buffer-overflow']
 two_point = ['integer-overflow', 'format-string', 'buffer-overflow']
 
@@ -17,26 +14,32 @@ def check_single_point(item):
 
 
 def check_two_point(item):
-    return (item['source'])  \
+    return ('source' in item \
+        and item['source'])  \
         and (item['source']['file']) \
         and (item['source']['line'] and type(item['source']['line']) == int) \
-        and (item['sink']) \
+        and ('sink' in item \
+        and item['sink']) \
         and (item['sink']['file']) \
         and (item['sink']['line'] and type(item['sink']['line']) == int) \
 
 
-for item in label:
-    assert (item['project'])
-    assert (item['version'])
-    assert (item['type'])
-    if (item['type'] in single_point) and (item['type'] in two_point):
-        assert (check_single_point(item) or check_two_point(item))
-    elif item['type'] in single_point:
-        assert (check_single_point(item))
-    elif item['type'] in two_point:
-        assert (check_two_point(item))
-    else:
-        assert False
-    assert ('CVE' in item)
-    assert ('report' in item)
-    assert ('patch' in item)
+if __name__ == "__main__":
+    with open(sys.argv[1]) as f:
+        label = json.load(f)
+
+        for item in label:
+            assert (item['project'])
+            assert (item['version'])
+            assert (item['type'])
+            if (item['type'] in single_point) and (item['type'] in two_point):
+                assert (check_single_point(item) or check_two_point(item))
+            elif item['type'] in single_point:
+                assert (check_single_point(item))
+            elif item['type'] in two_point:
+                assert (check_two_point(item))
+            else:
+                assert False
+            assert ('CVE' in item)
+            assert ('report' in item)
+            assert ('patch' in item)

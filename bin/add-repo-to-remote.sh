@@ -17,8 +17,8 @@ else
   exit 0
 fi
 
-mkdir /tmp/add_repo_to_remote
-pushd /tmp/add_repo_to_remote
+mkdir /tmp/$REPO_PATH
+pushd /tmp/$REPO_PATH
 
 gh repo create $1 --private -y
 wget $2
@@ -31,4 +31,4 @@ git push origin master
 popd
 
 popd
-rm -rf /tmp/add_repo_to_remote
+rm -rf /tmp/$REPO_PATH

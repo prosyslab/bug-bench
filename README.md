@@ -15,7 +15,8 @@
   "type": (string, see above),
   "CVE": (string option, CVE-XXXX-XXXX),
   "report": (string option, bug report or CVE report),
-  "patch": (string option, patch commit)
+  "patch": (string option, patch commit),
+  "code": (string)
 }
 ```
 ### Two points
@@ -26,10 +27,12 @@
   "source": {
     "file": (string),
     "line": (int),
+    "code": (string)
   },
   "sink": {
     "file": (string),
     "line": (int),
+    "code": (string)
   },
   "type": (string, see above),
   "CVE": (string option, CVE-XXXX-XXXX),

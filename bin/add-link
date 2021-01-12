@@ -2,7 +2,7 @@
 
 import json
 import sys
-from utils import check_single_point, check_two_point
+from utils import check_single_point_skip_link, check_two_point_skip_link
 
 HEADER = "https://github.com/prosyslab-warehouse"
 TAIL = "blob/master"
@@ -31,7 +31,7 @@ def is_formatted(item):
 
 def investigate(item):
     targets = []
-    if check_two_point(item):
+    if check_two_point_skip_link(item):
         if item[SRC][LINE] < 0 or is_formatted(item[SRC]):
             pass
         else:
@@ -40,7 +40,7 @@ def investigate(item):
             pass
         else:
             targets.append(SINK)
-    elif check_single_point(item):
+    elif check_single_point_skip_link(item):
         if item[LINE] < 0 or is_formatted(item):
             pass
         else:

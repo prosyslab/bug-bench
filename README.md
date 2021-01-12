@@ -40,6 +40,7 @@
   "patch": (string option, patch commit)
 }
 ```
+- "line": -1 means can't find location yet.
 
 ## Benchmark
 ```

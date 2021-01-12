@@ -3,11 +3,13 @@
   "version": "2.1.1",
   "source": {
     "file": "parser.c",
-    "line": 439
+    "line": 439,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/parser.c#L439"
   },
   "sink": {
     "file": "main.c",
-    "line": 834
+    "line": 834,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/main.c#L834"
   },
   "type": "format-string",
   "CVE": "CVE-2015-8106",

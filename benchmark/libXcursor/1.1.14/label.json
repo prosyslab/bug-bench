@@ -3,11 +3,13 @@
   "version": "1.1.14",
   "source": {
     "file": "src/file.c",
-    "line": 899
+    "line": 899,
+    "code": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L899"
   },
   "sink": {
     "file": "src/file.c",
-    "line": 32
+    "line": 32,
+    "code": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L32"
   },
   "type": "integer-overflow",
   "CVE": "CVE-2017-16612",

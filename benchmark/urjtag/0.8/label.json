@@ -1,97 +1,103 @@
 [{
-    "project": "urjtag",
-    "version": "0.8",
-    "source": {
-      "file": "src/jtag.c",
-      "line": 251
-    },
-    "sink": {
-      "file": "src/bus/prototype.c",
-      "line": 341
-    },
-    "type": "format-string",
-    "CVE": null,
-    "report": null,
-    "patch": null
+  "project": "urjtag",
+  "version": "0.8",
+  "source": {
+    "file": "src/jtag.c",
+    "line": 251,
+    "code": "https://github.com/prosyslab-warehouse/urjtag-0.8/blob/master/src/jtag.c#L251"
   },
-  {
-    "project": "urjtag",
-    "version": "0.8",
-    "source": {
-      "file": "src/jtag.c",
-      "line": 251
-    },
-    "sink": {
-      "file": "src/bus/prototype.c",
-      "line": 346
-    },
-    "type": "format-string",
-    "CVE": null,
-    "report": null,
-    "patch": null
+  "sink": {
+    "file": "src/bus/prototype.c",
+    "line": 341,
+    "code": "https://github.com/prosyslab-warehouse/urjtag-0.8/blob/master/src/bus/prototype.c#L341"
   },
-  {
-    "project": "urjtag",
-    "version": "0.8",
-    "source": {
-      "file": "src/jtag.c",
-      "line": 251
-    },
-    "sink": {
-      "file": "src/bus/prototype.c",
-      "line": 358
-    },
-    "type": "format-string",
-    "CVE": null,
-    "report": null,
-    "patch": null
+  "type": "format-string",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "urjtag",
+  "version": "0.8",
+  "source": {
+    "file": "src/jtag.c",
+    "line": 251,
+    "code": "https://github.com/prosyslab-warehouse/urjtag-0.8/blob/master/src/jtag.c#L251"
   },
-  {
-    "project": "urjtag",
-    "version": "0.8",
-    "source": {
-      "file": "src/jtag.c",
-      "line": 251
-    },
-    "sink": {
-      "file": "src/bus/prototype.c",
-      "line": 369
-    },
-    "type": "format-string",
-    "CVE": null,
-    "report": null,
-    "patch": null
+  "sink": {
+    "file": "src/bus/prototype.c",
+    "line": 346,
+    "code": "https://github.com/prosyslab-warehouse/urjtag-0.8/blob/master/src/bus/prototype.c#L346"
   },
-  {
-    "project": "urjtag",
-    "version": "0.8",
-    "source": {
-      "file": "src/jtag.c",
-      "line": 251
-    },
-    "sink": {
-      "file": "src/bus/prototype.c",
-      "line": 374
-    },
-    "type": "format-string",
-    "CVE": null,
-    "report": null,
-    "patch": null
+  "type": "format-string",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "urjtag",
+  "version": "0.8",
+  "source": {
+    "file": "src/jtag.c",
+    "line": 251,
+    "code": "https://github.com/prosyslab-warehouse/urjtag-0.8/blob/master/src/jtag.c#L251"
   },
-  {
-    "project": "urjtag",
-    "version": "0.8",
-    "source": {
-      "file": "src/jtag.c",
-      "line": 251
-    },
-    "sink": {
-      "file": "src/bus/prototype.c",
-      "line": 386
-    },
-    "type": "format-string",
-    "CVE": null,
-    "report": null,
-    "patch": null
-  }
-]
+  "sink": {
+    "file": "src/bus/prototype.c",
+    "line": 358,
+    "code": "https://github.com/prosyslab-warehouse/urjtag-0.8/blob/master/src/bus/prototype.c#L358"
+  },
+  "type": "format-string",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "urjtag",
+  "version": "0.8",
+  "source": {
+    "file": "src/jtag.c",
+    "line": 251,
+    "code": "https://github.com/prosyslab-warehouse/urjtag-0.8/blob/master/src/jtag.c#L251"
+  },
+  "sink": {
+    "file": "src/bus/prototype.c",
+    "line": 369,
+    "code": "https://github.com/prosyslab-warehouse/urjtag-0.8/blob/master/src/bus/prototype.c#L369"
+  },
+  "type": "format-string",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "urjtag",
+  "version": "0.8",
+  "source": {
+    "file": "src/jtag.c",
+    "line": 251,
+    "code": "https://github.com/prosyslab-warehouse/urjtag-0.8/blob/master/src/jtag.c#L251"
+  },
+  "sink": {
+    "file": "src/bus/prototype.c",
+    "line": 374,
+    "code": "https://github.com/prosyslab-warehouse/urjtag-0.8/blob/master/src/bus/prototype.c#L374"
+  },
+  "type": "format-string",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "urjtag",
+  "version": "0.8",
+  "source": {
+    "file": "src/jtag.c",
+    "line": 251,
+    "code": "https://github.com/prosyslab-warehouse/urjtag-0.8/blob/master/src/jtag.c#L251"
+  },
+  "sink": {
+    "file": "src/bus/prototype.c",
+    "line": 386,
+    "code": "https://github.com/prosyslab-warehouse/urjtag-0.8/blob/master/src/bus/prototype.c#L386"
+  },
+  "type": "format-string",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}]

@@ -6,5 +6,6 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2019-16166",
   "report": "https://www.cvedetails.com/cve/CVE-2019-16166",
-  "patch": null
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/cflow-1.5/blob/master/src/parser.c#L302"
 }]

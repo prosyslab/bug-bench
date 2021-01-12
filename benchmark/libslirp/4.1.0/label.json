@@ -2,8 +2,9 @@
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "src/",
-    "line": -1
+    "file": "file",
+    "line": -1,
+    "code": "code"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -18,8 +19,9 @@
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "src/",
-    "line": -1
+    "file": "file",
+    "line": -1,
+    "code": "code"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -34,8 +36,9 @@
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "src/",
-    "line": -1
+    "file": "file",
+    "line": -1,
+    "code": "code"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -50,8 +53,9 @@
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "src/",
-    "line": -1
+    "file": "file",
+    "line": -1,
+    "code": "code"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -66,8 +70,9 @@
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "src/",
-    "line": -1
+    "file": "file",
+    "line": -1,
+    "code": "code"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -82,8 +87,9 @@
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "src/",
-    "line": -1
+    "file": "file",
+    "line": -1,
+    "code": "code"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -98,8 +104,9 @@
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "src/",
-    "line": -1
+    "file": "file",
+    "line": -1,
+    "code": "code"
   },
   "sink": {
     "file": "src/tcp_subr.c",

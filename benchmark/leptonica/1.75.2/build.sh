@@ -10,7 +10,7 @@ if [[ $1 == "sparrow" ]]; then
   $SMAKE_BIN $MAKE_PARAMS
   mv sparrow/src/libxcursor/*.i $SMAKE_OUT
 elif [[ $1 == "infer" ]]; then
-  $INFER_BIN compile -- cmake ..
+  $INFER_BIN compile -- cmake .. -DBUILD_PROG=1
   $INFER_BIN capture -- make $MAKE_PARAMS
   cp -r infer-out ../
   cp -r infer-out $OUT

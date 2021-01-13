@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ./autogen.sh
-./configure
+./configure --without-magick --without-pstoedit
 
 if [[ $1 == "sparrow" ]]; then
   $SMAKE_BIN --init

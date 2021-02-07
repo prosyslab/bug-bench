@@ -1,18 +1,12 @@
 FROM prosyslab/bug-bench-base
 
-RUN apt-get -y update
-RUN apt-get -y install wget
-
 COPY build.sh $SRC
-
 ENV PROGRAM=jhead
-ENV VERSION=3.0.0
 
-RUN mkdir $PROGRAM
+ENV URL=https://github.com/prosyslab-warehouse/jhead-3.0.0
+ENV GIT_REPO_NAME=jhead-3.0.0
 
-ENV URL=http://deb.debian.org/debian/pool/main/j/jhead/jhead_3.00.orig.tar.gz
-
-RUN wget $URL
-RUN tar -xzvf jhead_3.00.orig.tar.gz -C $PROGRAM --strip-components 1
+RUN git clone $URL
+RUN mv $GIT_REPO_NAME $PROGRAM
 
 WORKDIR $PROGRAM

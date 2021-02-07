@@ -1,7 +1,7 @@
 FROM prosyslab/bug-bench-base
 
 RUN apt-get -y update
-RUN apt-get -y install tzdata wget autoconf xutils-dev libtool pkgconf libx11-dev libxrender-dev libxcursor-dev systemd
+RUN apt-get -y install autoconf xutils-dev libtool pkgconf libx11-dev libxrender-dev libxcursor-dev systemd
 
 COPY build.sh $SRC
 ENV PROGRAM=libxcursor

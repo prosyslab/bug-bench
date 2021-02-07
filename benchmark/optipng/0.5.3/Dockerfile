@@ -1,7 +1,7 @@
 FROM prosyslab/bug-bench-base
 
 RUN apt-get -y update
-RUN apt-get -y install tzdata wget
+RUN apt-get -y install wget
 
 COPY build.sh $SRC
 ENV PROGRAM=optipng

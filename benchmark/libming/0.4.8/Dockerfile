@@ -1,7 +1,7 @@
 FROM prosyslab/bug-bench-base
 
 RUN apt-get -y update
-RUN apt-get -y install tzdata wget libtool m4 automake bison flex libfreetype6 libfreetype6-dev
+RUN apt-get -y install wget libtool m4 automake bison flex
 
 COPY build.sh $SRC
 ENV PROGRAM=libming

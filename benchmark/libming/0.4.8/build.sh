@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ./autogen.sh
-./configure
+./configure --disable-freetype
 
 MAKE_PARAMS="-j"
 

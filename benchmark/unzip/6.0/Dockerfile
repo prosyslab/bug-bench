@@ -6,7 +6,6 @@ RUN apt-get -y install wget
 COPY build.sh $SRC
 
 ENV PROGRAM=unzip
-ENV VERSION=6.0
 
 RUN mkdir $PROGRAM
 

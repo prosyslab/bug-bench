@@ -1,7 +1,7 @@
 FROM prosyslab/bug-bench-base
 
 RUN apt-get -y update
-RUN apt-get -y install tzdata wget glib2.0-dev libgtk2.0-dev
+RUN apt-get -y install glib2.0-dev libgtk2.0-dev
 
 COPY build.sh $SRC
 ENV PROGRAM=gimp

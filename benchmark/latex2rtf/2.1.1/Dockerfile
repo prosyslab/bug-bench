@@ -4,9 +4,7 @@ RUN apt-get -y update
 RUN apt-get -y install wget
 
 COPY build.sh $SRC
-
 ENV PROGRAM=latex2rtf
-ENV VERSION=2.1.1
 
 RUN mkdir $PROGRAM
 

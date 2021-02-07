@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 # basic setting
 ENV TZ=Asia/Seoul
@@ -24,7 +24,7 @@ COPY build-deb.sh $SRC
 
 RUN apt-get update && \
     apt-get upgrade -y
-RUN apt-get install -y make git gcc tzdata bear dpkg-dev
+RUN apt-get install -y make git gcc tzdata bear dpkg-dev libtinfo5
 
 RUN git clone https://github.com/prosyslab/smake.git
 

@@ -1,7 +1,7 @@
 FROM prosyslab/bug-bench-base
 
 RUN apt-get -y update
-RUN apt-get -y install tzdata wget cmake
+RUN apt-get -y install cmake
 
 COPY build.sh $SRC
 ENV PROGRAM=leptonica

@@ -1,7 +1,7 @@
 FROM prosyslab/bug-bench-base
 
 RUN apt-get -y update
-RUN apt-get -y install tzdata wget automake libncurses5-dev
+RUN apt-get -y install automake libncurses5-dev
 
 COPY build.sh $SRC
 ENV PROGRAM=zsh

@@ -16,6 +16,10 @@ find_target() {
   fi
 }
 
+# 0. update package list
+apt update -y
+apt upgrade -y
+
 # 1. download target source
 apt source $PKG_NAME || error_exit "Error: download target source"
 

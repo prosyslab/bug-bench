@@ -6,7 +6,7 @@
     "line": 635,
     "code": "https://github.com/prosyslab-warehouse/u-boot-2019.07/blob/master/net/nfs.c#L635"
   },
-  "source": {
+  "sink": {
     "file": "net/nfs.c",
     "line": 642,
     "code": "https://github.com/prosyslab-warehouse/u-boot-2019.07/blob/master/net/nfs.c#L642"

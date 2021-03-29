@@ -6,17 +6,16 @@ PROJECT_HOME="$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd ../ && pwd)"
 
 build_base() {
   echo "build prosyslab/bug-bench-base"
-  docker build -t prosyslab/bug-bench-base $PROJECT_HOME/docker
+  docker build --no-cache -t prosyslab/bug-bench-base $PROJECT_HOME/docker
   docker push prosyslab/bug-bench-base
 }
 
 build() {
   benchmark=$1
-  benchmark_dir=$(dirname $benchmark)
-  version=$(dirname $benchmark | xargs basename)
-  program=$(dirname $benchmark | xargs dirname | xargs basename)
+  version=$(basename $benchmark)
+  program=$(dirname $benchmark | xargs basename)
   echo "build prosyslab/bug-bench-$program:$version"
-  docker build -t prosyslab/bug-bench-$program:$version $benchmark_dir
+  docker build --no-cache -t prosyslab/bug-bench-$program:$version $benchmark
   docker push prosyslab/bug-bench-$program:$version
 }
 

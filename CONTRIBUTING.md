@@ -25,15 +25,21 @@ WORKDIR $PROGRAM
 [Build commands to generate Makefile]
 
 if [[ $1 == "sparrow" ]]; then
-  [Put smake commands here. If you are not sure, put the following command.]
+  [Put smake commands here. If you are not sure, put the following command:]
   echo "TODO: $1"
   exit 1
 elif [[ $1 == "infer" ]]; then
-  [Put infer commands here. If you are not sure, put the following command.]
+  [Put infer commands here. For example:]
+  $INFER_BIN capture -- make
+  cp -r infer-out $OUT
+  [If you are not sure, put the following command:]
   echo "TODO: $1"
   exit 1
 elif [[ $1 == "codeql" ]]; then
-  [Put codeql commands here. If you are not sure, put the following command.]
+  [Put codeql commands here. For example:]
+  $CODEQL_BIN database create --language=cpp --command="make" codeql-db
+  cp -r codeql-db $OUT
+  [If you are not sure, put the following command:]
   echo "TODO: $1"
   exit 1
 else

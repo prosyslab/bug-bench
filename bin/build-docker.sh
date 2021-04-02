@@ -19,7 +19,9 @@ build() {
   docker push prosyslab/bug-bench-$program:$version
 }
 
-if [[ $1 == "all" ]]; then
+if [[ $1 == "base" ]]; then
+  build_base
+elif [[ $1 == "all" ]]; then
   build_base
   for benchmark in $(find $PROJECT_HOME/benchmark -name "Dockerfile"); do
     build $benchmark

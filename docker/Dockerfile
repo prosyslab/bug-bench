@@ -10,12 +10,18 @@ RUN mkdir -p $SRC $OUT/smake-out
 
 ENV BUILD=/src/build.sh
 
+# Sparrow
 ENV SMAKE_DIR=/smake
 ENV SMAKE_BIN=$SMAKE_DIR/smake
 ENV SMAKE_OUT=$OUT/smake-out
 
+# Infer
 ENV INFER_DIR=/infer
 ENV INFER_BIN=$INFER_DIR/infer/bin/infer
+
+# CodeQL
+ENV CODEQL_DIR=/codeql
+ENV CODEQL_BIN=$INFER_DIR/codeql
 
 # for debian package build
 ENV DEB_BUILD_OPTIONS="nocheck notest"

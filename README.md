@@ -1,47 +1,5 @@
 # Bug Bench
 
-## Bug Label
-### Bug type
-- buffer-overflow
-- integer-overflow
-- format-string
-### Single point
-```
-{
-  "project": (string),
-  "version": (string),
-  "file": (string),
-  "line": (int),
-  "type": (string, see above),
-  "CVE": (string option, CVE-XXXX-XXXX),
-  "report": (string option, bug report or CVE report),
-  "patch": (string option, patch commit),
-  "code": (string)
-}
-```
-### Two points
-```
-{
-  "project": (string),
-  "version": (string),
-  "source": {
-    "file": (string),
-    "line": (int),
-    "code": (string)
-  },
-  "sink": {
-    "file": (string),
-    "line": (int),
-    "code": (string)
-  },
-  "type": (string, see above),
-  "CVE": (string option, CVE-XXXX-XXXX),
-  "report": (string option, bug report or CVE report),
-  "patch": (string option, patch commit)
-}
-```
-- "line": -1 means can't find location yet.
-
 ## Benchmark
 ```
 benchmark
@@ -57,6 +15,9 @@ benchmark
     ...
 ```
 
+## Bug Label
+See [LABEL.md](LABEL.md).
+
 ## Docker
 - Base image: `prosyslab/bug-bench-base` in Dockerhub built from [docker/Dockerfile](docker/Dockerfile)
 ```sh
@@ -65,10 +26,12 @@ benchmark
 |  `-- PROGRAM/
 |  `-- build.sh
 |-- smake/
-|-- infer/  # shall be mounted
+|-- infer/   # shall be mounted
+|-- codeql/  # shall be mounted
 |-- out/
    `-- smake-out/
    `-- infer-out/
+   `-- codeql-db/
 ```
 ### Building Docker images
 - Building a single image
@@ -83,15 +46,19 @@ $ bin/build-docker.sh all
 ### How to build with respect to desired target?
 
 ```sh
-$ $BUILD [ sparrow | infer ]
+$ $BUILD [ sparrow | infer | codeql ]
 ```
 
 For example, to build target for Sparrow, run `$BUILD sparrow`. Then, the built target along with either Sparrow or Infer will be located at `/out/*`.
 
-### How to mount `infer`?
+### How to mount `infer` or `codeql`?
 
 ```sh
 $ docker run -it -v PATH/TO/INFER/DIR/:/infer REPO:TAG
+```
+or
+```sh
+$ docker run -it -v PATH/TO/CODEQL/DIR/:/codeql REPO:TAG
 ```
 
 FYI, look out for `-v` option in `docker run --help`.
@@ -105,3 +72,6 @@ Example
 ```sh
 $ bin/add_repo_to_remote.sh prosyslab-warehouse/shntool-3.0.5 http://shnutils.freeshell.org/shntool/dist/src/shntool-3.0.5.tar.gz
 ```
+
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md).

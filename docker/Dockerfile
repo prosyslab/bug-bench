@@ -21,7 +21,7 @@ ENV INFER_BIN=$INFER_DIR/infer/bin/infer
 
 # CodeQL
 ENV CODEQL_DIR=/codeql
-ENV CODEQL_BIN=$INFER_DIR/codeql
+ENV CODEQL_BIN=$CODEQL_DIR/codeql
 
 # for debian package build
 ENV DEB_BUILD_OPTIONS="nocheck notest"

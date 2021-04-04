@@ -47,4 +47,4 @@ else
   exit 1
 fi
 ```
-5. Write a label file `label.json` in the directory. See the other examples in this repository.
+5. Write a label file `label.json` in the directory. See the other examples in this repository. Make sure the file is properly formatted using [js-beautify](https://github.com/beautify-web/js-beautify) and passes the format checking by running `bin/check-format`.

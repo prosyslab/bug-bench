@@ -1,6 +1,7 @@
 FROM prosyslab/bug-bench-base
 
 RUN apt-get -y update
+RUN apt-get -y install clang
 
 COPY build.sh $SRC
 ENV PROGRAM=firejail

@@ -6,7 +6,8 @@ if [[ $1 == "sparrow" ]]; then
   echo "TODO: $1"
   exit 1
 elif [[ $1 == "infer" ]]; then
-  $INFER_BIN capture -- make
+  make -C gnulib -j && make -C common-src -j && make -C amandad-src -j
+  $INFER_BIN capture -- make -C client-src runtar
   cp -r infer-out $OUT
 elif [[ $1 == "codeql" ]]; then
   $CODEQL_BIN database create --language=cpp --command="make" codeql-db

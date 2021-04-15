@@ -6,7 +6,8 @@ from utils import check_single_point, check_two_point
 
 single_point = ['buffer-overflow']
 two_point = [
-    'integer-overflow', 'format-string', 'buffer-overflow', 'integer-underflow'
+    'integer-overflow', 'format-string', 'buffer-overflow',
+    'integer-underflow', 'command-injection'
 ]
 
 if __name__ == "__main__":

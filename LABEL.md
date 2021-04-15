@@ -14,9 +14,9 @@
   "file": (string),
   "line": (int),
   "type": (string, see above),
-  "CVE": (string option, CVE-XXXX-XXXX),
-  "report": (string option, bug report or CVE report),
-  "patch": (string option, patch commit),
+  "CVE": ((string | string[]) option, CVE-XXXX-XXXX),
+  "report": ((string | string[]) option, bug report or CVE report),
+  "patch": ((string | string[]) option, patch commit),
   "code": (string)
 }
 ```
@@ -36,9 +36,9 @@
     "code": (string)
   },
   "type": (string, see above),
-  "CVE": (string option, CVE-XXXX-XXXX),
-  "report": (string option, bug report or CVE report),
-  "patch": (string option, patch commit)
+  "CVE": ((string | string[]) option, CVE-XXXX-XXXX),
+  "report": ((string | string[]) option, bug report or CVE report),
+  "patch": ((string | string[]) option, patch commit)
 }
 ```
 

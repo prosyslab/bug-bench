@@ -7,9 +7,9 @@
     "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/base/jas_stream.c#L1102"
   },
   "sink": {
-    "file": "src/libjasper/jpc/jpc_dec.c",
-    "line": 1237,
-    "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/jpc/jpc_dec.c#L1237"
+    "file": "src/libjasper/base/jas_malloc.c",
+    "line": 148,
+    "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/70a6c30b26f5fc66318a7c969c2b27892f482551/src/libjasper/base/jas_malloc.c#L148"
   },
   "type": "integer-overflow",
   "CVE": "CVE-2016-9387",

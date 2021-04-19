@@ -5,6 +5,8 @@
 - integer-underflow
 - format-string
 - command-injection
+- negative-shift
+- div-by-zero
 
 ## Single point
 ```

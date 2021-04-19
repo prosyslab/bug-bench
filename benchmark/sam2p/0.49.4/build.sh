@@ -9,6 +9,9 @@ if [[ $1 == "sparrow" ]]; then
 elif [[ $1 == "infer" ]]; then
   $INFER_BIN capture -- make -j
   cp -r infer-out $OUT
+elif [[ $1 == "codeql" ]]; then
+  $CODEQL_BIN database create --language=cpp --command="make -j" codeql-db
+  cp -r codeql-db $OUT
 else
   echo "Unknown build target"
   exit 1

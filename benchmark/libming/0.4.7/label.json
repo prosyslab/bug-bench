@@ -3,13 +3,13 @@
   "version": "0.4.7",
   "source": {
     "file": "util/listmp3.c",
-    "line": 95,
-    "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/listmp3.c#L95"
+    "line": 94,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/listmp3.c#L94"
   },
   "sink": {
     "file": "util/listmp3.c",
-    "line": 95,
-    "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/listmp3.c#L95"
+    "line": 94,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/listmp3.c#L94"
   },
   "type": "negative-shift",
   "CVE": "CVE-2016-9266",
@@ -20,13 +20,13 @@
   "version": "0.4.7",
   "source": {
     "file": "util/listmp3.c",
-    "line": 96,
-    "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/listmp3.c#L96"
+    "line": 95,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/listmp3.c#L95"
   },
   "sink": {
     "file": "util/listmp3.c",
-    "line": 96,
-    "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/listmp3.c#L96"
+    "line": 95,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/listmp3.c#L95"
   },
   "type": "negative-shift",
   "CVE": "CVE-2016-9266",

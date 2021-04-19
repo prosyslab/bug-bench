@@ -1,0 +1,18 @@
+[{
+  "project": "jasper",
+  "version": "1.900.12",
+  "source": {
+    "file": "src/libjasper/base/jas_stream.c",
+    "line": 1102,
+    "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/base/jas_stream.c#L1102"
+  },
+  "sink": {
+    "file": "src/libjasper/jpc/jpc_dec.c",
+    "line": 1237,
+    "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/jpc/jpc_dec.c#L1237"
+  },
+  "type": "integer-overflow",
+  "CVE": "CVE-2016-9387",
+  "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9387",
+  "patch": "https://github.com/jasper-software/jasper/commit/d91198abd00fc435a397fe6bad906a4c1748e9cf"
+}]

@@ -4,12 +4,12 @@
   "source": {
     "file": "lib/cgi.c",
     "line": 81,
-    "code": " https://github.com/prosyslab-warehouse/xymon-debian-4.3.24-2/blob/master/lib/cgi.c#L81"
+    "code": "https://github.com/prosyslab-warehouse/xymon-debian-4.3.24-2/blob/master/lib/cgi.c#L81"
   },
   "sink": {
     "file": "web/chpasswd.c",
     "line": 160,
-    "code": " https://github.com/prosyslab-warehouse/xymon-debian-4.3.24-2/blob/master/web/chpasswd.c#L160"
+    "code": "https://github.com/prosyslab-warehouse/xymon-debian-4.3.24-2/blob/master/web/chpasswd.c#L160"
   },
   "type": "command-injection",
   "CVE": "CVE-2016-2056",

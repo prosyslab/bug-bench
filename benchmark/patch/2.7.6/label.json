@@ -3,8 +3,8 @@
   "version": "2.7.6",
   "source": {
     "file": "src/patch.c",
-    "line": 959,
-    "code": "https://github.com/prosyslab-warehouse/patch-2.7.6/blob/master/src/patch.c#L959"
+    "line": 110,
+    "code": "https://github.com/prosyslab-warehouse/patch-2.7.6/blob/master/src/patch.c#L110"
   },
   "sink": {
     "file": "src/pch.c",

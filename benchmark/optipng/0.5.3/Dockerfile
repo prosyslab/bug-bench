@@ -6,11 +6,10 @@ RUN apt-get -y install wget
 COPY build.sh $SRC
 ENV PROGRAM=optipng
 
-RUN mkdir $PROGRAM
+ENV URL=https://github.com/prosyslab-warehouse/optipng-0.5.3
+ENV GIT_REPO_NAME=optipng-0.5.3
 
-ENV URL=https://downloads.sourceforge.net/project/optipng/OptiPNG/optipng-0.5.3/optipng-0.5.3.tar.gz
-
-RUN wget $URL
-RUN tar -xzvf optipng-0.5.3.tar.gz -C $PROGRAM --strip-components 1
+RUN git clone $URL
+RUN mv $GIT_REPO_NAME $PROGRAM
 
 WORKDIR $PROGRAM

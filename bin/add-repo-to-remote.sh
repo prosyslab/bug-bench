@@ -17,10 +17,10 @@ else
   exit 0
 fi
 
-mkdir /tmp/$REPO_PATH
+mkdir -p /tmp/$REPO_PATH
 pushd /tmp/$REPO_PATH
 
-gh repo create $1 --private -y
+gh repo create $1 --public -y
 wget $2
 tar $TAR_OPTION $FILE_NAME -C $REPO_NAME --strip-components=1
 

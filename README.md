@@ -64,6 +64,17 @@ $ docker run -it -v PATH/TO/CODEQL/DIR/:/codeql REPO:TAG
 FYI, look out for `-v` option in `docker run --help`.
 
 ### How to upload repository to prosyslab-warehouse?
+
+First, you have to install and authenticate github-cli on your local machine. To install, see [here](https://github.com/cli/cli#installation).
+
+Then, authenticate with your github account:
+
+```sh
+$ gh auth login
+```
+
+Once auth is done, run the command below to upload source code of the benchmark:
+
 ```sh
 $ bin/add_repo_to_remote.sh [repo name] [url of tar file]
 ```

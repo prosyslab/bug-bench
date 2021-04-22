@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cmake -DCMAKE_BUILD_TYPE=Release
+
 MAKE_PARAMS="-j"
 
 if [[ $1 == "sparrow" ]]; then

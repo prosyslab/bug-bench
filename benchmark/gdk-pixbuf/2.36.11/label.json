@@ -3,7 +3,7 @@
   "version": "2.36.11",
   "source": {
     "file": "gdk-pixbuf/io-icns.c",
-    "line": 354,
+    "line": 349,
     "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349"
   },
   "sink": {

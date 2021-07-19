@@ -60,7 +60,7 @@
   "sink": {
     "file": "autotrace.c",
     "line": 170,
-    "code": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/autotrace.c#L170"
+    "code": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/autotrace.c#L170"
   },
   "type": "integer-overflow",
   "CVE": "CVE-2017-9181",
@@ -77,7 +77,7 @@
   "sink": {
     "file": "autotrace.c",
     "line": 170,
-    "code": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/autotrace.c#L170"
+    "code": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/autotrace.c#L170"
   },
   "type": "integer-overflow",
   "CVE": "CVE-2017-9181",
@@ -94,7 +94,7 @@
   "sink": {
     "file": "autotrace.c",
     "line": 170,
-    "code": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/autotrace.c#L170"
+    "code": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/autotrace.c#L170"
   },
   "type": "integer-overflow",
   "CVE": "CVE-2017-9181",

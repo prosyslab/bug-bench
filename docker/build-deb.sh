@@ -33,5 +33,5 @@ apt build-dep -y $PKG_NAME || error_exit "Error: install dependencies"
 bear dpkg-buildpackage -us -uc -d || error_exit "Error: dpkg-buildpackage"
 
 # 5. run infer capture and copy
-$INFER_BIN capture --compilation-database compile_commands.json || error_exit "Error: infer capture"
+$INFER_BIN capture --compilation-database compile_commands.json --keep-going || error_exit "Error: infer capture"
 cp -r infer-out $OUT

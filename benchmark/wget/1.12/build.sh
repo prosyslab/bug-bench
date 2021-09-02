@@ -3,7 +3,7 @@
 ./autogen.sh
 ./configure
 
-MAKE_PARAMS="install -j"
+MAKE_PARAMS="install -j MAKEINFO=true POD2MAN=true"
 SMAKE_I_DIR="sparrow/src/wget"
 
 if [[ $1 == "sparrow" ]]; then

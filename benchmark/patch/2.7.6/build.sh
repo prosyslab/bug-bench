@@ -2,9 +2,14 @@
 
 ./configure
 
+MAKE_PARAMS="-j"
+SMAKE_I_DIR="sparrow/src/patch"
+
 if [[ $1 == "sparrow" ]]; then
-  echo "TODO: $1"
-  exit 1
+  $SMAKE_BIN --init
+  $SMAKE_BIN ./configure
+  $SMAKE_BIN $MAKE_PARAMS
+  cp $SMAKE_I_DIR/*.i $SMAKE_OUT
 elif [[ $1 == "infer" ]]; then
   echo "TODO: $1"
   exit 1

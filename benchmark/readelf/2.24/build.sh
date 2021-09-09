@@ -2,8 +2,8 @@
 
 ./configure
 
-MAKE_PARAMS="-j"
-SMAKE_I_DIR="sparrow"
+MAKE_PARAMS="-j CFLAGS=-w"
+SMAKE_I_DIR="sparrow/binutils/readelf"
 
 if [[ $1 == "sparrow" ]]; then
   $SMAKE_BIN --init

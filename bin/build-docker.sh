@@ -24,6 +24,7 @@ if [[ $1 == "base" ]]; then
 elif [[ $1 == "all" ]]; then
   build_base
   for benchmark in $(find $PROJECT_HOME/benchmark -name "Dockerfile"); do
+    benchmark=$(dirname $benchmark)
     build $benchmark
   done
 elif [[ -d $1 ]]; then

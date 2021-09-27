@@ -8,7 +8,7 @@ MAKE_PARAMS="-j"
 if [[ $1 == "sparrow" ]]; then
   $SMAKE_BIN --init
   $SMAKE_BIN $MAKE_PARAMS
-  mv sparrow/src/zsh/*.i $SMAKE_OUT
+  mv sparrow/Src/zsh/*.i $SMAKE_OUT
 elif [[ $1 == "infer" ]]; then
   $INFER_BIN capture -- make
   cp -r infer-out $OUT

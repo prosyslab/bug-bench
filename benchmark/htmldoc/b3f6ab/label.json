@@ -1,0 +1,127 @@
+[{
+    "project": "htmldoc",
+    "version": "1.9.11",
+    "source": {
+      "file": "htmldoc/image.cxx",
+      "line": 1279,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1279"
+    },
+    "sink": {
+      "file": "htmldoc/image.cxx",
+      "line": 1326,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1326"
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2021-20308",
+    "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20308",
+    "patch": "https://github.com/prosyslab-warehouse/htmldoc/commit/6a8322a718b2ba5c440bd33e6f26d9e281c39654"
+  },
+  {
+    "project": "htmldoc",
+    "version": "1.9.11",
+    "source": {
+      "file": "htmldoc/image.cxx",
+      "line": 1242,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1242"
+    },
+    "sink": {
+      "file": "htmldoc/image.cxx",
+      "line": 1326,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1326"
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "htmldoc",
+    "version": "1.9.11",
+    "source": {
+      "file": "htmldoc/image.cxx",
+      "line": 1846,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1846"
+    },
+    "sink": {
+      "file": "htmldoc/image.cxx",
+      "line": 925,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "htmldoc",
+    "version": "1.9.11",
+    "source": {
+      "file": "htmldoc/image.cxx",
+      "line": 1847,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1847"
+    },
+    "sink": {
+      "file": "htmldoc/image.cxx",
+      "line": 925,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "htmldoc",
+    "version": "1.9.11",
+    "source": {
+      "file": "htmldoc/image.cxx",
+      "line": 1848,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1848"
+    },
+    "sink": {
+      "file": "htmldoc/image.cxx",
+      "line": 925,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "htmldoc",
+    "version": "1.9.11",
+    "source": {
+      "file": "htmldoc/image.cxx",
+      "line": 1849,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1849"
+    },
+    "sink": {
+      "file": "htmldoc/image.cxx",
+      "line": 925,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "htmldoc",
+    "version": "1.9.11",
+    "source": {
+      "file": "htmldoc/image.cxx",
+      "line": 1846,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1846"
+    },
+    "sink": {
+      "file": "htmldoc/image.cxx",
+      "line": 925,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  }
+]

@@ -2,9 +2,13 @@
 
 ./configure
 
+MAKE_PARAMS="-j"
+
 if [[ $1 == "sparrow" ]]; then
-  echo "TODO: $1"
-  exit 1
+  $SMAKE_BIN --init
+  make -C gnulib -j && make -C common-src -j && make -C amandad-src -j
+  $SMAKE_BIN -C client-src runtar $MAKE_PARAMS
+  cp sparrow/client-src/runtar.o.i $SMAKE_OUT
 elif [[ $1 == "infer" ]]; then
   make -C gnulib -j && make -C common-src -j && make -C amandad-src -j
   $INFER_BIN capture -- make -C client-src runtar

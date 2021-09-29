@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
+MAKE_PARAMS="-j"
+SMAKE_I_DIR="sparrow/picocom"
+
 if [[ $1 == "sparrow" ]]; then
-  echo "TODO: $1"
-  exit 1
+  $SMAKE_BIN --init
+  $SMAKE_BIN $MAKE_PARAMS
+  cp $SMAKE_I_DIR/*.i $SMAKE_OUT
 elif [[ $1 == "infer" ]]; then
   $INFER_BIN capture -- make
   cp -r infer-out $OUT

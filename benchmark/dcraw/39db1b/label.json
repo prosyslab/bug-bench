@@ -1,0 +1,56 @@
+[{
+    "project": "dcraw",
+    "version": "9.28",
+    "source": {
+      "file": "parse.c",
+      "line": 70,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/parse.c#L70"
+    },
+    "sink": {
+      "file": "dcraw.c",
+      "line": 1654,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L1654"
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "dcraw",
+    "version": "9.28",
+    "source": {
+      "file": "parse.c",
+      "line": 70,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/parse.c#L70"
+    },
+    "sink": {
+      "file": "parse.c",
+      "line": 790,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/parse.c#L790"
+    },
+    "type": "integer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": null
+  },
+  {
+    "project": "dcraw",
+    "version": "9.28",
+    "source": {
+      "file": "parse.c",
+      "line": 70,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/parse.c#L70"
+    },
+    "sink": {
+      "file": "dcraw.c",
+      "line": 3208,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3208"
+    },
+    "type": "integer-overflow",
+    "CVE": "CVE-2021-3624",
+    "report": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=984761",
+    "input": "n1",
+    "patch": null
+  }
+]

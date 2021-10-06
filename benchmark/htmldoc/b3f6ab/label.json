@@ -14,7 +14,8 @@
     "type": "integer-overflow",
     "CVE": "CVE-2021-20308",
     "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20308",
-    "patch": "https://github.com/prosyslab-warehouse/htmldoc/commit/6a8322a718b2ba5c440bd33e6f26d9e281c39654"
+    "patch": "https://github.com/prosyslab-warehouse/htmldoc/commit/6a8322a718b2ba5c440bd33e6f26d9e281c39654",
+    "input": "n1"
   },
   {
     "project": "htmldoc",

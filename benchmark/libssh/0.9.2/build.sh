@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 if [[ $1 == "sparrow" ]]; then
-  echo "TODO: $1"
-  exit 1
+  $SCMAKE_BIN
+  mv sparrow/src/*.i $SMAKE_OUT
 elif [[ $1 == "infer" ]]; then
   echo "TODO: $1"
   exit 1

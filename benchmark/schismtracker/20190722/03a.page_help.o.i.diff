@@ -1,0 +1,37 @@
+--- ../bug-bench/smake-out/schismtracker/20190722/03a.page_help.o.i	2021-09-27 15:25:59.000000000 +0900
++++ ./schims-issue.i	2021-12-16 14:21:59.228497081 +0900
+@@ -20249,7 +20249,7 @@
+   switch (**ptr) {
+   default:
+    lp = strcspn(*ptr+1, "\015\012");
+-   if ((0[*ptr] == LTYPE_BIOS || 0[*ptr] == LTYPE_SCHISM_BIOS)) {
++   if ((**ptr == LTYPE_BIOS || **ptr == LTYPE_SCHISM_BIOS)) {
+     draw_text_bios_len(*ptr + 1, lp, 2, pos, 6, 0);
+    } else {
+     draw_text_len(*ptr + 1, lp, 2, pos, **ptr == LTYPE_DISABLED ? 7 : 6, 0);
+@@ -20383,10 +20383,10 @@
+   ptr = help_text[status.current_help_index];
+   while (local_lines--) {
+    if (status.flags & CLASSIC_MODE) {
+-    if (!(0[ptr] == LTYPE_SCHISM || 0[ptr] == LTYPE_SCHISM_BIOS))
++    if (!(*ptr == LTYPE_SCHISM || *ptr == LTYPE_SCHISM_BIOS))
+      lines[cur_line++] = ptr;
+    } else {
+-    if (!(0[ptr] == LTYPE_CLASSIC))
++    if (!(*ptr == LTYPE_CLASSIC))
+      lines[cur_line++] = ptr;
+    }
+    ptr = strpbrk(ptr, "\015\012");
+@@ -20404,10 +20404,10 @@
+  ptr = help_text[HELP_GLOBAL];
+  while (global_lines--) {
+   if (status.flags & CLASSIC_MODE) {
+-   if (!(0[ptr] == LTYPE_SCHISM || 0[ptr] == LTYPE_SCHISM_BIOS))
++   if (!(*ptr == LTYPE_SCHISM || *ptr == LTYPE_SCHISM_BIOS))
+     lines[cur_line++] = ptr;
+   } else {
+-   if (!(0[ptr] == LTYPE_CLASSIC))
++   if (!(*ptr == LTYPE_CLASSIC))
+     lines[cur_line++] = ptr;
+   }
+   ptr = strpbrk(ptr, "\015\012");

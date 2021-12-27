@@ -20,7 +20,7 @@ fi
 mkdir -p /tmp/$REPO_PATH
 pushd /tmp/$REPO_PATH
 
-gh repo create $1 --public -y
+gh repo create $1 --public -c
 wget $2
 tar $TAR_OPTION $FILE_NAME -C $REPO_NAME --strip-components=1
 

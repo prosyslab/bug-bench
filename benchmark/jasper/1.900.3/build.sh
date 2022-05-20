@@ -13,6 +13,5 @@ elif [[ $1 == "infer" ]]; then
   $INFER_BIN capture -- make $MAKE_PARAMS
   cp -r infer-out $OUT
 else
-  echo "Unknown build target"
-  exit 1
+  make -j
 fi

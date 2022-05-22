@@ -1,0 +1,15 @@
+FROM prosyslab/bug-bench-fix
+
+RUN apt-get -y update
+
+COPY build.sh $SRC
+COPY input $INPUT
+ENV PROGRAM=libtiff
+
+ENV GIT_REPO_NAME=libtiff-4.0.7
+ENV URL=https://github.com/prosyslab-warehouse/$GIT_REPO_NAME
+
+RUN git clone $URL
+RUN mv $GIT_REPO_NAME $PROGRAM
+
+WORKDIR $PROGRAM

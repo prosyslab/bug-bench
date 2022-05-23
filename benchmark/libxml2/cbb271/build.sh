@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 apt-get update
-apt-get install -y autoconf libtool-bin pkg-config
+apt-get install -y autoconf libtool-bin pkg-config python-dev
 
 ./autogen.sh
 

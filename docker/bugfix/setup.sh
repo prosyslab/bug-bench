@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 apt-get update
-apt-get install clang-6.0
+apt-get install -y clang-6.0
 
 # Install klee and LowFat sanitizer for ExtractFix
 TOOLS=/tools

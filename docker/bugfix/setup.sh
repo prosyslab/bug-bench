@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 apt-get update
-apt-get install -y python2.7 clang-6.0
+apt-get install -y clang-6.0 python2.7
 
 # make alias
-echo "alias 'python=python2.7'
-alias 'clang=clang-6.0'" >> ~/.bashrc
+echo "ln -sf /usr/bin/clang-6.0 /usr/bin/clang
+ln -sf /usr/bin/python2.7 /usr/bin/python" >> ~/.bashrc
 
 # Install klee and LowFat sanitizer for ExtractFix
 TOOLS=/tools

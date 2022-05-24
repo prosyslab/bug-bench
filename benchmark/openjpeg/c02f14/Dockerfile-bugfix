@@ -1,0 +1,15 @@
+FROM prosyslab/bug-bench-fix
+
+RUN apt-get -y update
+
+COPY build.sh $SRC
+COPY input $INPUT
+
+ENV PROGRAM=openjpeg
+ENV URL=https://github.com/prosyslab-warehouse/$PROGRAM
+
+RUN git clone $URL
+
+WORKDIR $PROGRAM
+
+RUN git reset --hard c02f14

@@ -1,4 +1,4 @@
-FROM prosyslab/bug-bench-base
+FROM prosyslab/bug-bench-base:16.04
 
 # basic setting
 ENV INPUT=/input

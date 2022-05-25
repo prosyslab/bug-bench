@@ -5,11 +5,11 @@ RUN apt-get -y update
 COPY build.sh $SRC
 COPY input $INPUT
 
-ENV PROGRAM=openjpeg
-ENV URL=https://github.com/prosyslab-warehouse/$PROGRAM
+ENV OPENJPEG_c02f14=openjpeg-c02f14
+ENV URL=https://github.com/prosyslab-warehouse/openjpeg
 
-RUN git clone $URL
+RUN git clone $URL $OPENJPEG_c02f14
 
-WORKDIR $PROGRAM
+WORKDIR $OPENJPEG_c02f14
 
 RUN git reset --hard c02f14

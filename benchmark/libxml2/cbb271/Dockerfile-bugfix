@@ -5,11 +5,11 @@ RUN apt-get -y update
 COPY build.sh $SRC
 COPY input $INPUT
 
-ENV PROGRAM=libxml2
-ENV URL=https://github.com/prosyslab-warehouse/$PROGRAM
+ENV LIBXML2_cbb271=libxml2-cbb271
+ENV URL=https://github.com/prosyslab-warehouse/libxml2
 
-RUN git clone $URL
+RUN git clone $URL $LIBXML2_cbb271
 
-WORKDIR $PROGRAM
+WORKDIR $LIBXML2_cbb271
 
 RUN git reset --hard cbb271

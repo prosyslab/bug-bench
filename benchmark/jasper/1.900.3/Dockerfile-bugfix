@@ -5,12 +5,10 @@ RUN apt-get -y install autoconf libtool libjpeg-dev
 
 COPY build.sh $SRC
 COPY input $INPUT
-ENV PROGRAM=jasper
+ENV JASPER_1_900_3=jasper-1.900.3
 
-ENV URL=https://github.com/prosyslab-warehouse/jasper-1.900.3
-ENV GIT_REPO_NAME=jasper-1.900.3
+ENV URL=https://github.com/prosyslab-warehouse/$JASPER_1_900_3
 
 RUN git clone $URL
-RUN mv $GIT_REPO_NAME $PROGRAM
 
-WORKDIR $PROGRAM
+WORKDIR $JASPER_1_900_3

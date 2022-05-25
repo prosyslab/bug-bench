@@ -4,12 +4,10 @@ RUN apt-get -y update
 
 COPY build.sh $SRC
 COPY input $INPUT
-ENV PROGRAM=libtiff
+ENV LIBTIFF_4_0_7=libtiff-4.0.7
 
-ENV GIT_REPO_NAME=libtiff-4.0.7
-ENV URL=https://github.com/prosyslab-warehouse/$GIT_REPO_NAME
+ENV URL=https://github.com/prosyslab-warehouse/$LIBTIFF_4_0_7
 
 RUN git clone $URL
-RUN mv $GIT_REPO_NAME $PROGRAM
 
-WORKDIR $PROGRAM
+WORKDIR $LIBTIFF_4_0_7

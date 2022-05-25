@@ -1,7 +1,8 @@
 #!/bin/bash
 
-BIN=$SRC/$PROGRAM/xmllint
+BIN=$SRC/$LIBXML2_cbb271/xmllint
+HERE=$(dirname $0)
 
 case $1 in
-  n1) $BIN $INPUT/test_case ;;
+  n1) $BIN $HERE/test_case ;;
 esac

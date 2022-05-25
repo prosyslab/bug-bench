@@ -1,9 +1,10 @@
 #!/bin/bash
 
-XML_INCLUDE=$SRC/$PROGRAM/include
-XML_LIBS=$SRC/$PROGRAM/.libs
-SRC=$INPUT/poc.c
-BIN=$INPUT/poc
+XML_INCLUDE=$SRC/$LIBXML2_8f30bd/include
+XML_LIBS=$SRC/$LIBXML2_8f30bd/.libs
+HERE=$(dirname $0)
+SRC=$HERE/poc.c
+BIN=$HERE/poc
 
 case $1 in
   n1)

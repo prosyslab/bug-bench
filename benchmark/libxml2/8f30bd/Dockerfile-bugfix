@@ -1,7 +1,7 @@
 FROM prosyslab/bug-bench-fix
 
 RUN apt-get -y update
-RUN apt-get install -y libpython2-dev
+RUN apt-get install -y libpython-dev
 
 COPY build.sh $SRC
 COPY input $INPUT

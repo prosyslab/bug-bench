@@ -2,10 +2,10 @@ FROM prosyslab/bug-bench-fix
 
 RUN apt-get -y update
 
+ENV OPENJPEG_c02f14=openjpeg-c02f14
 COPY build.sh $SRC
 COPY input $INPUT
 
-ENV OPENJPEG_c02f14=openjpeg-c02f14
 ENV URL=https://github.com/prosyslab-warehouse/openjpeg
 
 RUN git clone $URL $OPENJPEG_c02f14

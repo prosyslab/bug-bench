@@ -2,9 +2,9 @@ FROM prosyslab/bug-bench-fix
 
 RUN apt-get -y update
 
+ENV LIBTIFF_4_0_6=libtiff-4.0.6
 COPY build.sh $SRC
 COPY input $INPUT
-ENV LIBTIFF_4_0_6=libtiff-4.0.6
 
 ENV URL=https://github.com/prosyslab-warehouse/$LIBTIFF_4_0_6
 

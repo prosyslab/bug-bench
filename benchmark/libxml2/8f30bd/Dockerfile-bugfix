@@ -3,10 +3,10 @@ FROM prosyslab/bug-bench-fix
 RUN apt-get -y update
 RUN apt-get install -y libpython-dev
 
+ENV LIBXML2_8f30bd=libxml2-8f30bd
 COPY build.sh $SRC
 COPY input $INPUT
 
-ENV LIBXML2_8f30bd=libxml2-8f30bd
 ENV URL=https://github.com/prosyslab-warehouse/libxml2
 
 RUN git clone $URL $LIBXML2_8f30bd

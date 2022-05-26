@@ -1,7 +1,7 @@
 FROM prosyslab/bug-bench-fix
 
 RUN apt-get -y update
-RUN apt-get -y install autoconf libtool libjpeg-dev
+RUN apt-get -y install libjpeg-dev
 
 ENV JASPER_1_900_3=jasper-1.900.3
 COPY build.sh $SRC

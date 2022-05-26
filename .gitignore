@@ -2,3 +2,5 @@ __pycache__
 
 infer-out
 smake-out
+
+docker/bugfix/full/Dockerfile-full

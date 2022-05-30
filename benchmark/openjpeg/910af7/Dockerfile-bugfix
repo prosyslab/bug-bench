@@ -1,0 +1,15 @@
+FROM prosyslab/bug-bench-fix
+
+RUN apt-get -y update
+
+ENV OPENJPEG_910af7=openjpeg-910af7
+COPY build.sh $SRC
+COPY input $INPUT
+
+ENV URL=https://github.com/prosyslab-warehouse/openjpeg
+
+RUN git clone $URL $OPENJPEG_910af7
+
+WORKDIR $OPENJPEG_910af7
+
+RUN git reset --hard 910af7

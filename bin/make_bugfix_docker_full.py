@@ -5,10 +5,12 @@ import os
 
 BENCHMARKS_BUGFIX_FULL = [("jasper", "1.900.3"), ("libtiff", "4.0.6"),
                           ("libtiff", "4.0.7"), ("libxml2", "8f30bd"),
-                          ("libxml2", "cbb271"), ("openjpeg", "c02f14")]
+                          ("libxml2", "cbb271"), ("openjpeg", "c02f14"),
+                          ("openjpeg", "910af7")]
 
 PROJECT_HOME = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BENCHMARK_DIR = os.path.join(PROJECT_HOME, "benchmark")
+
 
 def read_docker_file(docker_file):
     with open(docker_file, 'r') as f:
@@ -27,6 +29,7 @@ def find_prog_env(lines, program, version):
             if program.upper() in env:
                 return env
 
+
 def edit_docker_file(docker_file, program, version):
     raw_lines = read_docker_file(docker_file).split("\n")
     prog_env = find_prog_env(raw_lines, program, version)
@@ -35,15 +38,20 @@ def edit_docker_file(docker_file, program, version):
     new_lines.append(f"ENV {prog_env}={program}-{version}")
     for line in raw_lines:
         if line.startswith("FROM"):
-            new_lines.append(f"ENV BENCH_SRC_{prog_env}=$BENCHMARK/{program}/{version}")
-            new_lines.append(f"ENV BUILD_{prog_env}=$SCRIPT_BUILD/${prog_env}-build.sh")
+            new_lines.append(
+                f"ENV BENCH_SRC_{prog_env}=$BENCHMARK/{program}/{version}")
+            new_lines.append(
+                f"ENV BUILD_{prog_env}=$SCRIPT_BUILD/${prog_env}-build.sh")
         elif line.startswith("COPY"):
             if "build.sh" in line:
-                new_lines.append(f"COPY $BENCH_SRC_{prog_env}/build.sh $BUILD_{prog_env}")
+                new_lines.append(
+                    f"COPY $BENCH_SRC_{prog_env}/build.sh $BUILD_{prog_env}")
             elif "input" in line:
                 new_lines.append(f"RUN mkdir -p $INPUT/${prog_env}")
-                new_lines.append(f"COPY $BENCH_SRC_{prog_env}/input $INPUT/${prog_env}")
-                new_lines.append(f"ENV TEST_{prog_env}=$INPUT/${prog_env}/test.sh")
+                new_lines.append(
+                    f"COPY $BENCH_SRC_{prog_env}/input $INPUT/${prog_env}")
+                new_lines.append(
+                    f"ENV TEST_{prog_env}=$INPUT/${prog_env}/test.sh")
             else:
                 print("Unknown COPY line:", line)
                 exit(1)
@@ -58,7 +66,8 @@ def edit_docker_file(docker_file, program, version):
 def make_full_content():
     content = ""
     for (program, version) in BENCHMARKS_BUGFIX_FULL:
-        bench_docker_file = os.path.join(BENCHMARK_DIR, program, version, "Dockerfile-bugfix")
+        bench_docker_file = os.path.join(BENCHMARK_DIR, program, version,
+                                         "Dockerfile-bugfix")
         content += edit_docker_file(bench_docker_file, program, version)
     return content
 

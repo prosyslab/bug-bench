@@ -20,12 +20,9 @@ pip install wllvm coloredlogs enum
 # Install pyparsing for python3
 pip3 install pyparsing==2.4.6 z3
 
-# Install klee and LowFat sanitizer for ExtractFix
-TOOLS=/tools
-mkdir -p $TOOLS
-
-git clone -b klee-fix https://github.com/prosyslab/klee-bugfix.git $TOOLS/klee
-git clone -b symbolize https://github.com/prosyslab/LowFat-bugfix.git $TOOLS/LowFat
+git clone https://github.com/prosyslab/ExtractFix.git /ExtractFix
+cd /ExtractFix
+git submodule update --init --recursive
 
 # Install klee-uclibc
 git clone https://github.com/klee/klee-uclibc.git /klee-uclibc

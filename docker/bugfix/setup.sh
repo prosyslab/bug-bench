@@ -20,7 +20,9 @@ pip install wllvm coloredlogs enum
 # Install pyparsing for python3
 pip3 install pyparsing==2.4.6 z3
 
-git clone https://github.com/prosyslab/ExtractFix.git /ExtractFix
+# Github personal access token (`repo` access)
+TOKEN=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
+git clone https://$TOKEN@github.com/prosyslab/ExtractFix.git /ExtractFix
 cd /ExtractFix
 git submodule update --init --recursive
 

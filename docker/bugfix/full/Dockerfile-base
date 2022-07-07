@@ -1,7 +1,0 @@
-FROM prosyslab/bug-bench-fix
-
-# relative path with respect to bug-bench/
-ENV BENCHMARK=benchmark
-ENV SCRPT_BUILD=/script/build
-
-RUN apt-get -y update

@@ -3,10 +3,9 @@
   "version": "6dff24b",
   "file": "util/parser.c",
   "line": 68,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2017-7578",
   "report": "https://github.com/libming/libming/issues/68",
   "patch": null,
-  "code": null
-}
-]
+  "code": "dummy"
+}]

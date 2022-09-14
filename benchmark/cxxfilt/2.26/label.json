@@ -3,60 +3,59 @@
   "version": "2.6",
   "file": "libiberty/cplus-dem.c",
   "line": 4319,
-  "type": "null-derefernce",
+  "type": "buffer-overflow",
   "CVE": "CVE-2016-4487",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70481",
   "patch": null,
-  "code": null
-},{
+  "code": "dummy"
+}, {
   "project": "cxxfilt",
   "version": "2.6",
   "file": "libiberty/cplus-dem.c",
   "line": 4839,
-  "type": "integer-overflow",
+  "type": "buffer-overflow",
   "CVE": "CVE-2016-4489",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70492",
   "patch": null,
-  "code": null
-},{
+  "code": "dummy"
+}, {
   "project": "cxxfilt",
   "version": "2.6",
   "file": "libiberty/cp-demangle.c",
   "line": 1596,
-  "type": "integer-overflow",
+  "type": "buffer-overflow",
   "CVE": "CVE-2016-4490",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70498",
   "patch": null,
-  "code": null
-},{
+  "code": "dummy"
+}, {
   "project": "cxxfilt",
   "version": "2.6",
   "file": "libiberty/cp-demangle.c",
   "line": 5394,
-  "type": "stack-overflow",
+  "type": "buffer-overflow",
   "CVE": "CVE-2016-4491",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70909",
   "patch": null,
-  "code": null
-},{
+  "code": "dummy"
+}, {
   "project": "cxxfilt",
   "version": "2.6",
   "file": "libiberty/cplus-dem.c",
   "line": 3606,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2016-4492",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70926",
   "patch": null,
-  "code": null
-},{
+  "code": "dummy"
+}, {
   "project": "cxxfilt",
   "version": "2.6",
   "file": "libiberty/cplus-dem.c",
   "line": 2543,
-  "type": "stack-overflow",
+  "type": "buffer-overflow",
   "CVE": "CVE-2016-6131",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=71696",
   "patch": null,
-  "code": null
-}
-]
+  "code": "dummy"
+}]

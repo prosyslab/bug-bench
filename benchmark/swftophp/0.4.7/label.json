@@ -3,65 +3,59 @@
   "version": "0.4.7",
   "file": "util/outputscript.c",
   "line": 1687,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2016-9827",
   "report": "https://www.openwall.com/lists/oss-security/2016/12/01/7",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "swftophp",
   "version": "0.4.7",
   "file": "util/parser.c",
   "line": 1656,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2016-9829",
   "report": "https://blogs.gentoo.org/ago/2016/12/01/libming-listswf-heap-based-buffer-overflow-in-parseswf_definefont-parser-c/",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "swftophp",
   "version": "0.4.7",
   "file": "util/parser.c",
   "line": 746,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2016-9831",
   "report": "https://www.openwall.com/lists/oss-security/2016/12/01/6",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "swftophp",
   "version": "0.4.7",
   "file": "util/parser.c",
   "line": 2992,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2017-9988",
   "report": "https://github.com/libming/libming/issues/85",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "swftophp",
   "version": "0.4.7",
   "file": "util/decompile.c",
   "line": 1699,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2017-11728",
-  "report": "https://github.com/libming/libming/issues/82" ,
+  "report": "https://github.com/libming/libming/issues/82",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "swftophp",
   "version": "0.4.7",
   "file": "util/decompile.c",
   "line": 1437,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2017-11729",
   "report": "https://github.com/libming/libming/issues/79",
   "patch": null,
-  "code": null
-}
-]
+  "code": "dummy"
+}]

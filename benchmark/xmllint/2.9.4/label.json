@@ -3,43 +3,39 @@
   "version": "2.9.4",
   "file": "valid.c",
   "line": 1181,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2017-5869",
   "report": "https://www.openwall.com/lists/oss-security/2016/11/05/3",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "xmllint",
   "version": "2.9.4",
   "file": "valid.c",
   "line": 1279,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2017-9047",
   "report": "https://www.openwall.com/lists/oss-security/2017/05/15/1",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "xmllint",
   "version": "2.9.4",
   "file": "valid.c",
   "line": 1323,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2017-9048",
   "report": "https://www.openwall.com/lists/oss-security/2017/05/15/1",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "xmllint",
   "version": "2.9.4",
   "file": "dict.c",
   "line": 448,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2017-9049",
   "report": "https://www.openwall.com/lists/oss-security/2017/05/15/1",
   "patch": null,
-  "code": null
-}
-]
+  "code": "dummy"
+}]

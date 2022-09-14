@@ -3,76 +3,69 @@
   "version": "0.4.8",
   "file": "util/decompile.c",
   "line": 398,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2018-7868",
   "report": "https://github.com/libming/libming/issues/113",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "swftophp",
   "version": "0.4.8",
   "file": "util/decompile.c",
   "line": 349,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2018-8807",
   "report": "https://github.com/libming/libming/issues/129",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "swftophp",
   "version": "0.4.8",
   "file": "util/decompile.c",
   "line": 398,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2018-8962",
   "report": "https://github.com/libming/libming/issues/130",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "swftophp",
   "version": "0.4.8",
   "file": "util/decompile.c",
   "line": 1843,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2018-11095",
   "report": "https://github.com/libming/libming/issues/141",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "swftophp",
   "version": "0.4.8",
   "file": "util/decompile.c",
   "line": 2015,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2018-11225",
   "report": "https://github.com/libming/libming/issues/143",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "swftophp",
   "version": "0.4.8",
   "file": "util/decompile.c",
   "line": 425,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2018-20427",
   "report": "https://github.com/libming/libming/issues/164",
   "patch": null,
-  "code": null
-},
-{
+  "code": "dummy"
+}, {
   "project": "swftophp",
   "version": "0.4.8",
   "file": "util/decompile.c",
   "line": 3120,
-  "type": null,
+  "type": "buffer-overflow",
   "CVE": "CVE-2019-12982",
   "report": "https://github.com/libming/libming/commit/da9d86eab55cbf608d5c916b8b690f5b76bca462",
   "patch": null,
-  "code": null
-},
-]
+  "code": "dummy"
+}]

@@ -1,0 +1,12 @@
+[{
+  "project": "swftophp",
+  "version": "5009802",
+  "file": "util/decompile.c",
+  "line": 259,
+  "type": null,
+  "CVE": "CVE-2019-9114",
+  "report": "https://github.com/libming/libming/issues/68",
+  "patch": null,
+  "code": null
+}
+]

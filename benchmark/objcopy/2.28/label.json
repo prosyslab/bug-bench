@@ -1,0 +1,32 @@
+[{
+  "project": "objcopy",
+  "version": "2.8",
+  "file": "bfd/elf.c",
+  "line": 3562,
+  "type": null,
+  "CVE": "CVE-2017-8393",
+  "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=21412",
+  "patch": null,
+  "code": null
+},{
+  "project": "objcopy",
+  "version": "2.8",
+  "file": "binutils/objcopy.c",
+  "line": 1482,
+  "type": null,
+  "CVE": "CVE-2017-8394",
+  "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=21414",
+  "patch": null,
+  "code": null
+},{
+  "project": "objcopy",
+  "version": "2.8",
+  "file": "bfd/cache.c",
+  "line": 336,
+  "type": null,
+  "CVE": "CVE-2017-8395",
+  "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=21431",
+  "patch": null,
+  "code": null
+}
+]

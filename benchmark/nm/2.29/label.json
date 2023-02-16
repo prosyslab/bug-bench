@@ -1,0 +1,11 @@
+[{
+  "project": "nm",
+  "version": "2.9",
+  "file": "bfd/elf.c",
+  "line": 8205,
+  "type": "OOM",
+  "CVE": "CVE-2017-14940",
+  "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=22166",
+  "patch": null,
+  "code": "dummy"
+}]

@@ -1,0 +1,11 @@
+[{
+  "project": "readelf",
+  "version": "2.9",
+  "file": "binutils/dwarf.c",
+  "line": 7019,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2017-16828",
+  "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=22386",
+  "patch": null,
+  "code": "dummy"
+}]

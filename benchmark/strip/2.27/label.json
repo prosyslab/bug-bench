@@ -1,0 +1,11 @@
+[{
+  "project": "strip",
+  "version": "2.7",
+  "file": "bfd/elf.c",
+  "line": 1252,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2017-7303",
+  "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=20922",
+  "patch": null,
+  "code": "dummy"
+}]

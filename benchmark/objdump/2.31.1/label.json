@@ -1,0 +1,11 @@
+[{
+  "project": "objdump",
+  "version": "2.31.1",
+  "file": "bfd/libbfd.c",
+  "line": 656,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2018-17360",
+  "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=23685",
+  "patch": null,
+  "code": "dummy"
+}]

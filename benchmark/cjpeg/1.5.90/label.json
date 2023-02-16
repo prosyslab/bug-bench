@@ -1,0 +1,11 @@
+[{
+  "project": "cjpeg",
+  "version": "1.5.90",
+  "file": "rdbmp.c",
+  "line": 209,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2018-14498",
+  "report": "https://github.com/libjpeg-turbo/libjpeg-turbo/issues/258",
+  "patch": null,
+  "code": "dummy"
+}]

@@ -3,7 +3,7 @@
   "version": "9de7ccb",
   "file": "stream.c",
   "line": 1747,
-  "type": "use-after-free",
+  "type": "buffer-overflow",
   "CVE": "CVE-2017-8846",
   "report": "https://github.com/ckolivas/lrzip/issues/71",
   "patch": null,

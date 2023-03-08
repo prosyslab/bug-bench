@@ -12,6 +12,12 @@ if [[ $1 == "sparrow" ]]; then
 elif [[ $1 == "infer" ]]; then
   $INFER_BIN capture -- make $MAKE_PARAMS
   cp -r infer-out $OUT
+elif [[ $1 == "haechi" ]]; then
+  make -f ./Makefile.haechi $MAKE_PARAMS
+  EXT_TARGET=unzip
+  $GET_BC_BIN $EXT_TARGET &&
+  llvm-dis -o $EXT_TARGET.ll $EXT_TARGET.bc &&
+  opt -mem2reg -S -o $HAECHI_OUT/$(basename $EXT_TARGET).ll $EXT_TARGET.ll
 else
   echo "Unknown build target"
   exit 1

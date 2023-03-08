@@ -20,8 +20,9 @@ elif [[ $1 == "haechi" ]]; then
   for f in src/*; do
     $GET_BC_BIN $f &&
       llvm-dis -o $f.ll $f.bc &&
-      opt -mem2reg -S -o $HAECHI_OUT/$(basename $f).ll $f.ll
+      opt -mem2reg -S -o $f.ll $f.ll
   done
+  llvm-link-13 -S src/*.ll -o $HAECHI_OUT/libsndfile.ll
 else
   echo "Unknown build target"
   exit 1

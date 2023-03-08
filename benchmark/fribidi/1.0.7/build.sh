@@ -17,11 +17,10 @@ elif [[ $1 == "haechi" ]]; then
   ./autogen.sh
   ./configure
   make -j
-  for f in bin/*; do
-    $GET_BC_BIN $f &&
-      llvm-dis -o $f.ll $f.bc &&
-      opt -mem2reg -S -o $HAECHI_OUT/$(basename $f).ll $f.ll
-  done
+  EXT_TARGET=bin/fribidi-main.o
+  $GET_BC_BIN $EXT_TARGET &&
+  llvm-dis -o $EXT_TARGET.ll $EXT_TARGET.bc &&
+  opt -mem2reg -S -o $HAECHI_OUT/$(basename $EXT_TARGET).ll $EXT_TARGET.ll
 else
   echo "Unknown build target"
   exit 1

@@ -19,11 +19,10 @@ elif [[ $1 == "haechi" ]]; then
   autoreconf -i
   ./configure
   make $MAKE_PARAMS
-  for f in src/appl/*; do
-    $GET_BC_BIN $f &&
-      llvm-dis -o $f.ll $f.bc &&
-      opt -mem2reg -S -o $HAECHI_OUT/$(basename $f).ll $f.ll
-  done
+  EXT_TARGET=src/appl/jasper.o
+  $GET_BC_BIN $EXT_TARGET &&
+  llvm-dis -o $EXT_TARGET.ll $EXT_TARGET.bc &&
+  opt -mem2reg -S -o $HAECHI_OUT/$(basename $EXT_TARGET).ll $EXT_TARGET.ll
 else
   make -j
 fi

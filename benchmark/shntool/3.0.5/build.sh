@@ -18,7 +18,7 @@ elif [[ $1 == "codeql" ]]; then
   cp -r codeql-db $OUT
 elif [[ $1 == "haechi" ]]; then
   export CC=$GCLANG_BIN
-  export CFLAGS="-fno-discard-value-names -O0 -Xclang -disable-O0-optnone"
+  export CFLAGS="-fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
   ./configure
   make $MAKE_PARAMS
   EXT_TARGET=src/shntool

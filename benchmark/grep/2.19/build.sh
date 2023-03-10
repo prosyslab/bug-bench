@@ -11,7 +11,7 @@ elif [[ $1 == "infer" ]]; then
   mv infer-out $OUT
 elif [[ $1 == "haechi" ]]; then
   export CC=$GCLANG_BIN
-  export CFLAGS="-fno-discard-value-names -O0 -Xclang -disable-O0-optnone"
+  export CFLAGS="-fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
   ./configure
   make -j
   EXT_TARGET=src/grep

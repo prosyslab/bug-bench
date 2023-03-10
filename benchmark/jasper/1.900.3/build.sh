@@ -15,7 +15,7 @@ elif [[ $1 == "infer" ]]; then
   cp -r infer-out $OUT
 elif [[ $1 == "haechi" ]]; then
   export CC=$GCLANG_BIN
-  export CFLAGS="-fno-discard-value-names -O0 -Xclang -disable-O0-optnone"
+  export CFLAGS="-fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
   autoreconf -i
   ./configure
   make $MAKE_PARAMS

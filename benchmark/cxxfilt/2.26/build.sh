@@ -20,7 +20,7 @@ elif [[ $1 == "infer" ]]; then
   mv infer-out $OUT
 elif [[ $1 == "haechi" ]]; then
   export CC=$GCLANG_BIN
-  export CFLAGS="$CFLAGS -fno-discard-value-names -O0 -Xclang -disable-O0-optnone"
+  export CFLAGS="$CFLAGS -fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
   ./configure $CONFIG_OPTIONS
   make -j
   $GET_BC_BIN $BIN_PATH &&

@@ -16,4 +16,3 @@ RUN cd ${PROGRAM}; git checkout $VERSION; cd ..
 RUN mv $GIT_REPO_NAME $PROGRAM
 
 WORKDIR $PROGRAM
-

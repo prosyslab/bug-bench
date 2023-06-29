@@ -1,0 +1,13 @@
+[
+    {
+        "project": "jasper",
+        "version": "1.900.14",
+        "file": "src/libjasper/jpc/jpc_dec.c",
+        "line": "1234",
+        "type": "signed-integer-overflow",
+        "CVE": "CVE-2016-9387",
+        "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9387",
+        "patch": "https://github.com/jasper-software/jasper/commit/d91198abd00fc435a397fe6bad906a4c1748e9cf",
+        "code": "https://github.com/jasper-software/jasper/blob/d91198abd00fc435a397fe6bad906a4c1748e9cf/src/libjasper/jpc/jpc_dec.c#L1234"
+    }
+]

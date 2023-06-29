@@ -1,0 +1,13 @@
+[
+    {
+        "project": "libtiff",
+        "version": "v3.8.0",
+        "file": "tools/bmp2tiff.c",
+        "line": "511",
+        "type": "memory-write-error",
+        "CVE": "CVE-2016-8884",
+        "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8884",
+        "patch": "https://github.com/vadz/libtiff/commit/50373d7d2290701732cad0690260c48184f8b8b6",
+        "code": "https://github.com/vadz/libtiff/blob/50373d7d2290701732cad0690260c48184f8b8b6/tools/bmp2tiff.c#L312"
+    }
+]

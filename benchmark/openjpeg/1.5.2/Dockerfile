@@ -6,7 +6,7 @@ RUN apt-get -y install tzdata wget cmake
 COPY build.sh $SRC
 ENV URL=https://github.com/uclouvain/openjpeg
 ENV PROGRAM=openjpeg
-RUN git clone $URL
+RUN git clone $URL $GIT_REPO_NAME
 RUN cd $PROGRAM; git checkout $VERSION; cd ..
 RUN mv $GIT_REPO_NAME $PROGRAM
 

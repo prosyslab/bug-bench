@@ -1,13 +1,11 @@
-[
-    {
-        "project": "openjpeg",
-        "version": "1.3",
-        "file": "libopenjpeg/j2k.c",
-        "line": 470,
-        "type": "division-by-zero",
-        "CVE": "CVE-2016-8692",
-        "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8692",
-        "patch": "https://github.com/uclouvain/openjpeg/commit/f4d394d9324f12e820339fce0182b1d47f831059#diff-34e35bc2aefa4ec848d41eed5cb81160",
-        "code": "https://github.com/uclouvain/openjpeg/blob/f4d394d9324f12e820339fce0182b1d47f831059/libopenjpeg/j2k.c#L470"
-    }
-]
+[{
+  "project": "openjpeg",
+  "version": "1.3",
+  "file": "libopenjpeg/j2k.c",
+  "line": 470,
+  "type": "div-by-zero",
+  "CVE": "CVE-2016-8692",
+  "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8692",
+  "patch": "https://github.com/uclouvain/openjpeg/commit/f4d394d9324f12e820339fce0182b1d47f831059#diff-34e35bc2aefa4ec848d41eed5cb81160",
+  "code": "https://github.com/uclouvain/openjpeg/blob/f4d394d9324f12e820339fce0182b1d47f831059/libopenjpeg/j2k.c#L470"
+}]

@@ -1,13 +1,19 @@
-[
-    {
-        "project": "jasper",
-        "version": "1.900.4",
-        "file": "src/libjasper/mif/mif_cod.c",
-        "line": "394",
-        "type": "shift-overflow",
-        "CVE": "CVE-2016-9830",
-        "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9830",
-        "patch": "https://github.com/jasper-software/jasper/commit/6109f6a4e731085f50aca1a483fa90668e3203d9",
-        "code": "https://github.com/jasper-software/jasper/blob/6109f6a4e731085f50aca1a483fa90668e3203d9/src/libjasper/mif/mif_cod.c#L394"
-    }
-]
+[{
+  "project": "jasper",
+  "version": "1.900.4",
+  "type": "integer-overflow",
+  "source": {
+    "file": "src/libjasper/mif/mif_cod.c",
+    "line": 383,
+    "code": "https://github.com/jasper-software/jasper/blob/6109f6a4e731085f50aca1a483fa90668e3203d9/src/libjasper/mif/mif_cod.c#L383"
+  },
+  "sink": {
+    "file": "src/libjasper/mif/mif_cod.c",
+    "line": 394,
+    "code": "https://github.com/jasper-software/jasper/blob/6109f6a4e731085f50aca1a483fa90668e3203d9/src/libjasper/mif/mif_cod.c#L394"
+  },
+  "file": "src/libjasper/mif/mif_cod.c",
+  "CVE": "CVE-2016-9830",
+  "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9830",
+  "patch": "https://github.com/jasper-software/jasper/commit/6109f6a4e731085f50aca1a483fa90668e3203d9"
+}]

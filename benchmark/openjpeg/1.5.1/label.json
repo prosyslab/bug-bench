@@ -1,13 +1,11 @@
-[
-    {
-        "project": "openjpeg",
-        "version": "1.5.1",
-        "file": "libopenjpeg/cio.c",
-        "line": 110,
-        "type": "heap-buffer-overflow",
-        "CVE": "CVE-2016-9390",
-        "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8691",
-        "patch": "https://github.com/uclouvain/openjpeg/commit/69cd4f9211a33367e11563240ca1d5e095a804af#diff-05e88b300a6d6155fd0c0479f0bbc05f",
-        "code": "https://github.com/uclouvain/openjpeg/blob/69cd4f9211a33367e11563240ca1d5e095a804af/libopenjpeg/cio.c#L110"
-    }
-]
+[{
+  "project": "openjpeg",
+  "version": "1.5.1",
+  "file": "libopenjpeg/cio.c",
+  "line": 110,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2016-9390",
+  "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8691",
+  "patch": "https://github.com/uclouvain/openjpeg/commit/69cd4f9211a33367e11563240ca1d5e095a804af#diff-05e88b300a6d6155fd0c0479f0bbc05f",
+  "code": "https://github.com/uclouvain/openjpeg/blob/69cd4f9211a33367e11563240ca1d5e095a804af/libopenjpeg/cio.c#L110"
+}]

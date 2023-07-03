@@ -1,13 +1,18 @@
-[
-    {
-        "project": "jasper",
-        "version": "1.900.17",
-        "file": "src/libjasper/jpc/jpc_cs.c",
-        "line": "510",
-        "type": "unsigned-integer-overflow",
-        "CVE": "CVE-2016-9262",
-        "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9262",
-        "patch": "https://github.com/jasper-software/jasper/commit/ba2b9d000660313af7b692542afbd374c5685865",
-        "code": "https://github.com/jasper-software/jasper/blob/ba2b9d000660313af7b692542afbd374c5685865/src/libjasper/jpc/jpc_cs.c#L511"
-    }
-]
+[{
+  "project": "jasper",
+  "version": "1.900.17",
+  "source": {
+    "file": "src/libjasper/jpc/jpc_cs.c",
+    "line": 502,
+    "code": "https://github.com/jasper-software/jasper/blob/ba2b9d000660313af7b692542afbd374c5685865/src/libjasper/jpc/jpc_cs.c#L511"
+  },
+  "sink": {
+    "file": "src/libjasper/jpc/jpc_cs.c",
+    "line": 510,
+    "code": "https://github.com/jasper-software/jasper/blob/ba2b9d000660313af7b692542afbd374c5685865/src/libjasper/jpc/jpc_cs.c#L511"
+  },
+  "type": "integer-overflow",
+  "CVE": "CVE-2016-9262",
+  "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9262",
+  "patch": "https://github.com/jasper-software/jasper/commit/ba2b9d000660313af7b692542afbd374c5685865"
+}]

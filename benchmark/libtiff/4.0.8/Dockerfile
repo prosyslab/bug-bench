@@ -11,7 +11,7 @@ RUN cmake -DCMAKE_BUILD_TYPE=Release
 RUN URL=https://github.com/vadz/libtiff
 
 RUN git clone $URL $GIT_REPO_NAME
-RUN cd ${PROGRAM}; git checkout $VERSION; cd ..
+RUN cd $GIT_REPO_NAME; git checkout $VERSION; cd ..
 
 RUN mv $GIT_REPO_NAME $PROGRAM
 

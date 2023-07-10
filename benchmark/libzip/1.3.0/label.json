@@ -1,0 +1,11 @@
+[{
+  "project": "libzip",
+  "version": "1.2.0",
+  "file": "lib/zip_open.c",
+  "line": 850,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2017-14107",
+  "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14107",
+  "patch": "https://github.com/nih-at/libzip/commit/9b46957ec98d85a572e9ef98301247f39338a3b5",
+  "code": "https://github.com/nih-at/libzip/blob/9b46957ec98d85a572e9ef98301247f39338a3b5/lib/zip_open.c#L850"
+}]

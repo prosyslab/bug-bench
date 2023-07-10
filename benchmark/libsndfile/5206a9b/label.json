@@ -1,0 +1,11 @@
+[{
+  "project": "libsndfile",
+  "version": "5206a9b",
+  "file": "src/flac.c",
+  "line": 437,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2017-8365",
+  "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8365",
+  "patch": "https://github.com/libsndfile/libsndfile/commit/fd0484aba8e51d16af1e3a880f9b8b857b385eb3",
+  "code": "https://github.com/libsndfile/libsndfile/commit/fd0484aba8e51d16af1e3a880f9b8b857b385eb3#diff-8e207238dfa88679918526b98934ebbc5ba34be161fe55d8251b42c36cd9da8eR437"
+}]

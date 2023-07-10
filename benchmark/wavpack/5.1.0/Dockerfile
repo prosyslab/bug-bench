@@ -1,0 +1,15 @@
+FROM prosyslab/bug-bench-base
+
+RUN apt-get -y update
+RUN apt-get -y install libtool libjpeg-dev autoconf
+ENV VERSION=5.1.0
+ENV PROGRAM=wavpack
+ENV URL=https://github.com/dbry/WavPack
+ENV GIT_REPO_NAME=wavpack-5.1.0
+RUN git clone $URL $GIT_REPO_NAME
+RUN cd $GIT_REPO_NAME; git checkout $VERSION; cd ..
+RUN mv $GIT_REPO_NAME $PROGRAM
+
+COPY build.sh $SRC
+
+WORKDIR $PROGRAM

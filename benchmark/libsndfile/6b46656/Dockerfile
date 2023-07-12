@@ -1,11 +1,11 @@
 FROM prosyslab/bug-bench-base
 
 RUN apt-get -y update
-RUN apt-get -y install libtool libjpeg-dev autoconf
-ENV VERSION=v0.3.0
-ENV PROGRAM=libwebp
-ENV URL=https://github.com/webmproject/libwebp/
-ENV GIT_REPO_NAME=libwebp-0.3.0
+RUN apt-get -y install wget automake pkg-config python libtool autogen
+ENV VERSION=6b46656
+ENV PROGRAM=libsndfile
+ENV URL=https://github.com/erikd/libsndfile
+ENV GIT_REPO_NAME=libsndfile-6b46656
 RUN git clone $URL $GIT_REPO_NAME
 RUN cd $GIT_REPO_NAME; git checkout $VERSION; cd ..
 RUN mv $GIT_REPO_NAME $PROGRAM

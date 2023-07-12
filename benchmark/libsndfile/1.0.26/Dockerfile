@@ -2,15 +2,13 @@ FROM prosyslab/bug-bench-base
 
 RUN apt-get -y update
 RUN apt-get -y install wget automake pkg-config python libtool autogen
-
+ENV VERSION=1.0.26
 ENV PROGRAM=libsndfile
-
-RUN mkdir $PROGRAM
-
-ENV URL=https://github.com/libsndfile/libsndfile/archive/refs/tags/1.0.26.tar.gz
-
-RUN wget $URL
-RUN tar -xzvf 1.0.26.tar.gz -C $PROGRAM --strip-components 1
+ENV URL=https://github.com/erikd/libsndfile
+ENV GIT_REPO_NAME=libsndfile-1.0.26
+RUN git clone $URL $GIT_REPO_NAME
+RUN cd $GIT_REPO_NAME; git checkout $VERSION; cd ..
+RUN mv $GIT_REPO_NAME $PROGRAM
 
 COPY build.sh $SRC
 

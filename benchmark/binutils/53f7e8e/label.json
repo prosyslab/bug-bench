@@ -1,0 +1,11 @@
+[{
+  "project": "binutils",
+  "version": "53f7e8e",
+  "file": "dummy.c",
+  "line": 1,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2017-6965",
+  "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6965",
+  "patch": "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=03f7786e2f440b9892b1c34a58fb26222ce1b493",
+  "code": "dummy"
+}]

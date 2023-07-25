@@ -1,0 +1,11 @@
+[{
+  "project": "binutils",
+  "version": "515f23e",
+  "file": "dummy.c",
+  "line": 1,
+  "type": "div-by-zero",
+  "CVE": "CVE-2017-15025",
+  "report": "https://nvd.nist.gov/vuln/detail/CVE-2017-15025",
+  "patch": "https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=d8010d3e75ec7194a4703774090b27486b742d48",
+  "code": "dummy"
+}]

@@ -1,0 +1,11 @@
+[{
+  "project": "coreutils",
+  "version": "ca99c52",
+  "file": "dummy.c",
+  "line": 1,
+  "type": "buffer-overflow",
+  "CVE": "Gnubug-25023",
+  "report": "",
+  "patch": "https://github.com/coreutils/coreutils/commit/d91aee",
+  "code": "dummy"
+}]

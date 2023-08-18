@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-cmake -DCMAKE_BUILD_TYPE=Release
-./bootstrap.sh;
+autoconf -i;
 ./configure;
 
 MAKE_PARAMS="-j"

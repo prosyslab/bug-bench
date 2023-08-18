@@ -5,7 +5,7 @@ ENV PROGRAM=libjpeg
 ENV GIT_REPO_NAME=$PROGRAM-$VERSION_NO
 
 RUN apt-get -y update
-RUN apt-get -y install texinfo
+RUN apt-get -y install nasm
 
 RUN URL=https://github.com/libjpeg-turbo/libjpeg-turbo.git
 

@@ -6,7 +6,8 @@ ENV VERSION=version.2.1
 ENV PROGRAM=openjpeg
 ENV URL=https://github.com/uclouvain/openjpeg/
 ENV GIT_REPO_NAME=openjpeg-2.1.0
-RUN cd $GIT_REPO_NAME; git checkout $VERSION; cd ..
+RUN git clone $URL $GIT_REPO_NAME
+RUN cd $GIT_REPO_NAME; git checkout $VERSION
 RUN mv $GIT_REPO_NAME $PROGRAM
 
 COPY build.sh $SRC

@@ -3,7 +3,7 @@ FROM prosyslab/bug-bench-base
 RUN apt-get -y update
 RUN apt-get -y install wget autoconf texinfo \
     # for libxml
-    unzip python-dev libtool pkg-config
+    unzip python3-capstone libtool pkg-config
 
 ENV PROGRAM=xmllint
 ENV VERSION=2.9.4

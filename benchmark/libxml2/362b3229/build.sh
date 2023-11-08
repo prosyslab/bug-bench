@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+cmake -DCMAKE_BUILD_TYPE=Release
 ./autogen.sh
 
 MAKE_PARAMS="-j"

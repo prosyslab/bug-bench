@@ -1,7 +1,7 @@
 FROM prosyslab/bug-bench-base
 
 RUN apt-get -y update
-RUN apt-get -y install wget automake pkg-config python libtool autogen
+RUN apt-get -y install wget automake pkg-config python-is-python3 libtool autogen
 
 ENV PROGRAM=libsndfile
 ENV VERSION=5206a9b

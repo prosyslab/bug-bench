@@ -1,6 +1,6 @@
 FROM prosyslab/bug-bench-base
-ENV VERSION=6fc2b56
-ENV GIT_REPO_NAME=openjpeg-6fc2b56
+ENV VERSION=version.1.5.1
+ENV GIT_REPO_NAME=openjpeg-1.5.1
 RUN apt-get -y update
 RUN apt-get -y install tzdata wget cmake libtiff-dev libtiff-tools
 COPY build.sh $SRC

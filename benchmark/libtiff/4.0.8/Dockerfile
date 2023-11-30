@@ -1,6 +1,6 @@
 FROM prosyslab/bug-bench-base
-ENV VERSION_NO=991404c
-ENV VERSION=Release-991404c
+ENV VERSION_NO=4.0.8
+ENV VERSION=Release-v4.0.8
 ENV PROGRAM=libtiff
 ENV GIT_REPO_NAME=$PROGRAM-$VERSION_NO
 ENV URL=https://github.com/vadz/libtiff

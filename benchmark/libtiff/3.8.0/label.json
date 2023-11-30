@@ -1,0 +1,21 @@
+[{
+    "project": "libtiff",
+    "version": "v3.8.0",
+    "type": "integer-overflow",
+    "source": {
+      "file": "tools/bmp2tiff.c",
+      "line": 511,
+      "code": "https://github.com/vadz/libtiff/blob/50373d7d2290701732cad0690260c48184f8b8b6/tools/bmp2tiff.c#L312"
+    },
+    "sink": {
+      "file": "tools/bmp2tiff.c",
+      "line": 512,
+      "code": "https://github.com/vadz/libtiff/blob/50373d7d2290701732cad0690260c48184f8b8b6/tools/bmp2tiff.c#L312"
+    },
+    "file": "tools/bmp2tiff.c",
+    "CVE": "CVE-2016-8884",
+    "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8884",
+    "patch": "https://github.com/vadz/libtiff/commit/50373d7d2290701732cad0690260c48184f8b8b6",
+    "code": "https://github.com/vadz/libtiff/blob/50373d7d2290701732cad0690260c48184f8b8b6/tools/bmp2tiff.c#L312"
+  }]
+  

@@ -1,0 +1,23 @@
+[{
+    "project": "openjpeg",
+    "version": "1.5.1",
+    "file": "libopenjpeg/cio.c",
+    "line": 110,
+    "type": "buffer-overflow",
+    "CVE": null,
+    "report": null,
+    "patch": "https://github.com/uclouvain/openjpeg/commit/69cd4f9211a33367e11563240ca1d5e095a804af#diff-05e88b300a6d6155fd0c0479f0bbc05f",
+    "code": "https://github.com/uclouvain/openjpeg/blob/69cd4f9211a33367e11563240ca1d5e095a804af/libopenjpeg/cio.c#L110"
+  },
+  {
+    "project": "openjpeg",
+    "version": "1.5.1",
+    "file": "int.h",
+    "line": 87,
+    "type": "div-by-zero",
+    "CVE": null,
+    "report": null,
+    "patch": "https://github.com/uclouvain/openjpeg/commit/e55d5e29e0017e55a07a6c8d562091e31697341c#diff-34e35bc2aefa4ec848d41eed5cb81160",
+    "code": "https://github.com/uclouvain/openjpeg/blob/e55d5e29e0017e55a07a6c8d562091e31697341c/libopenjpeg/j2k.c#L471"
+  }
+]

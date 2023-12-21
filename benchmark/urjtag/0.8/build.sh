@@ -17,7 +17,11 @@ elif [[ $1 == "haechi" ]]; then
   # avoid multiple definition error
   sed -i '340s/.*/\/\/\0/' /src/urjtag/src/svf/svf_flex.c
   ./configure
-  make $MAKE_PARAMS
+  
+  $SMAKE_BIN --init
+  $SMAKE_BIN $MAKE_PARAMS
+  mv sparrow/src/jtag/*.i $SMAKE_OUT
+  
   EXT_TARGET=src/jtag
   $GET_BC_BIN $EXT_TARGET &&
   llvm-dis -o $EXT_TARGET.ll $EXT_TARGET.bc &&

@@ -16,7 +16,11 @@ elif [[ $1 == "haechi" ]]; then
   export CFLAGS="-fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
   autoreconf -i
   ./configure
-  make -j
+  
+  $SMAKE_BIN --init
+  $SMAKE_BIN -j
+  cp sparrow/schismtracker/*.i $SMAKE_OUT
+
   EXT_TARGET=schismtracker
   $GET_BC_BIN $EXT_TARGET &&
   llvm-dis -o $EXT_TARGET.ll $EXT_TARGET.bc &&

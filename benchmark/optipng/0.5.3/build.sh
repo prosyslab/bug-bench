@@ -15,7 +15,11 @@ elif [[ $1 == "codeql" ]]; then
 elif [[ $1 == "haechi" ]]; then
   export CC=$GCLANG_BIN
   export CFLAGS="-fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
-  make -j -C src/ -f scripts/clang.mak
+
+  $SMAKE_BIN --init
+  $SMAKE_BIN -j -C src/ -f scripts/clang.mak
+  mv sparrow/src/optipng/*.i $SMAKE_OUT
+
   EXT_TARGET=src/optipng
   $GET_BC_BIN $EXT_TARGET &&
   llvm-dis -o $EXT_TARGET.ll $EXT_TARGET.bc &&

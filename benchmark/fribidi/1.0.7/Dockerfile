@@ -7,11 +7,11 @@ ENV PROGRAM=fribidi
 
 RUN mkdir $PROGRAM
 
-ENV URL=https://github.com/fribidi/fribidi/archive/v1.0.7.tar.gz
+ENV URL=https://github.com/fribidi/fribidi.git
 
-RUN wget $URL
-RUN tar -xvzf v1.0.7.tar.gz -C $PROGRAM --strip-components 1
+RUN git clone $URL
 
 COPY build.sh $SRC
 
 WORKDIR $PROGRAM
+RUN git checkout v1.0.7

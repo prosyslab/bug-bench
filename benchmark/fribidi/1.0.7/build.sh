@@ -26,13 +26,11 @@ elif [[ $1 == "haechi" ]]; then
   llvm-dis -o $EXT_TARGET.ll $EXT_TARGET.bc &&
   opt -mem2reg -S -o $EXT_TARGET.ll $EXT_TARGET.ll
 
-  ## link other sources in lib/ to a single file
-  for f in lib/*; do
-    $GET_BC_BIN $f &&
-      llvm-dis -o $f.ll $f.bc &&
-      opt -mem2reg -S -o $f.ll $f.ll
-  done
-  llvm-link-13 -S lib/*.ll $EXT_TARGET.ll -o $HAECHI_OUT/fribidi-1.0.7.ll
+  ## link libfribidi.so.0.4.0 with fribidi-main.o
+  $GET_BC_BIN lib/.libs/libfribidi.so.0.4.0 &&
+  llvm-dis -o libfribidi.so.0.4.0.ll lib/.libs/libfribidi.so.0.4.0.bc &&
+  opt -mem2reg -S -o libfribidi.so.0.4.0.ll libfribidi.so.0.4.0.ll
+  llvm-link-13 -S libfribidi.so.0.4.0.ll $EXT_TARGET.ll -o $HAECHI_OUT/fribidi-1.0.7.ll
 
 else
   echo "Unknown build target"

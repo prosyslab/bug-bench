@@ -20,7 +20,11 @@ elif [[ $1 == "haechi" ]]; then
   export CFLAGS="$CFLAGS -fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
   ./autogen.sh
   ./configure $CONFIG_OPTIONS
-  make -j
+  
+  $SMAKE_BIN --init
+  $SMAKE_BIN
+  cp $SMAKE_I_DIR/*.i $SMAKE_OUT
+  
   $GET_BC_BIN $BIN_PATH &&
   llvm-dis -o $BIN_PATH.ll $BIN_PATH.bc &&
   opt -mem2reg -S -o $HAECHI_OUT/$(basename $BIN_PATH).ll $BIN_PATH.ll

@@ -5,7 +5,7 @@ if [[ $1 == "sparrow" ]]; then
   ./configure
   $SMAKE_BIN --init
   $SMAKE_BIN -j
-  cp sparrow/src/*.i $SMAKE_OUT
+  cp sparrow/src/.libs/libsndfile.so.1.0.28/*.i $SMAKE_OUT
 elif [[ $1 == "infer" ]]; then
   ./autogen.sh
   ./configure
@@ -16,13 +16,15 @@ elif [[ $1 == "haechi" ]]; then
   export CFLAGS="-fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
   ./autogen.sh
   ./configure
-  make -j
-  for f in src/*; do
-    $GET_BC_BIN $f &&
-      llvm-dis -o $f.ll $f.bc &&
-      opt -mem2reg -S -o $f.ll $f.ll
-  done
-  llvm-link-13 -S src/*.ll -o $HAECHI_OUT/libsndfile.ll
+  
+  $SMAKE_BIN --init
+  $SMAKE_BIN -j
+  cp sparrow/src/.libs/libsndfile.so.1.0.28/*.i $SMAKE_OUT
+
+  $GET_BC_BIN src/.libs/libsndfile.so.1.0.28 &&
+    llvm-dis -o libsndfile.so.1.0.28.ll src/.libs/libsndfile.so.1.0.28.bc &&
+    opt -mem2reg -S -o $HAECHI_OUT/libsndfile-1.0.28.ll libsndfile.so.1.0.28.ll
+
 else
   echo "Unknown build target"
   exit 1

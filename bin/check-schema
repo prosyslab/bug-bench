@@ -2,13 +2,14 @@
 
 import json
 import sys
-from utils import check_single_point, check_two_point
+from utils import check_single_point, check_two_point, check_none_alarm
 
 single_point = ['buffer-overflow', 'div-by-zero']
 two_point = [
     'integer-overflow', 'format-string', 'buffer-overflow',
     'integer-underflow', 'command-injection', 'negative-shift'
 ]
+none_alarm = ['stack-overflow', 'out-of-memory', 'use-after-free']
 
 if __name__ == "__main__":
     with open(sys.argv[1]) as f:
@@ -24,6 +25,8 @@ if __name__ == "__main__":
                 assert (check_single_point(item))
             elif item['type'] in two_point:
                 assert (check_two_point(item))
+            elif item['type'] in none_alarm:
+                assert (check_none_alarm(item))
             else:
                 assert False
             assert ('CVE' in item)

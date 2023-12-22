@@ -23,3 +23,6 @@ def check_two_point(item):
     return check_two_point_skip_link(item) \
         and item['source']['code'] \
         and item['sink']['code']
+
+def check_none_alarm(item):
+    return (item['file'] and item['line'] and item['code'])

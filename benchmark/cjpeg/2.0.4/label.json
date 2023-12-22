@@ -7,5 +7,5 @@
   "CVE": "CVE-2020-13790",
   "report": "https://github.com/libjpeg-turbo/libjpeg-turbo/issues/433",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libjpeg-turbo-2.0.4/blob/166e34213e4f4e2363ce058a7bcc69fd03e38b76/rdppm.c#L434"
 }]

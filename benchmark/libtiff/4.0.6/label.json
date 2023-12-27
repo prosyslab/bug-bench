@@ -1,0 +1,21 @@
+[{
+  "project": "libtiff",
+  "version": "4.0.6",
+  "file": "tools/rgb2ycbcr.c",
+  "line": 256,
+  "type": "div-by-zero",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L256"
+}, {
+  "project": "libtiff",
+  "version": "4.0.6",
+  "file": "tools/rgb2ycbcr.c",
+  "line": 257,
+  "type": "div-by-zero",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L257"
+}]

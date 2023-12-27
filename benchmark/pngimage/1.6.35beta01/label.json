@@ -1,0 +1,11 @@
+[{
+  "project": "pngimage",
+  "version": "1.6.35beta01",
+  "file": "pngrutil.c",
+  "line": 3172,
+  "type": "div-by-zero",
+  "CVE": "CVE-2018-13785",
+  "report": "https://sourceforge.net/p/libpng/bugs/278/",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/libpng-v1.6.35beta01/blob/master/pngrutil.c#L3172"
+}]

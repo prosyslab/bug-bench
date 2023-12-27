@@ -7,7 +7,7 @@
   "CVE": "CVE-2018-7868",
   "report": "https://github.com/libming/libming/issues/113",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L398"
 }, {
   "project": "swftophp",
   "version": "0.4.8",
@@ -17,7 +17,7 @@
   "CVE": "CVE-2018-8807",
   "report": "https://github.com/libming/libming/issues/129",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L349"
 }, {
   "project": "swftophp",
   "version": "0.4.8",
@@ -27,7 +27,7 @@
   "CVE": "CVE-2018-8962",
   "report": "https://github.com/libming/libming/issues/130",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L398"
 }, {
   "project": "swftophp",
   "version": "0.4.8",
@@ -37,7 +37,7 @@
   "CVE": "CVE-2018-11095",
   "report": "https://github.com/libming/libming/issues/141",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L1843"
 }, {
   "project": "swftophp",
   "version": "0.4.8",
@@ -47,7 +47,7 @@
   "CVE": "CVE-2018-11225",
   "report": "https://github.com/libming/libming/issues/143",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L2015"
 }, {
   "project": "swftophp",
   "version": "0.4.8",
@@ -57,7 +57,7 @@
   "CVE": "CVE-2018-20427",
   "report": "https://github.com/libming/libming/issues/164",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L425"
 }, {
   "project": "swftophp",
   "version": "0.4.8",
@@ -67,5 +67,5 @@
   "CVE": "CVE-2019-12982",
   "report": "https://github.com/libming/libming/commit/da9d86eab55cbf608d5c916b8b690f5b76bca462",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3120"
 }]

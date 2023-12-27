@@ -7,5 +7,5 @@
   "CVE": "CVE-2017-7578",
   "report": "https://github.com/libming/libming/issues/68",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/parser.c#L68"
 }]

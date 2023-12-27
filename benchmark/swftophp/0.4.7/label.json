@@ -7,7 +7,7 @@
   "CVE": "CVE-2016-9827",
   "report": "https://www.openwall.com/lists/oss-security/2016/12/01/7",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/outputscript.c#L1687"
 }, {
   "project": "swftophp",
   "version": "0.4.7",
@@ -17,7 +17,7 @@
   "CVE": "CVE-2016-9829",
   "report": "https://blogs.gentoo.org/ago/2016/12/01/libming-listswf-heap-based-buffer-overflow-in-parseswf_definefont-parser-c/",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/parser.c#L1656"
 }, {
   "project": "swftophp",
   "version": "0.4.7",
@@ -27,7 +27,7 @@
   "CVE": "CVE-2016-9831",
   "report": "https://www.openwall.com/lists/oss-security/2016/12/01/6",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/parser.c#L746"
 }, {
   "project": "swftophp",
   "version": "0.4.7",
@@ -37,7 +37,7 @@
   "CVE": "CVE-2017-9988",
   "report": "https://github.com/libming/libming/issues/85",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/parser.c#L2992"
 }, {
   "project": "swftophp",
   "version": "0.4.7",
@@ -47,7 +47,7 @@
   "CVE": "CVE-2017-11728",
   "report": "https://github.com/libming/libming/issues/82",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/decompile.c#L868"
 }, {
   "project": "swftophp",
   "version": "0.4.7",
@@ -57,5 +57,5 @@
   "CVE": "CVE-2017-11729",
   "report": "https://github.com/libming/libming/issues/79",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/decompile.c#L868"
 }]

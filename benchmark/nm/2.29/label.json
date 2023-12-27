@@ -7,5 +7,5 @@
   "CVE": "CVE-2017-14940",
   "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=22166",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/elf.c#L8205"
 }]

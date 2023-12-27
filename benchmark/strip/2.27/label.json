@@ -7,5 +7,5 @@
   "CVE": "CVE-2017-7303",
   "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=20922",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L1252"
 }]

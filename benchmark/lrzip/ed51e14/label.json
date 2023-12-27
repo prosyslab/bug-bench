@@ -7,5 +7,5 @@
   "CVE": "CVE-2018-11496",
   "report": "https://github.com/ckolivas/lrzip/issues/96",
   "patch": null,
-  "code": "dummy"
+  "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L1756"
 }]

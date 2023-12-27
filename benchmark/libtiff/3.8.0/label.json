@@ -4,17 +4,17 @@
   "type": "integer-overflow",
   "source": {
     "file": "tools/bmp2tiff.c",
-    "line": 511,
+    "line": 312,
     "code": "https://github.com/vadz/libtiff/blob/50373d7d2290701732cad0690260c48184f8b8b6/tools/bmp2tiff.c#L312"
   },
   "sink": {
     "file": "tools/bmp2tiff.c",
-    "line": 512,
-    "code": "https://github.com/vadz/libtiff/blob/50373d7d2290701732cad0690260c48184f8b8b6/tools/bmp2tiff.c#L312"
+    "line": 511,
+    "code": "https://github.com/vadz/libtiff/blob/991404c37c716d7267955e72fa217a0179df1cc1/tools/bmp2tiff.c#L511"
   },
   "file": "tools/bmp2tiff.c",
-  "CVE": "CVE-2016-8884",
-  "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8884",
+  "CVE": "None",
+  "report": "None",
   "patch": "https://github.com/vadz/libtiff/commit/50373d7d2290701732cad0690260c48184f8b8b6",
   "code": "https://github.com/vadz/libtiff/blob/50373d7d2290701732cad0690260c48184f8b8b6/tools/bmp2tiff.c#L312"
 }]

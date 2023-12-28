@@ -7,7 +7,108 @@
   "CVE": "CVE-2018-7868",
   "report": "https://github.com/libming/libming/issues/113",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L398"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L398",
+  "bug-trace": [{
+    "file": "util/read.c",
+    "line": 129,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/read.c#L114",
+    "cmd": "fgetc"
+  }, {
+    "file": "util/read.c",
+    "line": 155,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/read.c#L155",
+    "cmd": "return"
+  }, {
+    "file": "util/parser.c",
+    "line": 1118,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L1118",
+    "cmd": "return"
+  }, {
+    "file": "util/parser.c",
+    "line": 1124,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L1124",
+    "cmd": "malloc"
+  }, {
+    "file": "util/blocktypes.c",
+    "line": 145,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/blocktypes.c#L145",
+    "cmd": "return"
+  }, {
+    "file": "util/main.c",
+    "line": 265,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/main.c#L265",
+    "cmd": "return"
+  }, {
+    "file": "util/main.c",
+    "line": 277,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/main.c#L277",
+    "cmd": "call"
+  }, {
+    "file": "util/outputscript.c",
+    "line": 2079,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/outputscript.c#L2079",
+    "cmd": "call"
+  }, {
+    "file": "util/outputscript.c",
+    "line": 1548,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/outputscript.c#L1543",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3423,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3423",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3126,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3126",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 730,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L730",
+    "cmd": "assign buffer to golbal variable"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3126,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3126",
+    "cmd": "return"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "return"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3202,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3202",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 1690,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L1690",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 781,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L781",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 398,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L398",
+    "cmd": "buffer read"
+  }]
 }, {
   "project": "swftophp",
   "version": "0.4.8",
@@ -17,7 +118,103 @@
   "CVE": "CVE-2018-8807",
   "report": "https://github.com/libming/libming/issues/129",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L349"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L349",
+  "bug-trace": [{
+    "file": "util/read.c",
+    "line": 129,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/read.c#L114",
+    "cmd": "fgetc"
+  }, {
+    "file": "util/read.c",
+    "line": 155,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/read.c#L155",
+    "cmd": "return"
+  }, {
+    "file": "util/parser.c",
+    "line": 1118,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L1118",
+    "cmd": "return"
+  }, {
+    "file": "util/parser.c",
+    "line": 1124,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L1124",
+    "cmd": "malloc"
+  }, {
+    "file": "util/blocktypes.c",
+    "line": 145,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/blocktypes.c#L145",
+    "cmd": "return"
+  }, {
+    "file": "util/main.c",
+    "line": 265,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/main.c#L265",
+    "cmd": "return"
+  }, {
+    "file": "util/main.c",
+    "line": 277,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/main.c#L277",
+    "cmd": "call"
+  }, {
+    "file": "util/outputscript.c",
+    "line": 2079,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/outputscript.c#L2079",
+    "cmd": "call"
+  }, {
+    "file": "util/outputscript.c",
+    "line": 1548,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/outputscript.c#L1543",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3423,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3423",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3126,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3126",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 730,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L730",
+    "cmd": "assign buffer to golbal variable"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3126,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3126",
+    "cmd": "return"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "return"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 2877,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L2877",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 653,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L653",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 349,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L349",
+    "cmd": "buffer read"
+  }]
 }, {
   "project": "swftophp",
   "version": "0.4.8",
@@ -27,7 +224,103 @@
   "CVE": "CVE-2018-8962",
   "report": "https://github.com/libming/libming/issues/130",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L398"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L398",
+  "bug-trace": [{
+    "file": "util/read.c",
+    "line": 129,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/read.c#L114",
+    "cmd": "fgetc"
+  }, {
+    "file": "util/read.c",
+    "line": 155,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/read.c#L155",
+    "cmd": "return"
+  }, {
+    "file": "util/parser.c",
+    "line": 1118,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L1118",
+    "cmd": "return"
+  }, {
+    "file": "util/parser.c",
+    "line": 1124,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L1124",
+    "cmd": "malloc"
+  }, {
+    "file": "util/blocktypes.c",
+    "line": 145,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/blocktypes.c#L145",
+    "cmd": "return"
+  }, {
+    "file": "util/main.c",
+    "line": 265,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/main.c#L265",
+    "cmd": "return"
+  }, {
+    "file": "util/main.c",
+    "line": 277,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/main.c#L277",
+    "cmd": "call"
+  }, {
+    "file": "util/outputscript.c",
+    "line": 2079,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/outputscript.c#L2079",
+    "cmd": "call"
+  }, {
+    "file": "util/outputscript.c",
+    "line": 1548,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/outputscript.c#L1543",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3423,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3423",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3126,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3126",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 730,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L730",
+    "cmd": "assign buffer to golbal variable"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3126,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3126",
+    "cmd": "return"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "return"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3302,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3302",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3039,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3039",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 398,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L398",
+    "cmd": "buffer read"
+  }]
 }, {
   "project": "swftophp",
   "version": "0.4.8",
@@ -37,7 +330,83 @@
   "CVE": "CVE-2018-11095",
   "report": "https://github.com/libming/libming/issues/141",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L1843"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L1843",
+  "bug-trace": [{
+    "file": "util/parser.c",
+    "line": 1073,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L1073",
+    "cmd": "assign"
+  }, {
+    "file": "util/parser.c",
+    "line": 1075,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L1075",
+    "cmd": "call"
+  }, {
+    "file": "util/parser.c",
+    "line": 1061,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L1061",
+    "cmd": "assign"
+  }, {
+    "file": "util/parser.c",
+    "line": 1075,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L1075",
+    "cmd": "return"
+  }, {
+    "file": "util/parser.c",
+    "line": 2434,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L2434",
+    "cmd": "return"
+  }, {
+    "file": "util/parser.c",
+    "line": 2432,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L2432",
+    "cmd": "assign"
+  }, {
+    "file": "util/blocktypes.c",
+    "line": 145,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/blocktypes.c#L145",
+    "cmd": "return"
+  }, {
+    "file": "util/main.c",
+    "line": 265,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/main.c#L265",
+    "cmd": "return"
+  }, {
+    "file": "util/main.c",
+    "line": 277,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/main.c#L277",
+    "cmd": "call"
+  }, {
+    "file": "util/outputscript.c",
+    "line": 2079,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/outputscript.c#L2079",
+    "cmd": "call"
+  }, {
+    "file": "util/outputscript.c",
+    "line": 1548,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/outputscript.c#L1543",
+    "cmd": "return"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3423,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3423",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3232,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3232",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 1843,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L1843",
+    "cmd": "buffer read"
+  }]
 }, {
   "project": "swftophp",
   "version": "0.4.8",
@@ -47,7 +416,33 @@
   "CVE": "CVE-2018-11225",
   "report": "https://github.com/libming/libming/issues/143",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L2015"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L2015",
+  "bug-trace": [{
+    "file": "util/decompile.c",
+    "line": 1950,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L1950",
+    "cmd": "assign"
+  }, {
+    "file": "util/decompile.c",
+    "line": 2491,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L2491",
+    "cmd": "return"
+  }, {
+    "file": "util/decompile.c",
+    "line": 2493,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L2493",
+    "cmd": "calloc"
+  }, {
+    "file": "util/decompile.c",
+    "line": 2500,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L2500",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 2015,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L2015",
+    "cmd": "buffer read"
+  }]
 }, {
   "project": "swftophp",
   "version": "0.4.8",
@@ -57,7 +452,103 @@
   "CVE": "CVE-2018-20427",
   "report": "https://github.com/libming/libming/issues/164",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L425"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L425",
+  "bug-trace": [{
+    "file": "util/read.c",
+    "line": 129,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/read.c#L114",
+    "cmd": "fgetc"
+  }, {
+    "file": "util/parser.c",
+    "line": 987,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L987",
+    "cmd": "return"
+  }, {
+    "file": "util/blocktypes.c",
+    "line": 145,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/blocktypes.c#L145",
+    "cmd": "return"
+  }, {
+    "file": "util/main.c",
+    "line": 265,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/main.c#L265",
+    "cmd": "return"
+  }, {
+    "file": "util/main.c",
+    "line": 277,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/main.c#L277",
+    "cmd": "call"
+  }, {
+    "file": "util/outputscript.c",
+    "line": 2079,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/outputscript.c#L2079",
+    "cmd": "call"
+  }, {
+    "file": "util/outputscript.c",
+    "line": 1548,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/outputscript.c#L1543",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3423,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3423",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3151,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3151",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 1326,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L1326",
+    "cmd": "define global variable"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3151,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3151",
+    "cmd": "return"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "return"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3167,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3167",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 1381,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L1381",
+    "cmd": "use global variable"
+  }, {
+    "file": "util/decompile.c",
+    "line": 1388,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L1388",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 432,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L432",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 425,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L425",
+    "cmd": "buffer read"
+  }]
 }, {
   "project": "swftophp",
   "version": "0.4.8",
@@ -67,5 +558,26 @@
   "CVE": "CVE-2019-12982",
   "report": "https://github.com/libming/libming/commit/da9d86eab55cbf608d5c916b8b690f5b76bca462",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3120"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3120",
+  "bug-trace": [{
+    "file": "util/decompile.c",
+    "line": 3074,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3074",
+    "cmd": "assign"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3076,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3076",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3401,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3401",
+    "cmd": "call"
+  }, {
+    "file": "util/decompile.c",
+    "line": 3120,
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3120",
+    "cmd": "buffer read"
+  }]
 }]

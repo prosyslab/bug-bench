@@ -2,10 +2,51 @@
   "project": "swftophp",
   "version": "6dff24b",
   "file": "util/parser.c",
-  "line": 68,
+  "line": 771,
   "type": "buffer-overflow",
   "CVE": "CVE-2017-7578",
   "report": "https://github.com/libming/libming/issues/68",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/parser.c#L68"
+  "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/parser.c#L771",
+  "bug-trace": [{
+    "file": "util/read.c",
+    "line": 129,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/read.c#L129",
+    "cmd": "fgetc"
+  }, {
+    "file": "util/parser.c",
+    "line": 818,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/parser.c#L818",
+    "cmd": "return"
+  }, {
+    "file": "util/parser.c",
+    "line": 826,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/parser.c#L826",
+    "cmd": "calloc"
+  }, {
+    "file": "util/parser.c",
+    "line": 802,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/parser.c#L802",
+    "cmd": "call"
+  }, {
+    "file": "util/parser.c",
+    "line": 829,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/parser.c#L829",
+    "cmd": "call"
+  }, {
+    "file": "util/parser.c",
+    "line": 786,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/parser.c#L786",
+    "cmd": "call"
+  }, {
+    "file": "util/parser.c",
+    "line": 771,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/parser.c#L771",
+    "cmd": "call"
+  }, {
+    "file": "util/parser.c",
+    "line": 66,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/parser.c#L66",
+    "cmd": "buffer write"
+  }]
 }]

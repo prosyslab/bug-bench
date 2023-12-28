@@ -17,7 +17,38 @@
   "CVE": "CVE-2016-9829",
   "report": "https://blogs.gentoo.org/ago/2016/12/01/libming-listswf-heap-based-buffer-overflow-in-parseswf_definefont-parser-c/",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/parser.c#L1656"
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/parser.c#L1656",
+  "bug-trace": [{
+      "file": "util/read.c",
+      "line": 114,
+      "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/read.c#L114",
+      "cmd": "fgetc"
+    },
+    {
+      "file": "util/read.c",
+      "line": 129,
+      "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/read.c#L129",
+      "cmd": "return"
+    },
+    {
+      "file": "util/parser.c",
+      "line": 1652,
+      "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/parser.c#L1652",
+      "cmd": "return"
+    },
+    {
+      "file": "util/parser.c",
+      "line": 1655,
+      "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/parser.c#L1655",
+      "cmd": "malloc"
+    },
+    {
+      "file": "util/parser.c",
+      "line": 1656,
+      "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/parser.c#L1656",
+      "cmd": "buffer write"
+    }
+  ]
 }, {
   "project": "swftophp",
   "version": "0.4.7",

@@ -14,5 +14,54 @@
   "type": "integer-overflow",
   "CVE": "CVE-2016-9387",
   "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9387",
-  "patch": "https://github.com/jasper-software/jasper/commit/d91198abd00fc435a397fe6bad906a4c1748e9cf"
+  "patch": "https://github.com/jasper-software/jasper/commit/d91198abd00fc435a397fe6bad906a4c1748e9cf",
+  "bug-trace": [{
+      "file": "src/libjasper/base/jas_stream.c",
+      "line": 1102,
+      "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/base/jas_stream.c#L1102",
+      "cmd": "read"
+    },
+    {
+      "file": "src/libjasper/base/jas_stream.c",
+      "line": 781,
+      "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/base/jas_stream.c#L781",
+      "cmd": "return"
+    },
+    {
+      "file": "src/libjasper/jpc/jpc_cs.c",
+      "line": 1615,
+      "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/jpc/jpc_cs.c#L1615",
+      "cmd": "return"
+    },
+    {
+      "file": "src/libjasper/jpc/jpc_cs.c",
+      "line": 496,
+      "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/jpc/jpc_cs.c#L496",
+      "cmd": "return"
+    },
+    {
+      "file": "src/libjasper/jpc/jpc_cs.c",
+      "line": 281,
+      "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/jpc/jpc_cs.c#L281",
+      "cmd": "return"
+    },
+    {
+      "file": "src/libjasper/jpc/jpc_dec.c",
+      "line": 373,
+      "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/jpc/jpc_dec.c#L373",
+      "cmd": "return"
+    },
+    {
+      "file": "src/libjasper/jpc/jpc_dec.c",
+      "line": 391,
+      "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/jpc/jpc_dec.c#L391",
+      "cmd": "call"
+    },
+    {
+      "file": "src/libjasper/jpc/jpc_dec.c",
+      "line": 1234,
+      "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/jpc/jpc_dec.c#L1234",
+      "cmd": "multiply"
+    }
+  ]
 }]

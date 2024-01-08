@@ -1,0 +1,11 @@
+[{
+  "project": "libtiff",
+  "version": "v4.0.7",
+  "file": "tools/tiff2ps.c",
+  "line": 2475,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "http://bugzilla.maptools.org/show_bug.cgi?id=2633",
+  "patch": "https://github.com/vadz/libtiff/commit/5ed9fea523316c2f5cec4d393e4d5d671c2dbc33",
+  "code": "https://github.com/vadz/libtiff/blob/Release-v4-0-7/tools/tiff2ps.c#L2470"
+}]

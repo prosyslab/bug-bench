@@ -46,6 +46,24 @@
       "cmd": "assign"
     },
     {
+      "file": "libtiff/tif_dir.c",
+      "line": 1144,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L1144",
+      "cmd": "return"
+    },
+    {
+      "file": "libtiff/tif_dir.c",
+      "line": 1173,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L1173",
+      "cmd": "return"
+    },
+    {
+      "file": "libtiff/tif_dir.c",
+      "line": 1160,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L1173",
+      "cmd": "return"
+    },
+    {
       "file": "tools/rgb2ycbcr.c",
       "line": 352,
       "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L352",
@@ -115,6 +133,24 @@
       "line": 851,
       "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L848",
       "cmd": "assign"
+    },
+    {
+      "file": "libtiff/tif_dir.c",
+      "line": 1144,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L1144",
+      "cmd": "return"
+    },
+    {
+      "file": "libtiff/tif_dir.c",
+      "line": 1173,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L1173",
+      "cmd": "return"
+    },
+    {
+      "file": "libtiff/tif_dir.c",
+      "line": 1160,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L1173",
+      "cmd": "return"
     },
     {
       "file": "tools/rgb2ycbcr.c",

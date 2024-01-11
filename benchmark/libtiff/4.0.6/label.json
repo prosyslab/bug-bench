@@ -7,7 +7,68 @@
   "CVE": null,
   "report": null,
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L256"
+  "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L256",
+  "bug-trace": [
+    {
+      "file": "tools/rgb2ycbcr.c",
+      "line": 124,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L124",
+      "cmd": "open"
+    },
+    {
+      "file": "tools/rgb2ycbcr.c",
+      "line": 127,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L127",
+      "cmd": "call"
+    },
+    {
+      "file": "tools/rgb2ycbcr.c",
+      "line": 292,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L292",
+      "cmd": "call"
+    },
+    {
+      "file": "libtiff/tif_dir.c",
+      "line": 1158,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L1158",
+      "cmd": "call"
+    },
+    {
+      "file": "libtiff/tif_dir.c",
+      "line": 1174,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L1174",
+      "cmd": "call"
+    },
+    {
+      "file": "libtiff/tif_dir.c",
+      "line": 848,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L848",
+      "cmd": "assign"
+    },
+    {
+      "file": "tools/rgb2ycbcr.c",
+      "line": 352,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L352",
+      "cmd": "call"
+    },
+    {
+      "file": "tools/rgb2ycbcr.c",
+      "line": 256,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L256",
+      "cmd": "call"
+    },
+    {
+      "file": "tools/rgb2ycbcr.c",
+      "line": 51,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L51",
+      "cmd": "call"
+    },
+    {
+    "file": "tools/rgb2ycbcr.c",
+    "line": 49,
+    "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L49",
+    "cmd": "divide"
+    }]
 }, {
   "project": "libtiff",
   "version": "4.0.6",
@@ -17,5 +78,66 @@
   "CVE": null,
   "report": null,
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L257"
+  "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L257",
+  "bug-trace": [
+    {
+      "file": "tools/rgb2ycbcr.c",
+      "line": 124,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L124",
+      "cmd": "open"
+    },
+    {
+      "file": "tools/rgb2ycbcr.c",
+      "line": 127,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L127",
+      "cmd": "call"
+    },
+    {
+      "file": "tools/rgb2ycbcr.c",
+      "line": 292,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L292",
+      "cmd": "call"
+    },
+    {
+      "file": "libtiff/tif_dir.c",
+      "line": 1158,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L1158",
+      "cmd": "call"
+    },
+    {
+      "file": "libtiff/tif_dir.c",
+      "line": 1174,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L1174",
+      "cmd": "call"
+    },
+    {
+      "file": "libtiff/tif_dir.c",
+      "line": 851,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/libtiff/tif_dir.c#L848",
+      "cmd": "assign"
+    },
+    {
+      "file": "tools/rgb2ycbcr.c",
+      "line": 352,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L352",
+      "cmd": "call"
+    },
+    {
+      "file": "tools/rgb2ycbcr.c",
+      "line": 257,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L257",
+      "cmd": "call"
+    },
+    {
+      "file": "tools/rgb2ycbcr.c",
+      "line": 51,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L51",
+      "cmd": "call"
+    },
+    {
+    "file": "tools/rgb2ycbcr.c",
+    "line": 49,
+    "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L49",
+    "cmd": "divide"
+    }]
 }]

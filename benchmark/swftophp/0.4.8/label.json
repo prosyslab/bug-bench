@@ -11,7 +11,7 @@
   "bug-trace": [{
     "file": "util/read.c",
     "line": 129,
-    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/read.c#L114",
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/read.c#L129",
     "cmd": "fgetc"
   }, {
     "file": "util/read.c",

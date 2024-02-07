@@ -1,13 +1,49 @@
 [{
   "project": "cxxfilt",
-  "version": "2.6",
+  "version": "2.26",
   "file": "libiberty/cplus-dem.c",
   "line": 4319,
   "type": "buffer-overflow",
   "CVE": "CVE-2016-4487",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70481",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L4319"
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L4319",
+  "bug-trace": [{
+    "file": "libiberty/cplus-dem.c",
+    "line": 1239,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L1239",
+    "cmd": "assign"
+  }, {
+    "file": "libiberty/cplus-dem.c",
+    "line": 1353,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L1353",
+    "cmd": "return"
+  }, {
+    "file": "libiberty/cplus-dem.c",
+    "line": 1193,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L1193",
+    "cmd": "return"
+  }, {
+    "file": "libiberty/cplus-dem.c",
+    "line": 1203,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L1203",
+    "cmd": "call"
+  }, {
+    "file": "libiberty/cplus-dem.c",
+    "line": 1490,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L1490",
+    "cmd": "call"
+  }, {
+    "file": "libiberty/cplus-dem.c",
+    "line": 2594,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L2594",
+    "cmd": "call"
+  }, {
+    "file": "libiberty/cplus-dem.c",
+    "line": 4319,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L4319",
+    "cmd": "buffer write"
+  }]
 }, {
   "project": "cxxfilt",
   "version": "2.6",
@@ -17,7 +53,63 @@
   "CVE": "CVE-2016-4489",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70492",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L4839"
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L4839",
+  "bug-trace": [{
+    "file": "binutils/cxxfilt.c",
+    "line": 262,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L262",
+    "cmd": "getchar"
+  },{
+    "file": "binutils/cxxfilt.c",
+    "line": 268,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L268",
+    "cmd": "assign"
+  },{
+    "file": "binutils/cxxfilt.c",
+    "line": 275,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L275",
+    "cmd": "call"
+  },{
+    "file": "binutils/cxxfilt.c",
+    "line": 62,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L62",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 886,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L886",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 1190,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L1190",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 2992,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L2992",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 522,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L522",
+    "cmd": "assign"
+  }, {
+    "file": "libiberty/cplus-dem.c",
+    "line": 2992,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L2992",
+    "cmd": "return"
+  }, {
+    "file": "libiberty/cplus-dem.c",
+    "line": 3007,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L3007",
+    "cmd": "call"
+  }, {
+    "file": "libiberty/cplus-dem.c",
+    "line": 4839,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L4839",
+    "cmd": "buffer read"
+  }]
 }, {
   "project": "cxxfilt",
   "version": "2.6",
@@ -27,7 +119,129 @@
   "CVE": "CVE-2016-4490",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70498",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1596"
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1596",
+  "bug-trace": [{
+    "file": "binutils/cxxfilt.c",
+    "line": 262,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L262",
+    "cmd": "getchar"
+  },{
+    "file": "binutils/cxxfilt.c",
+    "line": 268,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L268",
+    "cmd": "assign"
+  },{
+    "file": "binutils/cxxfilt.c",
+    "line": 275,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L275",
+    "cmd": "call"
+  },{
+    "file": "binutils/cxxfilt.c",
+    "line": 62,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L62",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 864,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L864",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 6102,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L6102",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 5945,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L5945",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 5874,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L5874",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 5818,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L5818",
+    "cmd": "assign"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 5874,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L5874",
+    "cmd": "return"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 5894,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L5894",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1172,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1172",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1257,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1257",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1399,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1399",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1555,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1555",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1609,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1609",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1627,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1627",
+    "cmd": "assign"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1644,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1644",
+    "cmd": "assign"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1609,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1609",
+    "cmd": "return"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1612,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1612",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1676,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1609",
+    "cmd": "assign"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1612,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1612",
+    "cmd": "return"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1555,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1555",
+    "cmd": "return"
+  },{
+    "file": "libiberty/cp-demangle.c",
+    "line": 1596,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1596",
+    "cmd": "buffer read"
+  }
+]
 }, {
   "project": "cxxfilt",
   "version": "2.6",
@@ -47,7 +261,73 @@
   "CVE": "CVE-2016-4492",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70926",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L3606"
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L3606",
+  "bug-trace": [{
+    "file": "binutils/cxxfilt.c",
+    "line": 262,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L262",
+    "cmd": "getchar"
+  },{
+    "file": "binutils/cxxfilt.c",
+    "line": 268,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L268",
+    "cmd": "assign"
+  },{
+    "file": "binutils/cxxfilt.c",
+    "line": 275,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L275",
+    "cmd": "call"
+  },{
+    "file": "binutils/cxxfilt.c",
+    "line": 62,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L62",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 886,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L886",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 1203,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#1203",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 1642,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L1642",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 4514,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L4514",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 4231,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L4231",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 3600,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L3600",
+    "cmd": "call"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 3527,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L3527",
+    "cmd": "assign"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 3600,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L3600",
+    "cmd": "return"
+  },{
+    "file": "libiberty/cplus-dem.c",
+    "line": 3606,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L3600",
+    "cmd": "buffer read"
+  }]
 }, {
   "project": "cxxfilt",
   "version": "2.6",

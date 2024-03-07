@@ -3,7 +3,7 @@
   "version": "0.4.7",
   "file": "util/outputscript.c",
   "line": 1687,
-  "type": "buffer-overflow",
+  "type": "no-null-term-string",
   "CVE": "CVE-2016-9827",
   "report": "https://www.openwall.com/lists/oss-security/2016/12/01/7",
   "patch": null,

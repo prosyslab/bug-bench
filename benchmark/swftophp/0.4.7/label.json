@@ -21,7 +21,7 @@
   }, {
     "file": "util/parser.c",
     "line": 2668,
-    "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/read.c#L2668",
+    "code": "https://github.com/prosyslab-warehouse/libming-0.4.7/blob/master/util/parser.c#L2668",
     "cmd": "return"
   }, {
     "file": "util/blocktypes.c",

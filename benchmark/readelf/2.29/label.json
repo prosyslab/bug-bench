@@ -1,11 +1,82 @@
 [{
   "project": "readelf",
-  "version": "2.9",
+  "version": "2.29",
   "file": "binutils/dwarf.c",
   "line": 7019,
   "type": "buffer-overflow",
   "CVE": "CVE-2017-16828",
   "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=22386",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/dwarf.c#L7019"
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/dwarf.c#L7019",
+  "bug-trace": [{
+    "file": "binutils/readelf.c",
+    "line": 406,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/readelf.c#L406",
+    "cmd": "read"
+  }, {
+    "file": "binutils/readelf.c",
+    "line": 13144,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/readelf.c#L13144",
+    "cmd": "return"
+  }, {
+    "file": "binutils/readelf.c",
+    "line": 13336,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/readelf.c#L13336",
+    "cmd": "return"
+  }, {
+    "file": "binutils/readelf.c",
+    "line": 13343,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/readelf.c#L13343",
+    "cmd": "call"
+  }, {
+    "file": "binutils/dwarf.c",
+    "line": 6706,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/dwarf.c#L6706",
+    "cmd": "assign"
+  }, {
+    "file": "binutils/dwarf.c",
+    "line": 6986,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/dwarf.c#L6986",
+    "cmd": "call"
+  }, {
+    "file": "binutils/dwarf.c",
+    "line": 333,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/dwarf.c#L333",
+    "cmd": "call"
+  }, {
+    "file": "binutils/dwarf.c",
+    "line": 322,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/dwarf.c#L322",
+    "cmd": "call"
+  }, {
+    "file": "binutils/dwarf.c",
+    "line": 287,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/dwarf.c#L287",
+    "cmd": "assign"
+  }, {
+    "file": "binutils/dwarf.c",
+    "line": 322,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/dwarf.c#L322",
+    "cmd": "return"
+  }, {
+    "file": "binutils/dwarf.c",
+    "line": 333,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/dwarf.c#L333",
+    "cmd": "assign"
+  }, {
+    "file": "binutils/dwarf.c",
+    "line": 6986,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/dwarf.c#L6986",
+    "cmd": "return"
+  }, {
+    "file": "binutils/dwarf.c",
+    "line": 6987,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/dwarf.c#L6987",
+    "cmd": "assign"
+  }, {
+    "file": "binutils/dwarf.c",
+    "line": 7019,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/dwarf.c#L7019",
+    "cmd": "buffer read"
+  }]
 }]

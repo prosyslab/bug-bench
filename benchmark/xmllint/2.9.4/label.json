@@ -17,7 +17,28 @@
   "CVE": "CVE-2017-9047",
   "report": "https://www.openwall.com/lists/oss-security/2017/05/15/1",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/bdec2183f34b37ee89ae1d330c6ad2bb4d76605f/valid.c#L1279"
+  "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/bdec2183f34b37ee89ae1d330c6ad2bb4d76605f/valid.c#L1279",
+  "bug-trace": [{
+    "file": "binutils/valid.c",
+    "line": 5441,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L5441",
+    "cmd": "alloc"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 5445,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L5445",
+    "cmd": "call"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 1271,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L1271",
+    "cmd": "buffer write"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 1279,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L1279",
+    "cmd": "buffer write"
+  }]
 }, {
   "project": "xmllint",
   "version": "2.9.4",
@@ -27,7 +48,68 @@
   "CVE": "CVE-2017-9048",
   "report": "https://www.openwall.com/lists/oss-security/2017/05/15/1",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/bdec2183f34b37ee89ae1d330c6ad2bb4d76605f/valid.c#L1323"
+  "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/bdec2183f34b37ee89ae1d330c6ad2bb4d76605f/valid.c#L1323",
+  "bug-trace": [{
+    "file": "binutils/valid.c",
+    "line": 5441,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L5441",
+    "cmd": "alloc"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 5445,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L5445",
+    "cmd": "call"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 1306,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L1306",
+    "cmd": "call"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 1271,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L1271",
+    "cmd": "buffer write"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 1279,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L1279",
+    "cmd": "buffer write"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 1306,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L1306",
+    "cmd": "return"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 1319,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L1319",
+    "cmd": "call"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 1306,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L1306",
+    "cmd": "call"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 1271,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L1271",
+    "cmd": "buffer write"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 1279,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L1279",
+    "cmd": "buffer write"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 1319,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L1319",
+    "cmd": "return"
+  }, {
+    "file": "binutils/valid.c",
+    "line": 1323,
+    "code": "https://github.com/prosyslab-warehouse/libxml2-2.9.4/blob/master/valid.c#L1323",
+    "cmd": "buffer write"
+  }]
 }, {
   "project": "xmllint",
   "version": "2.9.4",

@@ -17,7 +17,98 @@
   "CVE": "CVE-2017-8396",
   "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=21432",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/libbfd.c#L615"
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/libbfd.c#L615",
+  "bug-trace": [{
+    "file": "bfd/cache.c",
+    "line": 326,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/cache.c#L326",
+    "cmd": "read"
+  }, {
+    "file": "bfd/cache.c",
+    "line": 370,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/cache.c#L370",
+    "cmd": "return"
+  }, {
+    "file": "bfd/bfdio.c",
+    "line": 196,
+    "code": "https://github.com/prosyslab-warehouse/libming-5009802/blob/master/bfd/bfdio.c#L196",
+    "cmd": "return"
+  }, {
+    "file": "bfd/elfcode.h",
+    "line": 1406,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L1406",
+    "cmd": "return"
+  }, {
+    "file": "bfd/elfcode.h",
+    "line": 1428,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L1428",
+    "cmd": "call"
+  }, {
+    "file": "bfd/elfcode.h",
+    "line": 414,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L414",
+    "cmd": "assign"
+  }, {
+    "file": "bfd/elfcode.h",
+    "line": 1428,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L1428",
+    "cmd": "return"
+  }, {
+    "file": "bfd/elfcode.h",
+    "line": 1437,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L1437",
+    "cmd": "assign"
+  }, {
+    "file": "bfd/elfcode.h",
+    "line": 1546,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L1546",
+    "cmd": "return"
+  }, {
+    "file": "bfd/elfcode.h",
+    "line": 1552,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L1552",
+    "cmd": "assign"
+  }, {
+    "file": "bfd/elf.c",
+    "line": 7983,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L7983",
+    "cmd": "return"
+  }, {
+    "file": "bfd/elf.c",
+    "line": 7988,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L7988",
+    "cmd": "assign"
+  }, {
+    "file": "bfd/bfd.c",
+    "line": 985,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/bfd.c#L985",
+    "cmd": "return"
+  }, {
+    "file": "bfd/reloc.c",
+    "line":8054,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/reloc.c#L8054",
+    "cmd": "return"
+  }, {
+    "file": "bfd/reloc.c",
+    "line":8099,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/reloc.c#L8099",
+    "cmd": "call"
+  }, {
+    "file": "bfd/reloc.c",
+    "line":625,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/reloc.c#L625",
+    "cmd": "assign"
+  }, {
+    "file": "bfd/reloc.c",
+    "line":930,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/reloc.c#L930",
+    "cmd": "call"
+  }, {
+    "file": "bfd/libbfd.c",
+    "line":615,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/libbfd.c#L615",
+    "cmd": "pointer dereference"
+  }]
 }, {
   "project": "objdump",
   "version": "2.8",
@@ -112,7 +203,7 @@
     "file": "bfd/reloc.c",
     "line":885,
     "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/reloc.c#L885",
-    "cmd": "call"
+    "cmd": "macro"
   }, {
     "file": "bfd/bfd.h",
     "line":1134,

@@ -7,7 +7,128 @@
   "CVE": "CVE-2017-8393",
   "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=21412",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L3562"
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L3562",
+  "bug-trace": [
+    {
+      "file": "bfd/elf.c",
+      "line": 1986,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L1986",
+      "cmd": "assign",
+      "comment": "hdr = (((abfd) -> tdata.elf_obj_data) -> elf_sect_ptr)[2]"
+    }, {
+      "file": "bfd/elf.c",
+      "line": 1988,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L1988",
+      "cmd": "assign",
+      "comment": "since hdr->sh_name is 0, bfd_elf_string_from_elf_section returns \"\""
+    }, {
+      "file": "bfd/section.c",
+      "line": 1193,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/section.c#L1193",
+      "cmd": "assign"
+    }, {
+      "file": "bfd/section.c",
+      "line": 1217,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/section.c#L1217",
+      "cmd": "assign"
+    }, {
+      "file": "bfd/elf.c",
+      "line": 958,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L958",
+      "cmd": "assign",
+      "comment": "assign name (emtpy string) to abfd->sections->next->name"
+    }, {
+      "file": "bfd/elf.c",
+      "line": 2344,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L2344",
+      "cmd": "assign"
+    }, {
+      "file": "bfd/elfcode.h",
+      "line": 804,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L804",
+      "cmd": "assign"
+    }, {
+      "file": "bfd/format.c",
+      "line": 311,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/format.c#L311",
+      "cmd": "assign",
+      "comment": "abfd gets abfd->sections->next->name, = \"\""
+    }, {
+      "file": "bfd/format.c",
+      "line": 364,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/format.c#L364",
+      "cmd": "copy",
+      "comment": "*abfd to preserve"
+    }, {
+      "file": "bfd/format.c",
+      "line": 439,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/format.c#L439",
+      "cmd": "copy",
+      "comment": "preserve to *abfd"
+    }, {
+      "file": "bfd/objcopy.c",
+      "line": 2859,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/binutils/objcopy.c#L2859",
+      "cmd": "assign",
+      "comment": "ibfd gets ibfd->sections->next->name, = \"\""
+    }, {
+      "file": "bfd/objcopy.c",
+      "line": 2877,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/binutils/objcopy.c#L2877",
+      "cmd": "call"
+    }, {
+      "file": "bfd/objcopy.c",
+      "line": 2879,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/binutils/objcopy.c#L2879",
+      "cmd": "call"
+    }, {
+      "file": "bfd/objcopy.c",
+      "line": 2044,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/binutils/objcopy.c#L2044",
+      "cmd": "copy",
+      "comment": "bfd_map_over_sections copies each section of ibfd to obfd"
+    }, {
+      "file": "bfd/objcopy.c",
+      "line": 2886,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/binutils/objcopy.c#L2886",
+      "cmd": "call"
+    }, {
+      "file": "bfd/opncls.c",
+      "line": 734,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/opncls.c#L734",
+      "cmd": "call"
+    }, {
+      "file": "bfd/elf.c",
+      "line": 6222,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L6222",
+      "cmd": "call"
+    }, {
+      "file": "bfd/elf.c",
+      "line": 4176,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L4176",
+      "cmd": "call"
+    }, {
+      "file": "bfd/elf.c",
+      "line": 3727,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L3727",
+      "cmd": "assign"
+    }, {
+      "file": "bfd/elf.c",
+      "line": 3836,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L3836",
+      "cmd": "call"
+    }, {
+      "file": "bfd/elf.c",
+      "line": 3552,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L3552",
+      "cmd": "assign"
+    }, {
+      "file": "bfd/elf.c",
+      "line": 3562,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L3562",
+      "cmd": "strcmp"
+    }
+  ]
 }, {
   "project": "objcopy",
   "version": "2.8",

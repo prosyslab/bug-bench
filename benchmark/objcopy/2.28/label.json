@@ -10,49 +10,92 @@
   "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L3562",
   "bug-trace": [
     {
+      "file": "bfd/cache.c",
+      "line": 336,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/cache.c#L336",
+      "cmd": "fread"
+    }, {
+      "file": "bfd/cache.c",
+      "line": 370,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/cache.c#L370",
+      "cmd": "return"
+    }, {
+      "file": "bfd/bfdio.c",
+      "line": 196,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/bfdio.c#L196",
+      "cmd": "return"
+    }, {
+      "file": "bfd/elfcode.h",
+      "line": 702,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L702",
+      "cmd": "return",
+      "comment": "when shindex ==2, *(x_shdr.sh_name) = 0, which causes problem."
+    }, {
+      "file": "bfd/elfcode.h",
+      "line": 704,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L704",
+      "cmd": "call"
+    }, {
+      "file": "bfd/elfcode.h",
+      "line": 308,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L308",
+      "cmd": "call",
+      "comment": "Macro expands to dst->sh_name = ((*((abfd)->xvec->bfd_h_getx32)) (src->sh_name)). And dst, where now i_shdrp + shindex, is same pointer to (((abfd) -> tdata.elf_obj_data) -> elf_sect_ptr)[shindex]."
+    }, {
+      "file": "bfd/libbfd.c",
+      "line": 548,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/libbfd.c#L548",
+      "cmd": "assign",
+      "comment": "line 548-551 assigns 32-bit address"
+    }, {
+      "file": "bfd/libbfd.c",
+      "line": 552,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/libbfd.c#L552",
+      "cmd": "return"
+    }, {
+      "file": "bfd/elfcode.h",
+      "line": 804,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L804",
+      "cmd": "call"
+    }, {
       "file": "bfd/elf.c",
       "line": 1986,
       "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L1986",
       "cmd": "assign",
-      "comment": "hdr = (((abfd) -> tdata.elf_obj_data) -> elf_sect_ptr)[2]"
+      "comment": "Macro expands to hdr = (((abfd) -> tdata.elf_obj_data) -> elf_sect_ptr)[shindex]. Data of abfd goes to hdr."
     }, {
       "file": "bfd/elf.c",
       "line": 1988,
       "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L1988",
       "cmd": "assign",
-      "comment": "since hdr->sh_name is 0, bfd_elf_string_from_elf_section returns \"\""
+      "comment": "since hdr->sh_name is 0, bfd_elf_string_from_elf_section returns \"\", which causes problem."
+    }, {
+      "file": "bfd/elf.c",
+      "line": 2344,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L2344",
+      "cmd": "call"
+    }, {
+      "file": "bfd/elf.c",
+      "line": 958,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L958",
+      "cmd": "call",
+      "comment": "This function assign name (emtpy string) to abfd->sections->next->name"
+    }, {
+      "file": "bfd/section.c",
+      "line": 1217,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/section.c#L1217",
+      "cmd": "call"
     }, {
       "file": "bfd/section.c",
       "line": 1193,
       "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/section.c#L1193",
       "cmd": "assign"
     }, {
-      "file": "bfd/section.c",
-      "line": 1217,
-      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/section.c#L1217",
-      "cmd": "assign"
-    }, {
-      "file": "bfd/elf.c",
-      "line": 958,
-      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L958",
-      "cmd": "assign",
-      "comment": "assign name (emtpy string) to abfd->sections->next->name"
-    }, {
-      "file": "bfd/elf.c",
-      "line": 2344,
-      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L2344",
-      "cmd": "assign"
-    }, {
-      "file": "bfd/elfcode.h",
-      "line": 804,
-      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elfcode.h#L804",
-      "cmd": "assign"
-    }, {
       "file": "bfd/format.c",
       "line": 311,
       "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/format.c#L311",
-      "cmd": "assign",
-      "comment": "abfd gets abfd->sections->next->name, = \"\""
+      "cmd": "return",
+      "comment": "Macro expands to temp = bfd_elf32_object_p(abfd). This is elf_object_p, in elfcode.h#L489 (The one on we discussed so far). abfd gets abfd->sections->next->name, = \"\""
     }, {
       "file": "bfd/format.c",
       "line": 364,
@@ -66,29 +109,46 @@
       "cmd": "copy",
       "comment": "preserve to *abfd"
     }, {
-      "file": "bfd/objcopy.c",
+      "file": "binutils/objcopy.c",
       "line": 2859,
       "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/binutils/objcopy.c#L2859",
-      "cmd": "assign",
-      "comment": "ibfd gets ibfd->sections->next->name, = \"\""
+      "cmd": "return",
+      "comment": "This function, copy_file, calls bfd_check_format_matches, the one we discussed so far. ibfd gets ibfd->sections->next->name, = \"\""
     }, {
-      "file": "bfd/objcopy.c",
-      "line": 2877,
-      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/binutils/objcopy.c#L2877",
-      "cmd": "call"
-    }, {
-      "file": "bfd/objcopy.c",
+      "file": "binutils/objcopy.c",
       "line": 2879,
       "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/binutils/objcopy.c#L2879",
       "cmd": "call"
     }, {
-      "file": "bfd/objcopy.c",
+      "file": "binutils/objcopy.c",
       "line": 2044,
       "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/binutils/objcopy.c#L2044",
-      "cmd": "copy",
+      "cmd": "call",
       "comment": "bfd_map_over_sections copies each section of ibfd to obfd"
     }, {
-      "file": "bfd/objcopy.c",
+      "file": "bfd/section.c",
+      "line": 1395,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/section.c#L1395",
+      "cmd": "call",
+      "comment": "calls setup_section"
+    }, {
+      "file": "binutils/objcopy.c",
+      "line": 3165,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/binutils/objcopy.c#L3165",
+      "cmd": "call",
+      "comment": "Macro expands to _bfd_elf_copy_private_section_data"
+    }, {
+      "file": "bfd/elf.c",
+      "line": 7421,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L7421",
+      "cmd": "call"
+    }, {
+      "file": "bfd/elf.c",
+      "line": 7351,
+      "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/elf.c#L7351",
+      "cmd": "assign"
+    }, {
+      "file": "binutils/objcopy.c",
       "line": 2886,
       "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/binutils/objcopy.c#L2886",
       "cmd": "call"
@@ -129,6 +189,7 @@
       "cmd": "strcmp"
     }
   ]
+
 }, {
   "project": "objcopy",
   "version": "2.8",

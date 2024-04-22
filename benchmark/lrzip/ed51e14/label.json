@@ -8,6 +8,16 @@
   "report": "https://github.com/ckolivas/lrzip/issues/96",
   "patch": null,
   "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L1756",
+  "source": {
+    "file": "main.c",
+    "line": 675,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/main.c#L675"
+  },
+  "sink": {
+    "file": "stream.c",
+    "line": 1756,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L1756"
+  },
   "bug-trace": [{
     "file": "main.c",
     "line": 675,
@@ -55,6 +65,51 @@
     "cmd": "call"
   }, {
     "file": "stream.c",
+    "line": 1617,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L1617",
+    "cmd": "call"
+  }, {
+    "file": "stream.c",
+    "line": 802,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L802",
+    "cmd": "call"
+  }, {
+    "file": "stream.c",
+    "line": 771,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L771",
+    "cmd": "call"
+  }, {
+    "file": "stream.c",
+    "line": 728,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L728",
+    "cmd": "read"
+  }, {
+    "file": "stream.c",
+    "line": 735,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L735",
+    "cmd": "return"
+  }, {
+    "file": "stream.c",
+    "line": 780,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L780",
+    "cmd": "return"
+  }, {
+    "file": "stream.c",
+    "line": 803,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L803",
+    "cmd": "return"
+  }, {
+    "file": "stream.c",
+    "line": 1633,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L1633",
+    "cmd": "assign"
+  }, {
+    "file": "stream.c",
+    "line": 1666,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L1666",
+    "cmd": "assign"
+  }, {
+    "file": "stream.c",
     "line": 1651,
     "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L1651",
     "cmd": "malloc"
@@ -62,6 +117,11 @@
     "file": "stream.c",
     "line": 1710,
     "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L1710",
+    "cmd": "assign"
+  }, {
+    "file": "stream.c",
+    "line": 1711,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-ed51e14/blob/master/stream.c#L1711",
     "cmd": "assign"
   }, {
     "file": "stream.c",

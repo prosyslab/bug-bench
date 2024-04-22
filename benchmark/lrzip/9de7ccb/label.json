@@ -8,6 +8,16 @@
   "report": "https://github.com/ckolivas/lrzip/issues/71",
   "patch": null,
   "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L1747",
+  "source": {
+    "file": "main.c",
+    "line": 669,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/main.c#L669"
+  },
+  "sink": {
+    "file": "stream.c",
+    "line": 1747,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L1747"
+  },
   "bug-trace": [{
     "file": "main.c",
     "line": 669,
@@ -50,14 +60,64 @@
     "cmd": "call"
   }, {
     "file": "stream.c",
-    "line": 1643,
-    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L1643",
+    "line": 1617,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L1617",
+    "cmd": "call"
+  }, {
+    "file": "stream.c",
+    "line": 805,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L805",
+    "cmd": "call"
+  }, {
+    "file": "stream.c",
+    "line": 774,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L774",
+    "cmd": "call"
+  }, {
+    "file": "stream.c",
+    "line": 731,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L731",
+    "cmd": "read"
+  }, {
+    "file": "stream.c",
+    "line": 738,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L738",
+    "cmd": "return"
+  }, {
+    "file": "stream.c",
+    "line": 783,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L783",
+    "cmd": "return"
+  }, {
+    "file": "stream.c",
+    "line": 806,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L806",
+    "cmd": "return"
+  }, {
+    "file": "stream.c",
+    "line": 1673,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L1673",
+    "cmd": "call"
+  }, {
+    "file": "stream.c",
+    "line": 1522,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L1522",
+    "cmd": "call"
+  }, {
+    "file": "stream.c",
+    "line": 546,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L546",
     "cmd": "malloc"
   }, {
     "file": "stream.c",
-    "line": 1702,
-    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L1702",
-    "cmd": "assign"
+    "line": 573,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L573",
+    "cmd": "return"
+  }, {
+    "file": "stream.c",
+    "line": 1561,
+    "code": "https://github.com/prosyslab-warehouse/lrzip-9de7ccb/blob/master/stream.c#L1561",
+    "cmd": "return"
   }, {
     "file": "stream.c",
     "line": 1710,

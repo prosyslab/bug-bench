@@ -8,16 +8,76 @@
   "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=22166",
   "patch": null,
   "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/elf.c#L8205",
+  "source": {
+    "file": "bfd/cache.c",
+    "line": 337,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/cache.c#L337"
+  },
+  "sink": {
+    "file": "bfd/opncls.c",
+    "line": 1040,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/opncls.c#L1040"
+  },
   "bug-trace": [{
-    "file": "binutils/nm.c",
-    "line": 1794,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/nm.c#L1794",
+    "file": "bfd/cache.c",
+    "line": 337,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/cache.c#L337",
+    "cmd": "fread"
+  }, {
+    "file": "bfd/cache.c",
+    "line": 344,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/cache.c#L344",
+    "cmd": "return"
+  }, {
+    "file": "bfd/cache.c",
+    "line": 388,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/cache.c#L388",
+    "cmd": "return"
+  }, {
+    "file": "bfd/bfdio.c",
+    "line": 202,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/bfdio.c#L202",
+    "cmd": "return"
+  }, {
+    "file": "bfd/elfcode.h",
+    "line": 704,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/elfcode.h#L704",
     "cmd": "call"
   }, {
-    "file": "binutils/nm.c",
-    "line": 1301,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/binutils/nm.c#L1301",
-    "cmd": "open"
+    "file": "bfd/elfcode.h",
+    "line": 318,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/elfcode.h#L318",
+    "cmd": "call"
+  }, {
+    "file": "bfd/libbfd.c",
+    "line": 554,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/libbfd.c#L554",
+    "cmd": "assign"
+  }, {
+    "file": "bfd/libbfd.c",
+    "line": 557,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/libbfd.c#L557",
+    "cmd": "assign"
+  }, {
+    "file": "bfd/libbfd.c",
+    "line": 561,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/libbfd.c#L561",
+    "cmd": "return"
+  }, {
+    "file": "bfd/elfcode.h",
+    "line": 323,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/elfcode.h#L323",
+    "cmd": "return"
+  }, {
+    "file": "bfd/elfcode.h",
+    "line": 842,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/elfcode.h#L842",
+    "cmd": "return"
+  }, {
+    "file": "bfd/format.c",
+    "line": 503,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.29/blob/master/bfd/format.c#L503",
+    "cmd": "return"
   }, {
     "file": "binutils/nm.c",
     "line": 1320,

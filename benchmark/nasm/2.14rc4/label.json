@@ -1,0 +1,45 @@
+[{
+  "project": "nasm",
+  "version": "2.14rc4",
+  "file": "float.c",
+  "line": 612,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2018-8882",
+  "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392513",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/float.c#L612"
+}, {
+  "project": "nasm",
+  "version": "2.14rc4",
+  "file": "parser.c",
+  "line": 891,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2018-8883",
+  "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392445",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/parser.c#L891"
+}, {
+  "project": "nasm",
+  "version": "2.14rc4",
+  "file": "labels.c",
+  "line": 64,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2018-16517",
+  "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392447",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/labels.c#L64"
+}, {
+  "project": "nasm",
+  "version": "2.14rc4",
+  "file": "eval.c",
+  "line": 805,
+  "type": "stack-overflow",
+  "CVE": "CVE-2019-6291",
+  "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392549",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/eval.c#L805"
+}]

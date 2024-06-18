@@ -1,0 +1,89 @@
+[{
+  "project": "nm",
+  "version": "2.30",
+  "file": "xmalloc.c",
+  "line": 147,
+  "type": "stack-overflow",
+  "CVE": "CVE-2018-9138",
+  "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=23008",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cplus-dem.c#L4578"
+}, {
+  "project": "nm",
+  "version": "2.30",
+  "file": "cplus-dem.c",
+  "line": 1916,
+  "type": "stack-overflow",
+  "CVE": "CVE-2018-9996",
+  "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=85304",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cplus-dem.c#L1916"
+}, {
+  "project": "nm",
+  "version": "2.30",
+  "file": "cp-demangle.c",
+  "line": 2367,
+  "type": "stack-overflow",
+  "CVE": "CVE-2018-17985",
+  "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=87335",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L2367"
+}, {
+  "project": "nm",
+  "version": "2.30",
+  "file": "cp-demangle.c",
+  "line": 2367,
+  "type": "stack-overflow",
+  "CVE": "CVE-2018-18484",
+  "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=87636",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L2367"
+}, {
+  "project": "nm",
+  "version": "2.30",
+  "file": "cp-demangle.c",
+  "line": 1401,
+  "type": "stack-overflow",
+  "CVE": "CVE-2018-18700",
+  "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=87681",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L1401"
+}, {
+  "project": "nm",
+  "version": "2.30",
+  "file": "cp-demangle.c",
+  "line": 4125,
+  "type": "stack-overflow",
+  "CVE": "CVE-2019-9071",
+  "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=89394",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L4125"
+}, {
+  "project": "nm",
+  "version": "2.30",
+  "file": "cp-demangle.c",
+  "line": 2387,
+  "type": "stack-overflow",
+  "CVE": "issue-unknow-1",
+  "report": "https://unknown",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L2387"
+}, {
+  "project": "nm",
+  "version": "2.30",
+  "file": "cp-demangle.c",
+  "line": 3119,
+  "type": "stack-overflow",
+  "CVE": "issue-unknow-2",
+  "report": "https://unknown",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L3119"
+}]

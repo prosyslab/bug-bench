@@ -1,0 +1,23 @@
+[{
+  "project": "tcpdump",
+  "version": "4.9.2",
+  "file": "addrtoname.c",
+  "line": 345,
+  "type": "bufer-overflow",
+  "CVE": "CVE-2017-16808",
+  "report": "https://github.com/the-tcpdump-group/tcpdump/issues/645",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/tcpdump-4.9.2/blob/master/addrtoname.c#L500"
+}, {
+  "project": "tcpdump",
+  "version": "4.9.2",
+  "file": "extract.h",
+  "line": 190,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2018-19325",
+  "report": "https://unknown",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/tcpdump-4.9.2/blob/master/extract.h#L190"
+}]

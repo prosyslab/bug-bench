@@ -1,0 +1,45 @@
+[{
+  "project": "gif2tga",
+  "version": "0.4",
+  "file": "ngiflib.c",
+  "line": 757,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2019-20219",
+  "report": "https://github.com/miniupnp/ngiflib/issues/15",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/ngiflib-0.4/blob/master/ngiflib.c#L757"
+}, {
+  "project": "gif2tga",
+  "version": "0.4",
+  "file": "ngiflib.c",
+  "line": 213,
+  "type": "buffer-overflow",
+  "CVE": "issue-1",
+  "report": "https://github.com/miniupnp/ngiflib/issues/1",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/ngiflib-0.4/blob/master/ngiflib.c#L213"
+}, {
+  "project": "gif2tga",
+  "version": "0.4",
+  "file": "ngiflib.c",
+  "line": 524,
+  "type": "buffer-overflow",
+  "CVE": "issue-4",
+  "report": "https://github.com/miniupnp/ngiflib/issues/4",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/ngiflib-0.4/blob/master/ngiflib.c#L524"
+}, {
+  "project": "gif2tga",
+  "version": "0.4",
+  "file": "ngiflib.c",
+  "line": 123,
+  "type": "buffer-overflow",
+  "CVE": "issue-11",
+  "report": "https://github.com/miniupnp/ngiflib/issues/11",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/ngiflib-0.4/blob/master/ngiflib.c#L123"
+}]

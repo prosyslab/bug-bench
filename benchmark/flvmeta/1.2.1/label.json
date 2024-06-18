@@ -1,0 +1,23 @@
+[{
+  "project": "flvmeta",
+  "version": "1.2.1",
+  "file": "dump_xml.c",
+  "line": 271,
+  "type": "buffer-overflow",
+  "CVE": "issue-13",
+  "report": "https://github.com/noirotm/flvmeta/issues/13",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/dump_xml.c#L271"
+}, {
+  "project": "flvmeta",
+  "version": "1.2.1",
+  "file": "dump_xml.c",
+  "line": 151,
+  "type": "buffer-overflow",
+  "CVE": "issue-14",
+  "report": "https://github.com/noirotm/flvmeta/issues/14",
+  "patch": null,
+  "bug-trace": [],
+  "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/dump_xml.c#L151"
+}]

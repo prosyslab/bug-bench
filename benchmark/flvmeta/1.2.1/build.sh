@@ -3,29 +3,28 @@ CONFIG_OPTIONS=""
 export CFLAGS="-Wno-error"
 
 MAKE_PARAMS="-j"
-SMAKE_I_DIR="sparrow"
+SMAKE_I_DIR="sparrow/flvmeta/"
 BIN_PATH="src/flvmeta"
 
 if [[ $1 == "sparrow" ]]; then
+  export CC=$GCLANG_BIN
   cmake .
-  /smake/scmake --cmake-out temp
-  for f in $(find $SMAKE_I_DIR -name "*.i" -not -path '*/\.*'); do
-    mv $f $SMAKE_OUT/$(basename $f)
-  done
+  cd src
+  $SMAKE_BIN --init
+  $SMAKE_BIN $MAKE_PARAMS
+  cp $SMAKE_I_DIR/*.i $SMAKE_OUT
 elif [[ $1 == "haechi" ]]; then
   export CC=$GCLANG_BIN
   export CFLAGS="$CFLAGS -fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
-
   cmake .
-  /smake/scmake --cmake-out temp
-  for f in $(find $SMAKE_I_DIR -name "*.i" -not -path '*/\.*'); do
-    mv $f $SMAKE_OUT/$(basename $f)
-  done
-  echo "Not finished - can't find flvmeta binary"
-  exit 1
-  # $GET_BC_BIN $BIN_PATH &&
-  #   llvm-dis -o $BIN_PATH.ll $BIN_PATH.bc &&
-  #   opt -mem2reg -S -o $HAECHI_OUT/$(basename $BIN_PATH).ll $BIN_PATH.ll
+  cd src
+  $SMAKE_BIN --init
+  $SMAKE_BIN $MAKE_PARAMS
+  cp $SMAKE_I_DIR/*.i $SMAKE_OUT
+  cd ..
+  $GET_BC_BIN $BIN_PATH &&
+    llvm-dis -o $BIN_PATH.ll $BIN_PATH.bc &&
+    opt -mem2reg -S -o $HAECHI_OUT/$(basename $BIN_PATH).ll $BIN_PATH.ll
 else
   echo "Unknown build target"
   exit 1

@@ -1,8 +1,7 @@
 FROM prosyslab/bug-bench-base
 
 RUN apt-get -y update
-RUN apt-get -y install wget autoconf texinfo
-RUN apt-get install libboost-all-dev libjsoncpp-dev libgraphviz-dev pkg-config libglib2.0-dev binutils-dev -y
+RUN apt-get -y install wget autoconf texinfo zlib1g-dev
 
 ENV PROGRAM=MP4Box
 ENV VERSION=0.7.1

@@ -18,8 +18,10 @@ elif [[ $1 == "infer" ]]; then
 elif [[ $1 == "haechi" ]]; then
   export CC=$GCLANG_BIN
   export CFLAGS="$CFLAGS -fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
+  NEW_CFLAGS="-fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
+  sed -i.bak -e "s/^CFLAGS=\"\"/CFLAGS=\"$NEW_CFLAGS\"/" "configure"
   ./configure $CONFIG_OPTIONS
-  
+
   $SMAKE_BIN --init
   $SMAKE_BIN $MAKE_PARAMS
   cp -r sparrow/bin/gcc/MP4Box/*.i $SMAKE_OUT

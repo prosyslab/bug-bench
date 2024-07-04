@@ -3,7 +3,7 @@
   "version": "4.9.2",
   "file": "addrtoname.c",
   "line": 345,
-  "type": "bufer-overflow",
+  "type": "buffer-overflow",
   "CVE": "CVE-2017-16808",
   "report": "https://github.com/the-tcpdump-group/tcpdump/issues/645",
   "patch": null,

@@ -8,8 +8,7 @@
   "report": null,
   "patch": null,
   "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L256",
-  "bug-trace": [
-    {
+  "bug-trace": [{
       "file": "tools/rgb2ycbcr.c",
       "line": 124,
       "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L124",
@@ -82,11 +81,12 @@
       "cmd": "call"
     },
     {
-    "file": "tools/rgb2ycbcr.c",
-    "line": 49,
-    "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L49",
-    "cmd": "divide"
-    }]
+      "file": "tools/rgb2ycbcr.c",
+      "line": 49,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L49",
+      "cmd": "divide"
+    }
+  ]
 }, {
   "project": "libtiff",
   "version": "4.0.6",
@@ -97,8 +97,7 @@
   "report": null,
   "patch": null,
   "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L257",
-  "bug-trace": [
-    {
+  "bug-trace": [{
       "file": "tools/rgb2ycbcr.c",
       "line": 124,
       "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L124",
@@ -171,9 +170,10 @@
       "cmd": "call"
     },
     {
-    "file": "tools/rgb2ycbcr.c",
-    "line": 49,
-    "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L49",
-    "cmd": "divide"
-    }]
+      "file": "tools/rgb2ycbcr.c",
+      "line": 49,
+      "code": "https://github.com/prosyslab-warehouse/libtiff-4.0.6/blob/master/tools/rgb2ycbcr.c#L49",
+      "cmd": "divide"
+    }
+  ]
 }]

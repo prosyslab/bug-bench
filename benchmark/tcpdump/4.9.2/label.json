@@ -8,7 +8,7 @@
   "report": "https://github.com/the-tcpdump-group/tcpdump/issues/645",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/tcpdump-4.9.2/blob/master/addrtoname.c#L500"
+  "code": "https://github.com/prosyslab-warehouse/tcpdump-4.9.2/blob/master/addrtoname.c#L345"
 }, {
   "project": "tcpdump",
   "version": "4.9.2",
@@ -16,8 +16,9 @@
   "line": 190,
   "type": "buffer-overflow",
   "CVE": "CVE-2018-19325",
-  "report": "https://unknown",
+  "report": "https://www.cve.org/CVERecord?id=CVE-2018-14466",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/tcpdump-4.9.2/blob/master/extract.h#L190"
+  "code": "https://github.com/prosyslab-warehouse/tcpdump-4.9.2/blob/master/extract.h#L190",
+  "comment": "Duplicate of CVE-2018-14466"
 }]

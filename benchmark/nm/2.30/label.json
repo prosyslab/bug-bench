@@ -8,7 +8,7 @@
   "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=23008",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cplus-dem.c#L4578"
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/xmalloc.c#L147"
 }, {
   "project": "nm",
   "version": "2.30",

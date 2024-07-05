@@ -1,23 +1,42 @@
 [{
   "project": "strip",
   "version": "2.7",
-  "file": "bfd/elf.c",
-  "line": 1252,
-  "type": "buffer-overflow",
+  "source": {
+    "file": "bfd/bfdio.c",
+    "line": 120,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/bfdio.c#L120"
+  },
+  "sink": {
+    "file": "bfd/elf.c",
+    "line": 1231,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L1231"
+  },
+  "type": "null-deref",
   "CVE": "CVE-2017-7303",
   "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=20922",
+  "comment": "find_link doesn't check null headers",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L1252",
   "bug-trace": [{
+    "file": "bfd/bfdio.c",
+    "line": 120,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/bfdio.c#L120",
+    "cmd": "fopen64"
+  }, {
+    "file": "bfd/opncls.c",
+    "line": 260,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/opncls.c#L260",
+    "cmd": "return"
+  }, {
+    "file": "bfd/opncls.c",
+    "line": 288,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.28/blob/master/bfd/opncls.c#L288",
+    "cmd": "return"
+  }, {
     "file": "binutils/objcopy.c",
     "line": 2770,
     "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/binutils/objcopy.c#L2770",
-    "cmd": "open"
-  }, {
-    "file": "binutils/objcopy.c",
-    "line": 2847,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/binutils/objcopy.c#L2847",
-    "cmd": "open"
+    "cmd": "assign",
+    "comment": "opens the PoC"
   }, {
     "file": "binutils/objcopy.c",
     "line": 2857,
@@ -25,29 +44,121 @@
     "cmd": "call"
   }, {
     "file": "binutils/objcopy.c",
-    "line": 2398,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/binutils/objcopy.c#L2398",
+    "line": 2022,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/binutils/objcopy.c#L2022",
     "cmd": "call"
   }, {
     "file": "bfd/section.c",
     "line": 1395,
     "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/section.c#L1395",
-    "cmd": "call"
+    "cmd": "call",
+    "comment": "calls copy_section"
   }, {
     "file": "binutils/objcopy.c",
-    "line": 3296,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/binutils/objcopy.c#L3296",
+    "line": 3288,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/binutils/objcopy.c#L3288",
     "cmd": "assign"
   }, {
     "file": "binutils/objcopy.c",
-    "line": 3384,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/binutils/objcopy.c#L3384",
+    "line": 3363,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/binutils/objcopy.c#L3363",
     "cmd": "call"
   }, {
+    "file": "bfd/section.c",
+    "line": 1533,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/section.c#L1533",
+    "cmd": "call"
+  }, {
+    "file": "bfd/elf.c",
+    "line": 8498,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L8498",
+    "cmd": "call"
+  }, {
+    "file": "bfd/elf.c",
+    "line": 4079,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L4079",
+    "cmd": "call"
+  }, {
+    "file": "bfd/elf.c",
+    "line": 3646,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L3646",
+    "cmd": "call"
+  }, {
+    "file": "bfd/opncls.c",
+    "line": 1006,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/opncls.c#L1006",
+    "cmd": "call"
+  }, {
+    "file": "bfd/opncls.c",
+    "line": 957,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/opncls.c#L957",
+    "cmd": "assign",
+    "comment": "based on abfd->memory, ret is assigned i_shdrp (in elf.c:L3641) + 0x28"
+  }, {
+    "file": "bfd/opncls.c",
+    "line": 960,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/opncls.c#L960",
+    "cmd": "return",
+    "comment": "to opncls.c:1006"
+  }, {
+    "file": "bfd/opncls.c",
+    "line": 1006,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/opncls.c#L1006",
+    "cmd": "assign"
+  }, {
+    "file": "bfd/opncls.c",
+    "line": 1008,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/opncls.c#L1008",
+    "cmd": "memset",
+    "comment": "size = 80, which is sizeof (Elf_Internal_Shdr). Since res = i_shdrp + 0x28 (= 5byte), res[5] becomes 0"
+  }, {
+    "file": "bfd/opncls.c",
+    "line": 1009,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/opncls.c#L1009",
+    "cmd": "return",
+    "comment": "to elf.c:3646"
+  }, {
+    "file": "bfd/elf.c",
+    "line": 3646,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L3646",
+    "cmd": "assign",
+    "comment": "i_shdrp is pointer array. i_shdrp[5] becomes, from 0xbebe.., to (nil)"
+  }, {
+    "file": "bfd/elf.c",
+    "line": 3654,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L3654",
+    "cmd": "assign",
+    "comment": "Note that i_shdrp[5] = (nil). i_shdrp's 0-4'th elements are assigned non-zero at various locations like L3656, and L3677, but 5th and beyond are zero"
+  }, {
+    "file": "bfd/elf.c",
+    "line": 3857,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L4151",
+    "cmd": "return",
+    "comment": "to elf.c:4079"
+  }, {
+    "file": "bfd/elf.c",
+    "line": 4151,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L4151",
+    "cmd": "return",
+    "comment": "to elf.c:8498"
+  }, {
+    "file": "bfd/elf.c",
+    "line": 8521,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L8521",
+    "cmd": "return",
+    "comment": "to section.c:1533. In there, BFD_SEND expands to *(abfd->xvec->_bfd_set_section_contents) (abfd, section, location, offset, count)."
+  }, {
+    "file": "bfd/section.c",
+    "line": 1537,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/section.c#L1537",
+    "cmd": "return",
+    "comment": "to objcopy.c:3363"
+  }, {
     "file": "binutils/objcopy.c",
-    "line": 3388,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/binutils/objcopy.c#L3388",
-    "cmd": "return"
+    "line": 3391,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/binutils/objcopy.c#L3391",
+    "cmd": "return",
+    "comment": "to objcopy.c:2398. In there, obfd->tdata.elf_obj_data->elf_sect_ptr[5] becomes (nil)"
   }, {
     "file": "binutils/objcopy.c",
     "line": 2495,
@@ -55,34 +166,10 @@
     "cmd": "call"
   }, {
     "file": "bfd/elf.c",
-    "line": 1369,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L1369",
-    "cmd": "assign"
-  }, {
-    "file": "bfd/elf.c",
-    "line": 1370,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L1370",
-    "cmd": "assign"
-  }, {
-    "file": "bfd/elf.c",
-    "line": 1407,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L1407",
-    "cmd": "assign"
-  }, {
-    "file": "bfd/elf.c",
-    "line": 1427,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L1427",
-    "cmd": "assign"
-  }, {
-    "file": "bfd/elf.c",
     "line": 1441,
     "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L1441",
-    "cmd": "call"
-  }, {
-    "file": "bfd/elf.c",
-    "line": 1280,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L1280",
-    "cmd": "assign"
+    "cmd": "call",
+    "comment": "In the 10th loop (j = 10), code reaches L1441. iheader->sh_info = 5. However, elf_elfsections(obfd)[5] = (nil)."
   }, {
     "file": "bfd/elf.c",
     "line": 1341,
@@ -92,7 +179,8 @@
     "file": "bfd/elf.c",
     "line": 1249,
     "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L1249",
-    "cmd": "assign"
+    "cmd": "assign",
+    "comment": "hint = 5. Because of obfd, oheaders[hint] is assigned 0. elf_elfsections(obfd) is defined to be obfd->tdata.elf_obj_data->elf_sect_ptr"
   }, {
     "file": "bfd/elf.c",
     "line": 1252,
@@ -102,6 +190,7 @@
     "file": "bfd/elf.c",
     "line": 1231,
     "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L1231",
-    "cmd": "pointer dereference"
+    "cmd": "pointer dereference",
+    "comment": "`a` points to the zero page. (b->sh_type has no problem)"
   }]
 }]

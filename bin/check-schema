@@ -4,10 +4,10 @@ import json
 import sys
 from utils import check_single_point, check_two_point, check_none_alarm
 
-single_point = ['buffer-overflow', 'div-by-zero', 'null-deref']
+single_point = ['buffer-overflow', 'div-by-zero', 'null-dereference']
 two_point = [
     'integer-overflow', 'format-string', 'buffer-overflow',
-    'integer-underflow', 'command-injection', 'negative-shift'
+    'integer-underflow', 'command-injection', 'negative-shift', 'null-dereference'
 ]
 none_alarm = ['stack-overflow', 'out-of-memory', 'use-after-free', 'no-null-term-string']
 

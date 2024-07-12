@@ -11,7 +11,7 @@
     "line": 1231,
     "code": "https://github.com/prosyslab-warehouse/binutils-2.27/blob/master/bfd/elf.c#L1231"
   },
-  "type": "null-deref",
+  "type": "null-dereference",
   "CVE": "CVE-2017-7303",
   "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=20922",
   "comment": "find_link doesn't check null headers",

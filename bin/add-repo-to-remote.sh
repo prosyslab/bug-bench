@@ -17,12 +17,14 @@ else
   exit 0
 fi
 
-mkdir -p /tmp/$REPO_PATH
-pushd /tmp/$REPO_PATH
+mkdir -p /tmp/$REPO_PATH/..
+pushd /tmp/$REPO_PATH/..
 
+# gh is a command line tool for GitHub
 gh repo create $1 --public -c
 wget $2
 tar $TAR_OPTION $FILE_NAME -C $REPO_NAME --strip-components=1
+rm $FILE_NAME
 
 pushd $REPO_NAME
 git add --all

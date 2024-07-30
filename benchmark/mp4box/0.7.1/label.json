@@ -31,90 +31,90 @@
   "patch": null,
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L804",
   "bug-trace": [{
-    "file": "src/isomedia/avc_ext.c",
+    "file": "avc_ext.c",
     "line": 2120,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L2120",
     "cmd": "malloc",
     "comment": "initialized to zero"
   }, {
-    "file": "src/isomedia/avc_ext.c",
+    "file": "avc_ext.c",
     "line": 2124,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L2124",
     "cmd": "return",
     "comment": "to box_funcs.c:1188"
   }, {
-    "file": "src/isomedia/box_funcs.c",
+    "file": "box_funcs.c",
     "line": 1188,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1188",
     "cmd": "assign",
     "comment": "box_registry[idx].new_fn is avcc_New."
   }, {
-    "file": "src/isomedia/box_funcs.c",
+    "file": "box_funcs.c",
     "line": 1196,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1196",
     "cmd": "return",
     "comment": "to box_funcs.c:173"
   }, {
-    "file": "src/isomedia/box_funcs.c",
+    "file": "box_funcs.c",
     "line": 173,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L173",
     "cmd": "assign",
     "comment": "Note ((GF_AVCConfigurationBox *)newBox)->config = NULL. newBox should be going through gf_isom_full_box_read in L195, but now it wouldn't. It's because newBox->size == size - hdr_size == 8 - 8 == 0. size and hdr_size are decided from GF_BitStream *bs. bs comes from mov->movieFileMap->bs in isom_intern.c:204"
   }, {
-    "file": "src/isomedia/box_funcs.c",
+    "file": "box_funcs.c",
     "line": 224,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L224",
     "cmd": "assign"
   }, {
-    "file": "src/isomedia/box_funcs.c",
+    "file": "box_funcs.c",
     "line": 226,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L226",
     "cmd": "return",
     "comment": "to box_code_base:1217. Note parameter *outBox is assigned struct pointer `a`. ((GF_AVCConfigurationBox *)a)->config == NULL."
   }, {
-    "file": "src/isomedia/box_funcs.c",
+    "file": "box_funcs.c",
     "line": 1265,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1265",
     "cmd": "call",
     "comment": "to box_code_base.c:4144."
   }, {
-    "file": "src/isomedia/box_code_base.c",
+    "file": "box_code_base.c",
     "line": 4171,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L4171",
     "cmd": "assign",
     "comment": "ptr->mvc_config = a. ((GF_AVCConfigurationBox *)a)->config == NULL."
   }, {
-    "file": "src/isomedia/box_code_base.c",
+    "file": "box_code_base.c",
     "line": 4211,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L4211",
     "cmd": "return",
     "comment": "to box_funcs:1265 (it is inside the while loop). Note parameter ptr is assigned struct pointer `parent`."
   }, {
-    "file": "src/isomedia/box_funcs.c",
+    "file": "box_funcs.c",
     "line": 1223,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1223",
     "cmd": "return",
     "comment": "to box_code_base.c:4220. parent->mvc_config->config = NULL."
   }, {
-    "file": "src/isomedia/box_code_base.c",
+    "file": "box_code_base.c",
     "line": 4223,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L4223",
     "cmd": "call",
     "comment": "mp4v->mvc_config->config == NULL. mp4box->mvc_config->config would refer to the specific configuration settings for MVC(multi-view coding) within the MP4 file."
   }, {
-    "file": "src/isomedia/avc_ext.c",
+    "file": "avc_ext.c",
     "line": 1024,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L1024",
     "cmd": "call",
     "comment": "avc->mvc_config->config == NULL"
   }, {
-    "file": "src/isomedia/avc_ext.c",
+    "file": "avc_ext.c",
     "line": 854,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L854",
     "cmd": "call",
     "comment": "src_cfg == NULL"
   }, {
-    "file": "src/isomedia/avc_ext.c",
+    "file": "avc_ext.c",
     "line": 804,
     "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L804",
     "cmd": "assign",
@@ -129,8 +129,243 @@
   "CVE": "CVE-2019-20169",
   "report": "https://github.com/gpac/gpac/issues/1329",
   "patch": null,
-  "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1295"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1295",
+  "bug-trace": [{
+    "file": "os_file.c",
+    "line": 696,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/utils/os_file.c#L696",
+    "cmd": "fopen64"
+  }, {
+    "file": "os_file.c",
+    "line": 716,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/utils/os_file.c#L716",
+    "cmd": "return",
+    "comment": "to data_map.c:402"
+  }, {
+    "file": "data_map.c",
+    "line": 402,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/data_map.c#L402",
+    "cmd": "assign"
+  }, {
+    "file": "data_map.c",
+    "line": 435,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/data_map.c#L435",
+    "cmd": "call"
+  }, {
+    "file": "bitstream.c",
+    "line": 135,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/utils/bitstream.c#L135",
+    "cmd": "assign"
+  }, {
+    "file": "bitstream.c",
+    "line": 142,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/utils/bitstream.c#L142",
+    "cmd": "assign"
+  }, {
+    "file": "data_map.c",
+    "line": 435,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/data_map.c#L435",
+    "cmd": "assign"
+  }, {
+    "file": "data_map.c",
+    "line": 444,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/data_map.c#L444",
+    "cmd": "return"
+  }, {
+    "file": "data_map.c",
+    "line": 140,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/data_map.c#L140",
+    "cmd": "assign"
+  }, {
+    "file": "isom_intern.c",
+    "line": 547,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/isom_intern.c#L547",
+    "cmd": "assign"
+  }, {
+    "file": "isom_intern.c",
+    "line": 604,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/isom_intern.c#L604",
+    "cmd": "call",
+    "comment": "mov->movieFileMap->bs is the bitstream"
+  }, {
+    "file": "isom_intern.c",
+    "line": 204,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/isom_intern.c#L204",
+    "cmd": "call"
+  }, {
+    "file": "box_funcs.c",
+    "line": 42,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L42",
+    "cmd": "call"
+  }, {
+    "file": "box_funcs.c",
+    "line": 196,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L196",
+    "cmd": "call"
+  }, {
+    "file": "box_funcs.c",
+    "line": 1323,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1323",
+    "cmd": "call"
+  }, {
+    "file": "box_code_base.c",
+    "line": 3748,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L3748",
+    "cmd": "call"
+  }, {
+    "file": "box_funcs.c",
+    "line": 251,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L251",
+    "cmd": "call"
+  }, {
+    "file": "box_funcs.c",
+    "line": 1217,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1217",
+    "cmd": "call",
+    "comment": "Note the while loop wrapping this runs very many times."
+  }, {
+    "file": "box_funcs.c",
+    "line": 196,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L196",
+    "cmd": "call"
+  }, {
+    "file": "box_funcs.c",
+    "line": 1323,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1323",
+    "cmd": "call"
+  }, {
+    "file": "box_code_base.c",
+    "line": 5852,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L5852",
+    "cmd": "call"
+  }, {
+    "file": "bitstream.c",
+    "line": 338,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/utils/bitstream.c#L338",
+    "cmd": "assign",
+    "comment": "same for L340,L342,L344"
+  }, {
+    "file": "bitstream.c",
+    "line": 345,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/utils/bitstream.c#L345",
+    "cmd": "return",
+    "comment": "to box_code_base.c:5852"
+  }, {
+    "file": "box_code_base.c",
+    "line": 5852,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L5852",
+    "cmd": "assign"
+  }, {
+    "file": "box_code_base.c",
+    "line": 5854,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L5854",
+    "cmd": "return",
+    "comment": "to box_funcs.c:1323"
+  }, {
+    "file": "box_funcs.c",
+    "line": 1323,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1323",
+    "cmd": "return",
+    "comment": "to box_funcs.c:196"
+  }, {
+    "file": "box_funcs.c",
+    "line": 224,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L224",
+    "cmd": "assign",
+    "comment": "*outBox = newBox"
+  }, {
+    "file": "box_funcs.c",
+    "line": 226,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L226",
+    "cmd": "return"
+  }, {
+    "file": "box_funcs.c",
+    "line": 1217,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1217",
+    "cmd": "assign",
+    "comment": "a is assigned a struct pointer (GF_Box *)"
+  }, {
+    "file": "box_funcs.c",
+    "line": 1265,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1265",
+    "cmd": "call"
+  }, {
+    "file": "box_code_base.c",
+    "line": 3015,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L3015",
+    "cmd": "call",
+    "comment": "the macro logs error and then calls gf_isom_box_del(a)"
+  }, {
+    "file": "box_funcs.c",
+    "line": 1295,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1295",
+    "cmd": "assign",
+    "comment": "other_boxes = a->other_boxes. Later used in box_funcs.c:242, other_boxes->slots[2] has already been removed."
+  }, {
+    "file": "box_funcs.c",
+    "line": 1303,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1303",
+    "cmd": "call",
+    "comment": "calls minf_del"
+  }, {
+    "file": "box_code_base.c",
+    "line": 3466,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L3466",
+    "cmd": "call",
+    "comment": "calls gf_free"
+  }, {
+    "file": "alloc.c",
+    "line": 165,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/utils/alloc.c#L165",
+    "cmd": "free",
+    "comment": "returns to box_funcs.c:1303"
+  }, {
+    "file": "box_funcs.c",
+    "line": 1311,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1311",
+    "cmd": "call",
+    "comment": "calls gf_isom_box_array_del"
+  }, {
+    "file": "box_funcs.c",
+    "line": 242,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L242",
+    "cmd": "call"
+  }, {
+    "file": "list.c",
+    "line": 648,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/utils/list.c#L648",
+    "cmd": "return"
+  }, {
+    "file": "box_funcs.c",
+    "line": 242,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L242",
+    "cmd": "assign",
+    "comment": "a = other_boxes->slots[i]. i is 2. a is assigned already freed struct pointer (GF_Box *)"
+  }, {
+    "file": "box_funcs.c",
+    "line": 243,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L243",
+    "cmd": "call",
+    "comment": "calls gf_isom_box_del"
+  }, {
+    "file": "box_funcs.c",
+    "line": 1303,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1303",
+    "cmd": "call",
+    "comment": "calls minf_del"
+  }, {
+    "file": "box_code_base.c",
+    "line": 3466,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L3466",
+    "cmd": "call",
+    "comment": "calls gf_free"
+  }, {
+    "file": "alloc.c",
+    "line": 165,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/utils/alloc.c#L165",
+    "cmd": "free",
+    "comment": "double free"
+  }]
 }, {
   "project": "MP4Box",
   "version": "0.7.1",

@@ -5,10 +5,10 @@
   "line": 612,
   "type": "buffer-overflow",
   "CVE": "CVE-2018-8882",
-  "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392513",
+  "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392445",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/float.c#L612"
+  "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L612"
 }, {
   "project": "nasm",
   "version": "2.14rc4",
@@ -16,21 +16,55 @@
   "line": 891,
   "type": "buffer-overflow",
   "CVE": "CVE-2018-8883",
-  "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392445",
+  "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392447",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/parser.c#L891"
+  "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/parser.c#L891"
 }, {
   "project": "nasm",
   "version": "2.14rc4",
   "file": "labels.c",
   "line": 64,
-  "type": "buffer-overflow",
+  "type": "null-dereference",
   "CVE": "CVE-2018-16517",
-  "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392447",
+  "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392513",
   "patch": null,
-  "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/labels.c#L64"
+  "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/labels.c#L64",
+  "bug-trace": [{
+    "file": "parser.c",
+    "line": 450,
+    "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/parser.c#L450",
+    "cmd": "initialize",
+    "comment": "result->label = NULL. Note: 1. parameter `result`, which here is nasm.c:1448's `output_ins` variable, is uninitialized before here. 2. parser.c:473 inside the unexecuted if stmt could have initialized the label, although in this case, isn't executed."
+  }, {
+    "file": "parser.c",
+    "line": 1137,
+    "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/parser.c#L1137",
+    "cmd": "return",
+    "comment": "to nasm.c:1448. In there, output_ins.label will be 0"
+  }, {
+    "file": "nasm.c",
+    "line": 1483,
+    "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/nasm.c#L1483",
+    "cmd": "call",
+    "comment": "although L1480 checks output_ins.label == NULL and reports via nasm_error, it doesn't kill (is NONFATAL), and L1483 is executed."
+  }, {
+    "file": "labels.c",
+    "line": 420,
+    "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/labels.c#L420",
+    "cmd": "call"
+  }, {
+    "file": "labels.c",
+    "line": 206,
+    "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/labels.c#L206",
+    "cmd": "call"
+  }, {
+    "file": "asm/labels.c",
+    "line": 64,
+    "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/labels.c#L64",
+    "cmd": "buffer read",
+    "comment": "l == NULL"
+  }]
 }, {
   "project": "nasm",
   "version": "2.14rc4",

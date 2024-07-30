@@ -19,7 +19,7 @@
   "report": "https://github.com/gpac/gpac/issues/1088",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/box_code_base.c#L635"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L635"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -29,8 +29,97 @@
   "CVE": "CVE-2018-21015",
   "report": "https://github.com/gpac/gpac/issues/1179",
   "patch": null,
-  "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/avc_ext.c#L804"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L804",
+  "bug-trace": [{
+    "file": "src/isomedia/avc_ext.c",
+    "line": 2120,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L2120",
+    "cmd": "malloc",
+    "comment": "initialized to zero"
+  }, {
+    "file": "src/isomedia/avc_ext.c",
+    "line": 2124,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L2124",
+    "cmd": "return",
+    "comment": "to box_funcs.c:1188"
+  }, {
+    "file": "src/isomedia/box_funcs.c",
+    "line": 1188,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1188",
+    "cmd": "assign",
+    "comment": "box_registry[idx].new_fn is avcc_New."
+  }, {
+    "file": "src/isomedia/box_funcs.c",
+    "line": 1196,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1196",
+    "cmd": "return",
+    "comment": "to box_funcs.c:173"
+  }, {
+    "file": "src/isomedia/box_funcs.c",
+    "line": 173,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L173",
+    "cmd": "assign",
+    "comment": "Note ((GF_AVCConfigurationBox *)newBox)->config = NULL. newBox should be going through gf_isom_full_box_read in L195, but now it wouldn't. It's because newBox->size == size - hdr_size == 8 - 8 == 0. size and hdr_size are decided from GF_BitStream *bs. bs comes from mov->movieFileMap->bs in isom_intern.c:204"
+  }, {
+    "file": "src/isomedia/box_funcs.c",
+    "line": 224,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L224",
+    "cmd": "assign"
+  }, {
+    "file": "src/isomedia/box_funcs.c",
+    "line": 226,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L226",
+    "cmd": "return",
+    "comment": "to box_code_base:1217. Note parameter *outBox is assigned struct pointer `a`. ((GF_AVCConfigurationBox *)a)->config == NULL."
+  }, {
+    "file": "src/isomedia/box_funcs.c",
+    "line": 1265,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1265",
+    "cmd": "call",
+    "comment": "to box_code_base.c:4144."
+  }, {
+    "file": "src/isomedia/box_code_base.c",
+    "line": 4171,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L4171",
+    "cmd": "assign",
+    "comment": "ptr->mvc_config = a. ((GF_AVCConfigurationBox *)a)->config == NULL."
+  }, {
+    "file": "src/isomedia/box_code_base.c",
+    "line": 4211,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L4211",
+    "cmd": "return",
+    "comment": "to box_funcs:1265 (it is inside the while loop). Note parameter ptr is assigned struct pointer `parent`."
+  }, {
+    "file": "src/isomedia/box_funcs.c",
+    "line": 1223,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1223",
+    "cmd": "return",
+    "comment": "to box_code_base.c:4220. parent->mvc_config->config = NULL."
+  }, {
+    "file": "src/isomedia/box_code_base.c",
+    "line": 4223,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L4223",
+    "cmd": "call",
+    "comment": "mp4v->mvc_config->config == NULL. mp4box->mvc_config->config would refer to the specific configuration settings for MVC(multi-view coding) within the MP4 file."
+  }, {
+    "file": "src/isomedia/avc_ext.c",
+    "line": 1024,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L1024",
+    "cmd": "call",
+    "comment": "avc->mvc_config->config == NULL"
+  }, {
+    "file": "src/isomedia/avc_ext.c",
+    "line": 854,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L854",
+    "cmd": "call",
+    "comment": "src_cfg == NULL"
+  }, {
+    "file": "src/isomedia/avc_ext.c",
+    "line": 804,
+    "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L804",
+    "cmd": "assign",
+    "comment": "cfg == NULL"
+  }]
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -41,7 +130,7 @@
   "report": "https://github.com/gpac/gpac/issues/1329",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/box_funcs.c#L1295"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1295"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -52,7 +141,7 @@
   "report": "https://github.com/gpac/gpac/issues/1264",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/mpegts.c#L2437"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L2437"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -63,7 +152,7 @@
   "report": "https://github.com/gpac/gpac/issues/1268",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/bitstream.c#L211"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/utils/bitstream.c#L211"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -74,7 +163,7 @@
   "report": "https://github.com/gpac/gpac/issues/1271",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/desc_private.c#L164"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/odf/desc_private.c#L164"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -85,7 +174,7 @@
   "report": "https://github.com/gpac/gpac/issues/1096",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/box_code_base.c#L8328"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L8328"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -96,7 +185,7 @@
   "report": "https://github.com/gpac/gpac/issues/1097",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/box_dump.c#L387"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_dump.c#L387"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -107,7 +196,7 @@
   "report": "https://github.com/gpac/gpac/issues/1099",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/avc_ext.c#L2398"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L2398"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -118,7 +207,7 @@
   "report": "https://github.com/gpac/gpac/issues/1250",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/mpegts.c#L1336"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L1336"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -129,7 +218,7 @@
   "report": "https://github.com/gpac/gpac/issues/1262",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/box_code_base.c#L8467"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L8467"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -140,7 +229,7 @@
   "report": "https://github.com/gpac/gpac/issues/1317",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/ipmpx_code.c#L1070"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/odf/ipmpx_code.c#L1070"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -151,7 +240,7 @@
   "report": "https://github.com/gpac/gpac/issues/1327",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/box_funcs.c#L180"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L180"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -162,7 +251,7 @@
   "report": "https://github.com/gpac/gpac/issues/1328",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/ipmpx_code.c#L115"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/odf/ipmpx_code.c#L115"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -173,7 +262,7 @@
   "report": "https://github.com/gpac/gpac/issues/1333",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/box_funcs.c#L1507"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1507"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -184,7 +273,7 @@
   "report": "https://github.com/gpac/gpac/issues/1338",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/box_code_apple.c#L110"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_apple.c#L110"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -195,7 +284,7 @@
   "report": "https://github.com/gpac/gpac/issues/1348",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/box_code_3gpp.c#L1000"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_3gpp.c#L1000"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -206,7 +295,7 @@
   "report": "https://github.com/gpac/gpac/issues/1422",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/mpegts.c#L1547"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L1547"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -217,7 +306,7 @@
   "report": "https://github.com/gpac/gpac/issues/1445",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/bitstream.c#L415"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/utils/bitstream.c#L415"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -228,7 +317,7 @@
   "report": "https://github.com/gpac/gpac/issues/1446",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/mpegts.c#L3137"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L3137"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -239,7 +328,7 @@
   "report": "https://github.com/gpac/gpac/issues/1446",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/media_import.c#L8337"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/media_tools/media_import.c#L8337"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -250,7 +339,7 @@
   "report": "https://unknown",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/sample_descs.c#L1083"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/sample_descs.c#L1083"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -261,7 +350,7 @@
   "report": "https://unknown",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/mpegts.c#L2012"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L2012"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -272,7 +361,7 @@
   "report": "https://unknown",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/list.c#L647"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/utils/list.c#L647"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -283,7 +372,7 @@
   "report": "https://unknown",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/mpegts.c#L1884"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L1884"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -294,7 +383,7 @@
   "report": "https://unknown",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/box_code_adobe.c#L145"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_adobe.c#L145"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -305,7 +394,7 @@
   "report": "https://unknown",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/mpegts.c#L671"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L671"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -316,7 +405,7 @@
   "report": "https://unknown",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/av_parsers.c#L1782"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/av_parsers.c#L1782"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -327,7 +416,7 @@
   "report": "https://unknown",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/mpegts.c#L816"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L816"
 }, {
   "project": "MP4Box",
   "version": "0.7.1",
@@ -338,5 +427,5 @@
   "report": "https://unknown",
   "patch": null,
   "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/mpegts.c#L547"
+  "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L547"
 }]

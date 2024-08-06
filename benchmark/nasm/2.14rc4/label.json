@@ -381,5 +381,5 @@
     "cmd": "call",
     "comment": "expr6 is being called recursively, causing a stack overflow."
   }],
-  "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/eval.c#L805"
+  "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L805"
 }]

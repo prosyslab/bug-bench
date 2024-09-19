@@ -2,7 +2,7 @@
 export CFLAGS="-Wno-error"
 
 MAKE_PARAMS="-j"
-SMAKE_I_DIR="sparrow/nasm"
+SMAKE_I_DIR="sparrow/asm"
 BIN_PATH="nasm"
 
 if [[ $1 == "sparrow" ]]; then

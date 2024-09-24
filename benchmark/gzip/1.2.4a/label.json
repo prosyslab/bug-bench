@@ -2,22 +2,22 @@
   "project": "gzip",
   "version": "1.2.4a",
   "file": "gzip.c",
-  "line": 515,
+  "line": 524,
   "type": "buffer-overflow",
   "CVE": null,
   "report": null,
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/gzip-1.2.4a/blob/master/gzip.c#L515"
+  "code": "https://github.com/prosyslab-warehouse/gzip-1.2.4a/blob/master/gzip.c#L524"
 }, {
   "project": "gzip",
   "version": "1.2.4a",
   "file": "gzip.c",
-  "line": 1005,
+  "line": 1009,
   "type": "buffer-overflow",
   "CVE": "CVE-2001-1228",
   "report": "https://www.cvedetails.com/cve/CVE-2001-1228/",
   "patch": "https://www.securityfocus.com/bid/3712/solution",
-  "code": "https://github.com/prosyslab-warehouse/gzip-1.2.4a/blob/master/gzip.c#L1005"
+  "code": "https://github.com/prosyslab-warehouse/gzip-1.2.4a/blob/master/gzip.c#L1009"
 }, {
   "project": "gzip",
   "version": "1.2.4a",
@@ -32,22 +32,22 @@
   "project": "gzip",
   "version": "1.2.4a",
   "file": "gzip.c",
-  "line": 1056,
+  "line": 1062,
   "type": "buffer-overflow",
   "CVE": "CVE-2001-1228",
   "report": "https://www.cvedetails.com/cve/CVE-2001-1228/",
   "patch": "https://www.securityfocus.com/bid/3712/solution",
-  "code": "https://github.com/prosyslab-warehouse/gzip-1.2.4a/blob/master/gzip.c#L1056"
+  "code": "https://github.com/prosyslab-warehouse/gzip-1.2.4a/blob/master/gzip.c#L1062"
 }, {
   "project": "gzip",
   "version": "1.2.4a",
   "file": "gzip.c",
-  "line": 1070,
+  "line": 1076,
   "type": "buffer-overflow",
   "CVE": null,
   "report": null,
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/gzip-1.2.4a/blob/master/gzip.c#L1070"
+  "code": "https://github.com/prosyslab-warehouse/gzip-1.2.4a/blob/master/gzip.c#L1076"
 }, {
   "project": "gzip",
   "version": "1.2.4a",
@@ -112,20 +112,20 @@
   "project": "gzip",
   "version": "1.2.4a",
   "file": "gzip.c",
-  "line": 1685,
+  "line": 1686,
   "type": "buffer-overflow",
   "CVE": "CVE-2001-1228",
   "report": "https://www.cvedetails.com/cve/CVE-2001-1228/",
   "patch": "https://www.securityfocus.com/bid/3712/solution",
-  "code": "https://github.com/prosyslab-warehouse/gzip-1.2.4a/blob/master/gzip.c#L1685"
+  "code": "https://github.com/prosyslab-warehouse/gzip-1.2.4a/blob/master/gzip.c#L1686"
 }, {
   "project": "gzip",
   "version": "1.2.4a",
   "file": "gzip.c",
-  "line": 1688,
+  "line": 1695,
   "type": "buffer-overflow",
   "CVE": null,
   "report": null,
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/gzip-1.2.4a/blob/master/gzip.c#L1688"
+  "code": "https://github.com/prosyslab-warehouse/gzip-1.2.4a/blob/master/gzip.c#L1695"
 }]

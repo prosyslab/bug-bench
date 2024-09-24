@@ -8,8 +8,8 @@
   },
   "sink": {
     "file": "src/libjasper/base/jas_malloc.c",
-    "line": 148,
-    "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/70a6c30b26f5fc66318a7c969c2b27892f482551/src/libjasper/base/jas_malloc.c#L148"
+    "line": 242,
+    "code": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/70a6c30b26f5fc66318a7c969c2b27892f482551/src/libjasper/base/jas_malloc.c#L242"
   },
   "type": "integer-overflow",
   "CVE": "CVE-2016-9387",

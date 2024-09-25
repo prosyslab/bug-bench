@@ -269,7 +269,7 @@
   "type": "stack-overflow",
   "CVE": "CVE-2018-17985",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=87335",
-  "patch": null,
+  "patch": "https://gcc.gnu.org/git/?p=gcc.git&a=commit;h=e96d1d8c7877ef25a2ef502b2685ba36b9913fd2",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L2565"
 }, {

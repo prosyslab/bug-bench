@@ -6,7 +6,7 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2018-7752",
   "report": "https://github.com/gpac/gpac/issues/997",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/90dc7f853d31b0a4e9441cba97feccf36d8b69a4",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/av_parsers.c#L2389"
 }, {
@@ -17,7 +17,7 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2018-13005",
   "report": "https://github.com/gpac/gpac/issues/1088",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/bceb03fd2be95097a7b409ea59914f332fb6bc86",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L635"
 }, {
@@ -28,7 +28,7 @@
   "type": "null-dereference",
   "CVE": "CVE-2018-21015",
   "report": "https://github.com/gpac/gpac/issues/1179",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/0545bb0a01bfac6764c43bd5074e9c2d1eae495f",
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L804",
   "bug-trace": [{
     "file": "avc_ext.c",
@@ -128,7 +128,7 @@
   "type": "use-after-free",
   "CVE": "CVE-2019-20169",
   "report": "https://github.com/gpac/gpac/issues/1329",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/a8b6246da925cf744805c9427a01fcacb53314bb",
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1295",
   "bug-trace": [{
     "file": "os_file.c",
@@ -374,7 +374,7 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2019-20629",
   "report": "https://github.com/gpac/gpac/issues/1264",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/2320eb73afba753b39b7147be91f7be7afc0eeb7",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L2437"
 }, {
@@ -385,7 +385,7 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2019-20630",
   "report": "https://github.com/gpac/gpac/issues/1268",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/1ab4860609f2e7a35634930571e7d0531297e090",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/utils/bitstream.c#L211"
 }, {
@@ -407,7 +407,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1096",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/0188fcc33b411a3cc3a4f33ee42930c12bb40b4a",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L8328"
 }, {
@@ -418,7 +418,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1097",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/0912224359518845ee95673a4e6db0690d35b1ef",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_dump.c#L387"
 }, {
@@ -429,7 +429,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1099",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/59ee23f4f283157d3c91f51ec3c43c6d03fde805",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/avc_ext.c#L2398"
 }, {
@@ -440,7 +440,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1250",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/c23d54ed15a70b4543e3191e6ead5097cda0878b",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L1336"
 }, {
@@ -451,7 +451,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1262",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/3fcf66c6031da966cf33ee89bcbefa2f8bec4b02",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_base.c#L8467"
 }, {
@@ -462,7 +462,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1317",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/155d7f8587f52e91a4f17128444b63e0ebd80fbc",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/odf/ipmpx_code.c#L1070"
 }, {
@@ -473,7 +473,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1327",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/3c0ba42546c8148c51169c3908e845c308746c77",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L180"
 }, {
@@ -484,7 +484,7 @@
   "type": "use-after-free",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1328",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/16856430287cc10f495eb241910b4dc45b193e03",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/odf/ipmpx_code.c#L115"
 }, {
@@ -495,7 +495,7 @@
   "type": "use-after-free",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1333",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/a8b6246da925cf744805c9427a01fcacb53314bb",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_funcs.c#L1507"
 }, {
@@ -506,7 +506,7 @@
   "type": "null-dereference",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1338",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/5250afecbc770c8f26829e9566d5b226a3c5fa80",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_apple.c#L110"
 }, {
@@ -517,7 +517,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1348",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/bcfcb3e90476692fe0d2bb532ea8deeb2a77580e",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/isomedia/box_code_3gpp.c#L1000"
 }, {
@@ -528,7 +528,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1422",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/8c5e847185d74462d674ee7d28fb46c29dae6dd2",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L1547"
 }, {
@@ -550,7 +550,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1446",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/a134832fc3dc8f04d223d153aecb83f67d14f39e",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/src/media_tools/mpegts.c#L3137"
 }, {
@@ -561,7 +561,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/gpac/gpac/issues/1446",
-  "patch": null,
+  "patch": "https://github.com/gpac/gpac/commit/a134832fc3dc8f04d223d153aecb83f67d14f39e",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/gpac-0.7.1/blob/master/media_tools/media_import.c#L8337"
 }, {

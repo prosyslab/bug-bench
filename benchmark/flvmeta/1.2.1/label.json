@@ -6,7 +6,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/noirotm/flvmeta/issues/13",
-  "patch": null,
+  "patch": "https://github.com/noirotm/flvmeta/commit/7b91e5656e27b16639c8de156878c7624346cbd4",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/dump_xml.c#L271"
 }, {
@@ -17,7 +17,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/noirotm/flvmeta/issues/14",
-  "patch": null,
+  "patch": "https://github.com/noirotm/flvmeta/commit/7d3007ba09f98cc76cb95a76f3a4db5285d7ad6e",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/dump_xml.c#L151"
 }]

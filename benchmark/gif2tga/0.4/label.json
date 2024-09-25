@@ -17,7 +17,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/miniupnp/ngiflib/issues/1",
-  "patch": null,
+  "patch": "https://github.com/miniupnp/ngiflib/commit/b588a2249c7abbfc52173e32ee11d6facef82f89",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/ngiflib-0.4/blob/master/ngiflib.c#L213"
 }, {
@@ -28,7 +28,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/miniupnp/ngiflib/issues/4",
-  "patch": null,
+  "patch": "https://github.com/miniupnp/ngiflib/commit/be4c7dffdcf7543fe24acc7448d6014a939fd26b",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/ngiflib-0.4/blob/master/ngiflib.c#L524"
 }, {
@@ -39,7 +39,7 @@
   "type": "buffer-overflow",
   "CVE": null,
   "report": "https://github.com/miniupnp/ngiflib/issues/11",
-  "patch": null,
+  "patch": "https://github.com/miniupnp/ngiflib/commit/37d939a6f511d16d4c95678025c235fe62e6417a",
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/ngiflib-0.4/blob/master/ngiflib.c#L123"
 }]

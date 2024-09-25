@@ -17,12 +17,13 @@ build_base() {
 
 build() {
   benchmark=$1
-  program_version=$(basename $benchmark)
-  version=$program_version-$BASE_VERSION
+  version=$(basename $benchmark)
   program=$(dirname $benchmark | xargs basename)
   echo "build prosyslab/bug-bench-$program:$version"
   docker build --no-cache -t prosyslab/bug-bench-$program:$version $benchmark
   docker push prosyslab/bug-bench-$program:$version
+  docker tag prosyslab/bug-bench-$program:$version prosyslab/bug-bench-$program:$version-$BASE_VERSION
+  docker push prosyslab/bug-bench-$program:$version-$BASE_VERSION
 }
 
 if [[ $1 == "base" ]]; then

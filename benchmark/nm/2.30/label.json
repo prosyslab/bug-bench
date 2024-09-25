@@ -70,7 +70,7 @@
   "file": "cp-demangle.c",
   "line": 2387,
   "type": "stack-overflow",
-  "CVE": "issue-unknow-1",
+  "CVE": "None",
   "report": "https://unknown",
   "patch": null,
   "bug-trace": [{
@@ -330,7 +330,7 @@
   "file": "cp-demangle.c",
   "line": 3119,
   "type": "stack-overflow",
-  "CVE": "issue-unknow-2",
+  "CVE": "None",
   "report": "https://unknown",
   "patch": null,
   "bug-trace": [],

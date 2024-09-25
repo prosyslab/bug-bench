@@ -9,7 +9,7 @@
   "sink": {
     "file": "src/libjasper/base/jas_malloc.c",
     "line": 251,
-    "code": "https://github.com/prosyslab-warehouse/jasper-1.900.21/blob/a063df4b0440c0a6f81b72e72ecb0a981172cbaf/src/libjasper/base/jas_malloc.c#L251"
+    "code": "https://github.com/prosyslab-warehouse/jasper-1.900.21/blob/master/src/libjasper/base/jas_malloc.c#L251"
   },
   "type": "integer-overflow",
   "CVE": "CVE-2016-9262",

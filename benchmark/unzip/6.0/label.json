@@ -14,7 +14,43 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2018-1000035",
   "report": "https://cve.circl.lu/cve/CVE-2018-1000035",
-  "patch": null
+  "patch": null,
+  "bug-trace": [{
+    "file": "fileio.c",
+    "line": 584,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/fileio.c#L584",
+    "cmd": "read"
+  }, {
+    "file": "fileio.c",
+    "line": 2210,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/fileio.c#L2210",
+    "cmd": "return"
+  }, {
+    "file": "fileio.c",
+    "line": 2223,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/fileio.c#L2223",
+    "cmd": "strncpy"
+  }, {
+    "file": "extract.c",
+    "line": 1197,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/extract.c#L1197",
+    "cmd": "return"
+  }, {
+    "file": "extract.c",
+    "line": 1274,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/extract.c#L1274",
+    "cmd": "call"
+  }, {
+    "file": "crypt.c",
+    "line": 503,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/crypt.c#L503",
+    "cmd": "call"
+  }, {
+    "file": "fileio.c",
+    "line": 1592,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/fileio.c#L1592",
+    "cmd": "sprintf"
+  }]
 }, {
   "project": "unzip",
   "version": "6.0",
@@ -31,5 +67,116 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2018-1000035",
   "report": "https://cve.circl.lu/cve/CVE-2018-1000035",
-  "patch": null
+  "patch": null,
+  "bug-trace": [{
+    "file": "unzip.c",
+    "line": 714,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/unzip.c#L714",
+    "cmd": "Main entry"
+  }, {
+    "file": "unzip.c",
+    "line": 721,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/unzip.c#L721",
+    "cmd": "call"
+  }, {
+    "file": "unzip.c",
+    "line": 721,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/unzip.c#L721",
+    "cmd": "define global variable"
+  }, {
+    "file": "unzip.c",
+    "line": 1254,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/unzip.c#L1254",
+    "cmd": "call"
+  }, {
+    "file": "process.c",
+    "line": 388,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/process.c#L388",
+    "cmd": "call"
+  }, {
+    "file": "unix/unix.c",
+    "line": 209,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/unix/unix.c#L209",
+    "cmd": "strncpy"
+  }, {
+    "file": "process.c",
+    "line": 388,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/process.c#L388",
+    "cmd": "return"
+  }, {
+    "file": "process.c",
+    "line": 401,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/process.c#L401",
+    "cmd": "call"
+  }, {
+    "file": "process.c",
+    "line": 729,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/process.c#L729",
+    "cmd": "call"
+  }, {
+    "file": "fileio.c",
+    "line": 239,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/fileio.c#L239",
+    "cmd": "open"
+  }, {
+    "file": "process.c",
+    "line": 729,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/process.c#L729",
+    "cmd": "return"
+  }, {
+    "file": "process.c",
+    "line": 987,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/process.c#L987",
+    "cmd": "call"
+  }, {
+    "file": "extract.c",
+    "line": 584,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/extract.c#L584",
+    "cmd": "call"
+  }, {
+    "file": "extract.c",
+    "line": 1197,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/extract.c#L1197",
+    "cmd": "call"
+  }, {
+    "file": "fileio.c",
+    "line": 2210,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/fileio.c#L2210",
+    "cmd": "call"
+  }, {
+    "file": "fileio.c",
+    "line": 584,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/fileio.c#L584",
+    "cmd": "read"
+  }, {
+    "file": "fileio.c",
+    "line": 2210,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/fileio.c#L2210",
+    "cmd": "return"
+  }, {
+    "file": "fileio.c",
+    "line": 2223,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/fileio.c#L2223",
+    "cmd": "strncpy"
+  }, {
+    "file": "extract.c",
+    "line": 1197,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/extract.c#L1197",
+    "cmd": "return"
+  }, {
+    "file": "extract.c",
+    "line": 1274,
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/extract.c#L1274",
+    "cmd": "call"
+  }, {
+    "file": "crypt.c",
+    "line": 503,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/crypt.c#L503",
+    "cmd": "call"
+  }, {
+    "file": "fileio.c",
+    "line": 1592,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/fileio.c#L1592",
+    "cmd": "sprintf"
+  }]
 }]

@@ -16,7 +16,7 @@ def parse_input_file(input_file):
                 "type": lines[i+2].strip(),
                 "CVE": lines[i+3].strip(),
                 "report": lines[i+4].strip(),
-                "patch": None,
+                "patch": null,
                 "bug-trace": []
             }
             bug_entries.append(bug_entry)

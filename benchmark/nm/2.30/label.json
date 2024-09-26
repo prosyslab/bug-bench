@@ -70,8 +70,8 @@
   "file": "cp-demangle.c",
   "line": 2387,
   "type": "stack-overflow",
-  "CVE": "None",
-  "report": "https://unknown",
+  "CVE": null,
+  "report": null,
   "patch": null,
   "bug-trace": [{
     "file": "bfd/bfdio.c",
@@ -330,8 +330,8 @@
   "file": "cp-demangle.c",
   "line": 3112,
   "type": "stack-overflow",
-  "CVE": "None",
-  "report": "https://unknown",
+  "CVE": null,
+  "report": null,
   "patch": null,
   "bug-trace": [],
   "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L3112"

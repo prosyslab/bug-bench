@@ -43,12 +43,12 @@
   }, {
     "file": "crypt.c",
     "line": 503,
-    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/util/crypt.c#L503",
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/crypt.c#L503",
     "cmd": "call"
   }, {
     "file": "fileio.c",
     "line": 1592,
-    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/util/fileio.c#L1592",
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/fileio.c#L1592",
     "cmd": "sprintf"
   }]
 }, {
@@ -171,12 +171,12 @@
   }, {
     "file": "crypt.c",
     "line": 503,
-    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/util/crypt.c#L503",
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/crypt.c#L503",
     "cmd": "call"
   }, {
     "file": "fileio.c",
     "line": 1592,
-    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/util/fileio.c#L1592",
+    "code": "https://github.com/prosyslab-warehouse/unzip-6.0/blob/master/fileio.c#L1592",
     "cmd": "sprintf"
   }]
 }]

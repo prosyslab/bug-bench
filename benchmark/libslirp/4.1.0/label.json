@@ -2,9 +2,9 @@
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "file",
-    "line": -1,
-    "code": "code"
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -14,14 +14,86 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2020-8608",
   "report": "https://cve.circl.lu/cve/CVE-2020-8608",
-  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2",
+  "bug-trace": [{
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794",
+    "cmd": "read",
+    "comment": "The slirp_input function is called as a library, with function arguments passed as shown in the following link (https://github.com/coreos/qemu/blob/master/net/slirp.c#L118)"
+  }, {
+    "file": "src/slirp.c",
+    "line": 809,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L809",
+    "cmd": "call"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 75,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L75",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 85,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L85",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 86,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L86",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 92,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L92",
+    "cmd": "return"
+  }, {
+    "file": "src/slirp.c",
+    "line": 817,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L817",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 818,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L818",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 824,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L824",
+    "cmd": "call"
+  }, {
+    "file": "src/ip_input.c",
+    "line": 199,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/ip_input.c#L199",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 373,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L373",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 543,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L543",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 624,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L624",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 643,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L643",
+    "cmd": "assign unsafe snprintf return value"
+  }]
 }, {
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "file",
-    "line": -1,
-    "code": "code"
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -31,14 +103,86 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2020-8608",
   "report": "https://cve.circl.lu/cve/CVE-2020-8608",
-  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2",
+  "bug-trace": [{
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794",
+    "cmd": "read",
+    "comment": "The slirp_input function is called as a library, with function arguments passed as shown in the following link (https://github.com/coreos/qemu/blob/master/net/slirp.c#L118)"
+  }, {
+    "file": "src/slirp.c",
+    "line": 809,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L809",
+    "cmd": "call"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 75,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L75",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 85,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L85",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 86,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L86",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 92,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L92",
+    "cmd": "return"
+  }, {
+    "file": "src/slirp.c",
+    "line": 817,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L817",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 818,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L818",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 824,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L824",
+    "cmd": "call"
+  }, {
+    "file": "src/ip_input.c",
+    "line": 199,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/ip_input.c#L199",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 373,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L373",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 543,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L543",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 659,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L659",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 684,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L684",
+    "cmd": "assign unsafe snprintf return value"
+  }]
 }, {
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "file",
-    "line": -1,
-    "code": "code"
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -48,14 +192,86 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2020-8608",
   "report": "https://cve.circl.lu/cve/CVE-2020-8608",
-  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2",
+  "bug-trace": [{
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794",
+    "cmd": "read",
+    "comment": "The slirp_input function is called as a library, with function arguments passed as shown in the following link (https://github.com/coreos/qemu/blob/master/net/slirp.c#L118)"
+  }, {
+    "file": "src/slirp.c",
+    "line": 809,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L809",
+    "cmd": "call"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 75,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L75",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 85,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L85",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 86,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L86",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 92,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L92",
+    "cmd": "return"
+  }, {
+    "file": "src/slirp.c",
+    "line": 817,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L817",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 818,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L818",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 824,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L824",
+    "cmd": "call"
+  }, {
+    "file": "src/ip_input.c",
+    "line": 199,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/ip_input.c#L199",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 373,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L373",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 543,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L543",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 692,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L692",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 720,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L720",
+    "cmd": "assign unsafe snprintf return value"
+  }]
 }, {
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "file",
-    "line": -1,
-    "code": "code"
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -65,14 +281,81 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2020-8608",
   "report": "https://cve.circl.lu/cve/CVE-2020-8608",
-  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2",
+  "bug-trace": [{
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794",
+    "cmd": "read",
+    "comment": "The slirp_input function is called as a library, with function arguments passed as shown in the following link (https://github.com/coreos/qemu/blob/master/net/slirp.c#L118)"
+  }, {
+    "file": "src/slirp.c",
+    "line": 809,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L809",
+    "cmd": "call"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 75,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L75",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 85,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L85",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 86,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L86",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 92,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L92",
+    "cmd": "return"
+  }, {
+    "file": "src/slirp.c",
+    "line": 817,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L817",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 818,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L818",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 824,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L824",
+    "cmd": "call"
+  }, {
+    "file": "src/ip_input.c",
+    "line": 199,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/ip_input.c#L199",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 373,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L373",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 543,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L543",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 747,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L747",
+    "cmd": "assign unsafe snprintf return value"
+  }]
 }, {
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "file",
-    "line": -1,
-    "code": "code"
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -82,14 +365,86 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2020-8608",
   "report": "https://cve.circl.lu/cve/CVE-2020-8608",
-  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2",
+  "bug-trace": [{
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794",
+    "cmd": "read",
+    "comment": "The slirp_input function is called as a library, with function arguments passed as shown in the following link (https://github.com/coreos/qemu/blob/master/net/slirp.c#L118)"
+  }, {
+    "file": "src/slirp.c",
+    "line": 809,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L809",
+    "cmd": "call"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 75,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L75",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 85,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L85",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 86,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L86",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 92,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L92",
+    "cmd": "return"
+  }, {
+    "file": "src/slirp.c",
+    "line": 817,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L817",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 818,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L818",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 824,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L824",
+    "cmd": "call"
+  }, {
+    "file": "src/ip_input.c",
+    "line": 199,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/ip_input.c#L199",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 373,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L373",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 543,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L543",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 760,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L760",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 766,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L766",
+    "cmd": "assign unsafe snprintf return value"
+  }]
 }, {
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "file",
-    "line": -1,
-    "code": "code"
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -99,14 +454,86 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2020-8608",
   "report": "https://cve.circl.lu/cve/CVE-2020-8608",
-  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2",
+  "bug-trace": [{
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794",
+    "cmd": "read",
+    "comment": "The slirp_input function is called as a library, with function arguments passed as shown in the following link (https://github.com/coreos/qemu/blob/master/net/slirp.c#L118)"
+  }, {
+    "file": "src/slirp.c",
+    "line": 809,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L809",
+    "cmd": "call"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 75,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L75",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 85,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L85",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 86,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L86",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 92,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L92",
+    "cmd": "return"
+  }, {
+    "file": "src/slirp.c",
+    "line": 817,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L817",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 818,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L818",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 824,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L824",
+    "cmd": "call"
+  }, {
+    "file": "src/ip_input.c",
+    "line": 199,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/ip_input.c#L199",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 373,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L373",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 543,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L543",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 769,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L769",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 777,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L777",
+    "cmd": "assign unsafe snprintf return value"
+  }]
 }, {
   "project": "libslirp",
   "version": "4.1.0",
   "source": {
-    "file": "file",
-    "line": -1,
-    "code": "code"
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794"
   },
   "sink": {
     "file": "src/tcp_subr.c",
@@ -116,5 +543,77 @@
   "type": "buffer-overflow",
   "CVE": "CVE-2020-8608",
   "report": "https://cve.circl.lu/cve/CVE-2020-8608",
-  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2"
+  "patch": "https://www.openwall.com/lists/oss-security/2020/02/06/2",
+  "bug-trace": [{
+    "file": "src/slirp.c",
+    "line": 794,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L794",
+    "cmd": "read",
+    "comment": "The slirp_input function is called as a library, with function arguments passed as shown in the following link (https://github.com/coreos/qemu/blob/master/net/slirp.c#L118)"
+  }, {
+    "file": "src/slirp.c",
+    "line": 809,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L809",
+    "cmd": "call"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 75,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L75",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 85,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L85",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 86,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L86",
+    "cmd": "assign"
+  }, {
+    "file": "src/mbuf.c",
+    "line": 92,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/mbuf.c#L92",
+    "cmd": "return"
+  }, {
+    "file": "src/slirp.c",
+    "line": 817,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L817",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 818,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L818",
+    "cmd": "assign"
+  }, {
+    "file": "src/slirp.c",
+    "line": 824,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/slirp.c#L824",
+    "cmd": "call"
+  }, {
+    "file": "src/ip_input.c",
+    "line": 199,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/ip_input.c#L199",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 373,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L373",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_input.c",
+    "line": 543,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_input.c#L543",
+    "cmd": "call"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 780,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L769",
+    "cmd": "assign"
+  }, {
+    "file": "src/tcp_subr.c",
+    "line": 788,
+    "code": "https://github.com/prosyslab-warehouse/libslirp-4.1.0/blob/master/src/tcp_subr.c#L788",
+    "cmd": "assign unsafe snprintf return value"
+  }]
 }]

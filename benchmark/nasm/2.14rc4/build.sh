@@ -2,16 +2,17 @@
 export CFLAGS="-Wno-error"
 
 MAKE_PARAMS="-j"
-SMAKE_I_DIR="sparrow/asm"
 BIN_PATH="nasm"
 
 if [[ $1 == "sparrow" ]]; then
   ./configure
   $SMAKE_BIN --init
   $SMAKE_BIN $MAKE_PARAMS
-  for f in $(find $SMAKE_I_DIR -name "*.i" -not -path '*/\.*'); do
-    mv $f $SMAKE_OUT/$(basename $f)
-  done
+  # Unfortunately, Smake does not gather every necessary files in this case
+  # Thus, sparrow/nasm contains only the source with main function.
+  # As a workaround, we manually copy necessary files from sparrow/nasmlib.  
+  cp sparrow/nasm/*.i $SMAKE_OUT
+  cp sparrow/nasmlib/*.i $SMAKE_OUT
 elif [[ $1 == "haechi" ]]; then
   export CC=$GCLANG_BIN
   export CFLAGS="$CFLAGS -fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
@@ -19,9 +20,8 @@ elif [[ $1 == "haechi" ]]; then
 
   $SMAKE_BIN --init
   $SMAKE_BIN $MAKE_PARAMS
-  for f in $(find $SMAKE_I_DIR -name "*.i" -not -path '*/\.*'); do
-    mv $f $SMAKE_OUT/$(basename $f)
-  done
+  cp sparrow/nasm/*.i $SMAKE_OUT
+  cp sparrow/nasmlib/*.i $SMAKE_OUT
   $GET_BC_BIN $BIN_PATH &&
     llvm-dis -o $BIN_PATH.ll $BIN_PATH.bc &&
     opt -mem2reg -S -o $HAECHI_OUT/$(basename $BIN_PATH).ll $BIN_PATH.ll

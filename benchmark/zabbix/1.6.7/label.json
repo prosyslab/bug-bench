@@ -14,7 +14,59 @@
   "type": "command-injection",
   "CVE": "CVE-2009-4498",
   "report": "https://cve.circl.lu/cve/cve-2009-4498",
-  "patch": "https://git.zabbix.com/projects/ZBX/repos/zabbix/commits/cf3653497d15042b96933e50a24e15d236399803#src/zabbix_server/trapper/nodecommand.c"
+  "patch": "https://git.zabbix.com/projects/ZBX/repos/zabbix/commits/cf3653497d15042b96933e50a24e15d236399803#src/zabbix_server/trapper/nodecommand.c",
+  "bug-trace": [{
+    "file": "src/libs/zbxcomms/comms.c",
+    "line": 897,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/libs/zbxcomms/comms.c#L897",
+    "cmd": "read"
+  }, {
+    "file": "src/zabbix_server/trapper/trapper.c",
+    "line": 721,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/trapper.c#L721",
+    "cmd": "call"
+  }, {
+    "file": "src/zabbix_server/trapper/trapper.c",
+    "line": 570,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/trapper.c#L570",
+    "cmd": "call"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 321,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L321",
+    "cmd": "assign"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 322,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L322",
+    "cmd": "call"
+  }, {
+    "file": "src/libs/zbxcommon/str.c",
+    "line": 1526,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/libs/zbxcommon/str.c#L1526",
+    "cmd": "assign"
+  }, {
+    "file": "src/libs/zbxcommon/str.c",
+    "line": 1531,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/libs/zbxcommon/str.c#L1531",
+    "cmd": "return"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 334,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L334",
+    "cmd": "call"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 74,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L74",
+    "cmd": "assign"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 144,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L144",
+    "cmd": "call",
+    "comment": "Calling `popen` with user input can lead to command injection."
+  }]
 }, {
   "project": "zabbix",
   "version": "1.6.7",
@@ -31,7 +83,59 @@
   "type": "command-injection",
   "CVE": "CVE-2009-4498",
   "report": "https://cve.circl.lu/cve/cve-2009-4498",
-  "patch": "https://git.zabbix.com/projects/ZBX/repos/zabbix/commits/cf3653497d15042b96933e50a24e15d236399803#src/zabbix_server/trapper/nodecommand.c"
+  "patch": "https://git.zabbix.com/projects/ZBX/repos/zabbix/commits/cf3653497d15042b96933e50a24e15d236399803#src/zabbix_server/trapper/nodecommand.c",
+  "bug-trace": [{
+    "file": "src/libs/zbxcomms/comms.c",
+    "line": 932,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/libs/zbxcomms/comms.c#L932",
+    "cmd": "read"
+  }, {
+    "file": "src/zabbix_server/trapper/trapper.c",
+    "line": 721,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/trapper.c#L721",
+    "cmd": "call"
+  }, {
+    "file": "src/zabbix_server/trapper/trapper.c",
+    "line": 570,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/trapper.c#L570",
+    "cmd": "call"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 321,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L321",
+    "cmd": "assign"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 322,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L322",
+    "cmd": "call"
+  }, {
+    "file": "src/libs/zbxcommon/str.c",
+    "line": 1526,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/libs/zbxcommon/str.c#L1526",
+    "cmd": "assign"
+  }, {
+    "file": "src/libs/zbxcommon/str.c",
+    "line": 1531,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/libs/zbxcommon/str.c#L1531",
+    "cmd": "return"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 334,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L334",
+    "cmd": "call"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 74,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L74",
+    "cmd": "assign"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 144,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L144",
+    "cmd": "call",
+    "comment": "Calling `popen` with user input can lead to command injection."
+  }]
 }, {
   "project": "zabbix",
   "version": "1.6.7",
@@ -48,5 +152,57 @@
   "type": "command-injection",
   "CVE": "CVE-2009-4498",
   "report": "https://cve.circl.lu/cve/cve-2009-4498",
-  "patch": "https://git.zabbix.com/projects/ZBX/repos/zabbix/commits/cf3653497d15042b96933e50a24e15d236399803#src/zabbix_server/trapper/nodecommand.c"
+  "patch": "https://git.zabbix.com/projects/ZBX/repos/zabbix/commits/cf3653497d15042b96933e50a24e15d236399803#src/zabbix_server/trapper/nodecommand.c",
+  "bug-trace": [{
+    "file": "src/libs/zbxcomms/comms.c",
+    "line": 964,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/libs/zbxcomms/comms.c#L964",
+    "cmd": "read"
+  }, {
+    "file": "src/zabbix_server/trapper/trapper.c",
+    "line": 721,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/trapper.c#L721",
+    "cmd": "call"
+  }, {
+    "file": "src/zabbix_server/trapper/trapper.c",
+    "line": 570,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/trapper.c#L570",
+    "cmd": "call"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 321,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L321",
+    "cmd": "assign"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 322,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L322",
+    "cmd": "call"
+  }, {
+    "file": "src/libs/zbxcommon/str.c",
+    "line": 1526,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/libs/zbxcommon/str.c#L1526",
+    "cmd": "assign"
+  }, {
+    "file": "src/libs/zbxcommon/str.c",
+    "line": 1531,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/libs/zbxcommon/str.c#L1531",
+    "cmd": "return"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 334,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L334",
+    "cmd": "call"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 74,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L74",
+    "cmd": "assign"
+  }, {
+    "file": "src/zabbix_server/trapper/nodecommand.c",
+    "line": 144,
+    "code": "https://github.com/prosyslab-warehouse/zabbix-1.6.7/blob/master/src/zabbix_server/trapper/nodecommand.c#L144",
+    "cmd": "call",
+    "comment": "Calling `popen` with user input can lead to command injection."
+  }]
 }]

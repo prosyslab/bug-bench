@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Collect source for listmp3, which is the utility that triggers
+# CVE-2016-9265 and CVE-2016-9266
+SMAKE_I_DIR="sparrow/util/.libs/listmp3"
+BIN_PATH="util/.libs/listmp3"
 MAKE_PARAMS="-j"
 
 if [[ $1 == "sparrow" ]]; then
@@ -7,7 +11,7 @@ if [[ $1 == "sparrow" ]]; then
   ./configure --disable-freetype
   $SMAKE_BIN --init
   $SMAKE_BIN $MAKE_PARAMS
-  mv sparrow/src/.libs/libming.so.1.4.6/*.i $SMAKE_OUT
+  cp $SMAKE_I_DIR/*.i $SMAKE_OUT
 elif [[ $1 == "infer" ]]; then
   ./autogen.sh
   ./configure --disable-freetype
@@ -21,11 +25,11 @@ elif [[ $1 == "haechi" ]]; then
   
   $SMAKE_BIN --init
   $SMAKE_BIN $MAKE_PARAMS
-  mv sparrow/src/.libs/libming.so.1.4.6/*.i $SMAKE_OUT
+  cp $SMAKE_I_DIR/*.i $SMAKE_OUT
   
-  $GET_BC_BIN src/.libs/libming.so.1.4.6 &&
-    llvm-dis -o libming.so.1.4.6.ll src/.libs/libming.so.1.4.6.bc &&
-    opt -mem2reg -S -o $HAECHI_OUT/libming-0.4.7.ll libming.so.1.4.6.ll
+  $GET_BC_BIN $BIN_PATH &&
+  llvm-dis -o $BIN_PATH.ll $BIN_PATH.bc &&
+  opt -mem2reg -S -o $HAECHI_OUT/libming-0.4.7.ll $BIN_PATH.ll
 else
   echo "Unknown build target"
   exit 1

@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Collect source for swftocxx,
+# which is the utility that triggers CVE-2018-7877
+SMAKE_I_DIR="sparrow/util/.libs/swftocxx"
+BIN_PATH="util/.libs/swftocxx"
 MAKE_PARAMS="-j"
 
 if [[ $1 == "sparrow" ]]; then
@@ -7,7 +11,7 @@ if [[ $1 == "sparrow" ]]; then
   ./configure --disable-freetype
   $SMAKE_BIN --init
   $SMAKE_BIN $MAKE_PARAMS
-  mv sparrow/src/.libs/libming.so.1.4.7/*.i $SMAKE_OUT
+  cp $SMAKE_I_DIR/*.i $SMAKE_OUT
 elif [[ $1 == "infer" ]]; then
   ./autogen.sh
   ./configure --disable-freetype
@@ -21,11 +25,11 @@ elif [[ $1 == "haechi" ]]; then
   
   $SMAKE_BIN --init
   $SMAKE_BIN
-  mv sparrow/src/.libs/libming.so.1.4.7/*.i $SMAKE_OUT
-
-  $GET_BC_BIN src/.libs/libming.so.1.4.7 &&
-    llvm-dis -o libming.so.1.4.7.ll src/.libs/libming.so.1.4.7.bc &&
-    opt -mem2reg -S -o $HAECHI_OUT/libming-0.4.8.ll libming.so.1.4.7.ll
+  cp $SMAKE_I_DIR/*.i $SMAKE_OUT
+  
+  $GET_BC_BIN $BIN_PATH &&
+  llvm-dis -o $BIN_PATH.ll $BIN_PATH.bc &&
+  opt -mem2reg -S -o $HAECHI_OUT/libming-0.4.8.ll $BIN_PATH.ll
 else
   echo "Unknown build target"
   exit 1

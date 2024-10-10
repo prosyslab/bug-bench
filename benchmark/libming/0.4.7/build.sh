@@ -2,13 +2,13 @@
 
 # Collect source for listmp3, which is the utility that triggers
 # CVE-2016-9265 and CVE-2016-9266
-SMAKE_I_DIR="sparrow/util/.libs/listmp3"
-BIN_PATH="util/.libs/listmp3"
+SMAKE_I_DIR="sparrow/util/listmp3"
+BIN_PATH="util/listmp3"
 MAKE_PARAMS="-j"
 
 if [[ $1 == "sparrow" ]]; then
   ./autogen.sh
-  ./configure --disable-freetype
+  ./configure --disable-shared --disable-freetype
   $SMAKE_BIN --init
   $SMAKE_BIN $MAKE_PARAMS
   cp $SMAKE_I_DIR/*.i $SMAKE_OUT
@@ -21,7 +21,7 @@ elif [[ $1 == "haechi" ]]; then
   export CC=$GCLANG_BIN
   export CFLAGS="-fcommon -fno-discard-value-names -O0 -Xclang -disable-O0-optnone -g"
   ./autogen.sh
-  ./configure --disable-freetype
+  ./configure --disable-shared --disable-freetype
   
   $SMAKE_BIN --init
   $SMAKE_BIN $MAKE_PARAMS

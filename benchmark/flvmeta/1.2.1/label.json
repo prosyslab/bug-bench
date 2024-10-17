@@ -7,8 +7,68 @@
   "CVE": null,
   "report": "https://github.com/noirotm/flvmeta/issues/13",
   "patch": "https://github.com/noirotm/flvmeta/commit/7b91e5656e27b16639c8de156878c7624346cbd4",
-  "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/dump_xml.c#L271"
+  "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L271",
+  "bug_trace": [{
+    "file": "src/amf.c",
+    "line": 207,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L207",
+    "cmd": "malloc"
+  }, {
+    "file": "src/amf.c",
+    "line": 212,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L212",
+    "cmd": "return"
+  }, {
+    "file": "src/amf.c",
+    "line": 484,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L484",
+    "cmd": "return"
+  }, {
+    "file": "src/amf.c",
+    "line": 243,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L243",
+    "cmd": "return"
+  }, {
+    "file": "src/flv.c",
+    "line": 236,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/flv.c#L236",
+    "cmd": "assign",
+    "comment": "d->string_data.mbstr is NULL"
+  }, {
+    "file": "src/flv.c",
+    "line": 237,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/flv.c#L237",
+    "cmd": "assign"
+  }, {
+    "file": "src/flv.c",
+    "line": 290,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/flv.c#L290",
+    "cmd": "return",
+    "comment": "to flv.c:498. POC is related to the `*name` pointer."
+  }, {
+    "file": "src/flv.c",
+    "line": 506,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/flv.c#L506",
+    "cmd": "call",
+    "comment": "calls xml_on_metadata_tag_only"
+  }, {
+    "file": "src/dump_xml.c",
+    "line": 271,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L271",
+    "cmd": "call"
+  }, {
+    "file": "src/amf.c",
+    "line": 940,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L940",
+    "cmd": "return",
+    "comment": "data->string_data.mbstr is NULL"
+  }, {
+    "file": "src/dump_xml.c",
+    "line": 271,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L271",
+    "cmd": "strcmp",
+    "comment": "gets NULL as input"
+  }]
 }, {
   "project": "flvmeta",
   "version": "1.2.1",
@@ -18,6 +78,196 @@
   "CVE": null,
   "report": "https://github.com/noirotm/flvmeta/issues/14",
   "patch": "https://github.com/noirotm/flvmeta/commit/7d3007ba09f98cc76cb95a76f3a4db5285d7ad6e",
-  "bug-trace": [],
-  "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/dump_xml.c#L151"
+  "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L151",
+  "bug_trace": [{
+    "file": "src/amf.c",
+    "line": 233,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L233",
+    "cmd": "fread"
+  }, {
+    "file": "src/amf.c",
+    "line": 233,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L233",
+    "cmd": "return",
+    "comment": "to amf.c:456"
+  }, {
+    "file": "src/amf.c",
+    "line": 458,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L458",
+    "cmd": "call"
+  }, {
+    "file": "src/amf.c",
+    "line": 1140,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L1140",
+    "cmd": "assign"
+  }, {
+    "file": "src/amf.c",
+    "line": 1143,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L1143",
+    "cmd": "return"
+  }, {
+    "file": "src/amf.c",
+    "line": 458,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L458",
+    "cmd": "return"
+  }, {
+    "file": "src/amf.c",
+    "line": 491,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L491",
+    "cmd": "return"
+  }, {
+    "file": "src/amf.c",
+    "line": 383,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L383",
+    "cmd": "assign",
+    "comment": "We are interested in element->date_data.milliseconds"
+  }, {
+    "file": "src/amf.c",
+    "line": 399,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L399",
+    "cmd": "call"
+  }, {
+    "file": "src/amf.c",
+    "line": 959,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L959",
+    "cmd": "call"
+  }, {
+    "file": "src/amf.c",
+    "line": 42,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L42",
+    "cmd": "assign",
+    "comment": "assigns first_element"
+  }, {
+    "file": "src/amf.c",
+    "line": 51,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L51",
+    "cmd": "return",
+    "comment": "to amf.c:959"
+  }, {
+    "file": "src/amf.c",
+    "line": 960,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L960",
+    "cmd": "return",
+    "comment": "to amf.c:399"
+  }, {
+    "file": "src/amf.c",
+    "line": 410,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L410",
+    "cmd": "return"
+  }, {
+    "file": "src/amf.c",
+    "line": 487,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L487",
+    "cmd": "return"
+  }, {
+    "file": "src/amf.c",
+    "line": 243,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L243",
+    "cmd": "return"
+  }, {
+    "file": "src/flv.c",
+    "line": 264,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/flv.c#L264",
+    "cmd": "assign",
+    "comment": "We are interested in (&d->list_data)->first_element->next->data->date_data.milliseconds"
+  }, {
+    "file": "src/flv.c",
+    "line": 265,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/flv.c#L265",
+    "cmd": "assign"
+  }, {
+    "file": "src/flv.c",
+    "line": 290,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/flv.c#L290",
+    "cmd": "return",
+    "comment": "to flv.c:498"
+  }, {
+    "file": "src/flv.c",
+    "line": 506,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/flv.c#L506",
+    "cmd": "call",
+    "comment": "calls xml_on_metadata_tag_only. We are interested in (&data->list_data)->first_element->next->data->date_data.milliseconds"
+  }, {
+    "file": "src/dump_xml.c",
+    "line": 272,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L272",
+    "cmd": "call"
+  }, {
+    "file": "src/dump_xml.c",
+    "line": 305,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L305",
+    "cmd": "call"
+  }, {
+    "file": "src/dump_xml.c",
+    "line": 118,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L118",
+    "cmd": "call"
+  }, {
+    "file": "src/amf.c",
+    "line": 1023,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L1023",
+    "cmd": "call"
+  }, {
+    "file": "src/amf.c",
+    "line": 139,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L139",
+    "cmd": "return"
+  }, {
+    "file": "src/amf.c",
+    "line": 1023,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L1023",
+    "cmd": "return",
+    "comment": "to dump_xml.c:95"
+  }, {
+    "file": "src/dump_xml.c",
+    "line": 118,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L118",
+    "cmd": "assign"
+  }, {
+    "file": "src/dump_xml.c",
+    "line": 121,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L121",
+    "cmd": "call",
+    "comment": "calls amf_associative_array_get_data(node). We are interested in node->next->data->date_data.milliseconds"
+  }, {
+    "file": "src/amf.c",
+    "line": 1062,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L1062",
+    "cmd": "assign"
+  }, {
+    "file": "src/amf.c",
+    "line": 1064,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L1064",
+    "cmd": "return",
+    "comment": "to dump_xml.c:98"
+  }, {
+    "file": "src/dump_xml.c",
+    "line": 121,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L121",
+    "cmd": "call",
+    "comment": "calls xml_amf_data_dump"
+  }, {
+    "file": "src/dump_xml.c",
+    "line": 148,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L148",
+    "cmd": "call"
+  }, {
+    "file": "src/amf.c",
+    "line": 1155,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L1155",
+    "cmd": "return",
+    "comment": "returns data->date_data.milliseconds / 1000"
+  }, {
+    "file": "src/dump_xml.c",
+    "line": 150,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L150",
+    "cmd": "assign",
+    "comment": "function `localtime` is defined in <time.h>"
+  }, {
+    "file": "src/dump_xml.c",
+    "line": 151,
+    "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L151",
+    "cmd": "buffer read",
+    "comment": "strftime function reads t, which is NULL"
+  }]
 }]

@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "file": "dump_xml.c",
   "line": 271,
-  "type": "buffer-overflow",
+  "type": "null-dereference",
   "CVE": null,
   "report": "https://github.com/noirotm/flvmeta/issues/13",
   "patch": "https://github.com/noirotm/flvmeta/commit/7b91e5656e27b16639c8de156878c7624346cbd4",

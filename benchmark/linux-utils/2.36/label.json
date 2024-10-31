@@ -1,0 +1,41 @@
+[{
+  "project": "linux-utils",
+  "version": "v2.36",
+  "file": "sys-utils/ipcutils.c",
+  "line": 224,
+  "type": "integer-overflow",
+  "CVE": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-37600",
+  "report": "https://github.com/util-linux/util-linux/issues/1395",
+  "patch": "https://github.com/util-linux/util-linux/commit/1c9143d0c1f979c3daf10e1c37b5b1e916c22a1c",
+  "source": {
+    "file": "sys-utils/ipcutils.c",
+    "line": 266,
+    "code": "https://github.com/prosyslab-warehouse/linux-utils-2.36/blob/master/sys-utils/ipcutils.c#L266"
+  },
+  "sink": {
+    "file": "sys-utils/ipcutils.c",
+    "line": 224,
+    "code": "https://github.com/prosyslab-warehouse/linux-utils-2.36/blob/master/sys-utils/ipcutils.c#L224"
+  },
+  "bug-trace": [{
+    "file": "sys-utils/ipcutils.c",
+    "line": 266,
+    "code": "https://github.com/prosyslab-warehouse/linux-utils-2.36/blob/master/sys-utils/ipcutils.c#L266",
+    "cmd": "read"
+  }, {
+    "file": "sys-utils/ipcutils.c",
+    "line": 284,
+    "code": "https://github.com/prosyslab-warehouse/linux-utils-2.36/blob/master/sys-utils/ipcutils.c#L284",
+    "cmd": "call"
+  }, {
+    "file": "sys-utils/ipcutils.c",
+    "line": 224,
+    "code": "https://github.com/prosyslab-warehouse/linux-utils-2.36/blob/master/sys-utils/ipcutils.c#L224",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_10-CWE190_Integer_Overflow__int_fscanf_multiply",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fscanf_add_01.c#L32",
+    "score": 1.0
+  }]
+}]

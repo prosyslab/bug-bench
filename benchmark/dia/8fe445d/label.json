@@ -1,0 +1,25 @@
+[{
+  "project": "linux-utils",
+  "version": "8fe445d",
+  "file": "lib/object.c",
+  "line": 59,
+  "type": "integer-overflow",
+  "CVE": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38281",
+  "report": "https://gitlab.gnome.org/GNOME/dia/-/issues/504",
+  "patch": "https://gitlab.gnome.org/GNOME/dia/-/commit/d15c2030d39c8863eb5474264e7a3b2066ac2701",
+  "source": {
+    "file": "unknwon",
+    "line": 999,
+    "code": "unknown"
+  },
+  "sink": {
+    "file": "lib/object.c",
+    "line": 59,
+    "code": "https://github.com/prosyslab-warehouse/dia-8fe445d/blob/master/lib/object.c#L59"
+  },
+  "similarity": [{
+    "ID": "CWE190_10-CWE190_Integer_Overflow__int_fscanf_multiply",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fscanf_add_01.c#L32",
+    "score": 1.0
+  }]
+}]

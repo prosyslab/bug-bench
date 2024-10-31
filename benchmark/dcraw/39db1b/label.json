@@ -51,6 +51,92 @@
     "CVE": "CVE-2021-3624",
     "report": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=984761",
     "input": "n1",
-    "patch": null
+    "patch": null,
+    "bug_trace": [{
+      "file": "parse.c",
+      "line": 70,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/parse.c#L70",
+      "cmd": "read"
+    }, {
+      "file": "parse.c",
+      "line": 72,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/parse.c#L72",
+      "cmd": "return"
+    }, {
+      "file": "dcraw.c",
+      "line": 3197,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3198",
+      "cmd": "call"
+    }, {
+      "file": "dcraw.c",
+      "line": 3198,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3198",
+      "cmd": "read"
+    }, {
+      "file": "dcraw.c",
+      "line": 3202,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3202",
+      "cmd": "multiply"
+    }, {
+      "file": "dcraw.c",
+      "line": 3202,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3202",
+      "cmd": "add"
+    }, {
+      "file": "dcraw.c",
+      "line": 3202,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3202",
+      "cmd": "modulo"
+    }, {
+      "file": "dcraw.c",
+      "line": 3202,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3202",
+      "cmd": "assign"
+    }, {
+      "file": "dcraw.c",
+      "line": 3203,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3203",
+      "cmd": "multiply"
+    }, {
+      "file": "dcraw.c",
+      "line": 3203,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3203",
+      "cmd": "right shift"
+    }, {
+      "file": "dcraw.c",
+      "line": 3203,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3203",
+      "cmd": "assign"
+    }, {
+      "file": "dcraw.c",
+      "line": 3208,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3208",
+      "cmd": "multiply"
+    }, {
+      "file": "dcraw.c",
+      "line": 3208,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3208",
+      "cmd": "multiply"
+    }, {
+      "file": "dcraw.c",
+      "line": 3208,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3208",
+      "cmd": "divide"
+    }, {
+      "file": "dcraw.c",
+      "line": 3208,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3208",
+      "cmd": "assign"
+    }, {
+      "file": "dcraw.c",
+      "line": 3208,
+      "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3208",
+      "cmd": "malloc"
+    }],
+    "similarity": [{
+      "ID": "autotrace-20200219.65",
+      "bug": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/autotrace.c#L170",
+      "score": 0.94
+    }]
   }
 ]

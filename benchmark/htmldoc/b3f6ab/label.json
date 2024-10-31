@@ -11,6 +11,52 @@
       "line": 1326,
       "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1326"
     },
+    "bug_trace": [{
+      "file": "htmldoc/image.cxx",
+      "line": 1279,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1279",
+      "cmd": "read"
+    }, {
+      "file": "htmldoc/image.cxx",
+      "line": 1320,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1320",
+      "cmd": "left shift"
+    }, {
+      "file": "htmldoc/image.cxx",
+      "line": 1320,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1320",
+      "cmd": "bitwise or"
+    }, {
+      "file": "htmldoc/image.cxx",
+      "line": 1321,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1321",
+      "cmd": "left shift"
+    }, {
+      "file": "htmldoc/image.cxx",
+      "line": 1321,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1321",
+      "cmd": "bitwise or"
+    }, {
+      "file": "htmldoc/image.cxx",
+      "line": 1321,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1321",
+      "cmd": "assign"
+    }, {
+      "file": "htmldoc/image.cxx",
+      "line": 1322,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1322",
+      "cmd": "assign"
+    }, {
+      "file": "htmldoc/image.cxx",
+      "line": 1326,
+      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1326",
+      "cmd": "malloc"
+    }],
+    "similarity": [{
+      "ID": "autotrace-20200219.65",
+      "bug": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/autotrace.c#L170",
+      "score": 0.95
+    }],
     "type": "integer-overflow",
     "CVE": "CVE-2021-20308",
     "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20308",

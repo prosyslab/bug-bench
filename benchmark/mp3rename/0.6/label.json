@@ -11,6 +11,17 @@
       "line": 523,
       "code": "https://github.com/prosyslab-warehouse/mp3rename-0.6/blob/master/mp3rename.c#L523"
     },
+    "bug_trace": [{
+      "file": "mp3rename.c",
+      "line": 24,
+      "code": "https://github.com/prosyslab-warehouse/mp3rename-0.6/blob/master/mp3rename.c#L24",
+      "cmd": "argv"
+    }, {
+      "file": "mp3rename.c",
+      "line": 523,
+      "code": "https://github.com/prosyslab-warehouse/mp3rename-0.6/blob/master/mp3rename.c#L523",
+      "cmd": "fprintf"
+    }],
     "type": "format-string",
     "CVE": null,
     "report": null,

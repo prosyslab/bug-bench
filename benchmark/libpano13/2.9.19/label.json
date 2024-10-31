@@ -1,0 +1,41 @@
+[{
+  "project": "libpano13",
+  "version": "2.9.19",
+  "file": "file.c",
+  "line": 2915,
+  "type": "format-string",
+  "CVE": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20307",
+  "report": "https://bugzilla.redhat.com/show_bug.cgi?id=1946284",
+  "patch": null,
+  "source": {
+    "file": "PTcommon.c",
+    "line": 1822,
+    "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/PTcommon.c#L1822"
+  },
+  "sink": {
+    "file": "file.c",
+    "line": 2915,
+    "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/file.c#L2915"
+  },
+  "bug_trace": [{
+    "file": "PTcommon.c",
+    "line": 1822,
+    "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/PTcommon.c#L1822",
+    "cmd": "getopt"
+  }, {
+    "file": "PTcommon.c",
+    "line": 1831,
+    "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/PTcommon.c#L1831",
+    "cmd": "strcpy"
+  }, {
+    "file": "file.c",
+    "line": 2915,
+    "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/file.c#L2915",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "mp3rename",
+    "bug": "https://github.com/prosyslab-warehouse/mp3rename-0.6/blob/master/mp3rename.c#L523",
+    "score": 0.59
+  }]
+}]

@@ -1,5 +1,5 @@
 [{
-  "project": "libplib",
+  "project": "libplib1",
   "version": "1.8.5",
   "file": "src/ssg/ssgLoadTGA.cxx",
   "line": 167,

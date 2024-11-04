@@ -9,7 +9,7 @@ two_point = [
     'integer-overflow', 'format-string', 'buffer-overflow',
     'integer-underflow', 'command-injection', 'negative-shift', 'null-dereference'
 ]
-none_alarm = ['stack-overflow', 'out-of-memory', 'use-after-free', 'no-null-term-string']
+none_alarm = ['stack-overflow', 'out-of-memory', 'use-after-free', 'no-null-term-string', 'double-free']
 
 if __name__ == "__main__":
     with open(sys.argv[1]) as f:

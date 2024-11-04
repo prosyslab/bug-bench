@@ -1,0 +1,36 @@
+[{
+  "project": "4ti2",
+  "version": "Release_1_6_9",
+  "file": "src/util/output.c",
+  "line": 720,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://github.com/4ti2/4ti2/issues/32",
+  "patch": null,
+  "source": {
+    "file": "src/util/output.c",
+    "line": 59,
+    "code": "https://github.com/prosyslab-warehouse/4ti2-1.6.9/blob/master/src/util/output.c#L59"
+  },
+  "sink": {
+    "file": "src/util/output.c",
+    "line": 720,
+    "code": "https://github.com/prosyslab-warehouse/4ti2-1.6.9/blob/master/src/util/output.c#L720"
+  },
+  "bug-trace": [{
+    "file": "src/util/output.c",
+    "line": 59,
+    "code": "https://github.com/prosyslab-warehouse/4ti2-1.6.9/blob/master/src/util/output.c#L59",
+    "cmd": "fscanf"
+  }, {
+    "file": "src/util/output.c",
+    "line": 720,
+    "code": "https://github.com/prosyslab-warehouse/4ti2-1.6.9/blob/master/src/util/output.c#L720",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_10-CWE190_Integer_Overflow__int_fscanf_add",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fscanf_add_01.c#L32",
+    "score": 0.71
+  }]
+}]

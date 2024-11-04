@@ -1,0 +1,56 @@
+[{
+  "project": "abyss",
+  "version": "2.3.1",
+  "file": "dialign/io.c",
+  "line": 291,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "source": {
+    "file": "dialign/io.c",
+    "line": 270,
+    "code": "https://github.com/prosyslab-warehouse/abyss-2.3.1/blob/master/dialign/io.c#L270"
+  },
+  "sink": {
+    "file": "dialign/io.c",
+    "line": 291,
+    "code": "https://github.com/prosyslab-warehouse/abyss-2.3.1/blob/master/dialign/io.c#L291"
+  },
+  "bug-trace": [{
+    "file": "dialign/io.c",
+    "line": 270,
+    "code": "https://github.com/prosyslab-warehouse/abyss-2.3.1/blob/master/dialign/io.c#L270",
+    "cmd": "fscanf"
+  }, {
+    "file": "dialign/io.c",
+    "line": 275,
+    "code": "https://github.com/prosyslab-warehouse/abyss-2.3.1/blob/master/dialign/io.c#L275",
+    "cmd": "add"
+  }, {
+    "file": "dialign/io.c",
+    "line": 276,
+    "code": "https://github.com/prosyslab-warehouse/abyss-2.3.1/blob/master/dialign/io.c#L276",
+    "cmd": "assign"
+  }, {
+    "file": "dialign/io.c",
+    "line": 289,
+    "code": "https://github.com/prosyslab-warehouse/abyss-2.3.1/blob/master/dialign/io.c#L289",
+    "cmd": "assign"
+  }, {
+    "file": "dialign/io.c",
+    "line": 291,
+    "code": "https://github.com/prosyslab-warehouse/abyss-2.3.1/blob/master/dialign/io.c#L291",
+    "cmd": "add"
+  }, {
+    "file": "dialign/io.c",
+    "line": 291,
+    "code": "https://github.com/prosyslab-warehouse/abyss-2.3.1/blob/master/dialign/io.c#L291",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_10-CWE190_Integer_Overflow__int_fscanf_add",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fscanf_add_01.c#L32",
+    "score": 0.83
+  }]
+}]

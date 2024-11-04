@@ -5,7 +5,7 @@
   "line": 301,
   "type": "integer-overflow",
   "CVE": null,
-  "report": null,
+  "report": "https://github.com/BenLangmead/bowtie2/issues/338",
   "patch": null,
   "source": {
     "file": "word_io.h",

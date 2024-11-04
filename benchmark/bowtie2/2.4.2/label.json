@@ -1,0 +1,52 @@
+[{
+  "project": "bowtie2",
+  "version": "v2.4.2",
+  "file": "bt2_io.cpp",
+  "line": 301,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "source": {
+    "file": "word_io.h",
+    "line": 124,
+    "code": "https://github.com/prosyslab-warehouse/bowtie2-2.4.2/blob/master/word_io.h#L124"
+  },
+  "sink": {
+    "file": "bt2_io.cpp",
+    "line": 301,
+    "code": "https://github.com/prosyslab-warehouse/bowtie2-2.4.2/blob/master/bt2_io.cpp#L301"
+  },
+  "bug-trace": [{
+    "file": "word_io.h",
+    "line": 124,
+    "code": "https://github.com/prosyslab-warehouse/bowtie2-2.4.2/blob/master/word_io.h#L124",
+    "cmd": "read"
+  }, {
+    "file": "word_io.h",
+    "line": 136,
+    "code": "https://github.com/prosyslab-warehouse/bowtie2-2.4.2/blob/master/word_io.h#L136",
+    "cmd": "return"
+  }, {
+    "file": "bt2_io.cpp",
+    "line": 285,
+    "code": "https://github.com/prosyslab-warehouse/bowtie2-2.4.2/blob/master/bt2_io.cpp#L285",
+    "cmd": "assign"
+  }, {
+    "file": "bt2_io.cpp",
+    "line": 301,
+    "code": "https://github.com/prosyslab-warehouse/bowtie2-2.4.2/blob/master/bt2_io.cpp#L301",
+    "cmd": "multiply"
+  }, {
+    "file": "bt2_io.cpp",
+    "line": 301,
+    "code": "https://github.com/prosyslab-warehouse/bowtie2-2.4.2/blob/master/bt2_io.cpp#L301",
+    "cmd": "malloc",
+    "comment": "used new keyword instead of malloc"
+  }],
+  "similarity": [{
+    "ID": "autotrace-20200219.65",
+    "bug": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L255",
+    "score": 0.73
+  }]
+}]

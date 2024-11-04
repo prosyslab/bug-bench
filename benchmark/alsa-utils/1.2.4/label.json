@@ -1,0 +1,57 @@
+[{
+  "project": "alsa-utils",
+  "version": "v1.2.4",
+  "file": "topology/topology.c",
+  "line": 126,
+  "type": "double-free",
+  "code": "https://github.com/prosyslab-warehouse/alsa-utils-1.2.4/blob/master/topology/topology.c#L126",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "source": {
+    "file": "topology/topology.c",
+    "line": 95,
+    "code": "https://github.com/prosyslab-warehouse/alsa-utils-1.2.4/blob/master/topology/topology.c#L95"
+  },
+  "sink": {
+    "file": "topology/topology.c",
+    "line": 126,
+    "code": "https://github.com/prosyslab-warehouse/alsa-utils-1.2.4/blob/master/topology/topology.c#L126"
+  },
+  "bug-trace": [{
+    "file": "topology/topology.c",
+    "line": 95,
+    "code": "https://github.com/prosyslab-warehouse/alsa-utils-1.2.4/blob/master/topology/topology.c#L95",
+    "cmd": "read"
+  }, {
+    "file": "topology/topology.c",
+    "line": 101,
+    "code": "https://github.com/prosyslab-warehouse/alsa-utils-1.2.4/blob/master/topology/topology.c#L101",
+    "cmd": "add"
+  }, {
+    "file": "topology/topology.c",
+    "line": 102,
+    "code": "https://github.com/prosyslab-warehouse/alsa-utils-1.2.4/blob/master/topology/topology.c#L102",
+    "cmd": "malloc"
+  }, {
+    "file": "topology/topology.c",
+    "line": 104,
+    "code": "https://github.com/prosyslab-warehouse/alsa-utils-1.2.4/blob/master/topology/topology.c#L104",
+    "cmd": "free"
+  }, {
+    "file": "topology/topology.c",
+    "line": 105,
+    "code": "https://github.com/prosyslab-warehouse/alsa-utils-1.2.4/blob/master/topology/topology.c#L105",
+    "cmd": "goto"
+  }, {
+    "file": "topology/topology.c",
+    "line": 126,
+    "code": "https://github.com/prosyslab-warehouse/alsa-utils-1.2.4/blob/master/topology/topology.c#L126",
+    "cmd": "free"
+  }],
+  "similarity": [{
+    "ID": "CWE415_33-CWE415_Double_Free__malloc_free_int64_t",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_33.cpp#L40",
+    "score": 1
+  }]
+}]

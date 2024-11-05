@@ -1,5 +1,5 @@
 [{
-  "project": "linux-utils",
+  "project": "util-linux",
   "version": "v2.36",
   "file": "sys-utils/ipcutils.c",
   "line": 224,
@@ -10,27 +10,27 @@
   "source": {
     "file": "sys-utils/ipcutils.c",
     "line": 266,
-    "code": "https://github.com/prosyslab-warehouse/linux-utils-2.36/blob/master/sys-utils/ipcutils.c#L266"
+    "code": "https://github.com/prosyslab-warehouse/util-linux-2.36/blob/master/sys-utils/ipcutils.c#L266"
   },
   "sink": {
     "file": "sys-utils/ipcutils.c",
     "line": 224,
-    "code": "https://github.com/prosyslab-warehouse/linux-utils-2.36/blob/master/sys-utils/ipcutils.c#L224"
+    "code": "https://github.com/prosyslab-warehouse/util-linux-2.36/blob/master/sys-utils/ipcutils.c#L224"
   },
   "bug-trace": [{
     "file": "sys-utils/ipcutils.c",
     "line": 266,
-    "code": "https://github.com/prosyslab-warehouse/linux-utils-2.36/blob/master/sys-utils/ipcutils.c#L266",
+    "code": "https://github.com/prosyslab-warehouse/util-linux-2.36/blob/master/sys-utils/ipcutils.c#L266",
     "cmd": "read"
   }, {
     "file": "sys-utils/ipcutils.c",
     "line": 284,
-    "code": "https://github.com/prosyslab-warehouse/linux-utils-2.36/blob/master/sys-utils/ipcutils.c#L284",
+    "code": "https://github.com/prosyslab-warehouse/util-linux-2.36/blob/master/sys-utils/ipcutils.c#L284",
     "cmd": "call"
   }, {
     "file": "sys-utils/ipcutils.c",
     "line": 224,
-    "code": "https://github.com/prosyslab-warehouse/linux-utils-2.36/blob/master/sys-utils/ipcutils.c#L224",
+    "code": "https://github.com/prosyslab-warehouse/util-linux-2.36/blob/master/sys-utils/ipcutils.c#L224",
     "cmd": "malloc"
   }],
   "similarity": [{

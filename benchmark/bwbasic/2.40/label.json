@@ -1,0 +1,47 @@
+[{
+  "project": "bwbasic",
+  "version": "2.40",
+  "file": "bwbasic.c",
+  "line": 483,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/bwbasic-2.40/blob/master/bwbasic.c#L483",
+  "source": {
+    "file": "bwx_tty.c",
+    "line": 259,
+    "code": "https://github.com/prosyslab-warehouse/bwbasic-2.40/blob/master/bwx_tty.c#L259"
+  },
+  "sink": {
+    "file": "bwbasic.c",
+    "line": 483,
+    "code": "https://github.com/prosyslab-warehouse/bwbasic-2.40/blob/master/bwbasic.c#L483"
+  },
+  "bug-trace": [{
+    "file": "bwx_tty.c",
+    "line": 259,
+    "code": "https://github.com/prosyslab-warehouse/bwbasic-2.40/blob/master/bwx_tty.c#L259",
+    "cmd": "fgetc"
+  }, {
+    "file": "bwx_tty.c",
+    "line": 262,
+    "code": "https://github.com/prosyslab-warehouse/bwbasic-2.40/blob/master/bwx_tty.c#L262",
+    "cmd": "return"
+  }, {
+    "file": "bwbasic.c",
+    "line": 262,
+    "code": "https://github.com/prosyslab-warehouse/bwbasic-2.40/blob/master/bwbasic.c#L1354",
+    "cmd": "return"
+  }, {
+    "file": "bwbasic.c",
+    "line": 483,
+    "code": "https://github.com/prosyslab-warehouse/bwbasic-2.40/blob/master/bwbasic.c#L483",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "zsh-5.4.2",
+    "bug": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665",
+    "score": 0.44
+  }]
+}]

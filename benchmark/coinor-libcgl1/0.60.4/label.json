@@ -1,0 +1,41 @@
+[{
+  "project": "coinor-libcgl1",
+  "version": "0.60.4",
+  "file": "Cgl/src/CglKnapsackCover/CglKnapsackCoverTest.cpp",
+  "line": 551,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "source": {
+    "file": "Cgl/src/CglKnapsackCover/CglKnapsackCoverTest.cpp",
+    "line": 544,
+    "code": "https://github.com/prosyslab-warehouse/coinor-libcgl1-0.60.4/blob/master/Cgl/src/CglKnapsackCover/CglKnapsackCoverTest.cpp#L544"
+  },
+  "sink": {
+    "file": "Cgl/src/CglKnapsackCover/CglKnapsackCoverTest.cpp",
+    "line": 551,
+    "code": "https://github.com/prosyslab-warehouse/coinor-libcgl1-0.60.4/blob/master/Cgl/src/CglKnapsackCover/CglKnapsackCoverTest.cpp#L551"
+  },
+  "bug-trace": [{
+    "file": "Cgl/src/CglKnapsackCover/CglKnapsackCoverTest.cpp",
+    "line": 544,
+    "code": "https://github.com/prosyslab-warehouse/coinor-libcgl1-0.60.4/blob/master/Cgl/src/CglKnapsackCover/CglKnapsackCoverTest.cpp#L544",
+    "cmd": "fscanf"
+  }, {
+    "file": "Cgl/src/CglKnapsackCover/CglKnapsackCoverTest.cpp",
+    "line": 551,
+    "code": "https://github.com/prosyslab-warehouse/coinor-libcgl1-0.60.4/blob/master/Cgl/src/CglKnapsackCover/CglKnapsackCoverTest.cpp#L551",
+    "cmd": "add"
+  }, {
+    "file": "Cgl/src/CglKnapsackCover/CglKnapsackCoverTest.cpp",
+    "line": 551,
+    "code": "https://github.com/prosyslab-warehouse/coinor-libcgl1-0.60.4/blob/master/Cgl/src/CglKnapsackCover/CglKnapsackCoverTest.cpp#L551",
+    "cmd": "memory access"
+  }],
+  "similarity": [{
+    "ID": "CWE190_10-CWE190_Integer_Overflow__int_fscanf_add",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fscanf_add_01.c#L32",
+    "score": 0.87
+  }]
+}]

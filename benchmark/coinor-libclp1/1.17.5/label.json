@@ -1,0 +1,41 @@
+[{
+  "project": "coinor-libclp1",
+  "version": "1.17.5",
+  "file": "Clp/src/unitTest.cpp",
+  "line": 2412,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://github.com/coin-or/Clp/issues/200",
+  "patch": null,
+  "source": {
+    "file": "Clp/src/unitTest.cpp",
+    "line": 2373,
+    "code": "https://github.com/prosyslab-warehouse/coinor-libclp1-1.17.5/blob/master/Clp/src/unitTest.cpp#L2373"
+  },
+  "sink": {
+    "file": "Clp/src/unitTest.cpp",
+    "line": 2412,
+    "code": "https://github.com/prosyslab-warehouse/coinor-libclp1-1.17.5/blob/master/Clp/src/unitTest.cpp#L2412"
+  },
+  "bug-trace": [{
+    "file": "Clp/src/unitTest.cpp",
+    "line": 2373,
+    "code": "https://github.com/prosyslab-warehouse/coinor-libclp1-1.17.5/blob/master/Clp/src/unitTest.cpp#L2373",
+    "cmd": "fscanf"
+  }, {
+    "file": "Clp/src/unitTest.cpp",
+    "line": 2412,
+    "code": "https://github.com/prosyslab-warehouse/coinor-libclp1-1.17.5/blob/master/Clp/src/unitTest.cpp#L2412",
+    "cmd": "multiply"
+  }, {
+    "file": "Clp/src/unitTest.cpp",
+    "line": 2412,
+    "code": "https://github.com/prosyslab-warehouse/coinor-libclp1-1.17.5/blob/master/Clp/src/unitTest.cpp#L2412",
+    "cmd": "memory access"
+  }],
+  "similarity": [{
+    "ID": "CWE190_10-CWE190_Integer_Overflow__int_fscanf_multiply",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fscanf_multiply_01.c#L32",
+    "score": 1
+  }]
+}]

@@ -1,0 +1,41 @@
+[{
+  "project": "util-linux",
+  "version": "v2.35",
+  "file": "text-utils/more.c",
+  "line": 1146,
+  "type": "command-injection",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "source": {
+    "file": "text-utils/more.c",
+    "line": 1630,
+    "code": "https://github.com/prosyslab-warehouse/util-linux-2.35/blob/master/text-utils/more.c#L1630"
+  },
+  "sink": {
+    "file": "text-utils/more.c",
+    "line": 1146,
+    "code": "https://github.com/prosyslab-warehouse/util-linux-2.35/blob/master/text-utils/more.c#L1146"
+  },
+  "bug-trace": [{
+    "file": "text-utils/more.c",
+    "line": 1630,
+    "code": "https://github.com/prosyslab-warehouse/util-linux-2.35/blob/master/text-utils/more.c#L1630",
+    "cmd": "getenv"
+  }, {
+    "file": "text-utils/more.c",
+    "line": 1651,
+    "code": "https://github.com/prosyslab-warehouse/util-linux-2.35/blob/master/text-utils/more.c#L1651",
+    "cmd": "call"
+  }, {
+    "file": "text-utils/more.c",
+    "line": 1146,
+    "code": "https://github.com/prosyslab-warehouse/util-linux-2.35/blob/master/text-utils/more.c#L1146",
+    "cmd": "exec"
+  }],
+  "similarity": [{
+    "ID": "amanda-3.3.1",
+    "bug": "https://github.com/prosyslab-warehouse/amanda-3.3.1/blob/master/client-src/runtar.c#L159",
+    "score": 0.86
+  }]
+}]

@@ -1,0 +1,52 @@
+[{
+  "project": "crrcsim",
+  "version": "0.9.13",
+  "file": "src/mod_video/crrc_graphics.cpp",
+  "line": 237,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://sourceforge.net/p/crrcsim/bugs/48/",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/crrcsim-0.9.13/blob/master/src/mod_video/crrc_graphics.cpp#L237",
+  "source": {
+    "file": "src/mod_video/crrc_graphics.cpp",
+    "line": 180,
+    "code": "https://github.com/prosyslab-warehouse/crrcsim-0.9.13/blob/master/src/mod_video/crrc_graphics.cpp#L180"
+  },
+  "sink": {
+    "file": "src/mod_video/crrc_graphics.cpp",
+    "line": 237,
+    "code": "https://github.com/prosyslab-warehouse/crrcsim-0.9.13/blob/master/src/mod_video/crrc_graphics.cpp#L237"
+  },
+  "bug-trace": [{
+    "file": "src/mod_video/crrc_graphics.cpp",
+    "line": 180,
+    "code": "https://github.com/prosyslab-warehouse/crrcsim-0.9.13/blob/master/src/mod_video/crrc_graphics.cpp#L180",
+    "cmd": "fread"
+  }, {
+    "file": "src/mod_video/crrc_graphics.cpp",
+    "line": 192,
+    "code": "https://github.com/prosyslab-warehouse/crrcsim-0.9.13/blob/master/src/mod_video/crrc_graphics.cpp#L192",
+    "cmd": "return"
+  }, {
+    "file": "src/mod_video/crrc_graphics.cpp",
+    "line": 237,
+    "code": "https://github.com/prosyslab-warehouse/crrcsim-0.9.13/blob/master/src/mod_video/crrc_graphics.cpp#L237",
+    "cmd": "assign"
+  }, {
+    "file": "src/mod_video/crrc_graphics.cpp",
+    "line": 237,
+    "code": "https://github.com/prosyslab-warehouse/crrcsim-0.9.13/blob/master/src/mod_video/crrc_graphics.cpp#L237",
+    "cmd": "multiply"
+  }, {
+    "file": "src/mod_video/crrc_graphics.cpp",
+    "line": 237,
+    "code": "https://github.com/prosyslab-warehouse/crrcsim-0.9.13/blob/master/src/mod_video/crrc_graphics.cpp#L237",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "optipng-0.5.3",
+    "bug": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/2f5197c817860a1b51705e80919a6cb8a11066c7/lib/pngxtern/minitiff/tiffread.c#L353",
+    "score": 0.9
+  }]
+}]

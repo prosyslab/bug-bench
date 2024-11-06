@@ -1,0 +1,77 @@
+[{
+  "project": "crafty",
+  "version": "23.4",
+  "file": "tbdecode.h",
+  "line": 686,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=993610",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L686",
+  "source": {
+    "file": "tbdecode.h",
+    "line": 647,
+    "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L647"
+  },
+  "sink": {
+    "file": "tbdecode.h",
+    "line": 686,
+    "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L686"
+  },
+  "bug-trace": [{
+    "file": "tbdecode.h",
+    "line": 647,
+    "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L647",
+    "cmd": "fread"
+  }, {
+    "file": "tbdecode.h",
+    "line": 651,
+    "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L651",
+    "cmd": "assign"
+  }, {
+    "file": "tbdecode.h",
+    "line": 653,
+    "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L653",
+    "cmd": "memory acess"
+  }, {
+    "file": "tbdecode.h",
+    "line": 653,
+    "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L653",
+    "cmd": "left shift"
+  }, {
+    "file": "tbdecode.h",
+    "line": 653,
+    "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L653",
+    "cmd": "add"
+  }, {
+    "file": "tbdecode.h",
+    "line": 683,
+    "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L686",
+    "cmd": "multiply"
+  }, {
+    "file": "tbdecode.h",
+    "line": 661,
+    "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L661",
+    "cmd": "macro call"
+  }, {
+    "file": "tbdecode.h",
+    "line": 683,
+    "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L686",
+    "cmd": "multiply"
+  }, {
+    "file": "tbdecode.h",
+    "line": 683,
+    "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L686",
+    "cmd": "assign"
+  }, {
+    "file": "tbdecode.h",
+    "line": 686,
+    "code": "https://github.com/prosyslab-warehouse/crafty-23.4/blob/master/tbdecode.h#L686",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "optipng-0.5.3",
+    "bug": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/2f5197c817860a1b51705e80919a6cb8a11066c7/lib/pngxtern/minitiff/tiffread.c#L353",
+    "score": 0.86
+  }]
+}]

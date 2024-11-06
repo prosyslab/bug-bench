@@ -1,0 +1,42 @@
+[{
+  "project": "darktable",
+  "version": "3.7.0",
+  "file": "src/common/imageio_pfm.c",
+  "line": 86,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://github.com/darktable-org/darktable/issues/9827",
+  "patch": "https://github.com/darktable-org/darktable/pull/9840/commits/0af684cd00f4510c9c564c5e5359dfa72adb492c",
+  "code": "https://github.com/prosyslab-warehouse/darktable-3.7.0/blob/master/src/common/imageio_pfm.c#L86",
+  "source": {
+    "file": "src/common/imageio_pfm.c",
+    "line": 53,
+    "code": "https://github.com/prosyslab-warehouse/darktable-3.7.0/blob/master/src/common/imageio_pfm.c#L53"
+  },
+  "sink": {
+    "file": "src/common/imageio_pfm.c",
+    "line": 86,
+    "code": "https://github.com/prosyslab-warehouse/darktable-3.7.0/blob/master/src/common/imageio_pfm.c#L86"
+  },
+  "bug-trace": [{
+    "file": "src/common/imageio_pfm.c",
+    "line": 53,
+    "code": "https://github.com/prosyslab-warehouse/darktable-3.7.0/blob/master/src/common/imageio_pfm.c#L53",
+    "cmd": "scanf"
+  }, {
+    "file": "src/common/imageio_pfm.c",
+    "line": 86,
+    "code": "https://github.com/prosyslab-warehouse/darktable-3.7.0/blob/master/src/common/imageio_pfm.c#L86",
+    "cmd": "multiply"
+  }, {
+    "file": "src/common/imageio_pfm.c",
+    "line": 86,
+    "code": "https://github.com/prosyslab-warehouse/darktable-3.7.0/blob/master/src/common/imageio_pfm.c#L86",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE680_01-CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_01.c#L33",
+    "score": 1
+  }]
+}]

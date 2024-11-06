@@ -1,0 +1,42 @@
+[{
+  "project": "cron",
+  "version": "3.0",
+  "file": "crontab.c",
+  "line": 690,
+  "type": "command-injection",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/cron-3.0/blob/master/crontab.c#L690",
+  "source": {
+    "file": "crontab.c",
+    "line": 646,
+    "code": "https://github.com/prosyslab-warehouse/cron-3.0/blob/master/crontab.c#L646"
+  },
+  "sink": {
+    "file": "crontab.c",
+    "line": 690,
+    "code": "https://github.com/prosyslab-warehouse/cron-3.0/blob/master/crontab.c#L690"
+  },
+  "bug-trace": [{
+    "file": "crontab.c",
+    "line": 646,
+    "code": "https://github.com/prosyslab-warehouse/cron-3.0/blob/master/crontab.c#L646",
+    "cmd": "getenv"
+  }, {
+    "file": "crontab.c",
+    "line": 689,
+    "code": "https://github.com/prosyslab-warehouse/cron-3.0/blob/master/crontab.c#L689",
+    "cmd": "snprintf"
+  }, {
+    "file": "crontab.c",
+    "line": 690,
+    "code": "https://github.com/prosyslab-warehouse/cron-3.0/blob/master/crontab.c#L690",
+    "cmd": "exec"
+  }],
+  "similarity": [{
+    "ID": "command-injection3-1",
+    "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/command-injection3.c#L16",
+    "score": 0.68
+  }]
+}]

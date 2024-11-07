@@ -1,0 +1,37 @@
+[{
+  "project": "elvis-tiny",
+  "version": "1.4",
+  "file": "main.c",
+  "line": 267,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=992407",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/elvis-tiny-1.4/blob/master/main.c#L267",
+  "source": {
+    "file": "main.c",
+    "line": 264,
+    "code": "https://github.com/prosyslab-warehouse/elvis-tiny-1.4/blob/master/main.c#L264"
+  },
+  "sink": {
+    "file": "main.c",
+    "line": 267,
+    "code": "https://github.com/prosyslab-warehouse/elvis-tiny-1.4/blob/master/main.c#L267"
+  },
+  "bug-trace": [{
+    "file": "main.c",
+    "line": 267,
+    "code": "https://github.com/prosyslab-warehouse/elvis-tiny-1.4/blob/master/main.c#L267",
+    "cmd": "getenv"
+  }, {
+    "file": "main.c",
+    "line": 267,
+    "code": "https://github.com/prosyslab-warehouse/elvis-tiny-1.4/blob/master/main.c#L267",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "buffer-overflow1-1",
+    "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12",
+    "score": 1
+  }]
+}]

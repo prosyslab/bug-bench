@@ -1,0 +1,61 @@
+[{
+  "project": "drawxtl",
+  "version": "5.5",
+  "file": "source/DRAWxtl55/drawxtl.h",
+  "line": 28,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "source": {
+    "file": "source/DRAWxtl55/Fourier.cxx",
+    "line": 758,
+    "code": "https://github.com/prosyslab-warehouse/drawxtl-5.5/blob/master/source/DRAWxtl55/Fourier.cxx#L758"
+  },
+  "sink": {
+    "file": "source/DRAWxtl55/drawxtl.h",
+    "line": 28,
+    "code": "https://github.com/prosyslab-warehouse/drawxtl-5.5/blob/master/source/DRAWxtl55/drawxtl.h#L28"
+  },
+  "bug-trace": [{
+    "file": "source/DRAWxtl55/Fourier.cxx",
+    "line": 1070,
+    "code": "https://github.com/prosyslab-warehouse/drawxtl-5.5/blob/master/source/DRAWxtl55/Fourier.cxx#L1070",
+    "cmd": "fread"
+  }, {
+    "file": "source/DRAWxtl55/Fourier.cxx",
+    "line": 759,
+    "code": "https://github.com/prosyslab-warehouse/drawxtl-5.5/blob/master/source/DRAWxtl55/Fourier.cxx#L759",
+    "cmd": "assign"
+  }, {
+    "file": "source/DRAWxtl55/Fourier.cxx",
+    "line": 813,
+    "code": "https://github.com/prosyslab-warehouse/drawxtl-5.5/blob/master/source/DRAWxtl55/Fourier.cxx#L813",
+    "cmd": "assign"
+  }, {
+    "file": "source/DRAWxtl55/Fourier.cxx",
+    "line": 1013,
+    "code": "https://github.com/prosyslab-warehouse/drawxtl-5.5/blob/master/source/DRAWxtl55/Fourier.cxx#L1013",
+    "cmd": "assign"
+  }, {
+    "file": "source/DRAWxtl55/Fourier.cxx",
+    "line": 758,
+    "code": "https://github.com/prosyslab-warehouse/drawxtl-5.5/blob/master/source/DRAWxtl55/Fourier.cxx#L758",
+    "cmd": "multiply"
+  }, {
+    "file": "source/DRAWxtl55/Fourier.cxx",
+    "line": 758,
+    "code": "https://github.com/prosyslab-warehouse/drawxtl-5.5/blob/master/source/DRAWxtl55/Fourier.cxx#L758",
+    "cmd": "call"
+  }, {
+    "file": "source/DRAWxtl55/drawxtl.h",
+    "line": 28,
+    "code": "https://github.com/prosyslab-warehouse/drawxtl-5.5/blob/master/source/DRAWxtl55/drawxtl.h#L28",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "autotrace-20200219.65",
+    "bug": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L255",
+    "score": 0.79
+  }]
+}]

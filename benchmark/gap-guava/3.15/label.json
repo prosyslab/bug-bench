@@ -1,0 +1,41 @@
+[{
+  "project": "gap-guava",
+  "version": "v3.15",
+  "file": "src/ctjhai/minimum-weight.c",
+  "line": 152,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://github.com/gap-packages/guava/issues/57",
+  "patch": null,
+  "source": {
+    "file": "src/ctjhai/minimum-weight.c",
+    "line": 147,
+    "code": "https://github.com/prosyslab-warehouse/gap-guava-3.15/blob/master/src/ctjhai/minimum-weight.c#L147"
+  },
+  "sink": {
+    "file": "src/ctjhai/minimum-weight.c",
+    "line": 152,
+    "code": "https://github.com/prosyslab-warehouse/gap-guava-3.15/blob/master/src/ctjhai/minimum-weight.c#L152"
+  },
+  "bug-trace": [{
+    "file": "src/ctjhai/minimum-weight.c",
+    "line": 147,
+    "code": "https://github.com/prosyslab-warehouse/gap-guava-3.15/blob/master/src/ctjhai/minimum-weight.c#L147",
+    "cmd": "fscanf"
+  }, {
+    "file": "src/ctjhai/minimum-weight.c",
+    "line": 152,
+    "code": "https://github.com/prosyslab-warehouse/gap-guava-3.15/blob/master/src/ctjhai/minimum-weight.c#L152",
+    "cmd": "multiply"
+  }, {
+    "file": "src/ctjhai/minimum-weight.c",
+    "line": 152,
+    "code": "https://github.com/prosyslab-warehouse/gap-guava-3.15/blob/master/src/ctjhai/minimum-weight.c#L152",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_10-CWE190_Integer_Overflow__int_fscanf_multiply",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fscanf_multiply_01.c#L32",
+    "score": 1
+  }]
+}]

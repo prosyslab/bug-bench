@@ -1,0 +1,39 @@
+[{
+  "project": "grass",
+  "version": "7.8.5",
+  "file": "raster/r.out.mpeg/main.c",
+  "line": 404,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/grass-7.8.5/blob/master/raster/r.out.mpeg/main.c#L404",
+  "source": {
+    "file": "lib/gis/parser.c",
+    "line": 964,
+    "code": "https://github.com/prosyslab-warehouse/grass-7.8.5/blob/master/lib/gis/parser.c#L964"
+  },
+  "sink": {
+    "file": "lib/gis/parser.c",
+    "line": 963,
+    "code": "https://github.com/prosyslab-warehouse/grass-7.8.5/blob/master/lib/gis/parser.c#L963"
+  },
+  "bug-trace": [
+    {
+      "file": "lib/gis/parser.c",
+      "line": 964,
+      "code": "https://github.com/prosyslab-warehouse/grass-7.8.5/blob/master/lib/gis/parser.c#L964",
+      "cmd": "genenv"
+    }, {
+      "file": "lib/gis/parser.c",
+      "line": 963,
+      "code": "https://github.com/prosyslab-warehouse/grass-7.8.5/blob/master/lib/gis/parser.c#L963",
+      "cmd": "sprintf"
+    }
+  ],
+  "similarity": [{
+    "ID": "buffer-overflow1-1",
+    "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12",
+    "score": 1
+  }]
+}]

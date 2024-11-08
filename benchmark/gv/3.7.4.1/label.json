@@ -1,0 +1,44 @@
+[{
+  "project": "gv",
+  "version": "3.7.4.1",
+  "file": "gv/src/resource.c",
+  "line": 243,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "https://savannah.gnu.org/patch/index.php?10096",
+  "patch": "https://github.com/william8000/gv/commit/1138482d128ba757977f7d3daa2d1684d89a9132#diff-bb4693a954ffbb2d8b74c3f8b1ef12cdab524f06f77ec36105b1d8bc8421f855R233",
+  "code": "https://github.com/prosyslab-warehouse/gv-3.7.4.1/blob/master/gv/src/resource.c#L243",
+  "source": {
+    "file": "gv/src/resource.c",
+    "line": 202,
+    "code": "https://github.com/prosyslab-warehouse/gv-3.7.4.1/blob/master/gv/src/resource.c#L202"
+  },
+  "sink": {
+    "file": "gv/src/resource.c",
+    "line": 243,
+    "code": "https://github.com/prosyslab-warehouse/gv-3.7.4.1/blob/master/gv/src/resource.c#L243"
+  },
+  "bug-trace": [
+    {
+      "file": "src/resource.c",
+      "line": 202,
+      "code": "https://github.com/prosyslab-warehouse/gv-3.7.4.1/blob/master/gv/src/resource.c#L202",
+      "cmd": "getenv"
+    }, {
+      "file": "src/resource.c",
+      "line": 242,
+      "code": "https://github.com/prosyslab-warehouse/gv-3.7.4.1/blob/master/gv/src/resource.c#L242",
+      "cmd": "strcpy"
+    }, {
+      "file": "gv/src/resource.c",
+      "line": 243,
+      "code": "https://github.com/prosyslab-warehouse/gv-3.7.4.1/blob/master/gv/src/resource.c#L243",
+      "cmd": "sprintf"
+    }
+  ],
+  "similarity": [{
+    "ID": "buffer-overflow1-1",
+    "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12",
+    "score": 1
+  }]
+}]

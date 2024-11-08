@@ -1,0 +1,42 @@
+[{
+  "project": "gnuplot",
+  "version": "5.4.2",
+  "file": "term/post.trm",
+  "line": 1445,
+  "type": "format-string",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/gnuplot-5.4.2/blob/master/term/post.trm#L1445",
+  "source": {
+    "file": "term/post.trm",
+    "line": 1435,
+    "code": "https://github.com/prosyslab-warehouse/gnuplot-5.4.2/blob/master/term/post.trm#L1435"
+  },
+  "sink": {
+    "file": "term/post.trm",
+    "line": 1445,
+    "code": "https://github.com/prosyslab-warehouse/gnuplot-5.4.2/blob/master/term/post.trm#L1445"
+  },
+  "bug-trace": [{
+    "file": "term/post.trm",
+    "line": 1435,
+    "code": "https://github.com/prosyslab-warehouse/gnuplot-5.4.2/blob/master/term/post.trm#L1435",
+    "cmd": "getenv"
+  }, {
+    "file": "term/post.trm",
+    "line": 1437,
+    "code": "https://github.com/prosyslab-warehouse/gnuplot-5.4.2/blob/master/term/post.trm#L1437",
+    "cmd": "sprintf"
+  }, {
+    "file": "term/post.trm",
+    "line": 1445,
+    "code": "https://github.com/prosyslab-warehouse/gnuplot-5.4.2/blob/master/term/post.trm#L1445",
+    "cmd": "popen"
+  }],
+  "similarity": [{
+    "ID": "CWE134_Uncontrolled_Format_String__char_environment_snprintf_05",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_snprintf_05.c#L70",
+    "score": 0.82
+  }]
+}]

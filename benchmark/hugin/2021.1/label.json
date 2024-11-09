@@ -1,0 +1,42 @@
+[{
+  "project": "hugin",
+  "version": "2021.1",
+  "file": "src/celeste/svm.cpp",
+  "line": 2686,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://sourceforge.net/p/huginplusplus/tickets/2/",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/hugin-2021.1/blob/master/src/celeste/svm.cpp#L2867",
+  "source": {
+    "file": "src/celeste/svm.cpp",
+    "line": 2862,
+    "code": "https://github.com/prosyslab-warehouse/hugin-2021.1/blob/master/src/celeste/svm.cpp#L2862"
+  },
+  "sink": {
+    "file": "src/celeste/svm.cpp",
+    "line": 2687,
+    "code": "https://github.com/prosyslab-warehouse/hugin-2021.1/blob/master/src/celeste/svm.cpp#L2867"
+  },
+  "bug-trace": [{
+    "file": "src/celeste/svm.cpp",
+    "line": 2862,
+    "code": "https://github.com/prosyslab-warehouse/hugin-2021.1/blob/master/src/celeste/svm.cpp#L2862",
+    "cmd": "fscanf"
+  }, {
+    "file": "src/celeste/svm.cpp",
+    "line": 2687,
+    "code": "https://github.com/prosyslab-warehouse/hugin-2021.1/blob/master/src/celeste/svm.cpp#L2867",
+    "cmd": "multiply"
+  }, {
+    "file": "src/celeste/svm.cpp",
+    "line": 2688,
+    "code": "https://github.com/prosyslab-warehouse/hugin-2021.1/blob/master/src/celeste/svm.cpp#L2868",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_01-CWE190_Integer_Overflow__char_fscanf_multiply-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_multiply_01.c#L31",
+    "score": 1
+  }]
+}]

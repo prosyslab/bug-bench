@@ -1,0 +1,37 @@
+[{
+  "project": "libaudio2",
+  "version": "nas-1.9.4",
+  "file": "clients/audio/auphone/auphone.c",
+  "line": 360,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "https://sourceforge.net/p/nas/bugs/8/",
+  "patch": "https://sourceforge.net/p/nas/nas.git/ci/7c0e91c6779f2a06073026d277021d8711200c01/",
+  "code": "https://github.com/prosyslab-warehouse/libaudio2-nas-1.9.4/blob/master/clients/audio/auphone/auphone.c#L360",
+  "source": {
+    "file": "clients/audio/auphone/auphone.c",
+    "line": 360,
+    "code": "https://github.com/prosyslab-warehouse/libaudio2-nas-1.9.4/blob/master/clients/audio/auphone/auphone.c#L360"
+  },
+  "sink": {
+    "file": "clients/audio/auphone/auphone.c",
+    "line": 360,
+    "code": "https://github.com/prosyslab-warehouse/libaudio2-nas-1.9.4/blob/master/clients/audio/auphone/auphone.c#L360"
+  },
+  "bug-trace": [{
+    "file": "clients/audio/auphone/auphone.c",
+    "line": 360,
+    "code": "https://github.com/prosyslab-warehouse/libaudio2-nas-1.9.4/blob/master/clients/audio/auphone/auphone.c#L360",
+    "cmd": "getenv"
+  }, {
+    "file": "clients/audio/auphone/auphone.c",
+    "line": 360,
+    "code": "https://github.com/prosyslab-warehouse/libaudio2-nas-1.9.4/blob/master/clients/audio/auphone/auphone.c#L360",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "buffer-overflow1-1",
+    "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12",
+    "score": 1
+  }]
+}]

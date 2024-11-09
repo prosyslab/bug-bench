@@ -18,19 +18,17 @@
     "line": 963,
     "code": "https://github.com/prosyslab-warehouse/grass-7.8.5/blob/master/lib/gis/parser.c#L963"
   },
-  "bug-trace": [
-    {
-      "file": "lib/gis/parser.c",
-      "line": 964,
-      "code": "https://github.com/prosyslab-warehouse/grass-7.8.5/blob/master/lib/gis/parser.c#L964",
-      "cmd": "genenv"
-    }, {
-      "file": "lib/gis/parser.c",
-      "line": 963,
-      "code": "https://github.com/prosyslab-warehouse/grass-7.8.5/blob/master/lib/gis/parser.c#L963",
-      "cmd": "sprintf"
-    }
-  ],
+  "bug-trace": [{
+    "file": "lib/gis/parser.c",
+    "line": 964,
+    "code": "https://github.com/prosyslab-warehouse/grass-7.8.5/blob/master/lib/gis/parser.c#L964",
+    "cmd": "genenv"
+  }, {
+    "file": "lib/gis/parser.c",
+    "line": 963,
+    "code": "https://github.com/prosyslab-warehouse/grass-7.8.5/blob/master/lib/gis/parser.c#L963",
+    "cmd": "sprintf"
+  }],
   "similarity": [{
     "ID": "buffer-overflow1-1",
     "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12",

@@ -1,0 +1,42 @@
+[{
+  "project": "libfreeimage3",
+  "version": "3.18.0",
+  "file": "Source/FreeImage/PSDParser.cpp",
+  "line": 801,
+  "type": "integer-underflow",
+  "CVE": null,
+  "report": "https://sourceforge.net/p/freeimage/discussion/36109/thread/b067ea4011/",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/libfreeimage3-3.18.0/blob/master/Source/FreeImage/PSDParser.cpp#L801",
+  "source": {
+    "file": "Source/FreeImage/PSDParser.cpp",
+    "line": 749,
+    "code": "https://github.com/prosyslab-warehouse/libfreeimage3-3.18.0/blob/master/Source/FreeImage/PSDParser.cpp#L749"
+  },
+  "sink": {
+    "file": "Source/FreeImage/PSDParser.cpp",
+    "line": 801,
+    "code": "https://github.com/prosyslab-warehouse/libfreeimage3-3.18.0/blob/master/Source/FreeImage/PSDParser.cpp#L801"
+  },
+  "bug-trace": [{
+    "file": "Source/FreeImage/PSDParser.cpp",
+    "line": 749,
+    "code": "https://github.com/prosyslab-warehouse/libfreeimage3-3.18.0/blob/master/Source/FreeImage/PSDParser.cpp#L749",
+    "cmd": "read"
+  }, {
+    "file": "Source/FreeImage/PSDParser.cpp",
+    "line": 751,
+    "code": "https://github.com/WohlSoft/libFreeImage/blob/master/Source/FreeImage/PSDParser.cpp#L751",
+    "cmd": "macro call"
+  }, {
+    "file": "Source/FreeImage/PSDParser.cpp",
+    "line": 801,
+    "code": "https://github.com/prosyslab-warehouse/libfreeimage3-3.18.0/blob/master/Source/FreeImage/PSDParser.cpp#L801",
+    "cmd": "multiply"
+  }],
+  "similarity": [{
+    "ID": "gdk-pixbuf-2.36.11",
+    "bug": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459",
+    "score": 0.83
+  }]
+}]

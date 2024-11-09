@@ -11,6 +11,17 @@
     "line": 459,
     "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459"
   },
+  "bug-trace": [{
+    "file": "gdk-pixbuf/io-icns.c",
+    "line": 349,
+    "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349",
+    "cmd": "fread"
+  }, {
+    "file": "gdk-pixbuf/gdk-pixbuf-loader.c",
+    "line": 459,
+    "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459",
+    "cmd": "add"
+  }],
   "type": "integer-underflow",
   "CVE": "CVE-2017-6313",
   "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6313",

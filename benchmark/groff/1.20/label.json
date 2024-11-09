@@ -18,24 +18,22 @@
     "line": 187,
     "code": "https://github.com/prosyslab-warehouse/groff-1.20/blob/master/src/preproc/grn/hdb.cpp#L187"
   },
-  "bug-trace": [
-    {
-      "file": "src/preproc/grn/hdb.cpp",
-      "line": 185,
-      "code": "https://github.com/prosyslab-warehouse/groff-1.20/blob/master/src/preproc/grn/hdb.cpp#L185",
-      "cmd": "fscanf"
-    }, {
-      "file": "src/preproc/grn/hdb.cpp",
-      "line": 187,
-      "code": "https://github.com/prosyslab-warehouse/groff-1.20/blob/master/src/preproc/grn/hdb.cpp#L187",
-      "cmd": "add"
-    }, {
-      "file": "src/preproc/grn/hdb.cpp",
-      "line": 187,
-      "code": "https://github.com/prosyslab-warehouse/groff-1.20/blob/master/src/preproc/grn/hdb.cpp#L187",
-      "cmd": "malloc"
-    }
-  ],
+  "bug-trace": [{
+    "file": "src/preproc/grn/hdb.cpp",
+    "line": 185,
+    "code": "https://github.com/prosyslab-warehouse/groff-1.20/blob/master/src/preproc/grn/hdb.cpp#L185",
+    "cmd": "fscanf"
+  }, {
+    "file": "src/preproc/grn/hdb.cpp",
+    "line": 187,
+    "code": "https://github.com/prosyslab-warehouse/groff-1.20/blob/master/src/preproc/grn/hdb.cpp#L187",
+    "cmd": "add"
+  }, {
+    "file": "src/preproc/grn/hdb.cpp",
+    "line": 187,
+    "code": "https://github.com/prosyslab-warehouse/groff-1.20/blob/master/src/preproc/grn/hdb.cpp#L187",
+    "cmd": "malloc"
+  }],
   "similarity": [{
     "ID": "CWE190_01-CWE190_Integer_Overflow__char_fscanf_add-1",
     "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_add_01.c#L31",

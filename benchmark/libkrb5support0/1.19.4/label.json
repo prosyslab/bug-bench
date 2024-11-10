@@ -1,0 +1,42 @@
+[{
+  "project": "libkrb5support0",
+  "version": "1.19.4",
+  "file": "src/kadmin/dbutil/dump.c",
+  "line": 671,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": "https://github.com/krb5/krb5/commit/d15930bec22781473c2eaf72c08a145508b373ba#diff-6dd5b3acdbcf7f111f3703767fd5e452198b118675daac0ab1b0f7b5475014a4R670",
+  "code": "https://github.com/prosyslab-warehouse/libkrb5support0-1.19.4/blob/master/src/kadmin/dbutil/dump.c#L671",
+  "source": {
+    "file": "src/kadmin/dbutil/dump.c",
+    "line": 660,
+    "code": "https://github.com/prosyslab-warehouse/libkrb5support0-1.19.4/blob/master/src/kadmin/dbutil/dump.c#L660"
+  },
+  "sink": {
+    "file": "src/kadmin/dbutil/dump.c",
+    "line": 671,
+    "code": "https://github.com/prosyslab-warehouse/libkrb5support0-1.19.4/blob/master/src/kadmin/dbutil/dump.c#L671"
+  },
+  "bug-trace": [{
+    "file": "src/kadmin/dbutil/dump.c",
+    "line": 660,
+    "code": "https://github.com/prosyslab-warehouse/libkrb5support0-1.19.4/blob/master/src/kadmin/dbutil/dump.c#L660",
+    "cmd": "facnf"
+  }, {
+    "file": "src/kadmin/dbutil/dump.c",
+    "line": 671,
+    "code": "https://github.com/prosyslab-warehouse/libkrb5support0-1.19.4/blob/master/src/kadmin/dbutil/dump.c#L671",
+    "cmd": "add"
+  }, {
+    "file": "src/kadmin/dbutil/dump.c",
+    "line": 671,
+    "code": "https://github.com/prosyslab-warehouse/libkrb5support0-1.19.4/blob/master/src/kadmin/dbutil/dump.c#L671",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_01-CWE190_Integer_Overflow__char_fscanf_add-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_add_01.c#L31",
+    "score": 1
+  }]
+}]

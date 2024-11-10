@@ -1,0 +1,103 @@
+[{
+  "project": "liblinear-tools",
+  "version": "v244",
+  "file": "linear.cpp",
+  "line": 3582,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://github.com/cjlin1/liblinear/issues/77",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/linear.cpp#L3582",
+  "source": {
+    "file": "linear.cpp",
+    "line": 3539,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/linear.cpp#L3539"
+  },
+  "sink": {
+    "file": "linear.cpp",
+    "line": 3582,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/linear.cpp#L3582"
+  },
+  "bug-trace": [{
+    "file": "linear.cpp",
+    "line": 3539,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/linear.cpp#L3539",
+    "cmd": "facnf"
+  }, {
+    "file": "linear.cpp",
+    "line": 3570,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/linear.cpp#L3570",
+    "cmd": "assign"
+  }, {
+    "file": "linear.cpp",
+    "line": 3572,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/linear.cpp#L3572",
+    "cmd": "add"
+  }, {
+    "file": "linear.cpp",
+    "line": 3575,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/linear.cpp#L3575",
+    "cmd": "assign"
+  }, {
+    "file": "linear.cpp",
+    "line": 3582,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/linear.cpp#L3582",
+    "cmd": "add"
+  }, {
+    "file": "linear.cpp",
+    "line": 3582,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/linear.cpp#L3582",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_01-CWE190_Integer_Overflow__char_fscanf_add-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_add_01.c#L31",
+    "score": 0.93
+  }]
+}, {
+  "project": "liblinear-tools",
+  "version": "v244",
+  "file": "train.c",
+  "line": 326,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/cjlin1/liblinear/blob/v243/train.c#L326",
+  "source": {
+    "file": "train.c",
+    "line": 107,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/train.c#L107"
+  },
+  "sink": {
+    "file": "train.c",
+    "line": 326,
+    "code": "https://github.com/cjlin1/liblinear/blob/v243/train.c#L326"
+  },
+  "bug-trace": [{
+    "file": "train.c",
+    "line": 107,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/train.c#L107",
+    "cmd": "argv"
+  }, {
+    "file": "train.c",
+    "line": 113,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/train.c#L113",
+    "cmd": "call"
+  }, {
+    "file": "train.c",
+    "line": 321,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/train.c#L321",
+    "cmd": "strrchr"
+  }, {
+    "file": "train.c",
+    "line": 3572,
+    "code": "https://github.com/prosyslab-warehouse/liblinear-tools-244/blob/master/linear.cpp#L3572",
+    "cmd": "add"
+  }],
+  "similarity": [{
+    "ID": "zsh-5.4.2",
+    "bug": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665",
+    "score": 0.3
+  }]
+}]

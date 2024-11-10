@@ -14,7 +14,23 @@
     "type": "buffer-overflow",
     "CVE": "CVE-2018-1100",
     "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1100",
-    "patch": "https://sourceforge.net/p/zsh/code/ci/31f72205630687c1cef89347863aab355296a27f"
+    "patch": "https://sourceforge.net/p/zsh/code/ci/31f72205630687c1cef89347863aab355296a27f",
+    "bug-trace": [{
+      "file": "Src/utils.c",
+      "line": 4963,
+      "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963",
+      "cmd": "readdir"
+    }, {
+      "file": "Src/utils.c",
+      "line": 4993,
+      "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993",
+      "cmd": "return"
+    }, {
+      "file": "Src/utils.c",
+      "line": 1665,
+      "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665",
+      "cmd": "sprintf"
+    }]
   },
   {
     "project": "zsh",

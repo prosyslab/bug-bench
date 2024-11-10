@@ -1,0 +1,42 @@
+[{
+  "project": "liblrs0",
+  "version": "071b",
+  "file": "lrslib.c",
+  "line": 4258,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://github.com/passagemath/lrslib/issues/8",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/liblrs0-071b/blob/master/lrslib.c#L4258",
+  "source": {
+    "file": "lrslib.c",
+    "line": 4247,
+    "code": "https://github.com/prosyslab-warehouse/liblrs0-071b/blob/master/lrslib.c#L4247"
+  },
+  "sink": {
+    "file": "lrslib.c",
+    "line": 4258,
+    "code": "https://github.com/prosyslab-warehouse/liblrs0-071b/blob/master/lrslib.c#L4258"
+  },
+  "bug-trace": [{
+    "file": "lrslib.c",
+    "line": 4247,
+    "code": "https://github.com/prosyslab-warehouse/liblrs0-071b/blob/master/lrslib.c#L4247",
+    "cmd": "facnf"
+  }, {
+    "file": "lrslib.c",
+    "line": 4258,
+    "code": "https://github.com/prosyslab-warehouse/liblrs0-071b/blob/master/lrslib.c#L4247",
+    "cmd": "add"
+  }, {
+    "file": "lrslib.c",
+    "line": 4258,
+    "code": "https://github.com/prosyslab-warehouse/liblrs0-071b/blob/master/lrslib.c#L4258",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_01-CWE190_Integer_Overflow__char_fscanf_add-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_add_01.c#L31",
+    "score": 0.91
+  }]
+}]

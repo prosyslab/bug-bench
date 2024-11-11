@@ -1,0 +1,47 @@
+[{
+  "project": "libmjpegutils",
+  "version": "2.1-0",
+  "file": "lavtools/audiolib.c",
+  "line": 637,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "https://sourceforge.net/p/mjpeg/bugs/142/",
+  "patch": "https://sourceforge.net/p/mjpeg/Code/3496/",
+  "code": "https://github.com/prosyslab-warehouse/libmjpegutils-2.1-0/blob/master/lavtools/audiolib.c#L637",
+  "source": {
+    "file": "lavtools/audiolib.c",
+    "line": 712,
+    "code": "https://github.com/prosyslab-warehouse/libmjpegutils-2.1-0/blob/master/lavtools/audiolib.c#L712"
+  },
+  "sink": {
+    "file": "lavtools/audiolib.c",
+    "line": 637,
+    "code": "https://github.com/prosyslab-warehouse/libmjpegutils-2.1-0/blob/master/lavtools/audiolib.c#L637"
+  },
+  "bug-trace": [{
+    "file": "lavtools/audiolib.c",
+    "line": 712,
+    "code": "https://github.com/prosyslab-warehouse/libmjpegutils-2.1-0/blob/master/lavtools/audiolib.c#L712",
+    "cmd": "getenv"
+  }, {
+    "file": "lavtools/audiolib.c",
+    "line": 716,
+    "code": "https://github.com/prosyslab-warehouse/libmjpegutils-2.1-0/blob/master/lavtools/audiolib.c#L716",
+    "cmd": "open"
+  }, {
+    "file": "lavtools/audiolib.c",
+    "line": 720,
+    "code": "https://github.com/prosyslab-warehouse/libmjpegutils-2.1-0/blob/master/lavtools/audiolib.c#L720",
+    "cmd": "call"
+  }, {
+    "file": "lavtools/audiolib.c",
+    "line": 637,
+    "code": "https://github.com/prosyslab-warehouse/libmjpegutils-2.1-0/blob/master/lavtools/audiolib.c#L637",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "buffer-overflow1-1",
+    "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12",
+    "score": 1
+  }]
+}]

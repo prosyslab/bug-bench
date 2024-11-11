@@ -1,0 +1,47 @@
+[{
+  "project": "lp-solve",
+  "version": "5.5.2.5",
+  "file": "shared/mmio.c",
+  "line": 355,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://groups.google.com/g/lp_solve/c/oWKsKbST57Y",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/lp-solve-5.5.2.5/blob/master/shared/mmio.c#L355",
+  "source": {
+    "file": "shared/mmio.c",
+    "line": 211,
+    "code": "https://github.com/prosyslab-warehouse/lp-solve-5.5.2.5/blob/master/shared/mmio.c#L211"
+  },
+  "sink": {
+    "file": "shared/mmio.c",
+    "line": 355,
+    "code": "https://github.com/prosyslab-warehouse/lp-solve-5.5.2.5/blob/master/shared/mmio.c#L355"
+  },
+  "bug-trace": [{
+    "file": "shared/mmio.c",
+    "line": 211,
+    "code": "https://github.com/prosyslab-warehouse/lp-solve-5.5.2.5/blob/master/shared/mmio.c#L211",
+    "cmd": "fscanf"
+  }, {
+    "file": "shared/mmio.c",
+    "line": 212,
+    "code": "https://github.com/prosyslab-warehouse/lp-solve-5.5.2.5/blob/master/shared/mmio.c#L212",
+    "cmd": "return"
+  }, {
+    "file": "shared/mmio.c",
+    "line": 355,
+    "code": "https://github.com/prosyslab-warehouse/lp-solve-5.5.2.5/blob/master/shared/mmio.c#L355",
+    "cmd": "multiply"
+  }, {
+    "file": "shared/mmio.c",
+    "line": 355,
+    "code": "https://github.com/prosyslab-warehouse/lp-solve-5.5.2.5/blob/master/shared/mmio.c#L355",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_10-CWE190_Integer_Overflow__int_fscanf_multiply",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fscanf_add_01.c#L32",
+    "score": 1
+  }]
+}]

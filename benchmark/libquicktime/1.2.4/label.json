@@ -1,0 +1,77 @@
+[{
+  "project": "libquicktime",
+  "version": "1.2.4",
+  "file": "src/elst.c",
+  "line": 151,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://sourceforge.net/p/libquicktime/discussion/151480/thread/3102ed1275/?limit=25#d175",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/elst.c#L151",
+  "source": {
+    "file": "src/util.c",
+    "line": 163,
+    "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/util.c#L163"
+  },
+  "sink": {
+    "file": "src/elst.c",
+    "line": 151,
+    "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/elst.c#L151"
+  },
+  "bug-trace": [{
+    "file": "src/util.c",
+    "line": 163,
+    "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/util.c#L163",
+    "cmd": "fread"
+  }, {
+    "file": "src/util.c",
+    "line": 264,
+    "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/util.c#L264",
+    "cmd": "return"
+  }, {
+    "file": "src/util.c",
+    "line": 668,
+    "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/util.c#L668",
+    "cmd": "assign"
+  }, {
+    "file": "src/util.c",
+    "line": 669,
+    "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/util.c#L669",
+    "cmd": "assign"
+  }, {
+    "file": "src/util.c",
+    "line": 670,
+    "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/util.c#L670",
+    "cmd": "assign"
+  }, {
+    "file": "src/util.c",
+    "line": 671,
+    "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/util.c#L671",
+    "cmd": "assign"
+  }, {
+    "file": "src/util.c",
+    "line": 673,
+    "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/util.c#L673",
+    "cmd": "left shift"
+  }, {
+    "file": "src/util.c",
+    "line": 674,
+    "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/util.c#L674",
+    "cmd": "return"
+  }, {
+    "file": "src/elst.c",
+    "line": 151,
+    "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/elst.c#L151",
+    "cmd": "multiply"
+  }, {
+    "file": "src/elst.c",
+    "line": 151,
+    "code": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/elst.c#L151",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "autotrace-20200219.65",
+    "bug": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L255",
+    "score": 0.95
+  }]
+}]

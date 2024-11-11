@@ -14,7 +14,33 @@
   "type": "integer-overflow",
   "CVE": "CVE-2017-9181",
   "report": "https://www.cvedetails.com/cve/CVE-2017-9181",
-  "patch": null
+  "patch": null,
+  "bug-trace": [{
+    "file": "src/input-bmp.c",
+    "line": 103,
+    "code": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L103",
+    "cmd": "read"
+  }, {
+    "file": "src/input-bmp.c",
+    "line": 144,
+    "code": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L144",
+    "cmd": "assign"
+  }, {
+    "file": "src/input-bmp.c",
+    "line": 186,
+    "code": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L186",
+    "cmd": "multiply"
+  }, {
+    "file": "src/input-bmp.c",
+    "line": 202,
+    "code": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L202",
+    "cmd": "call"
+  }, {
+    "file": "src/input-bmp.c",
+    "line": 255,
+    "code": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L255",
+    "cmd": "malloc"
+  }]
 }, {
   "project": "autotrace",
   "version": "20200219.65",

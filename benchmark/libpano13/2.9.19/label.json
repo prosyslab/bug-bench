@@ -34,8 +34,58 @@
     "cmd": "sprintf"
   }],
   "similarity": [{
-    "ID": "mp3rename",
+    "ID": "mp3rename-0.6",
     "bug": "https://github.com/prosyslab-warehouse/mp3rename-0.6/blob/master/mp3rename.c#L523",
     "score": 0.59
+  }]
+}, {
+  "project": "libpano13",
+  "version": "2.9.19",
+  "file": "file.h",
+  "line": 1488,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "source": {
+    "file": "filter.c",
+    "line": 1077,
+    "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/filter.h#L1077"
+  },
+  "sink": {
+    "file": "file.c",
+    "line": 1488,
+    "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/file.c#L1488"
+  },
+  "bug_trace": [{
+    "file": "filter.h",
+    "line": 1077,
+    "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/filter.h#L1077",
+    "cmd": "fread (macro)"
+  }, {
+    "file": "filter.c",
+    "line": 1364,
+    "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/filter.c#L1364",
+    "cmd": "macro call"
+  }, {
+    "file": "file.c",
+    "line": 1479,
+    "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/file.c#L1479",
+    "cmd": "call"
+  }, {
+    "file": "file.c",
+    "line": 1488,
+    "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/file.c#L1488",
+    "cmd": "multiply"
+  }, {
+    "file": "file.c",
+    "line": 1488,
+    "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/file.c#L1488",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "sam2p-0.49.4",
+    "bug": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L267",
+    "score": 0.87
   }]
 }]

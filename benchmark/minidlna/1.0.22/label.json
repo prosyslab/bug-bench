@@ -1,0 +1,52 @@
+[{
+  "project": "minidlna",
+  "version": "1.0.22",
+  "file": "upnphttp.c",
+  "line": 1088,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://github.com/azatoth/minidlna/issues/24",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/minidlna-1.0.22/blob/master/upnphttp.c#L1088",
+  "source": {
+    "file": "upnphttp.c",
+    "line": 1042,
+    "code": "https://github.com/prosyslab-warehouse/minidlna-1.0.22/blob/master/upnphttp.c#L1042"
+  },
+  "sink": {
+    "file": "upnphttp.c",
+    "line": 1088,
+    "code": "https://github.com/prosyslab-warehouse/minidlna-1.0.22/blob/master/upnphttp.c#L1088"
+  },
+  "bug-trace": [{
+    "file": "upnphttp.c",
+    "line": 1042,
+    "code": "https://github.com/prosyslab-warehouse/minidlna-1.0.22/blob/master/upnphttp.c#L1042",
+    "cmd": "recv"
+  }, {
+    "file": "upnphttp.c",
+    "line": 1060,
+    "code": "https://github.com/prosyslab-warehouse/minidlna-1.0.22/blob/master/upnphttp.c#L1060",
+    "cmd": "add"
+  }, {
+    "file": "upnphttp.c",
+    "line": 1060,
+    "code": "https://github.com/prosyslab-warehouse/minidlna-1.0.22/blob/master/upnphttp.c#L1060",
+    "cmd": "assign"
+  }, {
+    "file": "upnphttp.c",
+    "line": 1088,
+    "code": "https://github.com/prosyslab-warehouse/minidlna-1.0.22/blob/master/upnphttp.c#L1088",
+    "cmd": "add"
+  }, {
+    "file": "upnphttp.c",
+    "line": 1088,
+    "code": "https://github.com/prosyslab-warehouse/minidlna-1.0.22/blob/master/upnphttp.c#L1088",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "CWE190_01-CWE190_Integer_Overflow__int_connect_socket_add",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_connect_socket_add_01.c#L108",
+    "score": 0.94
+  }]
+}]

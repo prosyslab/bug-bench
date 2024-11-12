@@ -11,8 +11,35 @@
     "line": 475,
     "code": "https://github.com/prosyslab-warehouse/schismtracker-20190722/blob/master/fmt/okt.c#L475"
   },
-  "type": "integer-underflow",
+  "type": "buffer-overflow",
   "CVE": "CVE-2019-14523",
   "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14523",
-  "patch": "https://github.com/schismtracker/schismtracker/commit/c8986a876959a9d282e882d782af351a86e4034c"
+  "patch": "https://github.com/schismtracker/schismtracker/commit/c8986a876959a9d282e882d782af351a86e4034c",
+  "code": "https://github.com/prosyslab-warehouse/schismtracker-20190722/blob/master/fmt/okt.c#L475",
+  "bug-trace": [{
+    "file": "fmt/okt.c",
+    "line": 389,
+    "code": "https://github.com/prosyslab-warehouse/schismtracker-20190722/blob/master/fmt/okt.c#L389",
+    "cmd": "read"
+  }, {
+    "file": "fmt/okt.c",
+    "line": 390,
+    "code": "https://github.com/prosyslab-warehouse/schismtracker-20190722/blob/master/fmt/okt.c#L390",
+    "cmd": "call"
+  }, {
+    "file": "include/headers.h",
+    "line": 200,
+    "code": "https://github.com/prosyslab-warehouse/schismtracker-20190722/blob/master/include/headers.h#L200",
+    "cmd": "macro call"
+  }, {
+    "file": "fmt/okt.c",
+    "line": 475,
+    "code": "https://github.com/prosyslab-warehouse/schismtracker-20190722/blob/master/fmt/okt.c#L475",
+    "cmd": "add"
+  }, {
+    "file": "fmt/okt.c",
+    "line": 475,
+    "code": "https://github.com/prosyslab-warehouse/schismtracker-20190722/blob/master/fmt/okt.c#L475",
+    "cmd": "memset"
+  }]
 }]

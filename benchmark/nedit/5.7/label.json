@@ -1,0 +1,47 @@
+[{
+  "project": "nedit",
+  "version": "5.7",
+  "file": "source/server_common.c",
+  "line": 122,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "https://sourceforge.net/p/nedit/bugs/690/",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/nedit-5.7/blob/master/source/server_common.c#L122",
+  "source": {
+    "file": "util/utils.c",
+    "line": 143,
+    "code": "https://github.com/prosyslab-warehouse/nedit-5.7/blob/master/util/utils.c#L143"
+  },
+  "sink": {
+    "file": "source/server_common.c",
+    "line": 122,
+    "code": "https://github.com/prosyslab-warehouse/nedit-5.7/blob/master/source/server_common.c#L122"
+  },
+  "bug-trace": [{
+    "file": "util/utils.c",
+    "line": 143,
+    "code": "https://github.com/prosyslab-warehouse/nedit-5.7/blob/master/util/utils.c#L143",
+    "cmd": "getenv"
+  }, {
+    "file": "util/utils.c",
+    "line": 143,
+    "code": "https://github.com/prosyslab-warehouse/nedit-5.7/blob/master/util/utils.c#L143",
+    "cmd": "return"
+  }, {
+    "file": "source/server_common.c",
+    "line": 120,
+    "code": "https://github.com/prosyslab-warehouse/nedit-5.7/blob/master/source/server_common.c#L120",
+    "cmd": "assign"
+  }, {
+    "file": "source/server_common.c",
+    "line": 122,
+    "code": "https://github.com/prosyslab-warehouse/nedit-5.7/blob/master/source/server_common.c#L122",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "buffer-overflow1-1",
+    "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12",
+    "score": 1
+  }]
+}]

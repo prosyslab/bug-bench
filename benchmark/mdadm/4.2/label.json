@@ -1,0 +1,42 @@
+[{
+  "project": "mdadm",
+  "version": "4.2",
+  "file": "mdmon.c",
+  "line": 371,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/mdadm-4.2/blob/master/mdmon.c#L371",
+  "source": {
+    "file": "mdmon.c",
+    "line": 345,
+    "code": "https://github.com/prosyslab-warehouse/mdadm-4.2/blob/master/mdmon.c#L345"
+  },
+  "sink": {
+    "file": "mdmon.c",
+    "line": 371,
+    "code": "https://github.com/prosyslab-warehouse/mdadm-4.2/blob/master/mdmon.c#L371"
+  },
+  "bug-trace": [{
+    "file": "mdmon.c",
+    "line": 294,
+    "code": "https://github.com/prosyslab-warehouse/mdadm-4.2/blob/master/mdmon.c#L294",
+    "cmd": "argv"
+  }, {
+    "file": "mdmon.c",
+    "line": 359,
+    "code": "https://github.com/prosyslab-warehouse/mdadm-4.2/blob/master/mdmon.c#L359",
+    "cmd": "strlen"
+  }, {
+    "file": "mdmon.c",
+    "line": 371,
+    "code": "https://github.com/prosyslab-warehouse/mdadm-4.2/blob/master/mdmon.c#L371",
+    "cmd": "memset"
+  }],
+  "similarity": [{
+    "ID": "schismtracker-20190722",
+    "bug": "https://github.com/prosyslab-warehouse/schismtracker-20190722/blob/master/fmt/okt.c#L475",
+    "score": 1
+  }]
+}]

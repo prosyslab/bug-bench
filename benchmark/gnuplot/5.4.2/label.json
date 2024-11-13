@@ -35,7 +35,7 @@
     "cmd": "popen"
   }],
   "similarity": [{
-    "ID": "CWE134_Uncontrolled_Format_String__char_environment_snprintf_05",
+    "ID": "CWE134_01-CWE134_Uncontrolled_Format_String__char_environment_snprintf-1",
     "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_snprintf_05.c#L70",
     "score": 0.82
   }]

@@ -35,7 +35,7 @@
     "cmd": "malloc"
   }],
   "similarity": [{
-    "ID": "CWE680_01-CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf",
+    "ID": "CWE680_01-CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf-1",
     "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_01.c#L33",
     "score": 1
   }]

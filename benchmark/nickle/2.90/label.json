@@ -1,0 +1,78 @@
+[{
+  "project": "nickle",
+  "version": "2.90",
+  "file": "edit.c",
+  "line": 34,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=992413",
+  "patch": "https://keithp.com/cgit/nickle.git/commit/?id=48bc85955e8316e71c02aa9b1845ff8e3490266c",
+  "code": "https://github.com/prosyslab-warehouse/nickle-2.90/blob/master/edit.c#L34",
+  "source": {
+    "file": "edit.c",
+    "line": 30,
+    "code": "https://github.com/prosyslab-warehouse/nickle-2.90/blob/master/edit.c#L30"
+  },
+  "sink": {
+    "file": "edit.c",
+    "line": 34,
+    "code": "https://github.com/prosyslab-warehouse/nickle-2.90/blob/master/edit.c#L34"
+  },
+  "bug-trace": [{
+    "file": "edit.c",
+    "line": 30,
+    "code": "https://github.com/prosyslab-warehouse/nickle-2.90/blob/master/edit.c#L30",
+    "cmd": "getenv"
+  }, {
+    "file": "edit.c",
+    "line": 34,
+    "code": "https://github.com/prosyslab-warehouse/nickle-2.90/blob/master/edit.c#L34",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "buffer-overflow1-1",
+    "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12",
+    "score": 1
+  }]
+}, {
+  "project": "nickle",
+  "version": "2.90",
+  "file": "edit.c",
+  "line": 36,
+  "type": "command-injection",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/nickle-2.90/blob/master/edit.c#L36",
+  "source": {
+    "file": "edit.c",
+    "line": 30,
+    "code": "https://github.com/prosyslab-warehouse/nickle-2.90/blob/master/edit.c#L30"
+  },
+  "sink": {
+    "file": "edit.c",
+    "line": 36,
+    "code": "https://github.com/prosyslab-warehouse/nickle-2.90/blob/master/edit.c#L36"
+  },
+  "bug-trace": [{
+    "file": "edit.c",
+    "line": 30,
+    "code": "https://github.com/prosyslab-warehouse/nickle-2.90/blob/master/edit.c#L30",
+    "cmd": "getenv"
+  }, {
+    "file": "edit.c",
+    "line": 34,
+    "code": "https://github.com/prosyslab-warehouse/nickle-2.90/blob/master/edit.c#L34",
+    "cmd": "sprintf"
+  }, {
+    "file": "edit.c",
+    "line": 36,
+    "code": "https://github.com/prosyslab-warehouse/nickle-2.90/blob/master/edit.c#L36",
+    "cmd": "system"
+  }],
+  "similarity": [{
+    "ID": "CWE78_02-CWE78_OS_Command_Injection__char_environment_system-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_system_02.c#L64",
+    "score": 0.67
+  }]
+}]

@@ -18,7 +18,7 @@
     "code": "https://github.com/prosyslab-warehouse/dia-8fe445d/blob/master/lib/object.c#L59"
   },
   "similarity": [{
-    "ID": "CWE190_10-CWE190_Integer_Overflow__int_fscanf_multiply",
+    "ID": "CWE190_10-CWE190_Integer_Overflow__int_fscanf_multiply-1",
     "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fscanf_add_01.c#L32",
     "score": 1.0
   }]

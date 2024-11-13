@@ -1,0 +1,47 @@
+[{
+  "project": "octave-nan",
+  "version": "3.4.5",
+  "file": "src/svm.cpp",
+  "line": 2988,
+  "type": "format-string",
+  "CVE": null,
+  "report": "https://savannah.gnu.org/bugs/index.php?61053",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/octave-nan-3.4.5/blob/master/src/svm.cpp#L2988",
+  "source": {
+    "file": "src/svm.cpp",
+    "line": 2869,
+    "code": "https://github.com/prosyslab-warehouse/octave-nan-3.4.5/blob/master/src/svm.cpp#L2869"
+  },
+  "sink": {
+    "file": "src/svm.cpp",
+    "line": 2988,
+    "code": "https://github.com/prosyslab-warehouse/octave-nan-3.4.5/blob/master/src/svm.cpp#L2988"
+  },
+  "bug-trace": [{
+    "file": "src/svm.cpp",
+    "line": 2869,
+    "code": "https://github.com/prosyslab-warehouse/octave-nan-3.4.5/blob/master/src/svm.cpp#L2869",
+    "cmd": "fscanf"
+  }, {
+    "file": "src/svm.cpp",
+    "line": 2921,
+    "code": "https://github.com/prosyslab-warehouse/octave-nan-3.4.5/blob/master/src/svm.cpp#L2921",
+    "cmd": "return"
+  }, {
+    "file": "src/svm.cpp",
+    "line": 2984,
+    "code": "https://github.com/prosyslab-warehouse/octave-nan-3.4.5/blob/master/src/svm.cpp#L2984",
+    "cmd": "assign"
+  }, {
+    "file": "src/svm.cpp",
+    "line": 2988,
+    "code": "https://github.com/prosyslab-warehouse/octave-nan-3.4.5/blob/master/src/svm.cpp#L2988",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_10-CWE190_Integer_Overflow__int_fscanf_add-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fscanf_add_01.c#L32",
+    "score": 0.87
+  }]
+}]

@@ -1,0 +1,42 @@
+[{
+  "project": "mailutils",
+  "version": "3.14",
+  "file": "libmailutils/server/acl.c",
+  "line": 118,
+  "type": "use-after-free",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/mailutils-3.14/blob/master/libmailutils/server/acl.c#L118",
+  "source": {
+    "file": "libmailutils/server/acl.c",
+    "line": 110,
+    "code": "https://github.com/prosyslab-warehouse/mailutils-3.14/blob/master/libmailutils/server/acl.c#L110"
+  },
+  "sink": {
+    "file": "libmailutils/server/acl.c",
+    "line": 118,
+    "code": "https://github.com/prosyslab-warehouse/mailutils-3.14/blob/master/libmailutils/server/acl.c#L118"
+  },
+  "bug-trace": [{
+    "file": "libmailutils/server/acl.c",
+    "line": 110,
+    "code": "https://github.com/prosyslab-warehouse/mailutils-3.14/blob/master/libmailutils/server/acl.c#L110",
+    "cmd": "malloc"
+  }, {
+    "file": "libmailutils/server/acl.c",
+    "line": 115,
+    "code": "https://github.com/prosyslab-warehouse/mailutils-3.14/blob/master/libmailutils/server/acl.c#L115",
+    "cmd": "free"
+  }, {
+    "file": "libmailutils/server/acl.c",
+    "line": 118,
+    "code": "https://github.com/prosyslab-warehouse/mailutils-3.14/blob/master/libmailutils/server/acl.c#L118",
+    "cmd": "call"
+  }],
+  "similarity": [{
+    "ID": "CWE416_01-CWE416_Use_After_Free__malloc_free_int-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_01.c#L41",
+    "score": 1
+  }]
+}]

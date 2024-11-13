@@ -1,0 +1,37 @@
+[{
+  "project": "newmail",
+  "version": "0.5",
+  "file": "folder.c",
+  "line": 132,
+  "type": "format-string",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/newmail-0.5/blob/master/folder.c#L132",
+  "source": {
+    "file": "folder.c",
+    "line": 123,
+    "code": "https://github.com/prosyslab-warehouse/newmail-0.5/blob/master/folder.c#L123"
+  },
+  "sink": {
+    "file": "folder.c",
+    "line": 132,
+    "code": "https://github.com/prosyslab-warehouse/newmail-0.5/blob/master/folder.c#L132"
+  },
+  "bug-trace": [{
+    "file": "folder.c",
+    "line": 123,
+    "code": "https://github.com/prosyslab-warehouse/newmail-0.5/blob/master/folder.c#L123",
+    "cmd": "getenv"
+  }, {
+    "file": "folder.c",
+    "line": 132,
+    "code": "https://github.com/prosyslab-warehouse/newmail-0.5/blob/master/folder.c#L132",
+    "cmd": "snprintf"
+  }],
+  "similarity": [{
+    "ID": "CWE134_01-CWE134_Uncontrolled_Format_String__char_environment_snprintf-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_snprintf_01.c#L65",
+    "score": 0.82
+  }]
+}]

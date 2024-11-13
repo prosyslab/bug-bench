@@ -50,7 +50,7 @@
     "cmd": "free"
   }],
   "similarity": [{
-    "ID": "CWE415_33-CWE415_Double_Free__malloc_free_int64_t",
+    "ID": "CWE415_33-CWE415_Double_Free__malloc_free_int64_t-1",
     "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_33.cpp#L40",
     "score": 1
   }]

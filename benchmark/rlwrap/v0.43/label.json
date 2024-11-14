@@ -1,0 +1,42 @@
+[{
+  "project": "rlwrap",
+  "version": "v0.43",
+  "file": "src/filter.c",
+  "line": 137,
+  "type": "command-injection",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/rlwrap-0.43/blob/master/src/filter.c#L137",
+  "source": {
+    "file": "src/filter.c",
+    "line": 116,
+    "code": "https://github.com/prosyslab-warehouse/rlwrap-0.43/blob/master/src/filter.c#L116"
+  },
+  "sink": {
+    "file": "src/filter.c",
+    "line": 137,
+    "code": "https://github.com/prosyslab-warehouse/rlwrap-0.43/blob/master/src/filter.c#L137"
+  },
+  "bug-trace": [{
+    "file": "src/filter.c",
+    "line": 116,
+    "code": "https://github.com/prosyslab-warehouse/rlwrap-0.43/blob/master/src/filter.c#L116",
+    "cmd": "getenv"
+  }, {
+    "file": "src/filter.c",
+    "line": 132,
+    "code": "https://github.com/prosyslab-warehouse/rlwrap-0.43/blob/master/src/filter.c#L132",
+    "cmd": "assign"
+  }, {
+    "file": "src/filter.c",
+    "line": 137,
+    "code": "https://github.com/prosyslab-warehouse/rlwrap-0.43/blob/master/src/filter.c#L137",
+    "cmd": "execvp"
+  }],
+  "similarity": [{
+    "ID": "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execlp_01.c#L72",
+    "score": 0.82
+  }]
+}]

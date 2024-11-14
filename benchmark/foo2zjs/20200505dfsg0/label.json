@@ -1,0 +1,57 @@
+[{
+  "project": "foo2zjs",
+  "version": "20200505dfsg0",
+  "file": "foo2oak.c",
+  "line": 676,
+  "type": "integer-underflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/foo2zjs-20200505dfsg0/blob/master/foo2oak.c#L676",
+  "source": {
+    "file": "foo2oak.c",
+    "line": 1636,
+    "code": "https://github.com/prosyslab-warehouse/foo2zjs-20200505dfsg0/blob/master/foo2oak.c#L1636"
+  },
+  "sink": {
+    "file": "foo2oak.c",
+    "line": 676,
+    "code": "https://github.com/prosyslab-warehouse/foo2zjs-20200505dfsg0/blob/master/foo2oak.c#L676"
+  },
+  "bug-trace": [{
+    "file": "foo2oak.c",
+    "line": 1637,
+    "code": "https://github.com/prosyslab-warehouse/foo2zjs-20200505dfsg0/blob/master/foo2oak.c#L1637",
+    "cmd": "fscanf"
+  }, {
+    "file": "foo2oak.c",
+    "line": 1640,
+    "code": "https://github.com/prosyslab-warehouse/foo2zjs-20200505dfsg0/blob/master/foo2oak.c#L1760",
+    "cmd": "return"
+  }, {
+    "file": "foo2oak.c",
+    "line": 1760,
+    "code": "https://github.com/prosyslab-warehouse/foo2zjs-20200505dfsg0/blob/master/foo2oak.c#L1760",
+    "cmd": "subtract"
+  }, {
+    "file": "foo2oak.c",
+    "line": 1773,
+    "code": "https://github.com/prosyslab-warehouse/foo2zjs-20200505dfsg0/blob/master/foo2oak.c#L1773",
+    "cmd": "subtract"
+  }, {
+    "file": "foo2oak.c",
+    "line": 676,
+    "code": "https://github.com/prosyslab-warehouse/foo2zjs-20200505dfsg0/blob/master/foo2oak.c#L676",
+    "cmd": "multiply"
+  }, {
+    "file": "foo2oak.c",
+    "line": 676,
+    "code": "https://github.com/prosyslab-warehouse/foo2zjs-20200505dfsg0/blob/master/foo2oak.c#L676",
+    "cmd": "memset"
+  }],
+  "similarity": [{
+    "ID": "CWE191_01-CWE191_Integer_Underflow__char_fscanf_multiply-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__char_fscanf_multiply_01.c#L32",
+    "score": 0.94
+  }]
+}]

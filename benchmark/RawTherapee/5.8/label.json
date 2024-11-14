@@ -1,0 +1,52 @@
+[{
+  "project": "RawTherapee",
+  "version": "5.8",
+  "file": "rtengine/klt/klt.cc",
+  "line": 232,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://github.com/Beep6581/RawTherapee/issues/6354",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/RawTherapee-5.8/blob/master/rtengine/klt/klt.cc#L232",
+  "source": {
+    "file": "rtengine/klt/writeFeatures.cc",
+    "line": 554,
+    "code": "https://github.com/prosyslab-warehouse/RawTherapee-5.8/blob/master/rtengine/klt/writeFeatures.cc#L554"
+  },
+  "sink": {
+    "file": "rtengine/klt/klt.cc",
+    "line": 232,
+    "code": "https://github.com/prosyslab-warehouse/RawTherapee-5.8/blob/master/rtengine/klt/klt.cc#L232"
+  },
+  "bug-trace": [{
+    "file": "rtengine/klt/writeFeatures.cc",
+    "line": 554,
+    "code": "https://github.com/prosyslab-warehouse/RawTherapee-5.8/blob/master/rtengine/klt/writeFeatures.cc#L554",
+    "cmd": "fscanf"
+  }, {
+    "file": "rtengine/klt/writeFeatures.cc",
+    "line": 584,
+    "code": "https://github.com/prosyslab-warehouse/RawTherapee-5.8/blob/master/rtengine/klt/writeFeatures.cc#L584",
+    "cmd": "return"
+  }, {
+    "file": "rtengine/klt/writeFeatures.cc",
+    "line": 770,
+    "code": "https://github.com/prosyslab-warehouse/RawTherapee-5.8/blob/master/rtengine/klt/writeFeatures.cc#L770",
+    "cmd": "call"
+  }, {
+    "file": "rtengine/klt/klt.cc",
+    "line": 232,
+    "code": "https://github.com/prosyslab-warehouse/RawTherapee-5.8/blob/master/rtengine/klt/klt.cc#L232",
+    "cmd": "multiply"
+  }, {
+    "file": "rtengine/klt/klt.cc",
+    "line": 232,
+    "code": "https://github.com/prosyslab-warehouse/RawTherapee-5.8/blob/master/rtengine/klt/klt.cc#L232",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE680_01-CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_01.c#L33",
+    "score": 1
+  }]
+}]

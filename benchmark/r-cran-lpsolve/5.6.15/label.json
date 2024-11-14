@@ -1,0 +1,47 @@
+[{
+  "project": "r-cran-lpsolve",
+  "version": "5.6.15",
+  "file": "src/mmio.c",
+  "line": 65,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=993584",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/r-cran-lpsolve-5.6.15/blob/master/src/mmio.c#L65",
+  "source": {
+    "file": "src/mmio.c",
+    "line": 212,
+    "code": "https://github.com/prosyslab-warehouse/r-cran-lpsolve-5.6.15/blob/master/src/mmio.c#L212"
+  },
+  "sink": {
+    "file": "src/svm.cpp",
+    "line": 2988,
+    "code": "https://github.com/prosyslab-warehouse/octave-nan-3.4.5/blob/master/src/svm.cpp#L2988"
+  },
+  "bug-trace": [{
+    "file": "src/mmio.c",
+    "line": 212,
+    "code": "https://github.com/prosyslab-warehouse/r-cran-lpsolve-5.6.15/blob/master/src/mmio.c#L212",
+    "cmd": "fscanf"
+  }, {
+    "file": "src/mmio.c",
+    "line": 216,
+    "code": "https://github.com/prosyslab-warehouse/r-cran-lpsolve-5.6.15/blob/master/src/mmio.c#L216",
+    "cmd": "return"
+  }, {
+    "file": "src/mmio.c",
+    "line": 65,
+    "code": "https://github.com/prosyslab-warehouse/r-cran-lpsolve-5.6.15/blob/master/src/mmio.c#L65",
+    "cmd": "multiply"
+  }, {
+    "file": "src/mmio.c",
+    "line": 65,
+    "code": "https://github.com/prosyslab-warehouse/r-cran-lpsolve-5.6.15/blob/master/src/mmio.c#L65",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_10-CWE190_Integer_Overflow__int_fscanf_multiply-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fscanf_multiply_01.c#L32",
+    "score": 1
+  }]
+}]

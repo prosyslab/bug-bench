@@ -1,0 +1,42 @@
+[{
+  "project": "sane",
+  "version": "1.0.14",
+  "file": "src/preview.c",
+  "line": 1037,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=993580",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/sane-1.0.14/blob/master/src/preview.c#L1037",
+  "source": {
+    "file": "src/preview.c",
+    "line": 1020,
+    "code": "https://github.com/prosyslab-warehouse/sane-1.0.14/blob/master/src/preview.c#L1020"
+  },
+  "sink": {
+    "file": "src/preview.c",
+    "line": 1037,
+    "code": "https://github.com/prosyslab-warehouse/sane-1.0.14/blob/master/src/preview.c#L1037"
+  },
+  "bug-trace": [{
+    "file": "src/preview.c",
+    "line": 1020,
+    "code": "https://github.com/prosyslab-warehouse/sane-1.0.14/blob/master/src/preview.c#L1020",
+    "cmd": "fscanf"
+  }, {
+    "file": "src/preview.c",
+    "line": 1037,
+    "code": "https://github.com/prosyslab-warehouse/sane-1.0.14/blob/master/src/preview.c#L1037",
+    "cmd": "multiply"
+  }, {
+    "file": "src/preview.c",
+    "line": 1037,
+    "code": "https://github.com/prosyslab-warehouse/sane-1.0.14/blob/master/src/preview.c#L1037",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "autotrace-20200219.65",
+    "bug": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L255",
+    "score": 0.87
+  }]
+}]

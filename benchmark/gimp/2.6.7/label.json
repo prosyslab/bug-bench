@@ -33,7 +33,39 @@
   "CVE": "CVE-2009-1570",
   "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-1570",
   "patch": "https://gitlab.gnome.org/GNOME/gimp/commit/df2b0aca2e7cdb95ebfd3454c65aaba0a83e9bbe",
-  "code": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L630"
+  "code": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L630",
+  "bug-trace": [{
+    "file": "plug-ins/file-bmp/bmp-read.c",
+    "line": 251,
+    "code": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L251",
+    "cmd": "read"
+  }, {
+    "file": "plug-ins/file-bmp/bmp-read.c",
+    "line": 459,
+    "code": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L459",
+    "cmd": "assign"
+  }, {
+    "file": "plug-ins/file-bmp/bmp-read.c",
+    "line": 460,
+    "code": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L460",
+    "cmd": "assign"
+  }, {
+    "file": "plug-ins/file-bmp/bmp-read.c",
+    "line": 455,
+    "code": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L455",
+    "cmd": "multiply"
+  }, {
+    "file": "plug-ins/file-bmp/bmp-read.c",
+    "line": 482,
+    "code": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L482",
+    "cmd": "call"
+  }, {
+    "file": "plug-ins/file-bmp/bmp-read.c",
+    "line": 630,
+    "code": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L630",
+    "cmd": "malloc"
+  }]
+
 }, {
   "project": "gimp",
   "version": "2.6.7",

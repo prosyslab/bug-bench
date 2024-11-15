@@ -1,0 +1,67 @@
+[{
+  "project": "scheme48",
+  "version": "1.9.2",
+  "file": "c/scheme48-bibop-heap-64.c",
+  "line": 2504,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/scheme48-1.9.2/blob/master/c/scheme48-bibop-heap-64.c#L2504",
+  "source": {
+    "file": "c/unix/io.c",
+    "line": 88,
+    "code": "https://github.com/prosyslab-warehouse/scheme48-1.9.2/blob/master/c/unix/io.c#L88"
+  },
+  "sink": {
+    "file": "c/scheme48-bibop-heap-64.c",
+    "line": 2504,
+    "code": "https://github.com/prosyslab-warehouse/scheme48-1.9.2/blob/master/c/scheme48-bibop-heap-64.c#L2504"
+  },
+  "bug-trace": [{
+    "file": "c/unix/io.c",
+    "line": 88,
+    "code": "https://github.com/prosyslab-warehouse/scheme48-1.9.2/blob/master/c/unix/io.c#L88",
+    "cmd": "getchar"
+  }, {
+    "file": "c/scheme48-bibop-heap-64.c",
+    "line": 123,
+    "code": "https://github.com/prosyslab-warehouse/scheme48-1.9.2/blob/master/c/unix/io.c#L123",
+    "cmd": "return"
+  }, {
+    "file": "c/scheme48-bibop-heap-64.c",
+    "line": 1695,
+    "code": "https://github.com/prosyslab-warehouse/scheme48-1.9.2/blob/master/c/scheme48-bibop-heap-64.c#L1695",
+    "cmd": "assign"
+  }, {
+    "file": "c/scheme48-bibop-heap-64.c",
+    "line": 1909,
+    "code": "https://github.com/prosyslab-warehouse/scheme48-1.9.2/blob/master/c/scheme48-bibop-heap-64.c#L1909",
+    "cmd": "assign"
+  }, {
+    "file": "c/scheme48-bibop-heap-64.c",
+    "line": 1910,
+    "code": "https://github.com/prosyslab-warehouse/scheme48-1.9.2/blob/master/c/scheme48-bibop-heap-64.c#L1910",
+    "cmd": "assign"
+  }, {
+    "file": "c/scheme48-bibop-heap-64.c",
+    "line": 1911,
+    "code": "https://github.com/prosyslab-warehouse/scheme48-1.9.2/blob/master/c/scheme48-bibop-heap-64.c#L1911",
+    "cmd": "assign"
+  }, {
+    "file": "c/scheme48-bibop-heap-64.c",
+    "line": 2504,
+    "code": "https://github.com/prosyslab-warehouse/scheme48-1.9.2/blob/master/c/scheme48-bibop-heap-64.c#L2504",
+    "cmd": "multiply"
+  }, {
+    "file": "c/scheme48-bibop-heap-64.c",
+    "line": 2504,
+    "code": "https://github.com/prosyslab-warehouse/scheme48-1.9.2/blob/master/c/scheme48-bibop-heap-64.c#L2504",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "gimp",
+    "bug": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L630",
+    "score": 0.85
+  }]
+}]

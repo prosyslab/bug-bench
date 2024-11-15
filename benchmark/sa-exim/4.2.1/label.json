@@ -1,0 +1,57 @@
+[{
+  "project": "sa-exim",
+  "version": "4.2.1",
+  "file": "sa-exim.c",
+  "line": 974,
+  "type": "command-injection",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/sa-exim-4.2.1/blob/master/sa-exim.c#L974",
+  "source": {
+    "file": "sa-exim.c",
+    "line": 658,
+    "code": "https://github.com/prosyslab-warehouse/sa-exim-4.2.1/blob/master/sa-exim.c#L658"
+  },
+  "sink": {
+    "file": "sa-exim.c",
+    "line": 974,
+    "code": "https://github.com/prosyslab-warehouse/sa-exim-4.2.1/blob/master/sa-exim.c#L974"
+  },
+  "bug-trace": [{
+    "file": "sa-exim.c",
+    "line": 658,
+    "code": "https://github.com/prosyslab-warehouse/sa-exim-4.2.1/blob/master/sa-exim.c#L658",
+    "cmd": "fgets"
+  }, {
+    "file": "sa-exim.c",
+    "line": 723,
+    "code": "https://github.com/prosyslab-warehouse/sa-exim-4.2.1/blob/master/sa-exim.c#L723",
+    "cmd": "macro call"
+  }, {
+    "file": "sa-exim.c",
+    "line": 699,
+    "code": "https://github.com/prosyslab-warehouse/sa-exim-4.2.1/blob/master/sa-exim.c#L699",
+    "cmd": "strdup"
+  }, {
+    "file": "sa-exim.c",
+    "line": 930,
+    "code": "https://github.com/prosyslab-warehouse/sa-exim-4.2.1/blob/master/sa-exim.c#L930",
+    "cmd": "assign"
+  }, {
+    "file": "sa-exim.c",
+    "line": 938,
+    "code": "https://github.com/prosyslab-warehouse/sa-exim-4.2.1/blob/master/sa-exim.c#L938",
+    "cmd": "assign"
+  }, {
+    "file": "sa-exim.c",
+    "line": 974,
+    "code": "https://github.com/prosyslab-warehouse/sa-exim-4.2.1/blob/master/sa-exim.c#L974",
+    "cmd": "execv"
+  }],
+  "similarity": [{
+    "ID": "CWE78_01-CWE78_OS_Command_Injection__char_file_execl-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_execl_01.c#L79",
+    "score": 1
+  }]
+}]

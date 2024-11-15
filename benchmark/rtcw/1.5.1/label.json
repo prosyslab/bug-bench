@@ -1,0 +1,72 @@
+[{
+  "project": "rtcw",
+  "version": "1.5.1",
+  "file": "SP/code/qcommon/md4.c",
+  "line": 145,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/rtcw-1.5.1/blob/master/SP/code/qcommon/md4.c#L145",
+  "source": {
+    "file": "SP/code/qcommon/files.c",
+    "line": 1823,
+    "code": "https://github.com/prosyslab-warehouse/rtcw-1.5.1/blob/master/SP/code/qcommon/files.c#L1823"
+  },
+  "sink": {
+    "file": "SP/code/qcommon/md4.c",
+    "line": 145,
+    "code": "https://github.com/prosyslab-warehouse/rtcw-1.5.1/blob/master/SP/code/qcommon/md4.c#L145"
+  },
+  "bug-trace": [{
+    "file": "SP/code/qcommon/files.c",
+    "line": 1823,
+    "code": "https://github.com/prosyslab-warehouse/rtcw-1.5.1/blob/master/SP/code/qcommon/files.c#L1823",
+    "cmd": "fread"
+  }, {
+    "file": "SP/code/qcommon/files.c",
+    "line": 1841,
+    "code": "https://github.com/prosyslab-warehouse/rtcw-1.5.1/blob/master/SP/code/qcommon/files.c#L1841",
+    "cmd": "return"
+  }, {
+    "file": "SP/code/qcommon/files.c",
+    "line": 2146,
+    "code": "https://github.com/prosyslab-warehouse/rtcw-1.5.1/blob/master/SP/code/qcommon/files.c#L2146",
+    "cmd": "return"
+  }, {
+    "file": "SP/code/qcommon/files.c",
+    "line": 2221,
+    "code": "https://github.com/prosyslab-warehouse/rtcw-1.5.1/blob/master/SP/code/qcommon/files.c#L2221",
+    "cmd": "return"
+  }, {
+    "file": "SP/code/qcommon/cm_load.c",
+    "line": 656,
+    "code": "https://github.com/prosyslab-warehouse/rtcw-1.5.1/blob/master/SP/code/qcommon/cm_load.c#L656",
+    "cmd": "call"
+  }, {
+    "file": "SP/code/qcommon/md4.c",
+    "line": 204,
+    "code": "https://github.com/prosyslab-warehouse/rtcw-1.5.1/blob/master/SP/code/qcommon/md4.c#L204",
+    "cmd": "call"
+  }, {
+    "file": "SP/code/qcommon/md4.c",
+    "line": 193,
+    "code": "https://github.com/prosyslab-warehouse/rtcw-1.5.1/blob/master/SP/code/qcommon/md4.c#L193",
+    "cmd": "call"
+  }, {
+    "file": "SP/code/qcommon/md4.c",
+    "line": 167,
+    "code": "https://github.com/prosyslab-warehouse/rtcw-1.5.1/blob/master/SP/code/qcommon/md4.c#L167",
+    "cmd": "call"
+  }, {
+    "file": "SP/code/qcommon/md4.c",
+    "line": 145,
+    "code": "https://github.com/prosyslab-warehouse/rtcw-1.5.1/blob/master/SP/code/qcommon/md4.c#L145",
+    "cmd": "memcpy"
+  }],
+  "similarity": [{
+    "ID": "zsh-5.4.2",
+    "bug": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665",
+    "score": 0.4
+  }]
+}]

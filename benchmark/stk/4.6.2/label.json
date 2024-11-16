@@ -1,0 +1,67 @@
+[{
+  "project": "stk",
+  "version": "4.6.2",
+  "file": "Zoe/zoeHMM.c",
+  "line": 302,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://github.com/thestk/stk/issues/116",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/stk-4.6.2/blob/master/src/Stk.cpp#L302",
+  "source": {
+    "file": "src/FileRead.cpp",
+    "line": 223,
+    "code": "https://github.com/prosyslab-warehouse/stk-4.6.2/blob/master/src/FileRead.cpp#L233"
+  },
+  "sink": {
+    "file": "src/Stk.cpp",
+    "line": 302,
+    "code": "https://github.com/prosyslab-warehouse/stk-4.6.2/blob/master/src/Stk.cpp#L302"
+  },
+  "bug-trace": [{
+    "file": "src/FileRead.cpp",
+    "line": 223,
+    "code": "https://github.com/prosyslab-warehouse/stk-4.6.2/blob/master/src/FileRead.cpp#L233",
+    "cmd": "fread"
+  }, {
+    "file": "src/FileRead.cpp",
+    "line": 227,
+    "code": "https://github.com/prosyslab-warehouse/stk-4.6.2/blob/master/src/FileRead.cpp#L227",
+    "cmd": "assign"
+  }, {
+    "file": "src/FileRead.cpp",
+    "line": 297,
+    "code": "https://github.com/prosyslab-warehouse/stk-4.6.2/blob/master/src/FileRead.cpp#L297",
+    "cmd": "return"
+  }, {
+    "file": "src/FileLoop.cpp",
+    "line": 56,
+    "code": "https://github.com/prosyslab-warehouse/stk-4.6.2/blob/master/src/FileRead.cpp#L56",
+    "cmd": "call"
+  }, {
+    "file": "src/Stk.cpp",
+    "line": 296,
+    "code": "https://github.com/prosyslab-warehouse/stk-4.6.2/blob/master/src/Stk.cpp#L296",
+    "cmd": "assign"
+  }, {
+    "file": "src/Stk.cpp",
+    "line": 299,
+    "code": "https://github.com/prosyslab-warehouse/stk-4.6.2/blob/master/src/Stk.cpp#L299",
+    "cmd": "multiply"
+  }, {
+    "file": "src/Stk.cpp",
+    "line": 299,
+    "code": "https://github.com/prosyslab-warehouse/stk-4.6.2/blob/master/src/Stk.cpp#L302",
+    "cmd": "multiply"
+  }, {
+    "file": "src/Stk.cpp",
+    "line": 302,
+    "code": "https://github.com/prosyslab-warehouse/stk-4.6.2/blob/master/src/Stk.cpp#L302",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "shntool-3.0.5",
+    "bug": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L187",
+    "score": 0.87
+  }]
+}]

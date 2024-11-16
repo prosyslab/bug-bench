@@ -1,0 +1,42 @@
+[{
+  "project": "sweed",
+  "version": "4.0.0",
+  "file": "SweeD_Input.c",
+  "line": 4423,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://github.com/alachins/sweed/issues/14",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/sweed-4.0.0/blob/master/SweeD_Input.c#L4423",
+  "source": {
+    "file": "SweeD_Input.c",
+    "line": 4405,
+    "code": "https://github.com/prosyslab-warehouse/sweed-4.0.0/blob/master/SweeD_Input.c#L4405"
+  },
+  "sink": {
+    "file": "SweeD_Input.c",
+    "line": 4423,
+    "code": "https://github.com/prosyslab-warehouse/sweed-4.0.0/blob/master/SweeD_Input.c#L4423"
+  },
+  "bug-trace": [{
+    "file": "SweeD_Input.c",
+    "line": 4405,
+    "code": "https://github.com/prosyslab-warehouse/sweed-4.0.0/blob/master/SweeD_Input.c#L4405",
+    "cmd": "fread"
+  }, {
+    "file": "SweeD_Input.c",
+    "line": 4423,
+    "code": "https://github.com/prosyslab-warehouse/sweed-4.0.0/blob/master/SweeD_Input.c#L4423",
+    "cmd": "multiply"
+  }, {
+    "file": "SweeD_Input.c",
+    "line": 4423,
+    "code": "https://github.com/prosyslab-warehouse/sweed-4.0.0/blob/master/SweeD_Input.c#L4423",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_01-CWE190_Integer_Overflow__int_fscanf_multiply-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fscanf_multiply_01.c#L33",
+    "score": 1
+  }]
+}]

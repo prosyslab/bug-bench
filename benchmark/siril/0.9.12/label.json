@@ -1,0 +1,108 @@
+[{
+  "project": "siril",
+  "version": "0.9.12",
+  "file": "src/io/image_formats_internal.c",
+  "line": 175,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://discuss.pixls.us/t/potential-integer-overflow-vulnerability-in-siril/26474",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/io/image_formats_internal.c#L475",
+  "source": {
+    "file": "src/io/image_formats_internal.c",
+    "line": 418,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/io/image_formats_internal.c#L418"
+  },
+  "sink": {
+    "file": "src/io/image_formats_internal.c",
+    "line": 475,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/io/image_formats_internal.c#L475"
+  },
+  "bug-trace": [{
+    "file": "src/io/image_formats_internal.c",
+    "line": 418,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/io/image_formats_internal.c#L418",
+    "cmd": "fgets"
+  }, {
+    "file": "src/io/image_formats_internal.c",
+    "line": 431,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/io/image_formats_internal.c#L431",
+    "cmd": "atoi"
+  }, {
+    "file": "src/io/image_formats_internal.c",
+    "line": 475,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/io/image_formats_internal.c#L475",
+    "cmd": "multiply"
+  }, {
+    "file": "src/io/image_formats_internal.c",
+    "line": 475,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/io/image_formats_internal.c#L475",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE680_01-CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fgets-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fgets_01.c#L46",
+    "score": 0.72
+  }]
+}, {
+  "project": "siril",
+  "version": "0.9.12",
+  "file": "src/algos/demosaicing.c",
+  "line": 432,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "https://discuss.pixls.us/t/potential-integer-overflow-vulnerability-in-siril/26474",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/algos/demosaicing.c#L432",
+  "source": {
+    "file": "src/io/image_formats_internal.c",
+    "line": 418,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/io/image_formats_internal.c#L418"
+  },
+  "sink": {
+    "file": "src/algos/demosaicing.c",
+    "line": 432,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/algos/demosaicing.c#L432"
+  },
+  "bug-trace": [{
+    "file": "src/io/image_formats_internal.c",
+    "line": 418,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/io/image_formats_internal.c#L418",
+    "cmd": "fgets"
+  }, {
+    "file": "src/io/image_formats_internal.c",
+    "line": 431,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/io/image_formats_internal.c#L431",
+    "cmd": "atoi"
+  }, {
+    "file": "src/algos/demosaicing.c",
+    "line": 887,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/algos/demosaicing.c#L887",
+    "cmd": "assign"
+  }, {
+    "file": "src/algos/demosaicing.c",
+    "line": 906,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/algos/demosaicing.c#L906",
+    "cmd": "call"
+  }, {
+    "file": "src/algos/demosaicing.c",
+    "line": 816,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/algos/demosaicing.c#L816",
+    "cmd": "call"
+  }, {
+    "file": "src/algos/demosaicing.c",
+    "line": 310,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/algos/demosaicing.c#L310",
+    "cmd": "assign"
+  }, {
+    "file": "src/algos/demosaicing.c",
+    "line": 432,
+    "code": "https://github.com/prosyslab-warehouse/siril-0.9.12/blob/master/src/algos/demosaicing.c#L432",
+    "cmd": "memcpy"
+  }],
+  "similarity": [{
+    "ID": "CWE191_01-CWE191_Integer_Underflow__int_fgets_multiply-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_multiply_01.c#L46",
+    "score": 0.5
+  }]
+}]

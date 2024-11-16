@@ -1,0 +1,37 @@
+[{
+  "project": "tcliis",
+  "version": "v8.3",
+  "file": "tcliis/util.c",
+  "line": 85,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "https://github.com/alachins/sweed/issues/14",
+  "patch": "https://github.com/SAOImageDS9/SAOImageDS9/commit/9c0d6ee7fdd897b9a8b5b97e50c7f147926e37ae",
+  "code": "https://github.com/prosyslab-warehouse/tcliis-v8.3/blob/master/tcliis/util.c#L85",
+  "source": {
+    "file": "tcliis/util.c",
+    "line": 84,
+    "code": "https://github.com/prosyslab-warehouse/tcliis-v8.3/blob/master/tcliis/util.c#L84"
+  },
+  "sink": {
+    "file": "tcliis/util.c",
+    "line": 85,
+    "code": "https://github.com/prosyslab-warehouse/tcliis-v8.3/blob/master/tcliis/util.c#L85"
+  },
+  "bug-trace": [{
+    "file": "tcliis/util.c",
+    "line": 84,
+    "code": "https://github.com/prosyslab-warehouse/tcliis-v8.3/blob/master/tcliis/util.c#L84",
+    "cmd": "getenv"
+  }, {
+    "file": "tcliis/util.c",
+    "line": 85,
+    "code": "https://github.com/prosyslab-warehouse/tcliis-v8.3/blob/master/tcliis/util.c#L85",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "buffer_overflow1-1",
+    "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12",
+    "score": 1
+  }]
+}]

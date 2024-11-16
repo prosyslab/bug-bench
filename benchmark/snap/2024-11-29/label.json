@@ -1,0 +1,37 @@
+[{
+  "project": "snap",
+  "version": "2013-11-29",
+  "file": "Zoe/zoeHMM.c",
+  "line": 500,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "https://github.com/KorfLab/SNAP/issues/11",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/snap-2013-11-29/blob/master/Zoe/zoeHMM.c#L500",
+  "source": {
+    "file": "Zoe/zoeHMM.c",
+    "line": 495,
+    "code": "https://github.com/prosyslab-warehouse/snap-2013-11-29/blob/master/Zoe/zoeHMM.c#L495"
+  },
+  "sink": {
+    "file": "Zoe/zoeHMM.c",
+    "line": 500,
+    "code": "https://github.com/prosyslab-warehouse/snap-2013-11-29/blob/master/Zoe/zoeHMM.c#L500"
+  },
+  "bug-trace": [{
+    "file": "Zoe/zoeHMM.c",
+    "line": 495,
+    "code": "https://github.com/prosyslab-warehouse/snap-2013-11-29/blob/master/Zoe/zoeHMM.c#L495",
+    "cmd": "getenv"
+  }, {
+    "file": "Zoe/zoeHMM.c",
+    "line": 500,
+    "code": "https://github.com/prosyslab-warehouse/snap-2013-11-29/blob/master/Zoe/zoeHMM.c#L500",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "buffer_overflow1-1",
+    "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12",
+    "score": 1
+  }]
+}]

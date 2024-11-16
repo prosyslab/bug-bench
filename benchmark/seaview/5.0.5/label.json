@@ -1,0 +1,37 @@
+[{
+  "project": "seaview",
+  "version": "5.0.5",
+  "file": "seaview-5.0.5/blob/master/racnuc_fetch.cxx",
+  "line": 175,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/seaview-5.0.5/blob/master/racnuc_fetch.cxx#L175",
+  "source": {
+    "file": "seaview-5.0.5/blob/master/racnuc_fetch.cxx",
+    "line": 158,
+    "code": "https://github.com/prosyslab-warehouse/seaview-5.0.5/blob/master/racnuc_fetch.cxx#L158"
+  },
+  "sink": {
+    "file": "seaview-5.0.5/blob/master/racnuc_fetch.cxx",
+    "line": 175,
+    "code": "https://github.com/prosyslab-warehouse/seaview-5.0.5/blob/master/racnuc_fetch.cxx#L175"
+  },
+  "bug-trace": [{
+    "file": "seaview-5.0.5/blob/master/racnuc_fetch.cxx",
+    "line": 158,
+    "code": "https://github.com/prosyslab-warehouse/seaview-5.0.5/blob/master/racnuc_fetch.cxx#L158",
+    "cmd": "fgets"
+  }, {
+    "file": "seaview-5.0.5/blob/master/racnuc_fetch.cxx",
+    "line": 175,
+    "code": "https://github.com/prosyslab-warehouse/seaview-5.0.5/blob/master/racnuc_fetch.cxx#L175",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "zsh-5.4.2",
+    "bug": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665",
+    "score": 0.56
+  }]
+}]

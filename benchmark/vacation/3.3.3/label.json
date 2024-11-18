@@ -1,0 +1,42 @@
+[{
+  "project": "vacation",
+  "version": "3.3.3",
+  "file": "vacation.c",
+  "line": 753,
+  "type": "command-injection",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/vacation-3.3.3/blob/master/vacation.c#L753",
+  "source": {
+    "file": "vacation.c",
+    "line": 717,
+    "code": "https://github.com/prosyslab-warehouse/sa-exim-4.2.1/blob/master/sa-exim.c#L717"
+  },
+  "sink": {
+    "file": "vacation.c",
+    "line": 753,
+    "code": "https://github.com/prosyslab-warehouse/vacation-3.3.3/blob/master/vacation.c#L753"
+  },
+  "bug-trace": [{
+    "file": "vacation.c",
+    "line": 717,
+    "code": "https://github.com/prosyslab-warehouse/sa-exim-4.2.1/blob/master/sa-exim.c#L717",
+    "cmd": "getenv"
+  }, {
+    "file": "vacation.c",
+    "line": 752,
+    "code": "https://github.com/prosyslab-warehouse/vacation-3.3.3/blob/master/vacation.c#L752",
+    "cmd": "snprintf"
+  }, {
+    "file": "vacation.c",
+    "line": 753,
+    "code": "https://github.com/prosyslab-warehouse/vacation-3.3.3/blob/master/vacation.c#L753",
+    "cmd": "system"
+  }],
+  "similarity": [{
+    "ID": "CWE78_01-CWE78_OS_Command_Injection__char_environment_system-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_system_01.c#L61",
+    "score": 0.67
+  }]
+}]

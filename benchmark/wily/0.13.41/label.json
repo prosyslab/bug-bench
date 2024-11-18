@@ -1,0 +1,37 @@
+[{
+  "project": "wily",
+  "version": "0.13.41",
+  "file": "libmsg/connect.c",
+  "line": 191,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=993588",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/wily-0.13.41/blob/master/libmsg/connect.c#L191",
+  "source": {
+    "file": "libmsg/connect.c",
+    "line": 184,
+    "code": "https://github.com/prosyslab-warehouse/wily-0.13.41/blob/master/libmsg/connect.c#L184"
+  },
+  "sink": {
+    "file": "libmsg/connect.c",
+    "line": 191,
+    "code": "https://github.com/prosyslab-warehouse/wily-0.13.41/blob/master/libmsg/connect.c#L191"
+  },
+  "bug-trace": [{
+    "file": "libmsg/connect.c",
+    "line": 184,
+    "code": "https://github.com/prosyslab-warehouse/wily-0.13.41/blob/master/libmsg/connect.c#L184",
+    "cmd": "getenv"
+  }, {
+    "file": "libmsg/connect.c",
+    "line": 191,
+    "code": "https://github.com/prosyslab-warehouse/wily-0.13.41/blob/master/libmsg/connect.c#L191",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "buffer-overflow1-1",
+    "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12",
+    "score": 0.47
+  }]
+}]

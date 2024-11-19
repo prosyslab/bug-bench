@@ -1,0 +1,108 @@
+[{
+  "project": "zangband",
+  "version": "2.7.5",
+  "file": "src/xsane-viewer.c",
+  "line": 327,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://sourceforge.net/p/zangband/bugs/670/",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/maid-x11.c#L327",
+  "source": {
+    "file": "src/maid-x11.c",
+    "line": 211,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/maid-x11.c#L211"
+  },
+  "sink": {
+    "file": "src/maid-x11.c",
+    "line": 327,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/maid-x11.c#L327"
+  },
+  "bug-trace": [{
+    "file": "src/maid-x11.c",
+    "line": 221,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/maid-x11.c#L211",
+    "cmd": "getc"
+  }, {
+    "file": "src/maid-x11.c",
+    "line": 221,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/maid-x11.c#L211",
+    "cmd": "return"
+  }, {
+    "file": "src/maid-x11.c",
+    "line": 231,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/maid-x11.c#L231",
+    "cmd": "return"
+  }, {
+    "file": "src/maid-x11.c",
+    "line": 327,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/maid-x11.c#L327",
+    "cmd": "multiply"
+  }, {
+    "file": "src/maid-x11.c",
+    "line": 330,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/maid-x11.c#L330",
+    "cmd": "C_MAKE (memory allocation)"
+  }],
+  "similarity": [{
+    "ID": "autotrace-20200219.65",
+    "bug": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L255",
+    "score": 0.93
+  }]
+}, {
+  "project": "zangband",
+  "version": "2.7.5",
+  "file": "src/tk/plat.c",
+  "line": 535,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/tk/plat.c#L535",
+  "source": {
+    "file": "src/tk/plat.c",
+    "line": 437,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/tk/plat.c#L437"
+  },
+  "sink": {
+    "file": "src/tk/plat.c",
+    "line": 535,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/tk/plat.c#L535"
+  },
+  "bug-trace": [{
+    "file": "src/tk/plat.c",
+    "line": 437,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/tk/plat.c#L437",
+    "cmd": "getc"
+  }, {
+    "file": "src/tk/plat.c",
+    "line": 437,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/tk/plat.c#L437",
+    "cmd": "return"
+  }, {
+    "file": "src/tk/plat.c",
+    "line": 457,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/tk/plat.c#L457",
+    "cmd": "return"
+  }, {
+    "file": "src/tk/plat.c",
+    "line": 529,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/tk/plat.c#L529",
+    "cmd": "assign"
+  }, {
+    "file": "src/tk/plat.c",
+    "line": 535,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/tk/plat.c#L535",
+    "cmd": "multiply"
+  }, {
+    "file": "src/tk/plat.c",
+    "line": 535,
+    "code": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/tk/plat.c#L535",
+    "cmd": "C_MAKE (memory allocation)"
+  }],
+  "similarity": [{
+    "ID": "gdk-pixbuf-2.36.11",
+    "bug": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459",
+    "score": 0.77
+  }]
+}]

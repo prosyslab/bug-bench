@@ -1,0 +1,47 @@
+[{
+  "project": "xsane",
+  "version": "0.999",
+  "file": "src/xsane-viewer.c",
+  "line": 2365,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=993579",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/xsane-0.999/blob/master/src/xsane-viewer.c#L2365",
+  "source": {
+    "file": "src/xsane-save.c",
+    "line": 518,
+    "code": "https://github.com/prosyslab-warehouse/xsane-0.999/blob/master/src/xsane-save.c#L518"
+  },
+  "sink": {
+    "file": "src/xsane-viewer.c",
+    "line": 2365,
+    "code": "https://github.com/prosyslab-warehouse/xsane-0.999/blob/master/src/xsane-viewer.c#L2365"
+  },
+  "bug-trace": [{
+    "file": "src/xsane-save.c",
+    "line": 518,
+    "code": "https://github.com/prosyslab-warehouse/xsane-0.999/blob/master/src/xsane-save.c#L518",
+    "cmd": "fscanf"
+  }, {
+    "file": "src/xsane-viewer.c",
+    "line": 570,
+    "code": "https://github.com/prosyslab-warehouse/xsane-0.999/blob/master/src/xsane-save.c#L570",
+    "cmd": "return"
+  }, {
+    "file": "src/xsane-viewer.c",
+    "line": 2365,
+    "code": "https://github.com/prosyslab-warehouse/xsane-0.999/blob/master/src/xsane-viewer.c#L2365",
+    "cmd": "multiply"
+  }, {
+    "file": "src/xsane-viewer.c",
+    "line": 2365,
+    "code": "https://github.com/prosyslab-warehouse/xsane-0.999/blob/master/src/xsane-viewer.c#L2365",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "CWE190_01-CWE190_Integer_Overflow__char_fscanf_multiply-1",
+    "bug": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_multiply_01.c#L32",
+    "score": 0.87
+  }]
+}]

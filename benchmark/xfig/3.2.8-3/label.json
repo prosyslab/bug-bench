@@ -1,0 +1,37 @@
+[{
+  "project": "xfig",
+  "version": "3.2.8-3",
+  "file": "src/w_help.c",
+  "line": 55,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=992395",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/xfig-3.2.8-3/blob/master/src/w_help.c#L55",
+  "source": {
+    "file": "src/w_help.c",
+    "line": 55,
+    "code": "https://github.com/prosyslab-warehouse/xfig-3.2.8-3/blob/master/src/w_help.c#L55"
+  },
+  "sink": {
+    "file": "src/w_help.c",
+    "line": 55,
+    "code": "https://github.com/prosyslab-warehouse/xfig-3.2.8-3/blob/master/src/w_help.c#L55"
+  },
+  "bug-trace": [{
+    "file": "src/w_help.c",
+    "line": 55,
+    "code": "https://github.com/prosyslab-warehouse/xfig-3.2.8-3/blob/master/src/w_help.c#L55",
+    "cmd": "getenv"
+  }, {
+    "file": "src/w_help.c",
+    "line": 55,
+    "code": "https://github.com/prosyslab-warehouse/xfig-3.2.8-3/blob/master/src/w_help.c#L55",
+    "cmd": "sprintf"
+  }],
+  "similarity": [{
+    "ID": "buffer-overflow1-1",
+    "bug": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12",
+    "score": 1
+  }]
+}]

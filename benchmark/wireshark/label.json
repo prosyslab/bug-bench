@@ -1,0 +1,48 @@
+[{
+  "project": "wireshark",
+  "version": "v2.0.0",
+  "file": "epan/dissectors/packet-cp2179.c",
+  "line": 724,
+  "type": "div-by-zero",
+  "CVE": "CVE-2023-2906",
+  "report": "https://gitlab.com/wireshark/wireshark/-/issues/19229",
+  "patch": "https://gitlab.com/wireshark/wireshark/-/commit/0b874ad0f50f71a5b780cb915ea62f8625112402",
+  "code": "https://github.com/prosyslab-warehouse/wireshark-2.0.0/blob/master/epan/dissectors/packet-cp2179.c#L724",
+  "source": {
+    "file": "unknown",
+    "line": -1,
+    "code": "-"
+  },
+  "sink": {
+    "file": "epan/dissectors/packet-cp2179.c",
+    "line": 724,
+    "code": "https://github.com/prosyslab-warehouse/wireshark-2.0.0/blob/master/epan/dissectors/packet-cp2179.c#L724"
+  },
+  "bug-trace": [{
+    "file": "epan/dissectors/packet-cp2179.c",
+    "line": 1058,
+    "code": "https://github.com/prosyslab-warehouse/wireshark-2.0.0/blob/master/epan/dissectors/packet-cp2179.c#L1058",
+    "cmd": "call"
+  }, {
+    "file": "epan/dissectors/packet-cp2179.c",
+    "line": 1061,
+    "code": "https://github.com/prosyslab-warehouse/wireshark-2.0.0/blob/master/epan/dissectors/packet-cp2179.c#L1028",
+    "cmd": "call"
+  }, {
+    "file": "epan/dissectors/packet-cp2179.c",
+    "line": 1028,
+    "code": "https://github.com/prosyslab-warehouse/wireshark-2.0.0/blob/master/epan/dissectors/packet-cp2179.c#L1028",
+    "cmd": "call"
+  }, {
+    "file": "epan/dissectors/packet-cp2179.c",
+    "line": 723,
+    "code": "https://github.com/prosyslab-warehouse/wireshark-2.0.0/blob/master/epan/dissectors/packet-cp2179.c#L723",
+    "cmd": "assign",
+    "comment": "this function is not shown on the source code (library)"
+  }, {
+    "file": "epan/dissectors/packet-cp2179.c",
+    "line": 724,
+    "code": "https://github.com/prosyslab-warehouse/wireshark-2.0.0/blob/master/epan/dissectors/packet-cp2179.c#L724",
+    "cmd": "divide"
+  }]
+}]

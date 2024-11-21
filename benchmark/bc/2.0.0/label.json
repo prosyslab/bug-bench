@@ -1,0 +1,67 @@
+[{
+  "project": "bc",
+  "version": "2.0.0",
+  "file": "src/num.c",
+  "line": 337,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": "https://github.com/gavinhoward/bc/commit/e396dff5929071da830a84b64405f7a7c8e0113e#diff-9938f3b22dd90f74cd08153d1d46047a19bf2cc6e919792018e31b4192b09fb0R338",
+  "code": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/num.c#L337",
+  "source": {
+    "file": "src/read.c",
+    "line": 81,
+    "code": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/read.c#L81"
+  },
+  "sink": {
+    "file": "src/num.c",
+    "line": 337,
+    "code": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/num.c#L337"
+  },
+  "bug-trace": [{
+    "file": "src/read.c",
+    "line": 81,
+    "code": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/read.c#L81",
+    "cmd": "fgetc"
+  }, {
+    "file": "src/read.c",
+    "line": 113,
+    "code": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/read.c#L113",
+    "cmd": "return"
+  }, {
+    "file": "src/read.c",
+    "line": 134,
+    "code": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/read.c#L134",
+    "cmd": "call"
+  }, {
+    "file": "src/program.c",
+    "line": 1728,
+    "code": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/program.c#L1728",
+    "cmd": "call"
+  }, {
+    "file": "src/program.c",
+    "line": 1758,
+    "code": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/program.c#L1758",
+    "cmd": "call"
+  }, {
+    "file": "src/program.c",
+    "line": 1152,
+    "code": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/program.c#L1152",
+    "cmd": "assign"
+  }, {
+    "file": "src/program.c",
+    "line": 1163,
+    "code": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/program.c#L1163",
+    "cmd": "call"
+  }, {
+    "file": "src/num.c",
+    "line": 1989,
+    "code": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/num.c#L1989",
+    "cmd": "call"
+  }, {
+    "file": "src/num.c",
+    "line": 337,
+    "code": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/num.c#L337",
+    "cmd": "add"
+  }]
+}]

@@ -1,0 +1,113 @@
+[{
+  "project": "libambix",
+  "version": "v0.1.2",
+  "file": "utils/ambix-jplay.c",
+  "line": 382,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://www.google.com/url?q=https://git.iem.at/ambisonics/libambix/-/issues/5&sa=D&source=editors&ust=1732258976203365&usg=AOvVaw3OH6w0-PbqRlg5WPO9zAuj",
+  "patch": "https://git.iem.at/ambisonics/libambix/-/commit/3ff0234aa061222639265bbfd51d886915dc908e",
+  "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jplay.c#L382",
+  "source": {
+    "file": "utils/ambix-jplay.c",
+    "line": 514,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jplay.c#L514"
+  },
+  "sink": {
+    "file": "utils/ambix-jplay.c",
+    "line": 974,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jplay.c#L379"
+  },
+  "bug-trace": [{
+    "file": "utils/ambix-jplay.c",
+    "line": 514,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jplay.c#L514",
+    "cmd": "argv"
+  }, {
+    "file": "utils/ambix-jplay.c",
+    "line": 534,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jplay.c#L534",
+    "cmd": "strtol"
+  }, {
+    "file": "utils/ambix-jplay.c",
+    "line": 362,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jplay.c#L362",
+    "cmd": "add"
+  }, {
+    "file": "utils/ambix-jplay.c",
+    "line": 376,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jplay.c#L376",
+    "cmd": "multiply"
+  }, {
+    "file": "utils/ambix-jplay.c",
+    "line": 377,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jplay.c#L377",
+    "cmd": "multiply"
+  }, {
+    "file": "utils/ambix-jplay.c",
+    "line": 382,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jplay.c#L382",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "jasper-1.900.12",
+    "bug": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/jpc/jpc_dec.c#L1234",
+    "score": 0.7
+  }]
+}, {
+  "project": "libambix",
+  "version": "v0.1.2",
+  "file": "utils/ambix-jrecord.c",
+  "line": 455,
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": "https://www.google.com/url?q=https://git.iem.at/ambisonics/libambix/-/issues/5&sa=D&source=editors&ust=1732258976203365&usg=AOvVaw3OH6w0-PbqRlg5WPO9zAuj",
+  "patch": "https://git.iem.at/ambisonics/libambix/-/commit/3ff0234aa061222639265bbfd51d886915dc908e",
+  "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jrecord.c#L455",
+  "source": {
+    "file": "utils/ambix-jrecord.c",
+    "line": 299,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jrecord.c#L299"
+  },
+  "sink": {
+    "file": "utils/ambix-jrecord.c",
+    "line": 455,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jrecord.c#L455"
+  },
+  "bug-trace": [{
+    "file": "utils/ambix-jrecord.c",
+    "line": 299,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jrecord.c#L299",
+    "cmd": "argv"
+  }, {
+    "file": "utils/ambix-jrecord.c",
+    "line": 336,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jrecord.c#L336",
+    "cmd": "strtol"
+  }, {
+    "file": "utils/ambix-jrecord.c",
+    "line": 400,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jrecord.c#L400",
+    "cmd": "add"
+  }, {
+    "file": "utils/ambix-jrecord.c",
+    "line": 449,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jrecord.c#L449",
+    "cmd": "multiply"
+  }, {
+    "file": "utils/ambix-jrecord.c",
+    "line": 450,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jrecord.c#L450",
+    "cmd": "multiply"
+  }, {
+    "file": "utils/ambix-jrecord.c",
+    "line": 455,
+    "code": "https://github.com/prosyslab-warehouse/libambix-0.1.2/blob/master/utils/ambix-jrecord.c#L455",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "jasper-1.900.12",
+    "bug": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/jpc/jpc_dec.c#L1234",
+    "score": 0.7
+  }]
+}]

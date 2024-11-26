@@ -14,5 +14,62 @@
   "type": "format-string",
   "CVE": "CVE-2015-8106",
   "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8106",
-  "patch": "https://seclists.org/oss-sec/2015/q4/283"
+  "patch": "https://seclists.org/oss-sec/2015/q4/283",
+  "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/main.c#L834",
+  "bug-trace": [{
+    "file": "parser.c",
+    "line": 439,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/parser.c#L439",
+    "cmd": "getc"
+  }, {
+    "file": "parser.c",
+    "line": 439,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/parser.c#L439",
+    "cmd": "assign"
+  }, {
+    "file": "parser.c",
+    "line": 459,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/parser.c#L459",
+    "cmd": "assign"
+  }, {
+    "file": "parser.c",
+    "line": 503,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/parser.c#L503",
+    "cmd": "return"
+  }, {
+    "file": "parser.c",
+    "line": 556,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/parser.c#L556",
+    "cmd": "assign"
+  }, {
+    "file": "parser.c",
+    "line": 571,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/parser.c#L571",
+    "cmd": "assign"
+  }, {
+    "file": "parser.c",
+    "line": 610,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/parser.c#L610",
+    "cmd": "assign"
+  }, {
+    "file": "parser.c",
+    "line": 612,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/parser.c#L612",
+    "cmd": "assign"
+  }, {
+    "file": "parser.c",
+    "line": 877,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/parser.c#L877",
+    "cmd": "assign"
+  }, {
+    "file": "funct1.c",
+    "line": 1798,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/funct1.c#L1798",
+    "cmd": "fprintfRTF"
+  }, {
+    "file": "main.c",
+    "line": 834,
+    "code": "https://github.com/prosyslab-warehouse/latex2rtf-2.1.1/blob/master/main.c#L834",
+    "cmd": "vsnprintf"
+  }]
 }]

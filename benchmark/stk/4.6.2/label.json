@@ -60,7 +60,7 @@
     "cmd": "malloc"
   }],
   "similarity": [{
-    "ID": "shntool-3.0.5",
+    "ID": "shntool-3.0.5-1",
     "bug": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L187",
     "score": 0.87
   }]

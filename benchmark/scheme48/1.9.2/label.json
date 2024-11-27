@@ -60,7 +60,7 @@
     "cmd": "malloc"
   }],
   "similarity": [{
-    "ID": "gimp",
+    "ID": "gimp-2.6.7-1",
     "bug": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L630",
     "score": 0.85
   }]

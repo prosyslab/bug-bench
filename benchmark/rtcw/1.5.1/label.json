@@ -65,7 +65,7 @@
     "cmd": "memcpy"
   }],
   "similarity": [{
-    "ID": "zsh-5.4.2",
+    "ID": "zsh-5.4.2-1",
     "bug": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665",
     "score": 0.4
   }]

@@ -100,7 +100,7 @@
     "cmd": "add"
   }],
   "similarity": [{
-    "ID": "bc-2.0.0",
+    "ID": "bc-2.0.0-1",
     "bug": "https://github.com/prosyslab-warehouse/bc-2.0.0/blob/master/src/num.c#L337",
     "score": 0.7
   }]

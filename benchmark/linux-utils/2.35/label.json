@@ -34,11 +34,11 @@
     "cmd": "exec"
   }],
   "similarity": [{
-    "ID": "amanda-3.3.1",
+    "ID": "amanda-3.3.1-1",
     "bug": "https://github.com/prosyslab-warehouse/amanda-3.3.1/blob/master/client-src/runtar.c#L159",
     "score": 0.86
   }, {
-    "ID": "pococom-2.0a",
+    "ID": "pococom-2.0a-1",
     "bug": "https://github.com/prosyslab-warehouse/picocom-2.0a/blob/master/picocom.c#L825",
     "score": 0.72
   }]

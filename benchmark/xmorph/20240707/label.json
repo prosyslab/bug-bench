@@ -95,7 +95,7 @@
     "cmd": "divide"
   }],
   "similarity": [{
-    "ID": "wireshark-v2.0.0",
+    "ID": "wireshark-v2.0.0-1",
     "bug": "https://github.com/prosyslab-warehouse/wireshark-2.0.0/blob/master/epan/dissectors/packet-cp2179.c#L724",
     "score": 0.7
   }]

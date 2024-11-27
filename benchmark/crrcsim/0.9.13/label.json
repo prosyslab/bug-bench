@@ -45,7 +45,7 @@
     "cmd": "malloc"
   }],
   "similarity": [{
-    "ID": "optipng-0.5.3",
+    "ID": "optipng-0.5.3-1",
     "bug": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/2f5197c817860a1b51705e80919a6cb8a11066c7/lib/pngxtern/minitiff/tiffread.c#L353",
     "score": 0.9
   }]

@@ -45,7 +45,7 @@
     "cmd": "C_MAKE (memory allocation)"
   }],
   "similarity": [{
-    "ID": "autotrace-20200219.65",
+    "ID": "autotrace-20200219.65-1",
     "bug": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L255",
     "score": 0.93
   }]
@@ -54,7 +54,7 @@
   "version": "2.7.5",
   "file": "src/tk/plat.c",
   "line": 535,
-  "type": "buffer-overflow",
+  "type": "integer-underflow",
   "CVE": null,
   "report": null,
   "patch": null,
@@ -101,7 +101,7 @@
     "cmd": "C_MAKE (memory allocation)"
   }],
   "similarity": [{
-    "ID": "gdk-pixbuf-2.36.11",
+    "ID": "gdk-pixbuf-2.36.11-1",
     "bug": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459",
     "score": 0.77
   }]

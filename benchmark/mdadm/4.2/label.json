@@ -35,7 +35,7 @@
     "cmd": "memset"
   }],
   "similarity": [{
-    "ID": "schismtracker-20190722",
+    "ID": "schismtracker-20190722-1",
     "bug": "https://github.com/prosyslab-warehouse/schismtracker-20190722/blob/master/fmt/okt.c#L475",
     "score": 1
   }]

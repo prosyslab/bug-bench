@@ -34,7 +34,7 @@
     "cmd": "sprintf"
   }],
   "similarity": [{
-    "ID": "mp3rename-0.6",
+    "ID": "mp3rename-0.6-1",
     "bug": "https://github.com/prosyslab-warehouse/mp3rename-0.6/blob/master/mp3rename.c#L523",
     "score": 0.59
   }]
@@ -84,7 +84,7 @@
     "cmd": "malloc"
   }],
   "similarity": [{
-    "ID": "sam2p-0.49.4",
+    "ID": "sam2p-0.49.4-1",
     "bug": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L267",
     "score": 0.87
   }]

@@ -70,7 +70,7 @@
     "cmd": "malloc"
   }],
   "similarity": [{
-    "ID": "autotrace-20200219.65",
+    "ID": "autotrace-20200219.65-1",
     "bug": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L255",
     "score": 0.95
   }]

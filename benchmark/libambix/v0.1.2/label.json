@@ -50,7 +50,7 @@
     "cmd": "malloc"
   }],
   "similarity": [{
-    "ID": "jasper-1.900.12",
+    "ID": "jasper-1.900.12-1",
     "bug": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/jpc/jpc_dec.c#L1234",
     "score": 0.7
   }]
@@ -106,7 +106,7 @@
     "cmd": "malloc"
   }],
   "similarity": [{
-    "ID": "jasper-1.900.12",
+    "ID": "jasper-1.900.12-1",
     "bug": "https://github.com/prosyslab-warehouse/jasper-1.900.12/blob/master/src/libjasper/jpc/jpc_dec.c#L1234",
     "score": 0.7
   }]

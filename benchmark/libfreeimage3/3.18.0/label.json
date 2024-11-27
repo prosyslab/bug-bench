@@ -35,7 +35,7 @@
     "cmd": "multiply"
   }],
   "similarity": [{
-    "ID": "gdk-pixbuf-2.36.11",
+    "ID": "gdk-pixbuf-2.36.11-1",
     "bug": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459",
     "score": 0.83
   }]

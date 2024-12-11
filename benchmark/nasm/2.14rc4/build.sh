@@ -8,10 +8,7 @@ if [[ $1 == "sparrow" ]]; then
   ./configure
   $SMAKE_BIN --init
   $SMAKE_BIN $MAKE_PARAMS
-  # Unfortunately, Smake does not gather every necessary files in this case
-  # Thus, sparrow/nasm contains only the source with main function.
-  # As a workaround, we manually copy necessary files from sparrow/nasmlib.  
-  cp sparrow/nasm/*.i $SMAKE_OUT
+  cp sparrow/asm/*.i $SMAKE_OUT
   cp sparrow/nasmlib/*.i $SMAKE_OUT
 elif [[ $1 == "haechi" ]]; then
   export CC=$GCLANG_BIN
@@ -20,7 +17,7 @@ elif [[ $1 == "haechi" ]]; then
 
   $SMAKE_BIN --init
   $SMAKE_BIN $MAKE_PARAMS
-  cp sparrow/nasm/*.i $SMAKE_OUT
+  cp sparrow/asm/*.i $SMAKE_OUT
   cp sparrow/nasmlib/*.i $SMAKE_OUT
   $GET_BC_BIN $BIN_PATH &&
     llvm-dis -o $BIN_PATH.ll $BIN_PATH.bc &&

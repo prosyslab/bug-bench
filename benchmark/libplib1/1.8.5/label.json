@@ -17,7 +17,7 @@
     "line": 167,
     "code": "https://github.com/prosyslab-warehouse/libplib1-1.8.5/blob/master/src/ssg/ssgLoadTGA.cxx#L167"
   },
-  "bug_trace": [{
+  "bug-trace": [{
     "file": "src/ssg/ssgLoadTGA.cxx",
     "line": 92,
     "code": "https://github.com/prosyslab-warehouse/libplib1-1.8.5/blob/master/src/ssg/ssgLoadTGA.cxx#L92",

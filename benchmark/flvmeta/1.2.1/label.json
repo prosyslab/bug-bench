@@ -8,7 +8,7 @@
   "report": "https://github.com/noirotm/flvmeta/issues/13",
   "patch": "https://github.com/noirotm/flvmeta/commit/7b91e5656e27b16639c8de156878c7624346cbd4",
   "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L271",
-  "bug_trace": [{
+  "bug-trace": [{
     "file": "src/amf.c",
     "line": 207,
     "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L207",
@@ -79,7 +79,7 @@
   "report": "https://github.com/noirotm/flvmeta/issues/14",
   "patch": "https://github.com/noirotm/flvmeta/commit/7d3007ba09f98cc76cb95a76f3a4db5285d7ad6e",
   "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/dump_xml.c#L151",
-  "bug_trace": [{
+  "bug-trace": [{
     "file": "src/amf.c",
     "line": 233,
     "code": "https://github.com/prosyslab-warehouse/flvmeta-1.2.1/blob/master/src/amf.c#L233",

@@ -17,7 +17,7 @@
     "line": 2915,
     "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/file.c#L2915"
   },
-  "bug_trace": [{
+  "bug-trace": [{
     "file": "PTcommon.c",
     "line": 1822,
     "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/PTcommon.c#L1822",
@@ -57,7 +57,7 @@
     "line": 1488,
     "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/file.c#L1488"
   },
-  "bug_trace": [{
+  "bug-trace": [{
     "file": "filter.h",
     "line": 1077,
     "code": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/filter.h#L1077",

@@ -11,7 +11,7 @@
       "line": 1326,
       "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1326"
     },
-    "bug_trace": [{
+    "bug-trace": [{
       "file": "htmldoc/image.cxx",
       "line": 1279,
       "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1279",

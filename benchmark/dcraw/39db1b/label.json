@@ -52,7 +52,7 @@
     "report": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=984761",
     "input": "n1",
     "patch": null,
-    "bug_trace": [{
+    "bug-trace": [{
       "file": "parse.c",
       "line": 70,
       "code": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/parse.c#L70",

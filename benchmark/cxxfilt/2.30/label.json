@@ -1,0 +1,100 @@
+[{
+  "project": "cxxfilt",
+  "version": "2.30",
+  "file": "libiberty/cplus-dem.c",
+  "line": 4713,
+  "type": "stack-overflow",
+  "CVE": "CVE-2018-9138",
+  "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=23008",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cplus-dem.c#L4713",
+  "bug-trace": []
+}, {
+  "project": "cxxfilt",
+  "version": "2.30",
+  "file": "libiberty/cplus-dem.c",
+  "line": 1916,
+  "type": "stack-overflow",
+  "CVE": "CVE-2018-9996",
+  "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=85304",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cplus-dem.c#L1916",
+  "bug-trace": []
+}, {
+  "project": "cxxfilt",
+  "version": "2.30",
+  "file": "libiberty/cp-demangle.c",
+  "line": 2565,
+  "type": "stack-overflow",
+  "CVE": "CVE-2018-17985",
+  "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=87335",
+  "patch": "https://gcc.gnu.org/git/?p=gcc.git&a=commit;h=e96d1d8c7877ef25a2ef502b2685ba36b9913fd2",
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L2565",
+  "bug-trace": []
+}, {
+  "project": "cxxfilt",
+  "version": "2.30",
+  "file": "libiberty/cp-demangle.c",
+  "line": 2443,
+  "type": "stack-overflow",
+  "CVE": "CVE-2018-18484",
+  "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=87636",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L2443",
+  "bug-trace": []
+}, {
+  "project": "cxxfilt",
+  "version": "2.30",
+  "file": "libiberty/cp-demangle.c",
+  "line": 1312,
+  "type": "stack-overflow",
+  "CVE": "CVE-2018-18700",
+  "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=87681",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L1312",
+  "bug-trace": []
+}, {
+  "project": "cxxfilt",
+  "version": "2.30",
+  "file": "libiberty/cp-demangle.c",
+  "line": 3415,
+  "type": "stack-overflow",
+  "CVE": "CVE-2019-9070",
+  "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=89395",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L3415",
+  "bug-trace": []
+}, {
+  "project": "cxxfilt",
+  "version": "2.30",
+  "file": "libiberty/cp-demangle.c",
+  "line": 4125,
+  "type": "stack-overflow",
+  "CVE": "CVE-2019-9071",
+  "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=89394",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L4125",
+  "bug-trace": []
+}, {
+  "project": "cxxfilt",
+  "version": "2.30",
+  "file": "libiberty/cp-demangle.c",
+  "line": 2458,
+  "type": "stack-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L2458",
+  "bug-trace": []
+}, {
+  "project": "cxxfilt",
+  "version": "2.30",
+  "file": "libiberty/cp-demangle.c",
+  "line": 3112,
+  "type": "stack-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cp-demangle.c#L3112",
+  "bug-trace": []
+}]

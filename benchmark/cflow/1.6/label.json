@@ -1,0 +1,32 @@
+[{
+  "project": "cflow",
+  "version": "1.6",
+  "file": "src/parser.c",
+  "line": 1298,
+  "type": "use-after-free",
+  "CVE": "CVE-2019-16165",
+  "report": "https://www.cvedetails.com/cve/CVE-2019-16165",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/cflow-1.6/blob/master/src/parser.c#L1298",
+  "bug-trace": []
+}, {
+  "project": "cflow",
+  "version": "1.6",
+  "file": "src/parser.c",
+  "line": 302,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2019-16166",
+  "report": "https://www.cvedetails.com/cve/CVE-2019-16166",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/cflow-1.6/blob/master/src/parser.c#L302"
+}, {
+  "project": "cflow",
+  "version": "1.6",
+  "file": "src/symbol.c",
+  "line": 302,
+  "type": "buffer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/cflow-1.6/blob/master/src/symbol.c#L302"
+}]

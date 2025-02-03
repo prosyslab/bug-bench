@@ -1,12 +1,13 @@
 [{
   "project": "nm",
   "version": "2.30",
-  "file": "xmalloc.c",
-  "line": 147,
+  "file": "libiberty/cplus-dem.c",
+  "line": 4713,
   "type": "stack-overflow",
   "CVE": "CVE-2018-9138",
   "report": "https://sourceware.org/bugzilla/show_bug.cgi?id=23008",
   "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cplus-dem.c#L4713",
   "bug-trace": [{
     "file": "bfd/cache.c",
     "line": 327,
@@ -241,15 +242,9 @@
     "file": "libiberty/cplus-dem.c",
     "line": 4713,
     "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cplus-dem.c#L4713",
-    "cmd": "call"
-  }, {
-    "file": "libiberty/cplus-dem.c",
-    "line": 4659,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cplus-dem.c#L4659",
     "cmd": "call",
-    "comment": "call recursively, causing a stack overflow."
-  }],
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.30/blob/master/libiberty/cplus-dem.c#L4659"
+    "comment": "call L4659 recursively, causing a stack overflow."
+  }]
 }, {
   "project": "nm",
   "version": "2.30",

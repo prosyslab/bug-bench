@@ -248,7 +248,7 @@
 }, {
   "project": "nm",
   "version": "2.30",
-  "file": "cplus-dem.c",
+  "file": "libiberty/cplus-dem.c",
   "line": 1916,
   "type": "stack-overflow",
   "CVE": "CVE-2018-9996",
@@ -1075,7 +1075,7 @@
 }, {
   "project": "nm",
   "version": "2.30",
-  "file": "cp-demangle.c",
+  "file": "libiberty/cp-demangle.c",
   "line": 4125,
   "type": "stack-overflow",
   "CVE": "CVE-2019-9071",

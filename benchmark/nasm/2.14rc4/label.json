@@ -1,134 +1,134 @@
 [{
   "project": "nasm",
   "version": "2.14rc4",
-  "file": "float.c",
+  "file": "asm/float.c",
   "line": 612,
   "type": "buffer-overflow",
   "CVE": "CVE-2018-8882",
   "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392445",
   "patch": null,
   "bug-trace": [{
-    "file": "preproc.c",
+    "file": "asm/preproc.c",
     "line": 820,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/preproc.c#L820",
     "cmd": "fgetc",
     "comment": ""
   }, {
-    "file": "preproc.c",
+    "file": "asm/preproc.c",
     "line": 885,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/preproc.c#L885",
     "cmd": "return",
     "comment": ""
   }, {
-    "file": "preproc.c",
+    "file": "asm/preproc.c",
     "line": 5264,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/preproc.c#L5264",
     "cmd": "return",
     "comment": ""
   }, {
-    "file": "nasm.c",
+    "file": "asm/nasm.c",
     "line": 1448,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/nasm.c#L1448",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "parser.c",
+    "file": "asm/parser.c",
     "line": 688,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/parser.c#L688",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 907,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L907",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 722,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L722",
     "cmd": "initialize",
     "comment": "initialize `exponent`"
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 792,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L792",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 214,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L214",
     "cmd": "initialize",
     "comment": "initialize `tenpwr`"
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 229,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L229",
     "cmd": "assign",
     "comment": "decrease `tenpwr` until -58"
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 291,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L291",
     "cmd": "initialize",
     "comment": "initialize `twopwr`"
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 323,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L323",
     "cmd": "assign",
     "comment": "decrease `twopwr` until -2"
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 326,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L326",
     "cmd": "assign",
     "comment": "`twopwr` is assigned to -60"
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 371,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L371",
     "cmd": "assign",
     "comment": "`extractwos decreases by -74 with a while loop"
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 368,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L368",
     "cmd": "assign",
     "comment": "`twopwr` is assigned to -194"
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 393,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L393",
     "cmd": "assign",
     "comment": "`exponent` is assigned to -194"
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 394,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L394",
     "cmd": "return",
     "comment": ""
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 834,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L834",
     "cmd": "assign",
     "comment": "`shift` is assigned to 193"
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 836,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L836",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 605,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L605",
     "cmd": "assign",
     "comment": "`offs` is assigned to 6"
   }, {
-    "file": "float.c",
+    "file": "asm/float.c",
     "line": 612,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/float.c#L612",
     "cmd": "buffer read",
@@ -138,104 +138,104 @@
 }, {
   "project": "nasm",
   "version": "2.14rc4",
-  "file": "parser.c",
+  "file": "asm/parser.c",
   "line": 891,
   "type": "buffer-overflow",
   "CVE": "CVE-2018-8883",
   "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392447",
   "patch": null,
   "bug-trace": [{
-    "file": "preproc.c",
+    "file": "asm/preproc.c",
     "line": 820,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/preproc.c#L820",
     "cmd": "fgetc",
     "comment": ""
   }, {
-    "file": "preproc.c",
+    "file": "asm/preproc.c",
     "line": 885,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/preproc.c#L885",
     "cmd": "return",
     "comment": ""
   }, {
-    "file": "preproc.c",
+    "file": "asm/preproc.c",
     "line": 5264,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/preproc.c#L5264",
     "cmd": "return",
     "comment": ""
   }, {
-    "file": "nasm.c",
+    "file": "asm/nasm.c",
     "line": 1448,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/nasm.c#L1448",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "parser.c",
+    "file": "asm/parser.c",
     "line": 877,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/parser.c#L877",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 973,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L973",
     "cmd": "assign",
     "comment": "bexpr is assigned to expr0 (function pointer)."
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 988,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L988",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 932,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L932",
     "cmd": "assign",
     "comment": "type is assigned to 241."
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 940,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L940",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 105,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L105",
     "cmd": "assign",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 107,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L107",
     "cmd": "return",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 949,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L949",
     "cmd": "return",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 1022,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L1022",
     "cmd": "return",
     "comment": ""
   }, {
-    "file": "parser.c",
+    "file": "asm/parser.c",
     "line": 891,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/parser.c#L891",
     "cmd": "call",
     "comment": "value->type is 241."
   }, {
-    "file": "opflags.h",
+    "file": "include/opflags.h",
     "line": 171,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/include/opflags.h#L171",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "opflags.h",
+    "file": "asm/opflags.h",
     "line": 169,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/include/opflags.h#L169",
     "cmd": "buffer read",
@@ -245,7 +245,7 @@
 }, {
   "project": "nasm",
   "version": "2.14rc4",
-  "file": "labels.c",
+  "file": "asm/labels.c",
   "line": 64,
   "type": "null-dereference",
   "CVE": "CVE-2018-16517",
@@ -253,35 +253,35 @@
   "patch": null,
   "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/labels.c#L64",
   "bug-trace": [{
-    "file": "parser.c",
+    "file": "asm/parser.c",
     "line": 450,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/parser.c#L450",
     "cmd": "initialize",
     "comment": "result->label = NULL. Note: 1. parameter `result`, which here is nasm.c:1448's `output_ins` variable, is uninitialized before here. 2. parser.c:473 inside the unexecuted if stmt could have initialized the label, although in this case, isn't executed."
   }, {
-    "file": "parser.c",
+    "file": "asm/parser.c",
     "line": 1137,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/parser.c#L1137",
     "cmd": "return",
     "comment": "to nasm.c:1448. In there, output_ins.label will be 0"
   }, {
-    "file": "nasm.c",
+    "file": "asm/nasm.c",
     "line": 1483,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/nasm.c#L1483",
     "cmd": "call",
     "comment": "although L1480 checks output_ins.label == NULL and reports via nasm_error, it doesn't kill (is NONFATAL), and L1483 is executed."
   }, {
-    "file": "labels.c",
+    "file": "asm/labels.c",
     "line": 420,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/labels.c#L420",
     "cmd": "call"
   }, {
-    "file": "labels.c",
+    "file": "asm/labels.c",
     "line": 206,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/labels.c#L206",
     "cmd": "call"
   }, {
-    "file": "asm/labels.c",
+    "file": "asm/asm/labels.c",
     "line": 64,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/labels.c#L64",
     "cmd": "buffer read",
@@ -290,92 +290,92 @@
 }, {
   "project": "nasm",
   "version": "2.14rc4",
-  "file": "eval.c",
+  "file": "asm/eval.c",
   "line": 805,
   "type": "stack-overflow",
   "CVE": "CVE-2019-6291",
   "report": "https://bugzilla.nasm.us/show_bug.cgi?id=3392549",
   "patch": null,
   "bug-trace": [{
-    "file": "preproc.c",
+    "file": "asm/preproc.c",
     "line": 820,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/preproc.c#L820",
     "cmd": "fgetc",
     "comment": ""
   }, {
-    "file": "preproc.c",
+    "file": "asm/preproc.c",
     "line": 885,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/preproc.c#L885",
     "cmd": "return",
     "comment": ""
   }, {
-    "file": "preproc.c",
+    "file": "asm/preproc.c",
     "line": 5264,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/preproc.c#L5264",
     "cmd": "return",
     "comment": ""
   }, {
-    "file": "nasm.c",
+    "file": "asm/nasm.c",
     "line": 1448,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/nasm.c#L1448",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "parser.c",
+    "file": "asm/parser.c",
     "line": 697,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/parser.c#L697",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 973,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L973",
     "cmd": "assign",
     "comment": "bexpr is assigned to expr0 (function pointer)."
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 988,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L988",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 430,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L430",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 456,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L456",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 482,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L482",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 508,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L508",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 542,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L542",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 567,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L567",
     "cmd": "call",
     "comment": ""
   }, {
-    "file": "eval.c",
+    "file": "asm/eval.c",
     "line": 806,
     "code": "https://github.com/prosyslab-warehouse/nasm-2.14rc4/blob/master/asm/eval.c#L806",
     "cmd": "call",

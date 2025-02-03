@@ -21,13 +21,20 @@
 }, {
   "project": "mujs",
   "version": "1.0.2",
-  "file": "jsdtoa.c",
-  "line": 725,
+  "source": {
+    "file": "jsstate.c",
+    "line": 122,
+    "code": "https://github.com/prosyslab-warehouse/mujs-1.0.2/blob/master/jsstate.c#L122"
+  },
+  "sink": {
+    "file": "jsdtoa.c",
+    "line": 725,
+    "code": "https://github.com/prosyslab-warehouse/mujs-1.0.2/blob/master/jsdtoa.c#L725"
+  },
   "type": "integer-overflow",
   "CVE": "CVE-2018-6191",
   "report": "https://bugs.ghostscript.com/show_bug.cgi?id=698920",
-  "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/mujs-1.0.2/blob/master/jsdtoa.c#L725"
+  "patch": "https://cgit.ghostscript.com/cgi-bin/cgit.cgi/mujs.git/commit/?id=25821e6d74fab5fcc200fe5e818362e03e114428"
 }, {
   "project": "mujs",
   "version": "1.0.2",

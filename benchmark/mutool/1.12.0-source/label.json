@@ -1,0 +1,21 @@
+[{
+  "project": "mutool",
+  "version": "1.12.0-source",
+  "file": "source/pdf/pdf-xref.c",
+  "line": 1188,
+  "type": "use-after-free",
+  "CVE": "CVE-2016-6265",
+  "report": "https://bugs.ghostscript.com/show_bug.cgi?id=696941",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/mupdf-1.12.0-source/blob/master/source/pdf/pdf-xref.c#L1188"
+}, {
+  "project": "mutool",
+  "version": "1.12.0-source",
+  "file": "source/pdf/pdf-xref.c",
+  "line": 211,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2017-17858",
+  "report": "https://github.com/mzet-/Security-Advisories/blob/master/mzet-adv-2017-01.md",
+  "patch": "https://github.com/ArtifexSoftware/mupdf/commit/55c3f68d638ac1263a386e0aaa004bb6e8bde731",
+  "code": "https://github.com/prosyslab-warehouse/mupdf-1.12.0-source/blob/master/source/pdf/pdf-xref.c#L211"
+}]

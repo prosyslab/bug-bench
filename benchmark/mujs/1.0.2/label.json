@@ -1,0 +1,71 @@
+[{
+  "project": "mujs",
+  "version": "1.0.2",
+  "file": "jsrun.c",
+  "line": 114,
+  "type": "buffer-overflow",
+  "CVE": "CVE-2017-5627",
+  "report": "https://bugs.ghostscript.com/show_bug.cgi?id=697497",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/mujs-1.0.2/blob/master/jsrun.c#L114"
+}, {
+  "project": "mujs",
+  "version": "1.0.2",
+  "file": "jscompile.c",
+  "line": 651,
+  "type": "stack-overflow",
+  "CVE": "CVE-2018-5759",
+  "report": "https://bugs.ghostscript.com/show_bug.cgi?id=698868",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/mujs-1.0.2/blob/master/jscompile.c#L651"
+}, {
+  "project": "mujs",
+  "version": "1.0.2",
+  "file": "jsdtoa.c",
+  "line": 725,
+  "type": "integer-overflow",
+  "CVE": "CVE-2018-6191",
+  "report": "https://bugs.ghostscript.com/show_bug.cgi?id=698920",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/mujs-1.0.2/blob/master/jsdtoa.c#L725"
+}, {
+  "project": "mujs",
+  "version": "1.0.2",
+  "file": "regexp.c",
+  "line": 641,
+  "type": "stack-overflow",
+  "CVE": "CVE-2022-30974",
+  "report": "https://github.com/ccxvii/mujs/issues/162",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/mujs-1.0.2/blob/master/regexp.c#L641"
+}, {
+  "project": "mujs",
+  "version": "1.0.2",
+  "file": "jsparse.c",
+  "line": 905,
+  "type": "stack-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/mujs-1.0.2/blob/master/jsparse.c#L905"
+}, {
+  "project": "mujs",
+  "version": "1.0.2",
+  "file": "jsparse.c",
+  "line": 416,
+  "type": "stack-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/mujs-1.0.2/blob/master/jsparse.c#L416"
+}, {
+  "project": "mujs",
+  "version": "1.0.2",
+  "file": "regexp.c",
+  "line": 604,
+  "type": "stack-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/mujs-1.0.2/blob/master/regexp.c#L604"
+}]

@@ -1,6 +1,6 @@
 [{
   "project": "nm",
-  "version": "2.9",
+  "version": "2.29",
   "file": "bfd/elf.c",
   "line": 8205,
   "type": "out-of-memory",

@@ -1,0 +1,21 @@
+[{
+  "project": "dumpdwarf",
+  "version": "20190529",
+  "file": "libdwarf/dwarf_elf_load_headers.c",
+  "line": 1838,
+  "type": "div-by-zero",
+  "CVE": "CVE-2019-14249",
+  "report": "https://nvd.nist.gov/vuln/detail/CVE-2019-14249",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/libdwarf-20190529/blob/main/libdwarf/dwarf_elf_load_headers.c#L1838"
+}, {
+  "project": "dumpdwarf",
+  "version": "20190529",
+  "file": "libdwarf/dwarf_elfread.c",
+  "line": 520,
+  "type": "double-free",
+  "CVE": "CVE-2022-39170",
+  "report": "https://nvd.nist.gov/vuln/detail/cve-2022-39170",
+  "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/libdwarf-20190529/blob/main/libdwarf/dwarf_elfread.c#L520"
+}]

@@ -84,7 +84,7 @@
     "cmd": "malloc"
   }],
   "similarity": [{
-    "ID": "sam2p-0.49.4-1",
+    "ID": "sam2p-0.49.4-2",
     "bug": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L267",
     "score": 0.87
   }]

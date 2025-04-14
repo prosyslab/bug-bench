@@ -15,5 +15,46 @@
   "CVE": "CVE-2017-16612",
   "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16612",
   "patch": "https://cgit.freedesktop.org/xorg/lib/libXcursor/commit/?id=4794b5dd34688158fb51a2943032569d3780c4b8",
-  "code": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L32"
+  "code": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L32",
+  "bug-trace": [{
+    "file": "src/file.c",
+    "line": 899,
+    "code": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L899",
+    "cmd": "read"
+  }, {
+    "file": "src/file.c",
+    "line": 441,
+    "code": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L441",
+    "cmd": "read"
+  }, {
+    "file": "src/file.c",
+    "line": 161,
+    "code": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L161",
+    "cmd": "assign"
+  }, {
+    "file": "src/file.c",
+    "line": 443,
+    "code": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L443",
+    "cmd": "read"
+  }, {
+    "file": "src/file.c",
+    "line": 161,
+    "code": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L161",
+    "cmd": "assign"
+  }, {
+    "file": "src/file.c",
+    "line": 460,
+    "code": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L460",
+    "cmd": "call"
+  }, {
+    "file": "src/file.c",
+    "line": 32,
+    "code": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L32",
+    "cmd": "malloc"
+  }], 
+  "similarity": [{
+    "ID": "gimp-2.6.7-1",
+    "bug": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L630",
+    "score": 0.96
+  }]
 }]

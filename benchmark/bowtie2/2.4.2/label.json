@@ -48,5 +48,29 @@
     "ID": "autotrace-20200219.65-1",
     "bug": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/input-bmp.c#L255",
     "score": 0.73
+  }, {
+    "ID": "dcraw-9.28-3",
+    "bug": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3208",
+    "score": 0.94
+  }, {
+    "ID": "drawxtl-5.5-1",
+    "bug": "https://github.com/prosyslab-warehouse/drawxtl-5.5/blob/master/source/DRAWxtl55/drawxtl.h#L28",
+    "score": 0.79
+  }, {
+    "ID": "htmldoc-1.9.11-1",
+    "bug": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1326",
+    "score": 0.95
+  }, {
+    "ID": "libquicktime-1.2.4-1",
+    "bug": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/elst.c#L151",
+    "score": 0.95
+  }, {
+    "ID": "sane-1.0.14-1",
+    "bug": "https://github.com/prosyslab-warehouse/sane-1.0.14/blob/master/src/preview.c#L1037",
+    "score": 0.87
+  }, {
+    "ID": "zangband-2.7.5-1",
+    "bug": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/maid-x11.c#L330",
+    "score": 0.93
   }]
 }]

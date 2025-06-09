@@ -67,6 +67,14 @@
     "ID": "gimp-2.6.7-2",
     "bug": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L630",
     "score": 0.96
+  }, {
+    "ID": "libpano13-2.9.19-2",
+    "bug": "https://github.com/prosyslab-warehouse/libpano13-2.9.19/blob/master/file.c#L1488",
+    "score": 0.87
+  }, {
+    "ID": "nageru-2.1.0-1",
+    "bug": "https://github.com/prosyslab-warehouse/nageru-2.1.0/blob/master/futatabi/util.cpp#L17",
+    "score": 0.87
   }]
 }, {
   "project": "sam2p",

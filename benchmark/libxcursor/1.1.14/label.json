@@ -51,7 +51,7 @@
     "line": 32,
     "code": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L32",
     "cmd": "malloc"
-  }], 
+  }],
   "similarity": [{
     "ID": "gimp-2.6.7-2",
     "bug": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L630",

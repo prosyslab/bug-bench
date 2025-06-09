@@ -1,174 +1,191 @@
 [{
-    "project": "htmldoc",
-    "version": "1.9.11",
-    "source": {
-      "file": "htmldoc/image.cxx",
-      "line": 1279,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1279"
-    },
-    "sink": {
-      "file": "htmldoc/image.cxx",
-      "line": 1326,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1326"
-    },
-    "bug-trace": [{
-      "file": "htmldoc/image.cxx",
-      "line": 1279,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1279",
-      "cmd": "read"
-    }, {
-      "file": "htmldoc/image.cxx",
-      "line": 1320,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1320",
-      "cmd": "left shift"
-    }, {
-      "file": "htmldoc/image.cxx",
-      "line": 1320,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1320",
-      "cmd": "bitwise or"
-    }, {
-      "file": "htmldoc/image.cxx",
-      "line": 1321,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1321",
-      "cmd": "left shift"
-    }, {
-      "file": "htmldoc/image.cxx",
-      "line": 1321,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1321",
-      "cmd": "bitwise or"
-    }, {
-      "file": "htmldoc/image.cxx",
-      "line": 1321,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1321",
-      "cmd": "assign"
-    }, {
-      "file": "htmldoc/image.cxx",
-      "line": 1322,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1322",
-      "cmd": "assign"
-    }, {
-      "file": "htmldoc/image.cxx",
-      "line": 1326,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1326",
-      "cmd": "malloc"
-    }],
-    "similarity": [{
-      "ID": "autotrace-20200219.65-1",
-      "bug": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/autotrace.c#L170",
-      "score": 0.95
-    }],
-    "type": "integer-overflow",
-    "CVE": "CVE-2021-20308",
-    "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20308",
-    "patch": "https://github.com/prosyslab-warehouse/htmldoc/commit/6a8322a718b2ba5c440bd33e6f26d9e281c39654",
-    "input": "n1"
+  "project": "htmldoc",
+  "version": "1.9.11",
+  "source": {
+    "file": "htmldoc/image.cxx",
+    "line": 1279,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1279"
   },
-  {
-    "project": "htmldoc",
-    "version": "1.9.11",
-    "source": {
-      "file": "htmldoc/image.cxx",
-      "line": 1242,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1242"
-    },
-    "sink": {
-      "file": "htmldoc/image.cxx",
-      "line": 1326,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1326"
-    },
-    "type": "integer-overflow",
-    "CVE": null,
-    "report": null,
-    "patch": null
+  "sink": {
+    "file": "htmldoc/image.cxx",
+    "line": 1326,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1326"
   },
-  {
-    "project": "htmldoc",
-    "version": "1.9.11",
-    "source": {
-      "file": "htmldoc/image.cxx",
-      "line": 1846,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1846"
-    },
-    "sink": {
-      "file": "htmldoc/image.cxx",
-      "line": 925,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
-    },
-    "type": "integer-overflow",
-    "CVE": null,
-    "report": null,
-    "patch": null
+  "bug-trace": [{
+    "file": "htmldoc/image.cxx",
+    "line": 1279,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1279",
+    "cmd": "read"
+  }, {
+    "file": "htmldoc/image.cxx",
+    "line": 1320,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1320",
+    "cmd": "left shift"
+  }, {
+    "file": "htmldoc/image.cxx",
+    "line": 1320,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1320",
+    "cmd": "bitwise or"
+  }, {
+    "file": "htmldoc/image.cxx",
+    "line": 1321,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1321",
+    "cmd": "left shift"
+  }, {
+    "file": "htmldoc/image.cxx",
+    "line": 1321,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1321",
+    "cmd": "bitwise or"
+  }, {
+    "file": "htmldoc/image.cxx",
+    "line": 1321,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1321",
+    "cmd": "assign"
+  }, {
+    "file": "htmldoc/image.cxx",
+    "line": 1322,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1322",
+    "cmd": "assign"
+  }, {
+    "file": "htmldoc/image.cxx",
+    "line": 1326,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1326",
+    "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "autotrace-20200219.65-1",
+    "bug": "https://github.com/prosyslab-warehouse/autotrace-20200219.65/blob/master/src/autotrace.c#L170",
+    "score": 0.95
+  }, {
+    "ID": "bowtie2-v2.4.2-1",
+    "bug": "https://github.com/prosyslab-warehouse/bowtie2-2.4.2/blob/master/bt2_io.cpp#L301",
+    "score": 0.73
+  }, {
+    "ID": "dcraw-9.28-3",
+    "bug": "https://github.com/prosyslab-warehouse/dcraw/blob/9d909999fadaffa9acd6e3297866d55f04ed41a8/dcraw.c#L3208",
+    "score": 0.94
+  }, {
+    "ID": "drawxtl-5.5-1",
+    "bug": "https://github.com/prosyslab-warehouse/drawxtl-5.5/blob/master/source/DRAWxtl55/drawxtl.h#L28",
+    "score": 0.79
+  }, {
+    "ID": "libquicktime-1.2.4-1",
+    "bug": "https://github.com/prosyslab-warehouse/libquicktime-1.2.4/blob/master/src/elst.c#L151",
+    "score": 0.95
+  }, {
+    "ID": "sane-1.0.14-1",
+    "bug": "https://github.com/prosyslab-warehouse/sane-1.0.14/blob/master/src/preview.c#L1037",
+    "score": 0.87
+  }, {
+    "ID": "zangband-2.7.5-1",
+    "bug": "https://github.com/prosyslab-warehouse/zangband-2.7.5/blob/master/src/maid-x11.c#L330",
+    "score": 0.93
+  }],
+  "type": "integer-overflow",
+  "CVE": "CVE-2021-20308",
+  "report": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20308",
+  "patch": "https://github.com/prosyslab-warehouse/htmldoc/commit/6a8322a718b2ba5c440bd33e6f26d9e281c39654",
+  "input": "n1"
+}, {
+  "project": "htmldoc",
+  "version": "1.9.11",
+  "source": {
+    "file": "htmldoc/image.cxx",
+    "line": 1242,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1242"
   },
-  {
-    "project": "htmldoc",
-    "version": "1.9.11",
-    "source": {
-      "file": "htmldoc/image.cxx",
-      "line": 1847,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1847"
-    },
-    "sink": {
-      "file": "htmldoc/image.cxx",
-      "line": 925,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
-    },
-    "type": "integer-overflow",
-    "CVE": null,
-    "report": null,
-    "patch": null
+  "sink": {
+    "file": "htmldoc/image.cxx",
+    "line": 1326,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1326"
   },
-  {
-    "project": "htmldoc",
-    "version": "1.9.11",
-    "source": {
-      "file": "htmldoc/image.cxx",
-      "line": 1848,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1848"
-    },
-    "sink": {
-      "file": "htmldoc/image.cxx",
-      "line": 925,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
-    },
-    "type": "integer-overflow",
-    "CVE": null,
-    "report": null,
-    "patch": null
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "htmldoc",
+  "version": "1.9.11",
+  "source": {
+    "file": "htmldoc/image.cxx",
+    "line": 1846,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1846"
   },
-  {
-    "project": "htmldoc",
-    "version": "1.9.11",
-    "source": {
-      "file": "htmldoc/image.cxx",
-      "line": 1849,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1849"
-    },
-    "sink": {
-      "file": "htmldoc/image.cxx",
-      "line": 925,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
-    },
-    "type": "integer-overflow",
-    "CVE": null,
-    "report": null,
-    "patch": null
+  "sink": {
+    "file": "htmldoc/image.cxx",
+    "line": 925,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
   },
-  {
-    "project": "htmldoc",
-    "version": "1.9.11",
-    "source": {
-      "file": "htmldoc/image.cxx",
-      "line": 1846,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1846"
-    },
-    "sink": {
-      "file": "htmldoc/image.cxx",
-      "line": 925,
-      "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
-    },
-    "type": "integer-overflow",
-    "CVE": null,
-    "report": null,
-    "patch": null
-  }
-]
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "htmldoc",
+  "version": "1.9.11",
+  "source": {
+    "file": "htmldoc/image.cxx",
+    "line": 1847,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1847"
+  },
+  "sink": {
+    "file": "htmldoc/image.cxx",
+    "line": 925,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
+  },
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "htmldoc",
+  "version": "1.9.11",
+  "source": {
+    "file": "htmldoc/image.cxx",
+    "line": 1848,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1848"
+  },
+  "sink": {
+    "file": "htmldoc/image.cxx",
+    "line": 925,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
+  },
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "htmldoc",
+  "version": "1.9.11",
+  "source": {
+    "file": "htmldoc/image.cxx",
+    "line": 1849,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1849"
+  },
+  "sink": {
+    "file": "htmldoc/image.cxx",
+    "line": 925,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
+  },
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}, {
+  "project": "htmldoc",
+  "version": "1.9.11",
+  "source": {
+    "file": "htmldoc/image.cxx",
+    "line": 1846,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L1846"
+  },
+  "sink": {
+    "file": "htmldoc/image.cxx",
+    "line": 925,
+    "code": "https://github.com/prosyslab-warehouse/htmldoc/blob/b3f6abd3d09013bb8af7cb39938fd4b5bccb15b6/htmldoc/image.cxx#L925"
+  },
+  "type": "integer-overflow",
+  "CVE": null,
+  "report": null,
+  "patch": null
+}]

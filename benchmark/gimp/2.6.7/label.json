@@ -74,6 +74,19 @@
     "line": 630,
     "code": "https://github.com/prosyslab-warehouse/gimp-2.6.7/blob/master/plug-ins/file-bmp/bmp-read.c#L630",
     "cmd": "malloc"
+  }],
+  "similarity": [{
+    "ID": "sam2p-0.49.4-2",
+    "bug": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L272",
+    "score": 0.96
+  }, {
+    "ID": "libXcursor-1.1.14-1",
+    "bug": "https://github.com/prosyslab-warehouse/libXcursor-1.1.14/blob/master/src/file.c#L32",
+    "score": 0.96
+  }, {
+    "ID": "scheme48-1.9.2-1",
+    "bug": "https://github.com/prosyslab-warehouse/scheme48-1.9.2/blob/master/c/scheme48-bibop-heap-64.c#L2504",
+    "score": 0.85
   }]
 }, {
   "project": "gimp",

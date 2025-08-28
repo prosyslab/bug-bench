@@ -5,8 +5,12 @@ CONFIG_OPTIONS="--disable-shared --disable-gdb \
 export CFLAGS="-Wno-error"
 
 MAKE_PARAMS="-j"
-SMAKE_I_DIR="sparrow/binutils/cxxfilt-new"
+SMAKE_I_DIR="sparrow/binutils/cxxfilt"
 BIN_PATH="binutils/cxxfilt"
+sed -i '796,799c\
+  x86_64-*-linux-*)\
+    targ_defvec=x86_64_elf32_vec\
+    targ_selvecs="i386_elf32_vec x86_64_elf32_vec elf32_le_vec elf32_be_vec plugin_vec"' bfd/config.bfd
 
 if [[ $1 == "sparrow" ]]; then
   ./configure $CONFIG_OPTIONS
@@ -22,8 +26,8 @@ elif [[ $1 == "haechi" ]]; then
   $SMAKE_BIN $MAKE_PARAMS
   cp $SMAKE_I_DIR/*.i $SMAKE_OUT
 
-  $GET_BC_BIN $BIN_PATH-new &&
-  llvm-dis -o $BIN_PATH.ll $BIN_PATH-new.bc &&
+  $GET_BC_BIN $BIN_PATH &&
+  llvm-dis -o $BIN_PATH.ll $BIN_PATH.bc &&
   opt -mem2reg -S -o $HAECHI_OUT/$(basename $BIN_PATH).ll $BIN_PATH.ll
 else
   echo "Unknown build target"

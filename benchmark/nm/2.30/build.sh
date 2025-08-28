@@ -7,6 +7,10 @@ export CFLAGS="-Wno-error"
 MAKE_PARAMS="-j"
 SMAKE_I_DIR="sparrow/binutils/nm-new"
 BIN_PATH="binutils/nm"
+sed -i '796,799c\
+  x86_64-*-linux-*)\
+    targ_defvec=x86_64_elf32_vec\
+    targ_selvecs="i386_elf32_vec x86_64_elf32_vec elf32_le_vec elf32_be_vec plugin_vec"' bfd/config.bfd
 
 if [[ $1 == "sparrow" ]]; then
   ./configure $CONFIG_OPTIONS

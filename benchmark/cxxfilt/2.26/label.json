@@ -3,7 +3,7 @@
   "version": "2.26",
   "file": "libiberty/cplus-dem.c",
   "line": 4319,
-  "type": "buffer-overflow",
+  "type": "null-dereference",
   "CVE": "CVE-2016-4487",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70481",
   "patch": null,
@@ -46,14 +46,21 @@
   }]
 }, {
   "project": "cxxfilt",
-  "version": "2.6",
-  "file": "libiberty/cplus-dem.c",
-  "line": 4839,
+  "version": "2.26",
+  "source": {
+    "file": "binutils/cxxfilt.c",
+    "line": 262,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L262"
+  },
+  "sink": {
+    "file": "libiberty/cplus-dem.c",
+    "line": 4839,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L4839"
+  },
   "type": "buffer-overflow",
   "CVE": "CVE-2016-4489",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70492",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L4839",
   "bug-trace": [{
     "file": "binutils/cxxfilt.c",
     "line": 262,
@@ -112,14 +119,21 @@
   }]
 }, {
   "project": "cxxfilt",
-  "version": "2.6",
-  "file": "libiberty/cp-demangle.c",
-  "line": 1596,
+  "version": "2.26",
+  "source": {
+    "file": "binutils/cxxfilt.c",
+    "line": 262,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L262"
+  },
+  "sink": {
+    "file": "libiberty/cp-demangle.c",
+    "line": 1596,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1596"
+  },
   "type": "buffer-overflow",
   "CVE": "CVE-2016-4490",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70498",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1596",
   "bug-trace": [{
     "file": "binutils/cxxfilt.c",
     "line": 262,
@@ -223,7 +237,7 @@
   }, {
     "file": "libiberty/cp-demangle.c",
     "line": 1676,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1609",
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L1676",
     "cmd": "assign"
   }, {
     "file": "libiberty/cp-demangle.c",
@@ -243,7 +257,7 @@
   }]
 }, {
   "project": "cxxfilt",
-  "version": "2.6",
+  "version": "2.26",
   "file": "libiberty/cp-demangle.c",
   "line": 5394,
   "type": "stack-overflow",
@@ -253,14 +267,21 @@
   "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cp-demangle.c#L5394"
 }, {
   "project": "cxxfilt",
-  "version": "2.6",
-  "file": "libiberty/cplus-dem.c",
-  "line": 3606,
+  "version": "2.26",
+  "source": {
+    "file": "binutils/cxxfilt.c",
+    "line": 262,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/binutils/cxxfilt.c#L262"
+  },
+  "sink": {
+    "file": "libiberty/cplus-dem.c",
+    "line": 3606,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L3606"
+  },
   "type": "buffer-overflow",
   "CVE": "CVE-2016-4492",
   "report": "https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70926",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L3606",
   "bug-trace": [{
     "file": "binutils/cxxfilt.c",
     "line": 262,
@@ -324,12 +345,12 @@
   }, {
     "file": "libiberty/cplus-dem.c",
     "line": 3606,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L3600",
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.26/blob/master/libiberty/cplus-dem.c#L3606",
     "cmd": "buffer read"
   }]
 }, {
   "project": "cxxfilt",
-  "version": "2.6",
+  "version": "2.26",
   "file": "libiberty/cplus-dem.c",
   "line": 2543,
   "type": "stack-overflow",

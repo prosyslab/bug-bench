@@ -1,13 +1,20 @@
 [{
   "project": "swftophp",
   "version": "6dff24b",
-  "file": "util/parser.c",
-  "line": 771,
+  "source": {
+    "file": "util/read.c",
+    "line": 129,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/read.c#L129"
+  },
+  "sink": {
+    "file": "util/parser.c",
+    "line": 66,
+    "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/parser.c#L66"
+  },
   "type": "buffer-overflow",
   "CVE": "CVE-2017-7578",
   "report": "https://github.com/libming/libming/issues/68",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libming-6dff24b/blob/master/util/parser.c#L771",
   "bug-trace": [{
     "file": "util/read.c",
     "line": 129,

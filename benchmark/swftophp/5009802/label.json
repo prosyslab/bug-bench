@@ -1,13 +1,20 @@
 [{
   "project": "swftophp",
   "version": "5009802",
-  "file": "util/decompile.c",
-  "line": 259,
+  "source": {
+    "file": "util/read.c",
+    "line": 130,
+    "code": "https://github.com/prosyslab-warehouse/libming-5009802/blob/master/util/read.c#L130"
+  },
+  "sink": {
+    "file": "util/decompile.c",
+    "line": 259,
+    "code": "https://github.com/prosyslab-warehouse/libming-5009802/blob/master/util/decompile.c#L259"
+  },
   "type": "buffer-overflow",
   "CVE": "CVE-2019-9114",
   "report": "https://github.com/libming/libming/issues/68",
   "patch": null,
-  "code": "https://github.com/prosyslab-warehouse/libming-5009802/blob/master/util/decompile.c#L259",
   "bug-trace": [{
     "file": "util/read.c",
     "line": 130,

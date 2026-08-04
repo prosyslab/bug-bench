@@ -19,36 +19,6 @@
     "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/libbfd.c#L656"
   },
   "bug-trace": [{
-    "file": "bfd/peigen.c",
-    "line": 1687,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/peigen.c#L1687",
-    "cmd": "malloc"
-  }, {
-    "file": "bfd/peigen.c",
-    "line": 1691,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/peigen.c#L1691",
-    "cmd": "call"
-  }, {
-    "file": "bfd/peigen.c",
-    "line": 1691,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/peigen.c#L1691",
-    "cmd": "call"
-  }, {
-    "file": "bfd/section.c",
-    "line": 1598,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/section.c#L1598",
-    "cmd": "call"
-  }, {
-    "file": "bfd/libbfd.c",
-    "line": 925,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/libbfd.c#L925",
-    "cmd": "call"
-  }, {
-    "file": "bfd/cache.c",
-    "line": 359,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/cache.c#L359",
-    "cmd": "call"
-  }, {
     "file": "bfd/cache.c",
     "line": 320,
     "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/cache.c#L320",
@@ -65,8 +35,8 @@
     "cmd": "return"
   }, {
     "file": "bfd/libbfd.c",
-    "line": 928,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/libbfd.c#L928",
+    "line": 927,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/libbfd.c#L927",
     "cmd": "return"
   }, {
     "file": "bfd/section.c",
@@ -74,24 +44,29 @@
     "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/section.c#L1598",
     "cmd": "return"
   }, {
+    "file": "bfd/section.c",
+    "line": 1691,
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/section.c#L1691",
+    "cmd": "return"
+  }, {
     "file": "bfd/peigen.c",
     "line": 1702,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/peigen.c#L1702",
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/peXXigen.c#L1702",
     "cmd": "assign"
   }, {
     "file": "bfd/peigen.c",
     "line": 1704,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/peigen.c#L1704",
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/peXXigen.c#L1704",
     "cmd": "assign"
   }, {
     "file": "bfd/peigen.c",
     "line": 1789,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/peigen.c#L1789",
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/peXXigen.c#L1789",
     "cmd": "assign"
   }, {
     "file": "bfd/peigen.c",
     "line": 1791,
-    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/peigen.c#L1791",
+    "code": "https://github.com/prosyslab-warehouse/binutils-2.31.1/blob/master/bfd/peXXigen.c#L1791",
     "cmd": "call"
   }, {
     "file": "bfd/libbfd.c",

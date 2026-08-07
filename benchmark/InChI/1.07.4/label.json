@@ -91,9 +91,9 @@
   "project": "InChI",
   "version": "1.07.4",
   "source": {
-    "file": "INCHI-1-SRC/INCHI_BASE/src/ichi_io.c",
+    "file": "INCHI-1-SRC/INCHI_BASE/src/mol_fmt1.c",
     "line": 684,
-    "code": "https://github.com/prosyslab-warehouse/InChI-1.07.4/blob/main/INCHI-1-SRC/INCHI_BASE/src/ichi_io.c#L684"
+    "code": "https://github.com/prosyslab-warehouse/InChI-1.07.4/blob/main/INCHI-1-SRC/INCHI_BASE/src/mol_fmt1.c#L684"
   },
   "sink": {
     "file": "INCHI-1-SRC/INCHI_BASE/src/ichiprt1.c",

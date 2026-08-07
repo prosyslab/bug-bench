@@ -345,20 +345,13 @@
 }, {
   "project": "swftophp",
   "version": "0.4.8",
-  "source": {
-    "file": "util/parser.c",
-    "line": 1073,
-    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/parser.c#L1073"
-  },
-  "sink": {
-    "file": "util/decompile.c",
-    "line": 1843,
-    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L1843"
-  },
+  "file": "util/decompile.c",
+  "line": 1843,
   "type": "buffer-overflow",
   "CVE": "CVE-2018-11095",
   "report": "https://github.com/libming/libming/issues/141",
   "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L1843",
   "bug-trace": [{
     "file": "util/parser.c",
     "line": 1073,
@@ -438,20 +431,13 @@
 }, {
   "project": "swftophp",
   "version": "0.4.8",
-  "source": {
-    "file": "util/decompile.c",
-    "line": 1950,
-    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L1950"
-  },
-  "sink": {
-    "file": "util/decompile.c",
-    "line": 2015,
-    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L2015"
-  },
+  "file": "util/decompile.c",
+  "line": 2015,
   "type": "buffer-overflow",
   "CVE": "CVE-2018-11225",
   "report": "https://github.com/libming/libming/issues/143",
   "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L2015",
   "bug-trace": [{
     "file": "util/decompile.c",
     "line": 1950,
@@ -594,20 +580,13 @@
 }, {
   "project": "swftophp",
   "version": "0.4.8",
-  "source": {
-    "file": "util/decompile.c",
-    "line": 3074,
-    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3074"
-  },
-  "sink": {
-    "file": "util/decompile.c",
-    "line": 3120,
-    "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3120"
-  },
+  "file": "util/decompile.c",
+  "line": 3120,
   "type": "buffer-overflow",
   "CVE": "CVE-2019-12982",
   "report": "https://github.com/libming/libming/commit/da9d86eab55cbf608d5c916b8b690f5b76bca462",
   "patch": null,
+  "code": "https://github.com/prosyslab-warehouse/libming-0.4.8/blob/master/util/decompile.c#L3120",
   "bug-trace": [{
     "file": "util/decompile.c",
     "line": 3074,
